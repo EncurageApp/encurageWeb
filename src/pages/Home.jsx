@@ -1,5 +1,6 @@
 import React from "react";
-import MomKids from "../imgs/mom-kids.jpg";
+import { NavLink } from "react-router-dom";
+// import MomKids from "../imgs/mom-kids.jpg";
 import MomCheckingKid from "../imgs/momcheckingkid.jpg";
 import KidSurprised from "../imgs/kidsurprised.jpg";
 import FingerPaint from "../imgs/fingerprintpaint.jpg";
@@ -41,7 +42,9 @@ export const Home = () => {
                   peace of mind. Download now and start ensuring your child's
                   well-being effortlessly.
                 </p>
-                <button className="cta-btn-home">Get Started Now!</button>
+                <button className="cta-btn-home">
+                  <NavLink to={"AppFeatures"}>Get Started Now!</NavLink>
+                </button>
               </div>
             </div>
             <div className="card card-2">
@@ -59,7 +62,9 @@ export const Home = () => {
                   to share their stories of successful health management with
                   you.
                 </p>
-                <button className="cta-btn-home">Read Reviews</button>
+                <button className="cta-btn-home">
+                  <NavLink to={"Reviews"}>Read Reviews</NavLink>
+                </button>
               </div>
             </div>
             <div className="card card-3">
@@ -77,15 +82,17 @@ export const Home = () => {
                   the creation of our app and the incredible journey that
                   brought us here.
                 </p>
-                <button className="cta-btn-home">Explore Our Story</button>
+                <button className="cta-btn-home">
+                  <NavLink to={"Founder"}>Explore Our Story</NavLink>
+                </button>
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             className="home-main-img"
             src={MomKids}
             alt="kids standing in line"
-          />
+          /> */}
           <p>
             We believe that every child deserves the best care, and we're here
             to provide you with the tools and support to make that happen. With
@@ -93,6 +100,10 @@ export const Home = () => {
             the healthiest start in life.
           </p>
         </div>
+      </section>
+
+      <section className="home-app-container">
+        <h1>APP</h1>
       </section>
     </main>
   );
