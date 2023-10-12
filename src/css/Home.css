@@ -118,14 +118,14 @@ Home Section
   border-radius: 5px;
 }
 
-.card-1 {
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.card-1 img {
+.card img {
   position: absolute;
   width: 100%;
   max-width: 650px;
@@ -137,7 +137,7 @@ Home Section
   transition: all 0.3s ease-in-out;
 }
 
-.card-1 .card-info {
+.card .card-info {
   background-color: var(--primaryOne);
   position: relative;
   max-height: 0;
@@ -151,13 +151,13 @@ Home Section
   transition: all 0.5s ease-in-out;
 }
 
-.card-1:hover .card-info {
+.card:hover .card-info {
   max-height: 400px;
-  height: 250px;
+  height: 400px;
   transition: max-height 1s ease-out, opacity 0.5s linear;
 }
 
-.card-1 .card-info p {
+.card .card-info p {
   font-size: 1rem;
   padding: 0 30px;
   margin-bottom: 10px;

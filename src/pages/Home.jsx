@@ -1,6 +1,8 @@
 import React from "react";
 import MomKids from "../imgs/mom-kids.jpg";
 import MomCheckingKid from "../imgs/momcheckingkid.jpg";
+import KidSurprised from "../imgs/kidsurprised.jpg";
+import FingerPaint from "../imgs/fingerprintpaint.jpg";
 
 export const Home = () => {
   return (
@@ -42,8 +44,42 @@ export const Home = () => {
                 <button className="cta-btn-home">Get Started Now!</button>
               </div>
             </div>
-            <div className="card card-2">2</div>
-            <div className="card card-3">3</div>
+            <div className="card card-2">
+              <div className="card-2-img">
+                <img
+                  src={KidSurprised}
+                  alt="mom checking temperature of child"
+                />
+              </div>
+              <div className="card-2 card-info">
+                <h2>Hear What Our Users Say</h2>
+                <p>
+                  Discover what parents and caregivers have to say about their
+                  experience with our app. We value their feedback and are proud
+                  to share their stories of successful health management with
+                  you.
+                </p>
+                <button className="cta-btn-home">Read Reviews</button>
+              </div>
+            </div>
+            <div className="card card-3">
+              <div className="card-3-img">
+                <img
+                  src={FingerPaint}
+                  alt="kid holding book, looking surprised"
+                />
+              </div>
+              <div className="card-3 card-info">
+                <h2>Discover Our Journey</h2>
+                <p>
+                  Take a step back in time and explore the story behind our
+                  mission. Learn how our passion for children's health led to
+                  the creation of our app and the incredible journey that
+                  brought us here.
+                </p>
+                <button className="cta-btn-home">Explore Our Story</button>
+              </div>
+            </div>
           </div>
           <img
             className="home-main-img"
