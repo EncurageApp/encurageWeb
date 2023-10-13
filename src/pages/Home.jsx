@@ -27,7 +27,8 @@ export const Home = () => {
             medication tracking to timely reminders, our app ensures that you're
             always in control of your child's well-being.
           </p>
-          <div className="cta-cards">
+
+          <div className="cta-cards-container">
             <div className="card card-1">
               <div className="card-1-img">
                 <img
@@ -47,6 +48,7 @@ export const Home = () => {
                 </button>
               </div>
             </div>
+
             <div className="card card-2">
               <div className="card-2-img">
                 <img

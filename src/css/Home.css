@@ -100,7 +100,9 @@ Main Section
   padding: 25px 0 40px 0;
 }
 
-.cta-cards {
+/* Call to Action Cards */
+
+.cta-cards-container {
   width: 100%;
   max-width: 650px;
   height: 100%;
@@ -116,9 +118,6 @@ Main Section
   align-items: center;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -25px;
   border-radius: 5px;
-}
-
-.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -152,15 +151,21 @@ Main Section
 }
 
 .card:hover .card-info {
-  max-height: 400px;
+  max-height: 100%;
   height: 400px;
   transition: max-height 1s ease-out, opacity 0.5s linear;
 }
 
+.card .card-info h2 {
+  font-size: 1.5rem;
+}
+
+.card-2 .card-info h2 {
+  font-size: 1.3rem;
+}
+
 .card .card-info p {
   font-size: 1rem;
-  padding: 0 30px;
-  margin-bottom: 10px;
   width: 80%;
 }
 
@@ -168,7 +173,6 @@ Main Section
   color: white;
   background-color: var(--primaryFive);
   padding: 10px;
-  margin-top: 10px;
   border: 0 solid;
   border-radius: 5px;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
