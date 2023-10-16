@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import Iphone from "../imgs/iphone.jpg";
 
 export const ImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: Iphone,
       title: "Stay on Top of Medication Reminders",
-      description: "Never miss a dose with our intuitive reminder system.",
+      description:
+        "Never miss a dose with our intuitive reminder system. Set and receive medication reminders effortlessly. Try it now!",
       buttonText: "Explore Reminders",
     },
     {
-      title: "Slide 2",
-      description: "This is the second slide",
-      buttonText: "Explore",
+      title: "Prescription Flexibility",
+      description:
+        "Effortlessly manage both short-term and ongoing prescriptions with our app. Simplify prescription management for your child's changing healthcare needs.",
+      buttonText: "Learn More",
     },
     {
-      title: "Slide 3",
-      description: "This is the second slide",
-      buttonText: "Explore",
+      title: "Efficient Dosage Tracking",
+      description:
+        "Effortlessly track and log each dosage with precision using our app. Our dosage tracking feature helps you stay organized, ensuring your child receives the right medicine at the right time",
+      buttonText: "Explore Dosage Features",
     },
-    // Add more slide data as needed
   ];
 
   const nextSlide = () => {

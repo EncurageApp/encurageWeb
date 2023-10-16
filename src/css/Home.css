@@ -268,13 +268,16 @@ App Section
 }
 
 .slide {
+  border-radius: 5px;
   display: none;
   flex: 1;
   text-align: center;
   width: 100%;
   height: 100%;
-  max-height: 250px;
+  max-height: 350px;
   position: relative;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .slide.active {
@@ -287,12 +290,17 @@ App Section
 }
 
 .slide-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   border-radius: 5px;
   height: 100%;
   width: 100%;
   background: var(--primaryFour);
   color: #fff;
-  padding: 10px;
+  padding: 24px;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -301,7 +309,12 @@ App Section
   z-index: 0;
 }
 
+.slide-info h2 {
+  font-size: 1.6rem;
+}
+
 .slide-info p {
+  font-size: 1.2rem;
   color: white;
   display: flex;
   justify-content: center;
@@ -318,8 +331,8 @@ App Section
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
@@ -328,7 +341,7 @@ App Section
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
-  margin: 0 10px;
+  margin: 0 -15px;
 }
 
 .next-arrow {
