@@ -1,7 +1,10 @@
 import React from "react";
 
-// import MomKids from "../imgs/mom-kids.jpg";
+// imgs
+
+// Components
 import { CardContainer } from "../components/CardContainer";
+import { ImageSlider } from "../components/ImageSlider";
 
 export const Home = () => {
   return (
@@ -26,11 +29,7 @@ export const Home = () => {
             always in control of your child's well-being.
           </p>
           <CardContainer />
-          {/* <img
-            className="home-main-img"
-            src={MomKids}
-            alt="kids standing in line"
-          /> */}
+
           <p>
             We believe that every child deserves the best care, and we're here
             to provide you with the tools and support to make that happen. With
@@ -40,7 +39,19 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="home-app-container"></section>
+      <section className="home-app-container">
+        <div className="home-app-intro">
+          <h1>Welcome to the Future of Child Health Management</h1>
+          <p>
+            Our cutting-edge app is here to transform the way you care for your
+            child's well-being. Seamlessly manage medications, track health
+            milestones, and ensure a healthier tomorrow with ease. Join us on
+            this remarkable journey to a world where your child's health is just
+            a tap away.
+          </p>
+          <ImageSlider />
+        </div>
+      </section>
     </main>
   );
 };

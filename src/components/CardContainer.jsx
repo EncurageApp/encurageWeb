@@ -14,9 +14,12 @@ export const CardContainer = () => {
 
       cardElements.forEach((element, index) => {
         const rect = element.getBoundingClientRect();
-        const threshold = 400;
+        const thresholdMin = 200;
+        const thresholdMax = 400;
+
         const isInViewport =
-          rect.top < window.innerHeight - threshold && rect.bottom >= threshold;
+          rect.top < window.innerHeight - thresholdMax &&
+          rect.bottom >= thresholdMin;
 
         if (isInViewport) {
           setVisibleCard(index + 1);
