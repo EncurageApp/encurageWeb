@@ -31,15 +31,15 @@ Hero
   position: absolute;
   background-color: var(--primaryFour);
   width: 95%;
-  max-width: 900px;
+  max-width: 800px;
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   bottom: -100px;
-  border-radius: 10px 100px;
-  border: 15px double var(--primaryFive); /* FIGURE OUT HOW TO PUT LINEAR GRADIENT TO MATCH APP, GRAPE TO CORAL */
+  border-radius: 10px 70px;
+  border: 10px double var(--primaryFive); /* FIGURE OUT HOW TO PUT LINEAR GRADIENT TO MATCH APP, GRAPE TO CORAL */
 }
 
 .hero-inner h1 {
@@ -158,41 +158,14 @@ Main Section
 
 .card .card-info h2 {
   font-size: 1.4rem;
+  transition: all 0.5s ease-in-out;
 }
 
 .card .card-info p {
   font-size: 0.9rem;
   width: 80%;
   padding: 10px 0;
-}
-
-.cta-btn-home {
-  color: white;
-  background-color: var(--primaryFive);
-  padding: 10px;
-  border: 0 solid;
-  border-radius: 5px;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-  outline: 1px solid;
-  outline-color: rgba(255, 255, 255, 0.5);
-  outline-offset: 0px;
-  text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.cta-btn-home a {
-  color: white;
-  text-decoration: none;
-}
-
-.cta-btn-home:hover {
-  color: white;
-  border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
-    0 0 20px var(--primaryFive);
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #427388;
+  transition: all 0.5s ease-in-out;
 }
 
 .home-main-img {
@@ -250,14 +223,14 @@ App Section
 
 .image-slider {
   width: 100%;
-  height: 90vh;
-}
-
-.slider {
+  height: 100vh;
   background-image: url("../imgs/iphone.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.slider {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,6 +246,7 @@ App Section
   flex: 1;
   text-align: center;
   width: 100%;
+  max-width: 950px;
   height: 100%;
   max-height: 350px;
   position: relative;
@@ -292,7 +266,7 @@ App Section
 .slide-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   border-radius: 5px;
@@ -311,6 +285,7 @@ App Section
 
 .slide-info h2 {
   font-size: 1.6rem;
+  border-bottom: 0.3px solid white;
 }
 
 .slide-info p {
@@ -377,7 +352,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .hero-inner p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     transition: all 0.3s ease-in-out;
   }
 
@@ -387,6 +362,18 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   /*         Home Section         */
+
+  /* CTA Cards */
+
+  .card .card-info h2 {
+    font-size: 1.7rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .card .card-info p {
+    font-size: 1.1rem;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 @media (min-width: 1101px) {
@@ -403,12 +390,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .hero-inner h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     transition: all 0.3s ease-in-out;
   }
 
   .hero-inner p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     transition: all 0.3s ease-in-out;
   }
 
@@ -422,4 +409,16 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     transition: all 0.3s ease-in-out;
   }
   /*             Home Section               */
+
+  /* CTA Cards */
+
+  .card .card-info h2 {
+    font-size: 1.9rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .card .card-info p {
+    font-size: 1.3rem;
+    transition: all 0.5s ease-in-out;
+  }
 }

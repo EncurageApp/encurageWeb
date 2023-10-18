@@ -52,6 +52,8 @@ export const Home = () => {
           <ImageSlider />
         </div>
       </section>
+
+      <section className="home-founder-container"></section>
     </main>
   );
 };

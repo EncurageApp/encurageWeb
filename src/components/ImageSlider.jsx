@@ -43,7 +43,7 @@ export const ImageSlider = () => {
             <div className="slide-info">
               <h2>{slide.title}</h2>
               <p>{slide.description}</p>
-              <button>{slide.buttonText}</button>
+              <button className="cta-btn-home">{slide.buttonText}</button>
             </div>
           </div>
         ))}
