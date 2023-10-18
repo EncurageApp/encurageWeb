@@ -1,0 +1,424 @@
+@import "./Root.css";
+
+main {
+  height: 100%;
+}
+
+/*
+============================================
+Hero
+============================================
+*/
+
+.hero-container {
+  font-family: "Poppins", sans-serif;
+  height: 45vh;
+  background-image: url(../imgs/home-hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.hero {
+  position: absolute;
+  background-color: var(--primaryFour);
+  width: 95%;
+  max-width: 800px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: -100px;
+  border-radius: 10px 70px;
+  border: 10px double var(--primaryFive); /* FIGURE OUT HOW TO PUT LINEAR GRADIENT TO MATCH APP, GRAPE TO CORAL */
+}
+
+.hero-inner h1 {
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 3px 5px 2px #474747;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-inner p {
+  color: white;
+  font-size: 1.1rem;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/*
+============================================
+Main Section
+============================================
+*/
+
+.home-main-container {
+  width: 100%;
+  margin-top: 150px;
+  font-family: "Poppins";
+}
+
+.home-main {
+  background-color: var(--primaryFour);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 30px 30px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+}
+
+.home-main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  border-bottom: 0.3px solid white;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.home-main p {
+  font-size: 1.2rem;
+  max-width: 750px;
+  line-height: 30px;
+  padding: 25px 0 40px 0;
+}
+
+/* Call to Action Cards */
+
+.cta-cards-container {
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  height: 350px;
+  margin: 40px 0;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -25px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-info {
+  background-color: var(--primaryOne);
+  position: relative;
+  max-height: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.85;
+  transition: all 0.5s ease-in-out;
+}
+
+.card.hovered .card-info {
+  max-height: 100%;
+  height: 400px;
+  transition: max-height 1s ease-out, opacity 0.5s linear;
+}
+
+.card .card-info h2 {
+  font-size: 1.4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.card .card-info p {
+  font-size: 0.9rem;
+  width: 80%;
+  padding: 10px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-main-img {
+  width: 100%;
+  max-width: 650px;
+  border: 2px solid var(--primaryFive);
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*
+=============================================================
+App Section
+=============================================================
+*/
+
+.home-app-container {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  padding: 40px 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-app-intro {
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-app-intro h1 {
+  color: var(--primaryFour);
+  font-size: 1.8rem;
+  text-shadow: -1px -1px 1px rgba(6, 5, 5, 0.1), 1px 1px 1px var(--primaryFour);
+}
+
+.home-app-intro p {
+  padding-top: 20px;
+  color: var(--primaryFour);
+  font-size: 1.3rem;
+}
+
+/*    Image Slider       */
+
+.image-slider {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../imgs/iphone.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide {
+  border-radius: 5px;
+  display: none;
+  flex: 1;
+  text-align: center;
+  width: 100%;
+  max-width: 950px;
+  height: 100%;
+  max-height: 350px;
+  position: relative;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.image-slider img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  background: var(--primaryFour);
+  color: #fff;
+  padding: 24px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.slide-info h2 {
+  font-size: 1.6rem;
+  border-bottom: 0.3px solid white;
+}
+
+.slide-info p {
+  font-size: 1.2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-slider button {
+  cursor: pointer;
+}
+
+.next-arrow,
+.prev-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 -15px;
+}
+
+.next-arrow {
+  right: 0;
+}
+
+.prev-arrow {
+  left: 0;
+}
+
+/*
+=====================================================================
+Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
+=====================================================================
+*/
+
+@media (min-width: 550px) and (max-width: 1100px) {
+  /*       Hero Section       */
+
+  .hero-container {
+    height: 50vh;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero {
+    border-radius: 10px 120px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero-inner h1 {
+    font-size: 4.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero-inner p {
+    font-size: 1.6rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .home-main-img {
+    height: 350px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /*         Home Section         */
+
+  /* CTA Cards */
+
+  .card .card-info h2 {
+    font-size: 1.7rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .card .card-info p {
+    font-size: 1.1rem;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+@media (min-width: 1101px) {
+  /*         Hero Section          */
+
+  .hero-container {
+    height: 60vh;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero {
+    border-radius: 10px 150px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero-inner h1 {
+    font-size: 4.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero-inner p {
+    font-size: 1.8rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero-inner div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .home-main-img {
+    height: 410px;
+    transition: all 0.3s ease-in-out;
+  }
+  /*             Home Section               */
+
+  /* CTA Cards */
+
+  .card .card-info h2 {
+    font-size: 1.9rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .card .card-info p {
+    font-size: 1.3rem;
+    transition: all 0.5s ease-in-out;
+  }
+}
