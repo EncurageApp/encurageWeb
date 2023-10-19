@@ -4,7 +4,7 @@ import animationData from "../assets/Animation - 1697616794178 (1).json";
 export const PhoneAnimation = () => {
   return (
     <div className="home-app-intro">
-      <h1>Welcome to the Future of Child Health Management</h1>
+      <h2>Welcome to the Future of Child Health Management</h2>
       <Lottie loop={true} animationData={animationData} />
       <p>
         Our cutting-edge app is here to transform the way you care for your

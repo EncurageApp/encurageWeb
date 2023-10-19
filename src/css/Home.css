@@ -2,6 +2,20 @@
 
 main {
   height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-bottom: 0.3px solid white;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+main p {
+  transition: all 0.3s ease-in-out;
 }
 
 /*
@@ -11,7 +25,6 @@ Hero
 */
 
 .hero-container {
-  font-family: "Poppins", sans-serif;
   height: 45vh;
   background-image: url(../imgs/home-hero.jpg);
   background-position: center center;
@@ -85,16 +98,8 @@ Main Section
   -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
-.home-main h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  border-bottom: 0.3px solid white;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
 .home-main p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   max-width: 750px;
   line-height: 30px;
   padding: 25px 0 40px 0;
@@ -185,7 +190,6 @@ App Section
 */
 
 .home-app-container {
-  font-family: "Poppins", sans-serif;
   margin: 0 auto;
   padding: 40px 0;
   height: 100%;
@@ -207,124 +211,66 @@ App Section
   text-align: center;
 }
 
-.home-app-intro h1 {
+.home-app-intro h2 {
   color: var(--primaryFour);
-  font-size: 1.8rem;
-  text-shadow: -1px -1px 1px rgba(6, 5, 5, 0.1), 1px 1px 1px var(--primaryFour);
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .home-app-intro p {
   padding-top: 20px;
   color: var(--primaryFour);
   font-size: 1.3rem;
+  max-width: 900px;
 }
 
-/*    Image Slider       */
+/*
+=============================================================
+Founder Section
+=============================================================
+*/
 
-.image-slider {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../imgs/iphone.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+.home-founder-container {
   margin: 0 auto;
-  position: relative;
-}
-
-.slide {
-  border-radius: 5px;
-  display: none;
-  flex: 1;
-  text-align: center;
-  width: 100%;
-  max-width: 950px;
+  padding: 80px 0;
   height: 100%;
-  max-height: 350px;
-  position: relative;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.slide.active {
-  display: flex;
-}
-
-.image-slider img {
+.home-founder {
+  background-color: var(--primaryFour);
+  height: 100%;
   width: 100%;
-  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 0 3px 100% 0;
 }
 
-.slide-info {
+.home-founder-info {
+  width: 95%;
+  height: 100%;
+  min-height: 700px;
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  border-radius: 5px;
-  height: 100%;
-  width: 100%;
-  background: var(--primaryFour);
-  color: #fff;
-  padding: 24px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+  justify-content: flex-start;
+  align-items: left;
+  gap: 20px;
+  padding: 35px 15px 10px 10px;
 }
 
-.slide-info h2 {
-  font-size: 1.6rem;
-  border-bottom: 0.3px solid white;
+.home-founder-info h2 {
+  border-bottom: 0.2px solid white;
 }
 
-.slide-info p {
-  font-size: 1.2rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.home-founder-info p {
+  width: 85%;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
-.image-slider button {
-  cursor: pointer;
-}
-
-.next-arrow,
-.prev-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  margin: 0 -15px;
-}
-
-.next-arrow {
-  right: 0;
-}
-
-.prev-arrow {
-  left: 0;
+.home-founder-info button {
+  margin: 15px 0 0 2px;
+  width: 230px;
+  transition: all 0.3s ease-in-out;
 }
 
 /*
@@ -335,6 +281,11 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
 @media (min-width: 550px) and (max-width: 1100px) {
   /*       Hero Section       */
+
+  main h2 {
+    font-size: 2.3rem;
+    transition: all 0.3s ease-in-out;
+  }
 
   .hero-container {
     height: 50vh;
@@ -374,9 +325,27 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 1.1rem;
     transition: all 0.5s ease-in-out;
   }
+
+  /*       Founder Section       */
+  .home-founder-info p {
+    margin-right: 5px;
+    font-size: 1.3rem;
+    line-height: 1.75;
+  }
+
+  .home-founder-info button {
+    margin: 15px 0 0 30px;
+    width: 250px;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 @media (min-width: 1101px) {
+  main h2 {
+    font-size: 2.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
   /*         Hero Section          */
 
   .hero-container {
@@ -420,5 +389,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .card .card-info p {
     font-size: 1.3rem;
     transition: all 0.5s ease-in-out;
+  }
+
+  /*       Founder Section       */
+  .home-founder-info p {
+    font-size: 1.4rem;
+  }
+
+  .home-founder-info button {
+    margin: 15px 0 0 100px;
+    width: 300px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
   }
 }

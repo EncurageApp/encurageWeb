@@ -5,6 +5,7 @@ import React from "react";
 // Components
 import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/PhoneAnimation";
+import { NavLink } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -43,7 +44,25 @@ export const Home = () => {
         <PhoneAnimation />
       </section>
 
-      <section className="home-founder-container"></section>
+      <section className="home-founder-container">
+        <div className="home-founder">
+          <div className="home-founder-info">
+            <h2>Meet the Heart Behind The Mission</h2>
+            <p>
+              Discover the foundation of our app by exploring the story of our
+              founder. It all started with a mother's concern for her daughter's
+              medicine tracking. Learn how <span>Hadas Kanner-Golan</span>
+              embarked on a mission to create a user-friendly solution. Get to
+              know the backstory and the inspiration behind our innovative app.
+            </p>
+            <button className="cta-btn-home">
+              <NavLink to={"Founder"}>
+                Discover the Heart Behind the App
+              </NavLink>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
