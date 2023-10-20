@@ -15,7 +15,7 @@ export const CardContainer = () => {
       cardElements.forEach((element, index) => {
         const rect = element.getBoundingClientRect();
         const thresholdMin = 200;
-        const thresholdMax = 400;
+        const thresholdMax = 550;
 
         const isInViewport =
           rect.top < window.innerHeight - thresholdMax &&

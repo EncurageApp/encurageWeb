@@ -13,6 +13,13 @@ export const PhoneAnimation = () => {
         remarkable journey to a world where your child's health is just a tap
         away.
       </p>
+
+      <div className="home-app-icons">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+      </div>
     </div>
   );
 };

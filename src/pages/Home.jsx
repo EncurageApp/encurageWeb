@@ -6,6 +6,7 @@ import React from "react";
 import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/PhoneAnimation";
 import { NavLink } from "react-router-dom";
+import { ImagePopOut } from "../components/ImagePopOut";
 
 export const Home = () => {
   return (
@@ -61,6 +62,10 @@ export const Home = () => {
               </NavLink>
             </button>
           </div>
+          <div className="home-img"></div>
+        </div>
+        <div>
+          <ImagePopOut />
         </div>
       </section>
     </main>

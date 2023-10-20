@@ -53,6 +53,7 @@ Hero
   bottom: -100px;
   border-radius: 10px 70px;
   border: 10px double var(--primaryFive); /* FIGURE OUT HOW TO PUT LINEAR GRADIENT TO MATCH APP, GRAPE TO CORAL */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.43);
 }
 
 .hero-inner h1 {
@@ -240,14 +241,19 @@ Founder Section
   background-color: var(--primaryFour);
   height: 100%;
   width: 100%;
-  max-width: 800px;
-  border-radius: 0 3px 100% 0;
+  max-width: 1000px;
+  border-radius: 0 3px 1000px 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .home-founder-info {
   width: 95%;
   height: 100%;
-  min-height: 700px;
+  min-height: 800px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -271,6 +277,62 @@ Founder Section
   margin: 15px 0 0 2px;
   width: 230px;
   transition: all 0.3s ease-in-out;
+}
+
+.home-img {
+  position: relative;
+}
+
+/*            Image Pop Out          */
+
+.person img {
+  max-width: 100%;
+  display: block;
+}
+
+.person {
+  position: relative;
+  max-width: 15rem;
+  left: 100px;
+  top: -300px;
+}
+
+.person-container {
+  aspect-ratio: 1/1.5;
+  display: grid;
+  align-items: flex-end;
+  border-radius: 0 0 100vw 100vw;
+  overflow: hidden;
+  transition: transform 250ms ease-in-out;
+}
+
+.person-container:hover {
+  transform: scale(1.1);
+}
+
+.person-container div {
+  background-color: var(--primaryFour);
+  position: absolute;
+  inset: auto 0 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin-inline: auto;
+  object-fit: cover;
+}
+
+.person-img {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  left: 2.5rem;
+  bottom: -7rem;
+  transform: scale(1.6);
+  transition: transform 250ms ease-in-out;
+}
+
+.person-container:hover .person-img {
+  transform: scale(1.8) translateY(-2rem);
 }
 
 /*
