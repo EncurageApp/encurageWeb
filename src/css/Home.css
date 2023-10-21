@@ -225,6 +225,32 @@ App Section
   max-width: 900px;
 }
 
+.home-app-icons {
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-1,
+.icon-3 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primaryFour);
+}
+
+.icons div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.icons p {
+  max-width: 500px;
+  padding: 10px;
+}
+
 /*
 =============================================================
 Founder Section
@@ -258,19 +284,21 @@ Founder Section
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: left;
+  align-items: center;
   gap: 20px;
   padding: 35px 15px 10px 10px;
 }
 
 .home-founder-info h2 {
   border-bottom: 0.2px solid white;
+  text-align: center;
 }
 
 .home-founder-info p {
   width: 85%;
   font-size: 1.1rem;
   line-height: 1.5;
+  text-align: center;
 }
 
 .home-founder-info button {
@@ -450,6 +478,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .card .card-info p {
     font-size: 1.3rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /*       App Section       */
+
+  .home-app-intro p {
+    font-size: 1.6rem;
     transition: all 0.5s ease-in-out;
   }
 

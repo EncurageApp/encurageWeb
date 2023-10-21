@@ -92,7 +92,12 @@ Download Buttons
 */
 .cta-btn-home {
   color: white;
-  background-color: var(--primaryFive);
+  background: linear-gradient(
+    80deg,
+    hsla(272, 58%, 42%, 1) 0%,
+    hsla(290, 43%, 42%, 1) 12%,
+    hsla(360, 100%, 75%, 1) 100%
+  );
   padding: 10px;
   border: 0 solid;
   border-radius: 5px;
