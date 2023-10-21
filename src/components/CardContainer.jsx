@@ -47,14 +47,14 @@ export const CardContainer = () => {
             <img src={MomCheckingKid} alt="mom checking temperature of child" />
           </div>
           <div className="card-1 card-info">
-            <h2>Start Tracking Today</h2>
+            <h2>Protecting Your Child's Wellness</h2>
             <p>
-              Say goodbye to medication management hassles and hello to peace of
-              mind. Download now and start ensuring your child's well-being
-              effortlessly.
+              Discover the critical importance of precise administration and
+              tracking, and how to safeguard your little one from the potential
+              dangers of medication mishaps.
             </p>
             <button className="cta-btn-home">
-              <NavLink to={"AppFeatures"}>Get Started Now!</NavLink>
+              <NavLink to={"ChildrenHealth"}>Get Started Now!</NavLink>
             </button>
           </div>
         </div>

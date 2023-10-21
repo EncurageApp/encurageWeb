@@ -163,6 +163,7 @@ Main Section
 }
 
 .card .card-info h2 {
+  max-width: 300px;
   font-size: 1.4rem;
   transition: all 0.5s ease-in-out;
 }
@@ -239,16 +240,49 @@ App Section
 }
 
 .icons div {
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 30px;
+  padding: 40px 40px 100px 40px;
+}
+
+.icons h3 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  border-bottom: 0.5px solid white;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
 }
 
 .icons p {
+  font-size: 1.2rem;
   max-width: 500px;
-  padding: 10px;
+}
+
+.icons button {
+  margin-top: 30px;
+}
+
+.icons .icon-1 {
+  align-items: flex-start;
+}
+
+.icons .icon-2 {
+  color: var(--primaryFour);
+  align-items: flex-end;
+  text-align: right;
+  width: 100%;
+}
+
+.icons .icon-2 h3 {
+  border-bottom: 1px solid var(--primaryFour);
+}
+
+.icons .icon-3 {
+  align-items: flex-start;
 }
 
 /*
@@ -295,8 +329,8 @@ Founder Section
 }
 
 .home-founder-info p {
-  width: 85%;
-  font-size: 1.1rem;
+  width: 100%;
+  font-size: 1.2rem;
   line-height: 1.5;
   text-align: center;
 }
