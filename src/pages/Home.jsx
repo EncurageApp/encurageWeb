@@ -1,7 +1,7 @@
 import React from "react";
 
 // imgs
-
+import KidJumping from "../imgs/kidjumping.jpg";
 // Components
 import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/PhoneAnimation";
@@ -43,6 +43,60 @@ export const Home = () => {
 
       <section className="home-app-container">
         <PhoneAnimation />
+        <div className="duo-container">
+          <div className="duo">
+            <div className="duo-img-container">
+              <img loading="lazy" src={KidJumping} alt="" />
+            </div>
+
+            <div className="duo-info">
+              <h3>Tailored for Your Child</h3>
+              <p>
+                Ensure your child's health receives the personalized attention
+                it deserves. With numerous options to customize, you'll have the
+                power to create a unique healthcare plan that caters to your
+                child's individual needs. Start now and make their well-being a
+                top priority.
+              </p>
+              <button className="cta-btn-home">
+                <NavLink>Get Started</NavLink>
+              </button>
+            </div>
+          </div>
+          <div className="duo">
+            <div className="duo-info">
+              <h3>Tailored for Your Child</h3>
+              <p>
+                Ensure your child's health receives the personalized attention
+                it deserves. With numerous options to customize, you'll have the
+                power to create a unique healthcare plan that caters to your
+                child's individual needs. Start now and make their well-being a
+                top priority.
+              </p>
+              <button className="cta-btn-home">
+                <NavLink>Get Started</NavLink>
+              </button>
+            </div>
+          </div>
+          <div className="duo">
+            <div className="duo-info">
+              <h3>Tailored for Your Child</h3>
+              <p>
+                Ensure your child's health receives the personalized attention
+                it deserves. With numerous options to customize, you'll have the
+                power to create a unique healthcare plan that caters to your
+                child's individual needs. Start now and make their well-being a
+                top priority.
+              </p>
+              <button className="cta-btn-home">
+                <NavLink>Get Started</NavLink>
+              </button>
+            </div>
+            <div className="duo-img-container">
+              <img className="" loading="lazy" src={KidJumping} alt="" />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="home-founder-container">

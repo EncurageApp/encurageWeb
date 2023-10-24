@@ -191,18 +191,8 @@ App Section
 =============================================================
 */
 
-.home-app-container {
-  margin: 0 auto;
-  padding: 40px 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .home-app-intro {
+  margin: 0 auto;
   padding: 0 20px;
   width: 100%;
   max-width: 1100px;
@@ -226,29 +216,58 @@ App Section
   max-width: 900px;
 }
 
-.home-app-icons {
-  padding-top: 70px;
-  width: 100%;
-  height: 100%;
+.duo-container {
+  margin: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  transition: all 0.3s ease-in-out;
 }
 
-.icon-1,
-.icon-3 {
-  width: 100%;
-  height: 100%;
+.duo {
   background-color: var(--primaryFour);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  transition: all 0.3s ease-in-out;
 }
 
-.icons div {
-  color: white;
+.duo:nth-child(2) {
+  width: 100%;
+  background-color: white;
+  box-shadow: none;
+}
+
+.duo:nth-child(2) p,
+.duo:nth-child(2) h3 {
+  color: var(--primaryFour);
+}
+
+.duo-img-container {
+  display: flex;
+}
+
+.duo img {
+  width: 100%;
+  height: 100%;
+}
+
+.duo-info {
+  padding: 40px 40px 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 40px 100px 40px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 
-.icons h3 {
+.duo-info h3 {
+  color: white;
   font-size: 1.6rem;
   margin-bottom: 30px;
   border-bottom: 0.5px solid white;
@@ -257,34 +276,15 @@ App Section
   transition: all 0.3s ease-in-out;
 }
 
-.icons p {
+.duo-info p {
+  color: white;
   font-size: 1.2rem;
-  max-width: 500px;
 }
 
-.icons button {
+.duo-info button {
+  max-width: 200px;
   margin-top: 30px;
 }
-
-.icons .icon-1 {
-  align-items: flex-start;
-}
-
-.icons .icon-2 {
-  color: var(--primaryFour);
-  align-items: flex-end;
-  text-align: right;
-  width: 100%;
-}
-
-.icons .icon-2 h3 {
-  border-bottom: 1px solid var(--primaryFour);
-}
-
-.icons .icon-3 {
-  align-items: flex-start;
-}
-
 /*
 =============================================================
 Founder Section
@@ -446,7 +446,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .card .card-info p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.5s ease-in-out;
   }
 
@@ -488,7 +488,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .hero-inner p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease-in-out;
   }
 
@@ -506,12 +506,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* CTA Cards */
 
   .card .card-info h2 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     transition: all 0.5s ease-in-out;
   }
 
   .card .card-info p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     transition: all 0.5s ease-in-out;
   }
 
@@ -520,6 +520,34 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .home-app-intro p {
     font-size: 1.6rem;
     transition: all 0.5s ease-in-out;
+  }
+
+  .duo {
+    flex-direction: row;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .duo:nth-child(1) img {
+    border-radius: 100px 0 0 100px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .duo:nth-child(1) {
+    width: 95%;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .duo:nth-child(3) img {
+    border-radius: 0 100px 100px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .duo:nth-child(3) {
+    width: 95%;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
   }
 
   /*       Founder Section       */
