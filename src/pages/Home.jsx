@@ -2,6 +2,8 @@ import React from "react";
 
 // imgs
 import KidJumping from "../imgs/kidjumping.jpg";
+import MomKids from "../imgs/mom-kids.jpg";
+
 // Components
 import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/PhoneAnimation";
@@ -59,7 +61,7 @@ export const Home = () => {
                 top priority.
               </p>
               <button className="cta-btn-home">
-                <NavLink>Get Started</NavLink>
+                <NavLink>Explore Now</NavLink>
               </button>
             </div>
           </div>
@@ -93,7 +95,7 @@ export const Home = () => {
               </button>
             </div>
             <div className="duo-img-container">
-              <img className="" loading="lazy" src={KidJumping} alt="" />
+              <img className="" loading="lazy" src={MomKids} alt="" />
             </div>
           </div>
         </div>
@@ -121,6 +123,25 @@ export const Home = () => {
         <div>
           <ImagePopOut />
         </div>
+      </section>
+
+      <section className="home-review-container">
+        <div className="review-wrapper">
+          <div className="review-quote">
+            <h1>
+              some words and some reviews<span> stuff about the </span>
+              website. Just need a little more filler so i can style this.
+            </h1>
+            <h4>
+              &mdash;Shane Horton
+              <br />
+              <em>Father Of Two, Active App Member</em>
+            </h4>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>space filler</div>
       </section>
     </main>
   );
