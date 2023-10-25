@@ -143,8 +143,10 @@ export const Home = () => {
               &mdash;Shane Horton
               <br />
               <em>Father Of Two</em>
+              <br />
             </h4>
           </div>
+          <button className="cta-btn-home">Read More Reviews</button>
         </div>
       </section>
       <section>
