@@ -118,24 +118,31 @@ export const Home = () => {
               </NavLink>
             </button>
           </div>
-          <div className="home-img"></div>
         </div>
         <div>
           <ImagePopOut />
+          <h3>Hadas & Emily</h3>
         </div>
       </section>
 
       <section className="home-review-container">
         <div className="review-wrapper">
           <div className="review-quote">
+            {/* Change Testimonial to real one!!!!!  */}
+
             <h1>
-              some words and some reviews<span> stuff about the </span>
-              website. Just need a little more filler so i can style this.
+              <blockquote>
+                Oncure streamlines managing our child's medication with ease.
+                Its user-friendly interface, reminders, and ability to track
+                multiple medications have simplified our lives, giving us
+                <span> peace of mind.</span>
+              </blockquote>
             </h1>
+
             <h4>
               &mdash;Shane Horton
               <br />
-              <em>Father Of Two, Active App Member</em>
+              <em>Father Of Two</em>
             </h4>
           </div>
         </div>

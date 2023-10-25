@@ -298,6 +298,19 @@ Founder Section
   height: 100%;
 }
 
+.home-founder-container h3 {
+  color: var(--primaryFour);
+  font-size: 1.8rem;
+  position: relative;
+  top: -220px;
+  left: 60px;
+  border-bottom: 0.3px solid var(--primaryFour);
+  max-width: 250px;
+  text-align: center;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 .home-founder {
   background-color: var(--primaryFour);
   height: 100%;
@@ -342,10 +355,6 @@ Founder Section
   transition: all 0.3s ease-in-out;
 }
 
-.home-img {
-  position: relative;
-}
-
 /*            Image Pop Out          */
 
 .person img {
@@ -355,9 +364,9 @@ Founder Section
 
 .person {
   position: relative;
-  max-width: 15rem;
-  left: 100px;
-  top: -300px;
+  max-width: 20rem;
+  left: 30px;
+  top: -250px;
 }
 
 .person-container {
@@ -382,6 +391,7 @@ Founder Section
   border-radius: 50%;
   margin-inline: auto;
   object-fit: cover;
+  box-shadow: 0px 30px 35px -10px rgba(0, 0, 0, 0.43);
 }
 
 .person-img {
@@ -389,7 +399,7 @@ Founder Section
   height: 80%;
   position: relative;
   left: 2.5rem;
-  bottom: -7rem;
+  bottom: -7.5rem;
   transform: scale(1.6);
   transition: transform 250ms ease-in-out;
 }
@@ -409,37 +419,36 @@ Review Section
   background-color: var(--primaryFour);
 }
 
-/* center the blockquote in the page */
 .review-wrapper {
   display: flex;
   height: 100%;
-  margin: 0 20px;
+  margin: 0 30px;
 }
 
-/* Blockquote main style */
 .review-quote {
   position: relative;
   height: 100%;
   max-width: 800px;
-  margin: 80px auto;
+  margin: 100px auto;
   align-self: center;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-/* Blockquote header */
 .review-quote h1 {
-  position: relative; /* for pseudos */
+  position: relative;
   color: white;
-  font-size: 2.8rem;
+  font-size: 1.3rem;
   font-weight: normal;
-  line-height: 1;
+  line-height: 1.3;
+  text-align: center;
   margin: 0;
-  border: 2px solid #fff;
+  border: 2px solid white;
   border: solid 2px;
   border-radius: 20px;
-  padding: 25px;
+  padding: 35px;
 }
 
-/* Blockquote right double quotes */
 .review-quote h1:after {
   content: "";
   position: absolute;
@@ -464,15 +473,13 @@ Review Section
   z-index: 2;
 }
 
-/* increase header size after 600px */
 @media all and (min-width: 600px) {
   .review-quote h1 {
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: 2rem;
+    line-height: 1.4;
   }
 }
 
-/* Blockquote subheader */
 .review-quote h4 {
   position: relative;
   color: #ffffff;
@@ -488,6 +495,34 @@ Review Section
 
 .review-quote h4:first-letter {
   margin-left: -12px;
+}
+
+blockquote {
+  position: relative;
+  font-family: "Georgia", serif;
+  font-size: 1.8rem;
+}
+
+blockquote::before,
+blockquote::after {
+  color: white;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 0.2em;
+}
+
+blockquote::before {
+  position: absolute;
+  left: -20px;
+  content: open-quote;
+}
+
+blockquote span {
+  color: var(--primarySeven);
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 /*
