@@ -510,7 +510,7 @@ blockquote {
 blockquote::before,
 blockquote::after {
   color: white;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
   line-height: 0.2em;
 }
@@ -519,6 +519,13 @@ blockquote::before {
   position: absolute;
   left: -20px;
   content: open-quote;
+}
+
+blockquote::after {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  content: close-quote;
 }
 
 blockquote span {
