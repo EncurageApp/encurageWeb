@@ -9,6 +9,7 @@ import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/PhoneAnimation";
 import { NavLink } from "react-router-dom";
 import { ImagePopOut } from "../components/ImagePopOut";
+import { SupportAnimation } from "../components/SupportAnimation";
 
 export const Home = () => {
   return (
@@ -132,13 +133,13 @@ export const Home = () => {
 
             <h1>
               <blockquote>
-                Oncure streamlines managing our child's medication with ease.
-                Its user-friendly interface, reminders, and ability to track
-                multiple medications have simplified our lives, giving us
+                <span>Oncure</span> streamlines managing our child's medication
+                with ease. Its user-friendly interface, reminders, and ability
+                to track multiple medications have simplified our lives, giving
+                us
                 <span> peace of mind.</span>
               </blockquote>
             </h1>
-
             <h4>
               &mdash;Shane Horton
               <br />
@@ -150,7 +151,7 @@ export const Home = () => {
         </div>
       </section>
       <section>
-        <div>space filler</div>
+        <SupportAnimation />
       </section>
     </main>
   );

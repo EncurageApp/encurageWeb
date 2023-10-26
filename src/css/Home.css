@@ -477,13 +477,6 @@ Review Section
   z-index: 2;
 }
 
-@media all and (min-width: 600px) {
-  .review-quote h1 {
-    font-size: 2rem;
-    line-height: 1.4;
-  }
-}
-
 .review-quote h4 {
   position: relative;
   color: #ffffff;
@@ -549,6 +542,13 @@ blockquote span {
 Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 =====================================================================
 */
+
+@media all and (min-width: 600px) {
+  .review-quote h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}
 
 @media (min-width: 550px) and (max-width: 1100px) {
   /*       Hero Section       */
