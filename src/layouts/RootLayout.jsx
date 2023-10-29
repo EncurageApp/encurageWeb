@@ -18,7 +18,7 @@ export const RootLayout = () => {
 
   return (
     <div className="root-layout">
-      <Headroom disableInlineStyles upTolerance={50} downTolerance={20}>
+      <Headroom disableInlineStyles upTolerance={30} downTolerance={20}>
         <header>
           <nav>
             <div className="nav-header">

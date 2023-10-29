@@ -298,23 +298,11 @@ Founder Section
   height: 100%;
 }
 
-.home-founder-container h3 {
-  color: var(--primaryFour);
-  font-size: 1.8rem;
-  position: relative;
-  top: -220px;
-  left: 60px;
-  border-bottom: 0.3px solid var(--primaryFour);
-  max-width: 250px;
-  text-align: center;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
 .home-founder {
   background-color: var(--primaryFour);
   height: 100%;
   width: 100%;
+  min-height: 1000px;
   max-width: 1000px;
   border-radius: 0 3px 1000px 0;
   display: flex;
@@ -355,6 +343,26 @@ Founder Section
   transition: all 0.3s ease-in-out;
 }
 
+.founder-wrapper {
+  background-color: var(--primaryFour);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.founder-wrapper h3 {
+  padding: 10px 0 30px 0;
+  color: white;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 /*            Image Pop Out          */
 
 .person img {
@@ -363,10 +371,9 @@ Founder Section
 }
 
 .person {
+  margin: 0 auto;
   position: relative;
-  max-width: 20rem;
-  left: 30px;
-  top: -250px;
+  max-width: 15rem;
 }
 
 .person-container {
@@ -417,6 +424,9 @@ Review Section
 .home-review-container {
   width: 100%;
   background-color: var(--primaryFour);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .review-wrapper {
@@ -543,10 +553,71 @@ Contact Section
 =============================================================
 */
 
+.svg-icon {
+  height: 4rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: var(--primaryFive);
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.home-contact-container {
+  margin: 60px auto;
+  text-align: center;
+  color: var(--primaryFour);
+}
+
+.contact-card-container {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.contact-card-wrapper {
+  margin: 0 auto;
+  height: 90vh;
+  max-width: 800px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primaryFour);
+  justify-content: space-evenly;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+}
+
 .support-animation {
+  margin: 0 auto;
   width: 100%;
-  max-width: 900px;
-  height: 100%;
+  max-width: 700px;
+}
+
+.contact-card {
+  background-color: white;
+  width: 100%;
+  border: 0.3px solid var(--primaryFive);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+}
+
+.contact-card button {
+  width: 150px;
 }
 
 /*
@@ -554,13 +625,6 @@ Contact Section
 Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 =====================================================================
 */
-
-@media all and (min-width: 600px) {
-  .review-quote h1 {
-    font-size: 2rem;
-    line-height: 1.4;
-  }
-}
 
 @media (min-width: 550px) and (max-width: 1100px) {
   /*       Hero Section       */
@@ -620,6 +684,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     margin: 15px 0 0 30px;
     width: 250px;
     transition: all 0.3s ease-in-out;
+  }
+
+  .review-quote h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  /*       Image PopOut        */
+
+  .person {
+    max-width: 25rem;
   }
 }
 
@@ -725,5 +800,33 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     width: 300px;
     font-size: 1.1rem;
     transition: all 0.3s ease-in-out;
+  }
+
+  /*       Image PopOut        */
+
+  .person {
+    max-width: 35rem;
+  }
+
+  /*       Contact Section       */
+
+  .home-contact-container div {
+    display: flex;
+  }
+
+  .contact-card-wrapper {
+    height: 50vh;
+  }
+
+  .contact-card {
+    flex-direction: row;
+  }
+
+  .contact-card div {
+    flex-direction: column;
+  }
+
+  .contact-card button {
+    margin-right: 15px;
   }
 }
