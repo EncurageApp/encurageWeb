@@ -293,18 +293,19 @@ Founder Section
 */
 
 .home-founder-container {
-  margin: 0 auto;
-  padding: 40px 0;
+  margin: 10rem auto;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home-founder {
   background-color: var(--primaryFour);
   height: 100%;
   width: 100%;
-  min-height: 1000px;
   max-width: 1000px;
-  border-radius: 0 3px 1000px 0;
+  border-radius: 0 3px 600px 0;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
@@ -315,7 +316,7 @@ Founder Section
 .home-founder-info {
   width: 95%;
   height: 100%;
-  min-height: 800px;
+  min-height: 720px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -323,6 +324,7 @@ Founder Section
   align-items: center;
   gap: 20px;
   padding: 35px 15px 10px 10px;
+  transition: all 0.5s ease-in-out;
 }
 
 .home-founder-info h2 {
@@ -345,22 +347,6 @@ Founder Section
 
 .founder-wrapper {
   background-color: var(--primaryFour);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.founder-wrapper h3 {
-  padding: 10px 0 30px 0;
-  color: white;
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 /*            Image Pop Out          */
@@ -371,9 +357,10 @@ Founder Section
 }
 
 .person {
-  margin: 0 auto;
   position: relative;
-  max-width: 15rem;
+  max-width: 20rem;
+  left: 5%;
+  top: -250px;
 }
 
 .person-container {
@@ -429,12 +416,24 @@ Review Section
   -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
+.home-review-container h2 {
+  margin: 0 20%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-bottom: 0.3px solid white;
+}
+
 .review-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  min-height: 60vh;
   margin: 0 30px;
 }
 
@@ -574,6 +573,14 @@ Contact Section
   color: var(--primaryFour);
 }
 
+.home-contact-container h2 {
+  font-size: 3rem;
+}
+
+.home-contact-container > p {
+  font-size: 1.1rem;
+}
+
 .contact-card-container {
   margin-top: 20px;
   padding: 0 20px;
@@ -581,9 +588,10 @@ Contact Section
 
 .contact-card-wrapper {
   margin: 0 auto;
-  height: 90vh;
+  height: 100%;
   max-width: 800px;
-  padding: 0 20px;
+  padding: 20px 20px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   background-color: var(--primaryFour);
@@ -674,14 +682,19 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   /*       Founder Section       */
+
+  .home-founder-info {
+    min-height: 720px;
+    transition: all 0.5s ease-in-out;
+  }
+
   .home-founder-info p {
-    margin-right: 5px;
+    padding: 0 20px;
     font-size: 1.3rem;
     line-height: 1.75;
   }
 
   .home-founder-info button {
-    margin: 15px 0 0 30px;
     width: 250px;
     transition: all 0.3s ease-in-out;
   }
@@ -691,10 +704,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     line-height: 1.4;
   }
 
-  /*       Image PopOut        */
+  /*      Contact Section       */
 
-  .person {
-    max-width: 25rem;
+  .home-contact-container > p {
+    font-size: 1.6rem;
   }
 }
 
@@ -791,6 +804,16 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   /*       Founder Section       */
+
+  .home-founder {
+    max-width: 1400px;
+  }
+
+  .home-founder-info {
+    min-height: 400px;
+    transition: all 0.5s ease-in-out;
+  }
+
   .home-founder-info p {
     font-size: 1.4rem;
   }
@@ -805,21 +828,37 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /*       Image PopOut        */
 
   .person {
+    position: relative;
     max-width: 35rem;
+    left: 40%;
+    top: -650px;
   }
 
   /*       Contact Section       */
+
+  .home-contact-container h2 {
+    font-size: 4rem;
+  }
+
+  .home-contact-container p {
+    padding-bottom: 40px;
+  }
+
+  .home-contact-container > p {
+    font-size: 2rem;
+  }
 
   .home-contact-container div {
     display: flex;
   }
 
   .contact-card-wrapper {
-    height: 50vh;
+    height: 60vh;
   }
 
   .contact-card {
     flex-direction: row;
+    gap: 50px;
   }
 
   .contact-card div {

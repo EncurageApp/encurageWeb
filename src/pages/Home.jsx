@@ -8,7 +8,6 @@ import MomKids from "../imgs/mom-kids.jpg";
 import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/PhoneAnimation";
 import { NavLink } from "react-router-dom";
-import { ImagePopOut } from "../components/ImagePopOut";
 import { SupportAnimation } from "../components/SupportAnimation";
 
 export const Home = () => {
@@ -106,10 +105,6 @@ export const Home = () => {
         <div className="home-founder">
           <div className="home-founder-info">
             <h2>Meet the Heart Behind The Mission</h2>
-            <div className="founder-wrapper">
-              <ImagePopOut />
-              <h3>Hadas & Emily</h3>
-            </div>
             <p>
               Discover the foundation of our app by exploring the story of our
               founder. It all started with a mother's concern for her daughter's
@@ -127,6 +122,9 @@ export const Home = () => {
       </section>
 
       <section className="home-review-container">
+        <div>
+          <h2>See What Parents Say</h2>
+        </div>
         <div className="review-wrapper">
           <div className="review-quote">
             {/* Change Testimonial to real one!!!!!  */}
@@ -139,7 +137,7 @@ export const Home = () => {
                 us
                 <span> peace of mind.</span>
               </blockquote>{" "}
-              {/* Idea for component  : words transition from array, find transition package? */}
+              {/* Ideal for component  : words transition from array, find transition package? */}
             </h1>
             <h4>
               &mdash;Shane Horton
