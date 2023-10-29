@@ -276,6 +276,16 @@ App Section
   transition: all 0.3s ease-in-out;
 }
 
+.duo-info h2 {
+  color: var(--primaryFour);
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  border-bottom: 0.5px solid var(--primaryFour);
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
 .duo-info p {
   color: white;
   font-size: 1.2rem;
@@ -532,9 +542,7 @@ blockquote::after {
 
 blockquote span {
   color: var(--primarySeven);
-  text-transform: uppercase;
-  font-size: 2rem;
-  border-bottom: 0.3px solid var(--primaryFive);
+  font-size: 1.5rem;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
     1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -544,6 +552,16 @@ blockquote span {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-out.active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 /*
@@ -681,6 +699,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     transition: all 0.5s ease-in-out;
   }
 
+  /*       App Section       */
+
+  .duo-info h2,
+  h3 {
+    font-size: 1.8rem;
+  }
+
   /*       Founder Section       */
 
   .home-founder-info {
@@ -801,6 +826,15 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     width: 95%;
     margin: 0 auto;
     transition: all 0.3s ease-in-out;
+  }
+
+  .duo-info h2,
+  h3 {
+    font-size: 2rem;
+  }
+
+  .duo-info p {
+    font-size: 1.3rem;
   }
 
   /*       Founder Section       */

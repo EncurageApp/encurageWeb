@@ -9,6 +9,7 @@ import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/PhoneAnimation";
 import { NavLink } from "react-router-dom";
 import { SupportAnimation } from "../components/SupportAnimation";
+import { TestimonialSlider } from "../components/TestimonialSlider";
 
 export const Home = () => {
   return (
@@ -67,7 +68,7 @@ export const Home = () => {
           </div>
           <div className="duo">
             <div className="duo-info">
-              <h3>Tailored for Your Child</h3>
+              <h2>Tailored for Your Child</h2>
               <p>
                 Ensure your child's health receives the personalized attention
                 it deserves. With numerous options to customize, you'll have the
@@ -125,30 +126,9 @@ export const Home = () => {
         <div>
           <h2>See What Parents Say</h2>
         </div>
-        <div className="review-wrapper">
-          <div className="review-quote">
-            {/* Change Testimonial to real one!!!!!  */}
-
-            <h1>
-              <blockquote>
-                <span>Oncure</span> streamlines managing our child's medication
-                with ease. Its user-friendly interface, reminders, and ability
-                to track multiple medications have simplified our lives, giving
-                us
-                <span> peace of mind.</span>
-              </blockquote>{" "}
-              {/* Ideal for component  : words transition from array, find transition package? */}
-            </h1>
-            <h4>
-              &mdash;Shane Horton
-              <br />
-              <em>Father Of Two</em>
-              <br />
-            </h4>
-          </div>
-          <button className="cta-btn-home">Read More Reviews</button>
-        </div>
+        <TestimonialSlider />
       </section>
+
       <section className="home-contact-container">
         <h2>Help Center</h2>
         <p>Question not answered yet? We are here to help!</p>
