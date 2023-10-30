@@ -39,6 +39,7 @@ export const CardContainer = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div className="cta-cards-container">
       <div className="card-component-container">
@@ -58,7 +59,7 @@ export const CardContainer = () => {
               dangers of medication mishaps.
             </p>
             <button className="cta-btn-home">
-              <NavLink to={"ChildrenHealth"}>Get Started Now!</NavLink>
+              <NavLink to={"ChildrenHealth"}>Know The Risk</NavLink>
             </button>
           </div>
         </div>

@@ -9,21 +9,21 @@ const testimonialData = [
   },
   {
     quote:
-      "Another testimonial goes here. You can add more testimonials to the array.",
-    author: "John Doe",
-    role: "Example Role",
+      "As a busy parent, I was constantly worried about our child's medication regimen. Oncure came to our rescue, allowing us to effortlessly add babysitters and grandparents to help with medication tracking. It's a game-changer!",
+    author: "Emily Carter",
+    role: "Mother of Three",
   },
   {
     quote:
-      " 2 Another testimonial goes here. You can add more testimonials to the array.",
-    author: "John Doe",
-    role: "Example Role",
+      "Oncure has been a lifesaver for us. Our child has a complex medication schedule, and the app has made it incredibly easy to manage. We can share access with our child's school nurse, making sure everyone is on the same page. Highly recommended!",
+    author: "David and Lisa Johnson",
+    role: "Parents of Special Needs Child",
   },
   {
     quote:
-      " 3 Another testimonial goes here. You can add more testimonials to the array.",
-    author: "John Doe",
-    role: "Example Role",
+      "I can't express how grateful we are for Oncure. Our child's medical needs are demanding, and this app has brought much-needed relief. With the ability to easily invite babysitters and grandparents, it has strengthened our support network and improved our child's health management.",
+    author: "Michael and Amanda Reynolds",
+    role: "Parents of a Toddler",
   },
 ];
 
@@ -66,8 +66,10 @@ export function TestimonialSlider() {
           </em>
           <br />
         </h4>
+        <div className="review-btn">
+          <button className="cta-btn-home">Read More Reviews</button>
+        </div>
       </div>
-      <button className="cta-btn-home">Read More Reviews</button>
     </div>
   );
 }

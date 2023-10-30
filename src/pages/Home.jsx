@@ -62,34 +62,33 @@ export const Home = () => {
                 top priority.
               </p>
               <button className="cta-btn-home">
+                <NavLink></NavLink>
+              </button>
+            </div>
+          </div>
+          <div className="duo">
+            <div className="duo-info">
+              <h2>Your Child's Health, Your Way</h2>
+              <p>
+                Take control of your child's health with our app. Prioritize
+                their well-being and give them the personalized care they
+                deserve. Get started today.
+              </p>
+              <button className="cta-btn-home">
                 <NavLink>Explore Now</NavLink>
               </button>
             </div>
           </div>
           <div className="duo">
             <div className="duo-info">
-              <h2>Tailored for Your Child</h2>
+              <h3>Curiosity Unleashed: The Untold Dangers of Mis-Dosage</h3>
               <p>
-                Ensure your child's health receives the personalized attention
-                it deserves. With numerous options to customize, you'll have the
-                power to create a unique healthcare plan that caters to your
-                child's individual needs. Start now and make their well-being a
-                top priority.
-              </p>
-              <button className="cta-btn-home">
-                <NavLink>Get Started</NavLink>
-              </button>
-            </div>
-          </div>
-          <div className="duo">
-            <div className="duo-info">
-              <h3>Tailored for Your Child</h3>
-              <p>
-                Ensure your child's health receives the personalized attention
-                it deserves. With numerous options to customize, you'll have the
-                power to create a unique healthcare plan that caters to your
-                child's individual needs. Start now and make their well-being a
-                top priority.
+                Are you curious to know the untold dangers of mis-dosage when it
+                comes to your child's health? It's a story that every parent
+                should explore. Our app offers a fascinating journey into these
+                risks, providing a deeper understanding of the consequences and
+                how to protect your child. Let your curiosity lead the way to
+                essential knowledge.
               </p>
               <button className="cta-btn-home">
                 <NavLink>Get Started</NavLink>

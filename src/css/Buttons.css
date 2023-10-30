@@ -90,6 +90,13 @@
 Download Buttons
 ==========================
 */
+
+/*
+==========================
+CTA Button
+==========================
+*/
+
 .cta-btn-home {
   color: white;
   background: linear-gradient(
@@ -123,12 +130,6 @@ Download Buttons
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
 }
-/*
-==========================
-CTA Button
-==========================
-*/
-
 /*
 ==========================
 Social Media Icons

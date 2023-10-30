@@ -281,7 +281,7 @@ App Section
   color: var(--primaryFour);
   font-size: 1.6rem;
   margin-bottom: 30px;
-  border-bottom: 0.5px solid var(--primaryFour);
+
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
     1px 1px 1px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
@@ -293,8 +293,8 @@ App Section
 }
 
 .duo-info button {
-  max-width: 200px;
-  margin-top: 30px;
+  width: 150px;
+  margin-top: 20px;
 }
 
 /*
@@ -422,6 +422,7 @@ Review Section
 
 .home-review-container {
   width: 100%;
+  height: 100%;
   background-color: var(--primaryFour);
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
@@ -514,6 +515,10 @@ Review Section
   margin-left: -12px;
 }
 
+.review-quote em {
+  font-size: 1.2rem;
+}
+
 blockquote {
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -547,12 +552,19 @@ blockquote span {
     1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+.review-btn {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .review-wrapper button {
   font-size: 1rem;
   width: 200px;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
 }
 
 .fade-in-out {
@@ -702,9 +714,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   /*       App Section       */
 
-  .duo-info h2,
-  h3 {
-    font-size: 1.8rem;
+  .duo-info h2 {
+    font-size: 2.5rem;
+  }
+
+  .duo-info p {
+    font-size: 1.3rem;
   }
 
   /*       Founder Section       */
@@ -839,9 +854,8 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     transition: all 0.3s ease-in-out;
   }
 
-  .duo-info h2,
-  h3 {
-    font-size: 2rem;
+  .duo-info h2 {
+    font-size: 3rem;
   }
 
   .duo-info p {
@@ -880,6 +894,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   /*       Review Section       */
+
+  .home-review-container {
+    height: 650px;
+  }
 
   .review-wrapper {
     min-height: 50vh;
