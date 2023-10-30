@@ -58,9 +58,10 @@ export const CardContainer = () => {
               tracking, and how to safeguard your little one from the potential
               dangers of medication mishaps.
             </p>
-            <button className="cta-btn-home">
-              <NavLink to={"ChildrenHealth"}>Know The Risk</NavLink>
-            </button>
+
+            <NavLink to={"ChildrenHealth"}>
+              <button className="cta-btn-home">Know The Risk </button>
+            </NavLink>
           </div>
         </div>
 
@@ -79,9 +80,10 @@ export const CardContainer = () => {
               experience with our app. We value their feedback and are proud to
               share their stories of successful health management with you.
             </p>
-            <button className="cta-btn-home">
-              <NavLink to={"Reviews"}>Read Reviews</NavLink>
-            </button>
+
+            <NavLink to={"Reviews"}>
+              <button className="cta-btn-home">Read Reviews</button>
+            </NavLink>
           </div>
         </div>
         <div className={`card card-3 ${visibleCard === 3 ? "hovered" : ""}`}>
@@ -99,9 +101,10 @@ export const CardContainer = () => {
               Learn how our passion for children's health led to the creation of
               our app and the incredible journey that brought us here.
             </p>
-            <button className="cta-btn-home">
-              <NavLink to={"Founder"}>Explore Our Story</NavLink>
-            </button>
+
+            <NavLink to={"Founder"}>
+              <button className="cta-btn-home">Explore Our Story</button>
+            </NavLink>
           </div>
         </div>
       </div>

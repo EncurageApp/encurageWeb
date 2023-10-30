@@ -61,9 +61,9 @@ export const Home = () => {
                 child's individual needs. Start now and make their well-being a
                 top priority.
               </p>
-              <button className="cta-btn-home">
-                <NavLink></NavLink>
-              </button>
+              <NavLink to={"AppFeatures"}>
+                <button className="cta-btn-home">Learn More</button>
+              </NavLink>
             </div>
           </div>
           <div className="duo">
@@ -74,9 +74,10 @@ export const Home = () => {
                 their well-being and give them the personalized care they
                 deserve. Get started today.
               </p>
-              <button className="cta-btn-home">
-                <NavLink>Explore Now</NavLink>
-              </button>
+
+              <NavLink to={"AppFeatures"}>
+                <button className="cta-btn-home">Explore Now</button>
+              </NavLink>
             </div>
           </div>
           <div className="duo">
@@ -90,9 +91,9 @@ export const Home = () => {
                 how to protect your child. Let your curiosity lead the way to
                 essential knowledge.
               </p>
-              <button className="cta-btn-home">
-                <NavLink>Get Started</NavLink>
-              </button>
+              <NavLink to={"ChildrenHealth"}>
+                <button className="cta-btn-home">Get Started Today</button>
+              </NavLink>
             </div>
             <div className="duo-img-container">
               <img className="" loading="lazy" src={MomKids} alt="" />
@@ -112,11 +113,12 @@ export const Home = () => {
               embarked on a mission to create a user-friendly solution. Get to
               know the backstory and the inspiration behind our innovative app.
             </p>
-            <button className="cta-btn-home">
-              <NavLink to={"Founder"}>
+
+            <NavLink to={"Founder"}>
+              <button className="cta-btn-home">
                 Discover the Heart Behind the App
-              </NavLink>
-            </button>
+              </button>
+            </NavLink>
           </div>
         </div>
       </section>

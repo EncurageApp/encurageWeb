@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const testimonialData = [
   {
@@ -40,7 +41,7 @@ export function TestimonialSlider() {
         setCurrentTestimonial(nextIndex);
         setFadeIn(true);
       }, 500);
-    }, 7000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [currentTestimonial]);
@@ -67,7 +68,9 @@ export function TestimonialSlider() {
           <br />
         </h4>
         <div className="review-btn">
-          <button className="cta-btn-home">Read More Reviews</button>
+          <NavLink to={"Reviews"}>
+            <button className="cta-btn-home">Read More Reviews</button>
+          </NavLink>
         </div>
       </div>
     </div>
