@@ -14,9 +14,9 @@ import { TestimonialSlider } from "../components/TestimonialSlider";
 export const Home = () => {
   return (
     <main>
-      <section className="hero-container">
-        <div className="hero">
-          <div className="hero-inner">
+      <section className="home-hero-container">
+        <div className="home-hero">
+          <div className="home-hero-inner">
             <p>Peace of Mind, One Dose at a Time with </p>
             <h1>OnCure!</h1>
           </div>
@@ -169,7 +169,9 @@ export const Home = () => {
                 <p>Got questions? We've got answers</p>
               </div>
 
-              <button className="cta-btn-home">Vist Help Center</button>
+              <NavLink to={"FaqLayOut"}>
+                <button className="cta-btn-home">Vist Help Center</button>
+              </NavLink>
             </div>
             <div className="contact-card">
               <svg class="svg-icon" viewBox="0 0 20 20">
@@ -187,7 +189,9 @@ export const Home = () => {
                 <p>Problems with your App? We can help fix it!</p>
               </div>
 
-              <button className="cta-btn-home">Report a Issue</button>
+              <NavLink to={"FaqLayout"}>
+                <button className="cta-btn-home">Report a Issue</button>
+              </NavLink>
             </div>
             <div className="contact-card">
               <svg class="svg-icon" viewBox="0 0 20 20">
@@ -200,7 +204,7 @@ export const Home = () => {
                 <h3>Comments? Concerns?</h3>
                 <p>Email us! We would love to hear from you!</p>
               </div>
-
+              {/* Figure out Email Situation */}
               <button className="cta-btn-home">Email Us</button>
             </div>
           </div>
