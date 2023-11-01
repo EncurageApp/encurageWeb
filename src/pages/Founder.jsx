@@ -6,7 +6,7 @@ import DreamBig from "../imgs/dreambig.jpg";
 
 export const Founder = () => {
   return (
-    <main>
+    <main className="founder-page">
       <section className="f-story-container">
         <h2>
           From Idea to <span>Innovation</span>
@@ -14,7 +14,7 @@ export const Founder = () => {
         <div className="f-story-img-container ">
           <div>
             <p>
-              <span>Our Story</span> at OnCure begins with Hadas Kanner-Golan, a
+              <span>O</span>ur Story at OnCure begins with Hadas Kanner-Golan, a
               remarkable co-founder and our esteemed CEO, at the helm.
             </p>
           </div>
