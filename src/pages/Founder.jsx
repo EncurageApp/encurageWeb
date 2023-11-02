@@ -11,36 +11,40 @@ export const Founder = () => {
         <h2>
           From Idea to <span>Innovation</span>
         </h2>
-        <div className="f-story-img-container ">
+        <div className="f-story-info-container ">
           <div>
-            <p>
-              <span>O</span>ur Story at OnCure begins with Hadas Kanner-Golan, a
-              remarkable co-founder and our esteemed CEO, at the helm.
-            </p>
+            <h2>
+              <span>O</span>ur Story at OnCure
+            </h2>
           </div>
+
           <img
             src={DreamBig}
             alt="The Words Dream Big in White on a Black Background"
           />
 
-          <p>
-            In the initial chapters of our journey, Hadas found herself facing a
-            daunting challenge when her daughter, Emily, fell ill with strep
-            throat and a high fever. The struggle to manage the timing of
-            Emily's fever reducer doses led her to seek a solution, but to her
-            surprise, there was no dedicated app to assist parents in tracking
-            their children's medication. While adult-focused medication
-            reminders abounded, they failed to address the unique needs of
-            parents.
-          </p>
-          <p>
-            This pivotal moment marked the genesis of OnCure. Hadas delved into
-            comprehensive research, unveiling the scope of medication errors
-            within homes and the unique challenges it posed. Fueled by her
-            passion, she joined forces with a board-certified pediatrician and a
-            dedicated team of developers to create a secure, user-friendly
-            solution for parents and caregivers.
-          </p>
+          <div>
+            <p>
+              In the initial chapters of our journey, Hadas found herself facing
+              a daunting challenge when her daughter, Emily, fell ill with strep
+              throat and a high fever. The struggle to manage the timing of
+              Emily's fever reducer doses led her to seek a solution, but to her
+              surprise, there was no dedicated app to assist parents in tracking
+              their children's medication. While adult-focused medication
+              reminders abounded, they failed to address the unique needs of
+              parents.
+            </p>
+          </div>
+          <div>
+            <p>
+              This pivotal moment marked the genesis of OnCure. Hadas delved
+              into comprehensive research, unveiling the scope of medication
+              errors within homes and the unique challenges it posed. Fueled by
+              her passion, she joined forces with a board-certified pediatrician
+              and a dedicated team of developers to create a secure,
+              user-friendly solution for parents and caregivers.
+            </p>
+          </div>
         </div>
       </section>
       <section className="f-hero-container">
