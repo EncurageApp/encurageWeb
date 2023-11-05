@@ -65,6 +65,20 @@ Story
   margin: 0 auto;
 }
 
+.f-story-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.founder-animation {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaryThree);
+}
+
 .f-story-container h2 {
   font-size: 4rem;
   color: var(--primaryFour);
@@ -85,7 +99,7 @@ Story
   font-size: 1.5rem;
 }
 
-.f-story-container :nth-child(3) {
+.f-story-container :nth-child(4) {
   background: var(--primaryThree);
 }
 
@@ -146,6 +160,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .f-hero-container h2 {
     font-size: 3.5rem;
   }
+
+  .founder-animation {
+    height: 500px;
+  }
 }
 
 @media (min-width: 1101px) {
@@ -165,5 +183,9 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .f-founder-container h2 {
     font-size: 4rem;
+  }
+
+  .founder-animation {
+    height: 500px;
   }
 }
