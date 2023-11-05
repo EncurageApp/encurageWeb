@@ -1,4 +1,6 @@
 import React from "react";
+import Lottie from "lottie-react";
+import founderAnimation from "../assets/founder.json";
 
 //imgs
 import Hadas from "../imgs/hadas.jpg";
@@ -14,10 +16,13 @@ export const Founder = () => {
       <section>
         <div className="f-story-container">
           <h2>Our Story</h2>
+
           <p>
             Let me introduce you to <i className="name">Hadas Kanner-Golan</i>,
             our exceptional co-founder and CEO, leading the charge for OnCure.
+            <Lottie loop={true} animationData={founderAnimation} />
           </p>
+
           <p>
             When her daughter, Emily, was struck by strep throat and a high
             fever, Hadas faced a daunting task: managing the timing of her fever
