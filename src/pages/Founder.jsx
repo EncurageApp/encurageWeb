@@ -2,28 +2,26 @@ import React from "react";
 
 //imgs
 import Hadas from "../imgs/hadas.jpg";
-import DreamBig from "../imgs/dreambig.jpg";
+import Color1 from "../imgs/colorsmoke.jpg";
+import Color2 from "../imgs/colorsmoke2.jpg";
+import Color3 from "../imgs/colorsmoke3.jpg";
+
+//components
+
+import { ImageSlider } from "../components/FounderSlider";
 
 export const Founder = () => {
   return (
     <main className="founder-page">
-      <section className="f-story-container">
+      <section className="f-hero-container">
         <h2>
           From Idea to <span>Innovation</span>
         </h2>
-        <div className="f-story-info-container ">
+      </section>
+      <section>
+        <ImageSlider>
           <div>
-            <h2>
-              <span>O</span>ur Story at OnCure
-            </h2>
-          </div>
-
-          <img
-            src={DreamBig}
-            alt="The Words Dream Big in White on a Black Background"
-          />
-
-          <div>
+            <img src={Color1} alt="" />
             <p>
               In the initial chapters of our journey, Hadas found herself facing
               a daunting challenge when her daughter, Emily, fell ill with strep
@@ -45,12 +43,16 @@ export const Founder = () => {
               user-friendly solution for parents and caregivers.
             </p>
           </div>
-        </div>
+          <div>
+            {" "}
+            <img src={Color3} alt="" />
+          </div>
+        </ImageSlider>
       </section>
-      <section className="f-hero-container">
+      <section className="f-founder-container">
         <h2>Our Founder</h2>
-        <div className="f-hero-info">
-          <div className="f-hero-img-container">
+        <div className="f-founder-info">
+          <div className="f-founder-img-container">
             <img src={Hadas} alt="Founder of Company Hadas" />
           </div>
           <div>

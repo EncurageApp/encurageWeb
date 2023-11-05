@@ -2,16 +2,17 @@
 
 /*
 ============================================
-Story
+Hero
 ============================================
 */
 
-.f-story-container {
-  text-align: center;
+.f-hero-container {
+  margin: 0 auto;
   background-color: var(--primaryThree);
 }
 
-.f-story-container > h2 {
+.f-hero-container > h2 {
+  text-align: center;
   color: var(--primarySix);
   text-transform: uppercase;
   letter-spacing: 0.45em;
@@ -22,7 +23,7 @@ Story
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
 }
 
-.f-story-container > h2 span {
+.f-hero-container > h2 span {
   font: 900 3.5rem/1 "Poppins", sans-serif;
   letter-spacing: 0;
   padding: 20px 0;
@@ -53,72 +54,48 @@ Story
   }
 }
 
-.f-story-info-container {
-  margin: 0 auto;
-  background-color: var(--primaryFour);
-  width: 100%;
+/*
+============================================
+Founder Slider
+============================================
+*/
+
+.image-slider {
+  height: 100%;
+
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-.f-story-info-container img {
-  width: 95%;
-  max-width: 900px;
-  border-radius: 0 800px 10px 0;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-}
-
-.f-story-info-container div {
+.image-slider img {
   width: 100%;
-}
-
-.f-story-info-container h2 {
-  margin: 30px auto;
-  font-size: 2rem;
-  border: none;
-  color: white;
-  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
-}
-
-.f-story-info-container p {
-  color: white;
-  font-size: 1.5rem;
-  padding: 60px 30px 10px 30px;
-  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
-}
-
-.f-story-info-container div:nth-child(1) {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.f-story-info-container div h2 span {
-  font-size: 3rem;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 /*
 ============================================
-Hero
+Founder
 ============================================
 */
-.f-hero-container {
+.f-founder-container {
   margin: 50px auto;
 }
 
-.f-hero-container h2 {
+.f-founder-container h2 {
   font-size: 3rem;
   color: var(--primaryFour);
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.f-hero-info {
+.f-founder-info {
   margin: 0 40px;
   display: flex;
   flex-direction: column;
@@ -126,11 +103,11 @@ Hero
   align-items: center;
 }
 
-.f-hero-img-container {
+.f-founder-img-container {
   height: 100%;
 }
 
-.f-hero-img-container img {
+.f-founder-img-container img {
   border-radius: 4px;
   width: 100%;
   max-width: 700px;
@@ -139,7 +116,7 @@ Hero
   -moz-box-shadow: -21px 11px 5px 0px rgba(46, 149, 147, 1);
 }
 
-.f-hero-info p {
+.f-founder-info p {
   text-align: center;
   max-width: 500px;
 }
@@ -151,13 +128,9 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 */
 
 @media (min-width: 550px) and (max-width: 1100px) {
-  .f-story-container > h2 span {
+  .f-hero-container > h2 span {
     font-size: 6rem;
     transition: all 0.3s ease-in-out;
-  }
-
-  .f-story-img-container div:nth-child(1) p {
-    max-width: 80%;
   }
 
   .f-hero-container h2 {
@@ -166,7 +139,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 }
 
 @media (min-width: 1101px) {
-  .f-story-container > h2 span {
+  .f-hero-container > h2 span {
     font-size: 8rem;
     transition: all 0.3s ease-in-out;
   }
@@ -176,11 +149,11 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 1.8rem;
   }
 
-  .f-hero-info {
+  .f-founder-info {
     flex-direction: row;
   }
 
-  .f-hero-container h2 {
+  .f-founder-container h2 {
     font-size: 4rem;
   }
 }
