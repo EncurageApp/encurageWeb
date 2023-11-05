@@ -14,29 +14,30 @@ export const Founder = () => {
       </section>
       <section>
         <div className="f-story-container">
+          <h2>Our Story</h2>
           <div>
             <p>
-              Let me introduce you to <i className="name">Hadas Kanner-Golan</i>
-              , our exceptional co-founder and CEO, leading the charge for
-              OnCure.
+              <span>Let</span> me introduce you to{" "}
+              <i className="name">Hadas Kanner-Golan</i>, our exceptional
+              co-founder and CEO, leading the charge for OnCure.
             </p>
             <FounderAnimation />
           </div>
           <p>
-            When her daughter, Emily, was struck by strep throat and a high
-            fever, Hadas faced a daunting task: managing the timing of her fever
-            reducer doses. She was surprised to discover the absence of a
-            dedicated app to aid parents in monitoring their children's
-            medication. While numerous medication reminders catered to adults,
-            they fell short in meeting the unique requirements of parents like
-            Hadas.
+            <span>When</span> her daughter, Emily, was struck by strep throat
+            and a high fever, Hadas faced a daunting task: managing the timing
+            of her fever reducer doses. She was surprised to discover the
+            absence of a dedicated app to aid parents in monitoring their
+            children's medication. While numerous medication reminders catered
+            to adults, they fell short in meeting the unique requirements of
+            parents like Hadas.
           </p>
           <p>
-            Her response was to dive into in-depth research, probing the issue
-            of medication errors within households. Through this exploration,
-            she unveiled the vastness of the problem and the particular
-            challenges it presented. This was the pivotal moment that birthed
-            the idea of OnCure. Hadas formed a partnership with a
+            <span>Her</span> response was to dive into in-depth research,
+            probing the issue of medication errors within households. Through
+            this exploration, she unveiled the vastness of the problem and the
+            particular challenges it presented. This was the pivotal moment that
+            birthed the idea of OnCure. Hadas formed a partnership with a
             board-certified pediatrician and an enthusiastic team of developers
             to craft a secure, user-friendly solution for parents and
             caregivers.

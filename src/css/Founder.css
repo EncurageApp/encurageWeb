@@ -66,8 +66,15 @@ Story
 }
 
 .f-story-container > div {
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.f-story-container > div > p {
+  margin: 0 auto;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 .founder-animation {
@@ -83,7 +90,9 @@ Story
   font-size: 4rem;
   color: var(--primaryFour);
   text-align: center;
-  margin: 3rem 0;
+  margin: 30px auto;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 .f-story-container p {
@@ -92,11 +101,16 @@ Story
   font-size: 1.3rem;
   color: var(--primaryFour);
   padding: 30px;
-  margin-bottom: 40px;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.f-story-container span {
+  font-size: 2rem;
 }
 
 .name {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .f-story-container :nth-child(4) {
@@ -117,6 +131,8 @@ Founder
   color: var(--primaryFour);
   text-align: center;
   margin: 3rem 0;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 .f-founder-info {
@@ -151,7 +167,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 =====================================================================
 */
 
+/* Hero */
+/* Story */
+/* Founder */
+
 @media (min-width: 550px) and (max-width: 1100px) {
+  /* Hero */
+
   .f-hero-container > h2 span {
     font-size: 6rem;
     transition: all 0.3s ease-in-out;
@@ -161,21 +183,46 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 3.5rem;
   }
 
+  /* Story */
+
+  .f-story-container > div > p {
+    max-width: 70%;
+  }
+
   .founder-animation {
     height: 500px;
   }
+
+  /* Founder */
 }
 
 @media (min-width: 1101px) {
+  /* Hero */
+
   .f-hero-container > h2 span {
     font-size: 8rem;
     transition: all 0.3s ease-in-out;
   }
 
-  .f-story-img-container div:nth-child(1) p {
-    max-width: 50%;
+  /* Story */
+
+  .f-story-container > div {
+    flex-direction: row;
+    background-color: var(--primaryThree);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .f-story-container > div > p {
+    max-width: 60%;
     font-size: 1.8rem;
   }
+
+  .founder-animation {
+    height: 500px;
+  }
+
+  /* Founder */
 
   .f-founder-info {
     flex-direction: row;
@@ -183,9 +230,5 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .f-founder-container h2 {
     font-size: 4rem;
-  }
-
-  .founder-animation {
-    height: 500px;
   }
 }
