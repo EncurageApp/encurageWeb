@@ -2,13 +2,6 @@ import React from "react";
 
 //imgs
 import Hadas from "../imgs/hadas.jpg";
-import Color1 from "../imgs/colorsmoke.jpg";
-import Color2 from "../imgs/colorsmoke2.jpg";
-import Color3 from "../imgs/colorsmoke3.jpg";
-
-//components
-
-import { ImageSlider } from "../components/FounderSlider";
 
 export const Founder = () => {
   return (
@@ -19,35 +12,32 @@ export const Founder = () => {
         </h2>
       </section>
       <section>
-        <ImageSlider>
-          <div>
-            <img src={Color1} alt="" />
-            <p>
-              In the initial chapters of our journey, Hadas found herself facing
-              a daunting challenge when her daughter, Emily, fell ill with strep
-              throat and a high fever. The struggle to manage the timing of
-              Emily's fever reducer doses led her to seek a solution, but to her
-              surprise, there was no dedicated app to assist parents in tracking
-              their children's medication. While adult-focused medication
-              reminders abounded, they failed to address the unique needs of
-              parents.
-            </p>
-          </div>
-          <div>
-            <p>
-              This pivotal moment marked the genesis of OnCure. Hadas delved
-              into comprehensive research, unveiling the scope of medication
-              errors within homes and the unique challenges it posed. Fueled by
-              her passion, she joined forces with a board-certified pediatrician
-              and a dedicated team of developers to create a secure,
-              user-friendly solution for parents and caregivers.
-            </p>
-          </div>
-          <div>
-            {" "}
-            <img src={Color3} alt="" />
-          </div>
-        </ImageSlider>
+        <div className="f-story-container">
+          <h2>Our Story</h2>
+          <p>
+            Let me introduce you to <i className="name">Hadas Kanner-Golan</i>,
+            our exceptional co-founder and CEO, leading the charge for OnCure.
+          </p>
+          <p>
+            When her daughter, Emily, was struck by strep throat and a high
+            fever, Hadas faced a daunting task: managing the timing of her fever
+            reducer doses. She was surprised to discover the absence of a
+            dedicated app to aid parents in monitoring their children's
+            medication. While numerous medication reminders catered to adults,
+            they fell short in meeting the unique requirements of parents like
+            Hadas.
+          </p>
+          <p>
+            Her response was to dive into in-depth research, probing the issue
+            of medication errors within households. Through this exploration,
+            she unveiled the vastness of the problem and the particular
+            challenges it presented. This was the pivotal moment that birthed
+            the idea of OnCure. Hadas formed a partnership with a
+            board-certified pediatrician and an enthusiastic team of developers
+            to craft a secure, user-friendly solution for parents and
+            caregivers.
+          </p>
+        </div>
       </section>
       <section className="f-founder-container">
         <h2>Our Founder</h2>

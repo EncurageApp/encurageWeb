@@ -16,7 +16,7 @@ export const ImageSlider = ({ children }) => {
   return (
     <div className="image-slider">
       {children[currentImageIndex]}
-      <div>
+      <div className="slider-btn-container">
         <button className="slider-btn" onClick={prevImage}>
           Previous
         </button>
