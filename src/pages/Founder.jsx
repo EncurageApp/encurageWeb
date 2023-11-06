@@ -4,6 +4,7 @@ import React from "react";
 import Hadas from "../imgs/hadas.jpg";
 
 import { AnimateText } from "../components/AnimateText";
+import { FounderAnimation } from "../components/FounderAnimation";
 
 export const Founder = () => {
   return (
@@ -12,10 +13,11 @@ export const Founder = () => {
         <h2>
           From Idea to <span>Innovation</span>
         </h2>
+        <FounderAnimation />
       </section>
       <section>
         <div className="f-story-container">
-          <div>
+          <div className="f-founder-container">
             <div>
               <h2>Our Founder</h2>
               <p>
@@ -27,12 +29,13 @@ export const Founder = () => {
             <div className="f-founder-info">
               <div className="f-founder-img-container">
                 <img src={Hadas} alt="Founder of Company Hadas" />
+                <p className="founder-title">Hadas & Emily</p>
               </div>
             </div>
           </div>
 
           <h2>Our Story</h2>
-          <div>
+          <div className="f-animate-wrapper">
             <AnimateText>
               <p>
                 <span>When</span> her daughter, Emily, was struck by strep
@@ -46,7 +49,7 @@ export const Founder = () => {
             </AnimateText>
           </div>
 
-          <div>
+          <div className="f-animate-wrapper">
             <AnimateText>
               <p>
                 <span>Her</span> response was to dive into in-depth research,
@@ -61,7 +64,7 @@ export const Founder = () => {
             </AnimateText>
           </div>
 
-          <div>
+          <div className="f-animate-wrapper">
             <AnimateText>
               <p>
                 <span>Our </span>Story is a tribute to Hadas Kanner-Golan, the
@@ -76,6 +79,7 @@ export const Founder = () => {
           </div>
         </div>
       </section>
+      <section></section>
     </main>
   );
 };
