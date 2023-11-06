@@ -71,15 +71,24 @@ export const Founder = () => {
                 driving force behind the well-being and happiness of families.
                 Every day, we are grateful for Hadas's unwavering commitment to
                 empowering parents and ensuring the well-being of their
-                children. With a commitment to innovation, we have exciting
-                plans for OnCure, so be sure to subscribe here to stay updated
-                on our latest developments.
+                children.
               </p>
             </AnimateText>
           </div>
         </div>
       </section>
-      <section></section>
+      <section className="f-subscribe-container">
+        <h2>Our Commitment to Innovation</h2>
+        <p>
+          With a , we have exciting plans for OnCure, so be sure to subscribe
+          here to stay updated on our latest developments.
+        </p>
+        <div className="subscribe-box">
+          <div className="ribbon">
+            <span>Join Today</span>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
