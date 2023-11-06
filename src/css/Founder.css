@@ -121,7 +121,7 @@ Story
 
 .f-story-container {
   text-align: center;
-  margin: 0 auto;
+  margin: 0 15px;
 }
 
 .f-story-container div:nth-child(4) {
@@ -132,6 +132,7 @@ Story
   width: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.43);
 }
 
 .f-story-container > div > p {
@@ -144,9 +145,17 @@ Story
   font-size: 4rem;
   color: var(--primaryFour);
   text-align: center;
-  margin: 30px auto;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.f-story-container h2:nth-child(2) {
+  margin: 0 auto;
+  margin-top: 10rem;
+  background-color: var(--primaryThree);
+  border-radius: 10px 10px 0 0;
+  width: 80%;
+  box-shadow: 0px 20px 10px 2px rgba(0, 0, 0, 0.43);
 }
 
 .f-story-container p {
@@ -154,7 +163,7 @@ Story
   text-align: center;
   font-size: 1.3rem;
   color: var(--primaryFour);
-
+  padding: 30px 0;
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
 }
@@ -174,7 +183,7 @@ Story
 }
 
 .f-animate-wrapper p {
-  margin: 60px auto;
+  padding: 60px 0;
 }
 
 .animated-paragraph {
