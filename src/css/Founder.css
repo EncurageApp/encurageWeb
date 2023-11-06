@@ -177,6 +177,8 @@ Story
 }
 
 .f-animate-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
   background-color: var(--primaryThree);
   padding: 20px;
 }
@@ -186,10 +188,10 @@ Story
 }
 
 .animated-paragraph {
-  border-bottom: 0.3px solid var(--primaryFour);
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 3s ease, transform 3s ease;
+  transform: translateY(15px);
+  transition: opacity 4s ease, transform 4s ease;
+  border-bottom: 0.3px solid var(--primaryFour);
 }
 
 .animated-paragraph.animate-paragraph {
@@ -199,7 +201,7 @@ Story
 
 .animated-paragraph.animate-paragraph.reverse {
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(-15px);
 }
 
 /*
@@ -217,7 +219,17 @@ Subscribe Box
 }
 
 .f-subscribe-container h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: var(--primaryFour);
+  text-align: center;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.f-subscribe-container p {
+  width: 80%;
+  margin: 4rem auto;
+  font-size: 1.4rem;
   color: var(--primaryFour);
   text-align: center;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
@@ -333,6 +345,16 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     padding: 60px 0;
     width: 90%;
   }
+
+  /* Subscribe */
+
+  .f-subscribe-container h2 {
+    font-size: 3.5rem;
+  }
+
+  .f-subscribe-container p {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 1101px) {
@@ -388,5 +410,14 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .name {
     font-size: 2.2rem;
     transition: all 0.5s ease-in-out;
+  }
+
+  /* Subscribe */
+  .f-subscribe-container h2 {
+    font-size: 4rem;
+  }
+
+  .f-subscribe-container p {
+    font-size: 1.8rem;
   }
 }
