@@ -34,9 +34,9 @@ header nav {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(
-    var(--primaryFour) 0%,
-    var(--primaryFour) 40%,
-    var(--primaryFive) 80%
+    var(--primaryFive) 0%,
+
+    var(--primaryFour) 60%
   );
   height: 4rem;
   font-family: "Poppins", sans-serif;
@@ -128,9 +128,9 @@ header nav {
     position: absolute;
     top: 60px;
     background: linear-gradient(
-      var(--primaryFive) 0%,
-      var(--primaryFive) 20%,
-      var(--primaryFour) 100%
+      var(--primaryFour) 0%,
+      var(--primaryFour) 90%,
+      var(--primaryFive) 100%
     );
     transition: all 0.5s ease-in-out;
   }
@@ -213,7 +213,7 @@ footer .logo {
 }
 
 footer .logo a {
-  font-size: 5.5rem;
+  font-size: 4rem;
   padding-bottom: 20px;
 }
 
@@ -412,7 +412,7 @@ footer .logo a {
   }
 
   footer .logo a {
-    font-size: 4rem;
+    font-size: 4.2rem;
   }
 
   .quick-links {
