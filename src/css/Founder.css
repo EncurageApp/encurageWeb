@@ -1,5 +1,15 @@
 @import "../css/Root.css";
 
+.founder-page p {
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.founder-page h2 {
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px 0.1px 10px rgba(255, 255, 255, 0.3);
+}
+
 /*
 ============================================
 Hero
@@ -178,13 +188,13 @@ Story
 
 .f-animate-wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 900px;
   background-color: var(--primaryThree);
   padding: 20px;
 }
 
 .f-animate-wrapper p {
-  padding: 60px 5px;
+  padding: 30px 5px;
 }
 
 .animated-paragraph {
@@ -226,7 +236,7 @@ Subscribe Box
     0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
-.f-subscribe-container p {
+.f-subscribe-container > p {
   width: 80%;
   margin: 4rem auto;
   font-size: 1.4rem;
@@ -239,11 +249,16 @@ Subscribe Box
 .subscribe-box {
   margin: 10px auto;
   width: 90%;
-  max-width: 1000px;
-  height: 600px;
+  max-width: 700px;
+  min-height: 40vh;
   position: relative;
   border: 0.3px solid #bbb;
-  background: var(--primaryThree);
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    var(--primaryFive) 0%,
+    var(--primaryFour) 100%
+  );
   box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.43);
 }
 .ribbon {
@@ -297,6 +312,54 @@ Subscribe Box
   border-top: 3px solid #79a70a;
 }
 
+.subscribe img {
+  margin: 0 auto;
+  display: flex;
+}
+
+.subscribe h3 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.subscribe p {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 5px 2rem 2rem;
+}
+
+.f-email-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-email-bar {
+  background-color: transparent;
+  text-align: center;
+  min-width: 70%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 25px;
+  margin-top: 18px;
+  font-size: 15px;
+  font-style: italic;
+  border-bottom: 2px solid var(--primaryFive);
+}
+
+.f-email-bar::placeholder {
+  color: white;
+}
+
+input {
+  color: white;
+}
+
 /*
 =====================================================================
 Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
@@ -341,9 +404,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .f-animate-wrapper p {
-    margin: 0 auto;
-    padding: 60px 0;
-    width: 90%;
+    padding: 50px 0;
   }
 
   /* Subscribe */
@@ -352,8 +413,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 3.5rem;
   }
 
-  .f-subscribe-container p {
+  .f-subscribe-container > p {
     font-size: 1.6rem;
+  }
+
+  .subscribe p {
+    font-size: 1.2rem;
   }
 }
 
@@ -399,8 +464,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .f-animate-wrapper p {
     margin: 0 auto;
-    padding: 60px 0;
-    width: 80%;
+    padding: 30px 0;
   }
 
   .founder-animation {
@@ -417,7 +481,11 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 4rem;
   }
 
-  .f-subscribe-container p {
+  .f-subscribe-container > p {
     font-size: 1.8rem;
+  }
+
+  .subscribe p {
+    font-size: 1.3rem;
   }
 }

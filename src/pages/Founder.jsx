@@ -2,6 +2,7 @@ import React from "react";
 
 //imgs
 import Hadas from "../imgs/hadas.jpg";
+import EmailIcon from "../imgs/email-icon.png";
 
 import { AnimateText } from "../components/AnimateText";
 import { FounderAnimation } from "../components/FounderAnimation";
@@ -22,8 +23,8 @@ export const Founder = () => {
               <h2>Our Founder</h2>
               <p>
                 <span>Let</span> me introduce you to
-                <i className="name"> Hadas Kanner-Golan</i>, our exceptional
-                co-founder and CEO, leading the charge for OnCure.
+                <em className="name"> Hadas Kanner-Golan</em>, our exceptional
+                co-founder and CEO, leading the charge for Encurage.
               </p>
             </div>
             <div className="f-founder-info">
@@ -56,7 +57,7 @@ export const Founder = () => {
                 probing the issue of medication errors within households.
                 Through this exploration, she unveiled the vastness of the
                 problem and the particular challenges it presented. This was the
-                pivotal moment that birthed the idea of OnCure. Hadas formed a
+                pivotal moment that birthed the idea of Encurage. Hadas formed a
                 partnership with a board-certified pediatrician and an
                 enthusiastic team of developers to craft a secure, user-friendly
                 solution for parents and caregivers.
@@ -77,12 +78,13 @@ export const Founder = () => {
           </div>
         </div>
       </section>
+
       <section className="f-subscribe-container">
         <h2>Our Lifelong Mission</h2>
 
         <p>
-          Our Commitment to Innovation Innovation drives everything we do at
-          OnCure. We're dedicated to staying ahead of the curve, creating
+          Our Commitment to Innovation drives everything we do at Encurage.
+          We're dedicated to staying ahead of the curve, creating
           state-of-the-art solutions for parents and caregivers. Collaborating
           with experts, we continuously push boundaries to redefine child
           healthcare. With OnCure, you can trust that you'll have access to the
@@ -90,13 +92,32 @@ export const Founder = () => {
           Join us in redefining child care through innovation.
         </p>
         <p>
-          We have exciting plans for OnCure, so be sure to subscribe here to
+          We have exciting plans for Encurage, so be sure to subscribe here to
           stay updated on our latest developments.
         </p>
 
         <div className="subscribe-box">
           <div className="ribbon">
             <span>Join Today</span>
+          </div>
+          <div className="subscribe">
+            <img src={EmailIcon} alt="email flying in clouds" />
+            <h3>Subscribe</h3>
+            <p> to our newsletter to get updates about our new products</p>
+            <form className="f-email-form">
+              <input
+                className="f-email-bar"
+                type="email"
+                name="Email"
+                placeholder="Enter your email address"
+                autoFocus
+                autoComplete
+                required
+                checked
+              />
+
+              <button className="cta-btn-home">Subscribe</button>
+            </form>
           </div>
         </div>
       </section>
