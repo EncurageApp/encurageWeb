@@ -18,24 +18,18 @@ export const Founder = () => {
       </section>
       <section>
         <div className="f-story-container">
-          <div className="f-founder-container">
-            <div>
-              <h2>Our Founder</h2>
-              <p>
-                <span>Let</span> me introduce you to
-                <em className="name"> Hadas Kanner-Golan</em>, our exceptional
-                co-founder and CEO, leading the charge for Encurage.
-              </p>
-            </div>
-            <div className="f-founder-info">
-              <div className="f-founder-img-container">
-                <img src={Hadas} alt="Founder of Company Hadas" />
-                <p className="founder-title">Hadas & Emily</p>
-              </div>
-            </div>
-          </div>
-
           <h2>Our Story</h2>
+          <div className="f-animate-wrapper">
+            <AnimateText>
+              <p>
+                <span>Our </span>Story is a tribute to{" "}
+                <em className="name">Hadas Kanner-Golan</em>, the driving force
+                behind the well-being and happiness of families. Every day, we
+                are grateful for Hadas's unwavering commitment to empowering
+                parents and ensuring the well-being of their children.
+              </p>
+            </AnimateText>
+          </div>
           <div className="f-animate-wrapper">
             <AnimateText>
               <p>
@@ -64,24 +58,32 @@ export const Founder = () => {
               </p>
             </AnimateText>
           </div>
+        </div>
+      </section>
 
-          <div className="f-animate-wrapper">
+      <section>
+        <div className="f-founder-container">
+          <div>
+            <h2>Our Founder</h2>
             <AnimateText>
               <p>
-                <span>Our </span>Story is a tribute to Hadas Kanner-Golan, the
-                driving force behind the well-being and happiness of families.
-                Every day, we are grateful for Hadas's unwavering commitment to
-                empowering parents and ensuring the well-being of their
-                children.
+                <span>Let</span> me introduce you to
+                <em className="name"> Hadas Kanner-Golan</em>, our exceptional
+                co-founder and CEO, leading the charge for Encurage.
               </p>
             </AnimateText>
+          </div>
+          <div className="f-founder-info">
+            <div className="f-founder-img-container">
+              <img src={Hadas} alt="Founder of Company Hadas" />
+              <p className="founder-title">Hadas & Emily</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="f-subscribe-container">
         <h2>Our Lifelong Mission</h2>
-
         <p>
           Our Commitment to Innovation drives everything we do at Encurage.
           We're dedicated to staying ahead of the curve, creating
@@ -91,34 +93,34 @@ export const Founder = () => {
           most advanced and user-friendly solutions for your child's well-being.
           Join us in redefining child care through innovation.
         </p>
-        <p>
-          We have exciting plans for Encurage, so be sure to subscribe here to
-          stay updated on our latest developments.
-        </p>
-
-        <div className="subscribe-box">
-          <div className="ribbon">
-            <span>Join Today</span>
+        <div className="subscribe-wrapper">
+          <div className="subscribe-box">
+            <div className="ribbon">
+              <span>Join Today</span>
+            </div>
+            <div className="subscribe">
+              <img src={EmailIcon} alt="email flying in clouds" />
+              <h3>Subscribe</h3>
+              <p> to our newsletter to get updates about our new products</p>
+              <form className="f-email-form">
+                <input
+                  className="f-email-bar"
+                  type="email"
+                  name="Email"
+                  placeholder="Enter your email address"
+                  autoFocus
+                  autoComplete
+                  required
+                  checked
+                />
+                <button className="cta-btn-home">Subscribe</button>
+              </form>
+            </div>
           </div>
-          <div className="subscribe">
-            <img src={EmailIcon} alt="email flying in clouds" />
-            <h3>Subscribe</h3>
-            <p> to our newsletter to get updates about our new products</p>
-            <form className="f-email-form">
-              <input
-                className="f-email-bar"
-                type="email"
-                name="Email"
-                placeholder="Enter your email address"
-                autoFocus
-                autoComplete
-                required
-                checked
-              />
-
-              <button className="cta-btn-home">Subscribe</button>
-            </form>
-          </div>
+          <p>
+            We have exciting plans for Encurage, so be sure to subscribe here to
+            stay updated on our latest developments.
+          </p>
         </div>
       </section>
     </main>
