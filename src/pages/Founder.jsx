@@ -61,38 +61,45 @@ export const Founder = () => {
         </div>
       </section>
 
-      <section>
-        <div className="f-founder-container">
+      <section className="f-founder-container">
+        <div className="f-founder-intro">
+          <h2>Our Founder</h2>
+          <p>
+            <span>Let</span> me introduce you to
+            <em className="name"> Hadas Kanner-Golan</em>, our exceptional
+            co-founder and CEO, leading the charge for Encurage.
+          </p>
+        </div>
+        <div className="f-founder-img-container">
           <div>
-            <h2>Our Founder</h2>
-            <AnimateText>
-              <p>
-                <span>Let</span> me introduce you to
-                <em className="name"> Hadas Kanner-Golan</em>, our exceptional
-                co-founder and CEO, leading the charge for Encurage.
-              </p>
-            </AnimateText>
+            <p className="founder-title"> ~ Hadas & Emily ~ </p>
+            <img src={Hadas} alt="Founder of Company Hadas" />
           </div>
-          <div className="f-founder-info">
-            <div className="f-founder-img-container">
-              <img src={Hadas} alt="Founder of Company Hadas" />
-              <p className="founder-title">Hadas & Emily</p>
-            </div>
-          </div>
+          <p>
+            Parents are a force of nature. Nothing is impossible when it comes
+            to helping, protecting, and caring for our kids. I am so grateful
+            for the opportunity to support families in the ever evolving journey
+            of their children's health, and for the ability to keep developing
+            and enhancing Encurage through the invaluable feedback and
+            suggestions of our community of parents and caregivers. My team and
+            I will keep working hard to be your trusted digital companion.{" "}
+          </p>
         </div>
       </section>
 
       <section className="f-subscribe-container">
-        <h2>Our Lifelong Mission</h2>
-        <p>
-          Our Commitment to Innovation drives everything we do at Encurage.
-          We're dedicated to staying ahead of the curve, creating
-          state-of-the-art solutions for parents and caregivers. Collaborating
-          with experts, we continuously push boundaries to redefine child
-          healthcare. With OnCure, you can trust that you'll have access to the
-          most advanced and user-friendly solutions for your child's well-being.
-          Join us in redefining child care through innovation.
-        </p>
+        <div>
+          <h2>Our Lifelong Mission</h2>
+          <p>
+            Our Commitment to Innovation drives everything we do at Encurage.
+            We're dedicated to staying ahead of the curve, creating
+            state-of-the-art solutions for parents and caregivers. Collaborating
+            with experts, we continuously push boundaries to redefine child
+            healthcare. With OnCure, you can trust that you'll have access to
+            the most advanced and user-friendly solutions for your child's
+            well-being. Join us in redefining child care through innovation.
+          </p>
+        </div>
         <div className="subscribe-wrapper">
           <div className="subscribe-box">
             <div className="ribbon">
