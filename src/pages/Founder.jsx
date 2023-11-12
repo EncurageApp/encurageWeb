@@ -62,28 +62,36 @@ export const Founder = () => {
       </section>
 
       <section className="f-founder-container">
-        <div className="f-founder-intro">
-          <h2>Our Founder</h2>
-          <p>
-            <span>Let</span> me introduce you to
-            <em className="name"> Hadas Kanner-Golan</em>, our exceptional
-            co-founder and CEO, leading the charge for Encurage.
-          </p>
-        </div>
         <div className="f-founder-img-container">
-          <div>
-            <p className="founder-title"> ~ Hadas & Emily ~ </p>
-            <img src={Hadas} alt="Founder of Company Hadas" />
+          <div className="f-founder-intro">
+            <h2>Our Founder</h2>
+            <p>
+              <span>Let</span> me introduce you to
+              <em className="name"> Hadas Kanner-Golan</em>, our exceptional
+              co-founder and CEO, leading the charge for Encurage.
+            </p>
           </div>
-          <p>
-            Parents are a force of nature. Nothing is impossible when it comes
-            to helping, protecting, and caring for our kids. I am so grateful
-            for the opportunity to support families in the ever evolving journey
-            of their children's health, and for the ability to keep developing
-            and enhancing Encurage through the invaluable feedback and
-            suggestions of our community of parents and caregivers. My team and
-            I will keep working hard to be your trusted digital companion.{" "}
-          </p>
+          <div>
+            <img src={Hadas} alt="Founder of Company Hadas" />
+            <p className="founder-title"> ~ Hadas & Emily ~ </p>
+          </div>
+        </div>
+        <div class="animated-border-quote">
+          <blockquote>
+            <p>
+              <q>
+                Parents are a force of nature. Nothing is impossible when it
+                comes to helping, protecting, and caring for our kids. I am so
+                grateful for the opportunity to support families in the ever
+                evolving journey of their children's health, and for the ability
+                to keep developing and enhancing Encurage through the invaluable
+                feedback and suggestions of our community of parents and
+                caregivers. My team and I will keep working hard to be your
+                trusted digital companion.
+              </q>
+            </p>
+            <cite>Hadas Kanner-Golan</cite>
+          </blockquote>
         </div>
       </section>
 
