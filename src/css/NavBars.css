@@ -33,7 +33,11 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #008080;
+  background: linear-gradient(
+    var(--primaryFive) 0%,
+
+    var(--primaryFour) 60%
+  );
   height: 4rem;
   font-family: "Poppins", sans-serif;
 }
@@ -123,7 +127,11 @@ header nav {
     width: 100%;
     position: absolute;
     top: 60px;
-    background-color: var(--primaryOne);
+    background: linear-gradient(
+      var(--primaryFour) 0%,
+      var(--primaryFour) 90%,
+      var(--primaryFive) 100%
+    );
     transition: all 0.5s ease-in-out;
   }
 
@@ -180,7 +188,11 @@ Footer
 footer {
   bottom: 0;
   width: 100%;
-  background-color: var(--primaryOne);
+  background: linear-gradient(
+    var(--primaryFour) 0%,
+    var(--primaryFour) 30%,
+    var(--primaryFive) 100%
+  );
   font-family: "Poppins", sans-serif;
 }
 
@@ -201,7 +213,7 @@ footer .logo {
 }
 
 footer .logo a {
-  font-size: 5.5rem;
+  font-size: 4rem;
   padding-bottom: 20px;
 }
 
@@ -400,7 +412,7 @@ footer .logo a {
   }
 
   footer .logo a {
-    font-size: 4rem;
+    font-size: 4.2rem;
   }
 
   .quick-links {

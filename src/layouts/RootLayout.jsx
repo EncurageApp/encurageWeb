@@ -23,7 +23,7 @@ export const RootLayout = () => {
           <nav>
             <div className="nav-header">
               <h1 className="logo">
-                <NavLink to={"/"}>OnCure</NavLink>
+                <NavLink to={"/"}>Encurage</NavLink>
               </h1>
               <div
                 className={`menu-icon ${isMenuOpen ? "open" : ""}`}
@@ -65,7 +65,7 @@ export const RootLayout = () => {
       <footer>
         <nav>
           <h1 className="logo">
-            <NavLink to={"/"}>OnCure</NavLink>
+            <NavLink to={"/"}>Encurage</NavLink>
           </h1>
           <div className="quick-links">
             <NavLink to={"/"}>Home</NavLink>

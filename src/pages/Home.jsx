@@ -18,7 +18,7 @@ export const Home = () => {
         <div className="home-hero">
           <div className="home-hero-inner">
             <p>Peace of Mind, One Dose at a Time with </p>
-            <h1>OnCure!</h1>
+            <h1>Encurage!</h1>
           </div>
         </div>
       </section>
