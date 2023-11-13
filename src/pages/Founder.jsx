@@ -1,9 +1,4 @@
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 
 //imgs
 import Hadas from "../imgs/hadas.jpg";
@@ -13,6 +8,7 @@ import EmailIcon from "../imgs/email-icon.png";
 import { AnimateText } from "../components/AnimateText";
 import { FounderAnimation } from "../components/FounderAnimation";
 import { TimeLine } from "../components/TimeLine";
+import { MissionAnimation } from "../components/MissionAnimation";
 
 export const Founder = () => {
   return (
@@ -106,9 +102,12 @@ export const Founder = () => {
         <TimeLine />
       </section>
 
-      <section className="f-subscribe-container">
+      <section className="f-mission-container">
+        <h2>Our Lifelong Mission</h2>
         <div>
-          <h2>Our Lifelong Mission</h2>
+          <div>
+            <MissionAnimation />
+          </div>
           <p>
             Our Commitment to Innovation drives everything we do at Encurage.
             We're dedicated to staying ahead of the curve, creating
@@ -119,7 +118,14 @@ export const Founder = () => {
             well-being. Join us in redefining child care through innovation.
           </p>
         </div>
+      </section>
+
+      <section className="f-subscribe-container">
         <div className="subscribe-wrapper">
+          <p>
+            We have exciting plans for Encurage, so be sure to subscribe here to
+            stay updated on our latest developments.
+          </p>
           <div className="subscribe-box">
             <div className="ribbon">
               <span>Join Today</span>
@@ -143,10 +149,6 @@ export const Founder = () => {
               </form>
             </div>
           </div>
-          <p>
-            We have exciting plans for Encurage, so be sure to subscribe here to
-            stay updated on our latest developments.
-          </p>
         </div>
       </section>
     </main>
