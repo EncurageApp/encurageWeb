@@ -122,10 +122,10 @@ export const Founder = () => {
 
       <section className="f-subscribe-container">
         <div className="subscribe-wrapper">
-          <p>
+          <h3>
             We have exciting plans for Encurage, so be sure to subscribe here to
             stay updated on our latest developments.
-          </p>
+          </h3>
           <div className="subscribe-box">
             <div className="ribbon">
               <span>Join Today</span>
