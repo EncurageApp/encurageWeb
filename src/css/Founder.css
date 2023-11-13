@@ -178,6 +178,7 @@ Founder
   margin: 6rem auto;
   padding: 2rem;
   text-align: center;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .f-founder-container h2 {
@@ -189,7 +190,7 @@ Founder
 }
 
 .f-founder-intro {
-  padding: 2rem;
+  padding-bottom: 40px;
   color: var(--primaryFour);
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
@@ -198,7 +199,7 @@ Founder
 .f-founder-img-container {
   display: flex;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 4rem 0;
   height: 100%;
 }
 
@@ -293,17 +294,44 @@ Founder
 
 /*
 ============================================
+TimeLine
+============================================
+*/
+
+.timeline {
+  color: var(--primaryFour);
+  margin: 10vh auto;
+}
+
+.timeline h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--primaryFour);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+  border: none;
+}
+
+#timelineDescription {
+  font-size: 1rem;
+}
+
+/*
+============================================
 Subscribe Box
 ============================================
 */
 
 .f-subscribe-container {
-  margin: 8rem auto;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--primaryThree);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .f-subscribe-container h2 {
@@ -313,20 +341,6 @@ Subscribe Box
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
   border: none;
-}
-
-.f-subscribe-container > p {
-  width: 80%;
-  margin: 4rem auto;
-  font-size: 1.4rem;
-  color: var(--primaryFour);
-  text-align: center;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
-    0px -5px 35px rgba(255, 255, 255, 0.3);
-}
-
-.subscribe-wrapper > p {
-  text-align: center;
 }
 
 .subscribe-box {
@@ -452,6 +466,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 /* Hero */
 /* Story */
 /* Founder */
+/* Timeline */
 /* Subscribe */
 
 @media (min-width: 550px) and (max-width: 1100px) {
@@ -584,6 +599,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     justify-self: center;
     align-items: center;
     padding-left: 60px;
+  }
+
+  /* Timeline */
+
+  #timelineDescription {
+    font-size: 1.1rem;
   }
 
   /* Subscribe */

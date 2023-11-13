@@ -1,11 +1,18 @@
 import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 //imgs
 import Hadas from "../imgs/hadas.jpg";
 import EmailIcon from "../imgs/email-icon.png";
 
+//components
 import { AnimateText } from "../components/AnimateText";
 import { FounderAnimation } from "../components/FounderAnimation";
+import { TimeLine } from "../components/TimeLine";
 
 export const Founder = () => {
   return (
@@ -93,6 +100,10 @@ export const Founder = () => {
             <cite>Hadas Kanner-Golan</cite>
           </blockquote>
         </div>
+      </section>
+
+      <section className="f-timeline">
+        <TimeLine />
       </section>
 
       <section className="f-subscribe-container">
