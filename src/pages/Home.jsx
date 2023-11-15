@@ -49,7 +49,7 @@ export const Home = () => {
         <div className="duo-container">
           <div className="duo">
             <div className="duo-img-container">
-              <img loading="lazy" src={KidJumping} alt="" />
+              <img src={KidJumping} alt="" />
             </div>
 
             <div className="duo-info">
@@ -96,7 +96,7 @@ export const Home = () => {
               </NavLink>
             </div>
             <div className="duo-img-container">
-              <img className="" loading="lazy" src={MomKids} alt="" />
+              <img src={MomKids} alt="" />
             </div>
           </div>
         </div>

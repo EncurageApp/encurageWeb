@@ -45,11 +45,7 @@ export const CardContainer = () => {
       <div className="card-component-container">
         <div className={`card card-1 ${visibleCard === 1 ? "hovered" : ""}`}>
           <div className="card-1-img">
-            <img
-              loading="lazy"
-              src={MomCheckingKid}
-              alt="mom checking temperature of child"
-            />
+            <img src={MomCheckingKid} alt="mom checking temperature of child" />
           </div>
           <div className="card-1 card-info">
             <h2>Protecting Your Child's Wellness</h2>
@@ -67,11 +63,7 @@ export const CardContainer = () => {
 
         <div className={`card card-2 ${visibleCard === 2 ? "hovered" : ""}`}>
           <div className="card-2-img">
-            <img
-              loading="lazy"
-              src={KidSurprised}
-              alt="mom checking temperature of child"
-            />
+            <img src={KidSurprised} alt="mom checking temperature of child" />
           </div>
           <div className="card-2 card-info">
             <h2>Hear What Our Users Say</h2>
@@ -88,11 +80,7 @@ export const CardContainer = () => {
         </div>
         <div className={`card card-3 ${visibleCard === 3 ? "hovered" : ""}`}>
           <div className="card-3-img">
-            <img
-              loading="lazy"
-              src={FingerPaint}
-              alt="kid holding book, looking surprised"
-            />
+            <img src={FingerPaint} alt="kid holding book, looking surprised" />
           </div>
           <div className="card-3 card-info">
             <h2>Discover Our Journey</h2>
