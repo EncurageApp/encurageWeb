@@ -43,3 +43,62 @@ Hero
 .ch-intro-text p {
   font-size: 1.2rem;
 }
+
+/*
+=================================================
+Stats
+=================================================
+*/
+
+.stats {
+  margin: 10vh auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.stats > div {
+  color: var(--primaryOne);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+/*
+=================================================
+Slider
+=================================================
+*/
+
+.ch-slider {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*
+=================================================
+
+=================================================
+*/
+/*
+=================================================
+
+=================================================
+*/
+
+/*
+=====================================================================
+Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
+=====================================================================
+*/
+
+/* Hero */
+/* Stats */
+/* Slider */
+
+@media (min-width: 550px) and (max-width: 1100px) {
+}
+
+@media (min-width: 1101px) {
+}

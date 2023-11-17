@@ -2,6 +2,7 @@ import React from "react";
 import SilverLines from "../imgs/colorsmoke2.jpg";
 import { HealthSlider } from "../components/HealthSlider";
 import { Parallax } from "react-parallax";
+import { ChildrenStats } from "../components/ChildrenStats";
 
 export const ChildrenHealth = () => {
   return (
@@ -15,6 +16,10 @@ export const ChildrenHealth = () => {
             </div>
           </div>
         </Parallax>
+      </section>
+
+      <section className="ch-stats-container">
+        <ChildrenStats />
       </section>
 
       <section className="ch-slider-container">
