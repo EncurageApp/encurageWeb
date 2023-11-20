@@ -16,23 +16,17 @@ Hero
 =================================================
 */
 
-.health-page {
-  min-height: 200vh;
-}
-
-.ch-hero {
-}
-
 .ch-intro {
   height: 95vh;
 }
 
 .ch-intro-text {
   margin: 0 auto;
+  padding-top: 10rem;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   color: white;
@@ -40,7 +34,7 @@ Hero
 
 .ch-intro-text h2 {
   border: none;
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
 .ch-intro-text p {
@@ -53,13 +47,19 @@ Stats
 =================================================
 */
 
-.ch-stats-container {
+.ch-card-wrapper {
+  margin: 10vh auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.ch-stats-container h2 {
+  color: var(--primaryFour);
+  font-size: 2.5rem;
 }
 
 .ch-stats-card {
@@ -69,14 +69,14 @@ Stats
   align-items: flex-start;
   position: relative;
   width: 80%;
-  max-width: 500px;
-  height: 450px;
+  max-width: 400px;
+  height: 500px;
   margin: 30px;
   border-radius: 20px;
   border-bottom-left-radius: 160px;
   border-bottom-right-radius: 160px;
-  box-shadow: 0 15px 0 var(--primaryTwo), inset 0 -15px 0 var(--primaryOne),
-    0 25px 0 var(--primaryFour);
+  box-shadow: 0 0 40px 0 var(--primaryFour), 0 15px 0 var(--primaryTwo),
+    inset 0 -15px 0 var(--primaryOne), 0 25px 0 var(--primaryFour);
   overflow: hidden;
 }
 
@@ -94,6 +94,29 @@ Stats
   filter: blur(5px);
 }
 
+.ch-stats-card .ch-card-content {
+  width: 100%;
+  padding: 30px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.ch-stats-card .ch-card-content p {
+  padding-top: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.ch-download-btn-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Animated Numbers */
 .stats {
   position: relative;
@@ -107,9 +130,10 @@ Stats
 .stats > div {
   color: white;
   display: flex;
+
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 /*
@@ -145,7 +169,28 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 /* Slider */
 
 @media (min-width: 550px) and (max-width: 1100px) {
+  /* Hero */
+  .ch-intro-text h2 {
+    font-size: 3.5rem;
+  }
+  /* Stats */
+  .ch-card-wrapper {
+    flex-direction: row;
+  }
+
+  /* Slider */
 }
 
 @media (min-width: 1101px) {
+  /* Hero */
+
+  .ch-intro-text h2 {
+    font-size: 5rem;
+  }
+  /* Stats */
+  .ch-card-wrapper {
+    flex-direction: row;
+  }
+
+  /* Slider */
 }
