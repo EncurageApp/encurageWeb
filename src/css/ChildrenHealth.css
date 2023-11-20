@@ -20,8 +20,11 @@ Hero
   min-height: 200vh;
 }
 
+.ch-hero {
+}
+
 .ch-intro {
-  height: 75vh;
+  height: 95vh;
 }
 
 .ch-intro-text {
@@ -32,7 +35,7 @@ Hero
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--primaryOne);
+  color: white;
 }
 
 .ch-intro-text h2 {
@@ -50,19 +53,63 @@ Stats
 =================================================
 */
 
+.ch-stats-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ch-stats-card {
+  background-color: var(--primaryFour);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  height: 450px;
+  margin: 30px;
+  border-radius: 20px;
+  border-bottom-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+  box-shadow: 0 15px 0 var(--primaryTwo), inset 0 -15px 0 var(--primaryOne),
+    0 25px 0 var(--primaryFour);
+  overflow: hidden;
+}
+
+.ch-stats-card::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  left: -40%;
+  padding: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
+  transform: rotate(35deg);
+  pointer-events: none;
+  filter: blur(5px);
+}
+
+/* Animated Numbers */
 .stats {
-  margin: 10vh auto;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
 .stats > div {
-  color: var(--primaryOne);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 /*
