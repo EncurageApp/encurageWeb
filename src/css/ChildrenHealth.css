@@ -6,7 +6,7 @@
 }
 
 .health-page h2 {
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -33,11 +33,15 @@ Hero
 }
 
 .ch-intro-text h2 {
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.55),
+    0px 0.1px 10px rgba(255, 255, 255, 0.3);
   border: none;
   font-size: 3rem;
 }
 
 .ch-intro-text p {
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.55),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
   font-size: 1.2rem;
 }
 
@@ -48,7 +52,7 @@ Stats
 */
 
 .ch-card-wrapper {
-  margin: 10vh auto;
+  margin: 5vh auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -58,8 +62,10 @@ Stats
 }
 
 .ch-stats-container h2 {
+  padding-top: 4rem;
   color: var(--primaryFour);
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .ch-stats-card {
@@ -70,7 +76,7 @@ Stats
   position: relative;
   width: 80%;
   max-width: 400px;
-  height: 500px;
+  height: 530px;
   margin: 30px;
   border-radius: 20px;
   border-bottom-left-radius: 160px;
@@ -97,7 +103,7 @@ Stats
 .ch-stats-card .ch-card-content {
   width: 100%;
   padding: 30px;
-  padding-top: 80px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -105,7 +111,7 @@ Stats
   padding-top: 30px;
   font-size: 1.2rem;
   color: #fff;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
 .ch-download-btn-container {
@@ -138,13 +144,56 @@ Stats
 
 /*
 =================================================
-Slider
+Reasons
+=================================================
+*/
+
+.ch-reason-container {
+  position: relative;
+  margin: 5rem auto;
+  min-height: 100vh;
+  color: var(--primaryFour);
+}
+
+.ch-reason-container h2 {
+  font-size: 2rem;
+  border: none;
+  width: 100%;
+}
+
+.ch-reason-container p {
+  font-size: 1.4rem;
+}
+
+.ch-reason-container > div {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 500px;
+  background-color: var(--primaryThree);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+/*
+=================================================
+Health Slider
 =================================================
 */
 
 .ch-slider {
+  max-width: 1200px;
+  color: white;
+  background-color: var(--primaryFour);
   margin: 0 auto;
   text-align: center;
+}
+
+.ch-slider h2 {
+  border: none;
 }
 
 /*
@@ -166,6 +215,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
 /* Hero */
 /* Stats */
+/* Reason */
 /* Slider */
 
 @media (min-width: 550px) and (max-width: 1100px) {
@@ -178,10 +228,18 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     flex-direction: row;
   }
 
+  /* Reason */
+
+  .ch-reason-container > img {
+    left: 35%;
+    top: 250px;
+    transition: all 0.5s ease-in-out;
+  }
+
   /* Slider */
 }
 
-@media (min-width: 1101px) {
+@media (min-width: 1100px) {
   /* Hero */
 
   .ch-intro-text h2 {
@@ -190,6 +248,14 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* Stats */
   .ch-card-wrapper {
     flex-direction: row;
+  }
+
+  /* Reason */
+
+  .ch-reason-container > img {
+    left: 50%;
+    top: 200px;
+    transition: all 0.5s ease-in-out;
   }
 
   /* Slider */

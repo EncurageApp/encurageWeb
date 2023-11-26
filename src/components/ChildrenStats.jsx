@@ -1,13 +1,13 @@
 import React from "react";
 import AnimatedNumbers from "react-animated-numbers";
 
-export const ChildrenStats = ({ animateNumber }) => {
+export const ChildrenStats = ({ animateNumber, icon }) => {
   return (
     <div className="stats">
       <AnimatedNumbers
         includeComma
         animateToNumber={animateNumber}
-        fontStyle={{ color: "white" }}
+        fontStyle={{ fontSize: "4rem", color: "White" }}
         configs={[
           { mass: 1, tension: 220, friction: 100 },
           { mass: 1, tension: 180, friction: 130 },

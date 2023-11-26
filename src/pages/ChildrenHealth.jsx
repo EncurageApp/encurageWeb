@@ -1,16 +1,20 @@
-import React from "react";
-import SilverLines from "../imgs/dadtwokids.jpg";
-// import { HealthSlider } from "../components/HealthSlider";
+// Pictures
+import DadTwoKids from "../imgs/dadtwokids.jpg";
+import MultiTask from "../imgs/mommultitasking.jpg";
+
+// Components
+import { HealthSlider } from "../components/HealthSlider";
 import { Parallax } from "react-parallax";
 import { ChildrenStats } from "../components/ChildrenStats";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
+import { Collapsible } from "../components/Collapsible";
 
 export const ChildrenHealth = () => {
   return (
     <main className="health-page">
       <section className="ch-hero">
-        <Parallax strength={500} bgImage={SilverLines}>
+        <Parallax strength={500} bgImage={DadTwoKids}>
           <div className="ch-intro">
             <div className="ch-intro-text">
               <h2>Navigating the Numbers,</h2>
@@ -64,13 +68,31 @@ export const ChildrenHealth = () => {
         </div>
       </section>
 
-      <section className="ch-reason-container"></section>
+      <section className="ch-reason-container">
+        <div>
+          <h2>Common Factors That Amplify The Risk </h2>
+          <p>
+            Understanding the factors that lead to mis-dosage is key to helping
+            protect our child from unnecessary risks.
+          </p>
+          <ul>
+            <Collapsible label="Multiple Caregivers" />
+            <hr />
+            <Collapsible label="Multiple Children" />
+            <hr />
+            <Collapsible label="Everyday Life" />
+            <hr />
+            <Collapsible label="Experience" />
+            <hr />
+          </ul>
+        </div>
+      </section>
 
-      {/* <section className="ch-slider-container">
-        <Parallax strength={500} bgImage={SilverLines}>
+      <section className="ch-slider-container">
+        <Parallax strength={500}>
           <HealthSlider />
         </Parallax>
-      </section> */}
+      </section>
     </main>
   );
 };
