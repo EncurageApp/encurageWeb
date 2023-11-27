@@ -1,6 +1,6 @@
 // Pictures
 import DadTwoKids from "../imgs/dadtwokids.jpg";
-import MultiTask from "../imgs/mommultitasking.jpg";
+// import MultiTask from "../imgs/mommultitasking.jpg";
 
 // Components
 import { HealthSlider } from "../components/HealthSlider";
@@ -75,17 +75,65 @@ export const ChildrenHealth = () => {
             Understanding the factors that lead to mis-dosage is key to helping
             protect our child from unnecessary risks.
           </p>
-          <ul>
-            <Collapsible label="Multiple Caregivers" />
-            <hr />
-            <Collapsible label="Multiple Children" />
-            <hr />
-            <Collapsible label="Everyday Life" />
-            <hr />
-            <Collapsible label="Experience" />
-            <hr />
-          </ul>
         </div>
+        <p className="ch-reason-spacer">
+          CLICK to explore some common factors that lead to mis how Encurage can
+          transform your approach to managing your child's health.
+        </p>
+        <ul>
+          <li>
+            <Collapsible label="Multiple Caregivers">
+              <h3>Synchronized Care Across Multiple Caregivers</h3>
+              <p>
+                Encurage simplifies coordination among multiple caregivers.
+                Whether it's parents, grandparents, or babysitters, our app
+                ensures everyone stays in sync with your child's medication
+                schedule. Real-time updates and shared information facilitate
+                seamless care, providing a unified approach to your child's
+                health
+              </p>
+            </Collapsible>
+          </li>
+
+          <li>
+            <Collapsible label="Multiple Children">
+              <h3>Effortless Management for Multiple Children</h3>
+              <p>
+                With Encurage, managing medication for multiple children becomes
+                effortless. Tailor individual profiles for each child, track
+                their medications separately, and receive personalized reminders
+                for each one. Simplify your routine and ensure every child's
+                health needs are met without confusion.
+              </p>
+            </Collapsible>
+          </li>
+
+          <li>
+            <Collapsible label="Everyday Life">
+              <h3>Streamlining Medication amidst Everyday Life</h3>
+              <p>
+                We understand the demands of modern life. Encurage fits
+                seamlessly into your busy schedule, integrating medication
+                management into your everyday routine. Whether it's work,
+                meetings, or other commitments, our app ensures you never miss a
+                medication time, providing convenience and peace of mind.
+              </p>
+            </Collapsible>
+          </li>
+
+          <li>
+            <Collapsible label="Experience">
+              <h3>Guidance for Novice Medicator's</h3>
+              <p>
+                Encurage offers guidance and support, especially for those new
+                to administering medication to children. Our app provides clear
+                instructions, dosage details, and gentle reminders, empowering
+                you to confidently navigate this aspect of caregiving, ensuring
+                your child's safety and well-being.
+              </p>
+            </Collapsible>
+          </li>
+        </ul>
       </section>
 
       <section className="ch-slider-container">
