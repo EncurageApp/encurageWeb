@@ -4,7 +4,6 @@ export const Collapsible = (props) => {
   const [isOpen, SetIsOpen] = useState(false);
 
   const contentRef = useRef();
-  if (contentRef.current) console.log(contentRef.current.scrollHeight);
 
   const handleToggle = () => {
     SetIsOpen(!isOpen);

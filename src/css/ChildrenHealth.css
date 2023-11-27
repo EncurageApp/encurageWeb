@@ -1,6 +1,7 @@
 @import "./Root.css";
 
 .health-page p {
+  font-size: 1.2rem;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
 }
@@ -149,8 +150,7 @@ Reasons
 */
 
 .ch-reason-container {
-  position: relative;
-  margin: 5rem auto;
+  margin: 10rem auto;
   min-height: 100vh;
   color: white;
   text-align: center;
@@ -164,29 +164,29 @@ Reasons
   margin: 0 auto;
   padding: 5em 2rem;
   max-width: 1000px;
-  background-color: var(--primaryOne);
+  background-color: var(--primaryFour);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgb(38, 57, 77) 0px 5px 30px 5px;
   transition: all 0.5s ease-in-out;
 }
 
-.ch-reason-container > div h3 {
-  padding-top: 3rem;
-  font-size: 1.5rem;
+.ch-reason-spacer {
+  margin: 0 auto;
+  color: var(--primaryFour);
+  font-size: 1.2rem;
+  padding: 5rem 2rem;
+  max-width: 1200px;
 }
 
-.ch-reason-spacer {
-  color: var(--primaryFour);
-  font-size: 1.5rem;
-  padding: 5rem 0;
+.ch-reason-spacer span {
+  font-size: 2rem;
 }
 
 .ch-reason-container > ul {
   margin: 0 auto;
-  padding-top: 3rem;
   max-width: 1000px;
   background-color: var(--primaryFour);
   min-height: 80vh;
@@ -194,13 +194,15 @@ Reasons
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 50px 5px;
 }
 
 .ch-reason-container li {
-  max-width: 800px;
+  max-width: 700px;
+  margin: 20px 0;
   padding: 20px 0;
   list-style: none;
+  border-bottom: 1px solid var(--primaryThree);
 }
 
 .ch-collapse {
@@ -231,15 +233,54 @@ Health Slider
 */
 
 .ch-slider {
-  max-width: 1200px;
+  border-radius: 0%;
+  min-height: 500px;
+  max-width: 800px;
   color: white;
   background-color: var(--primaryFour);
-  margin: 0 auto;
+  margin: 5rem auto;
+  padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 10px 60px -10px;
 }
 
 .ch-slider h2 {
-  border: none;
+  font-size: 2rem;
+}
+
+.ch-slider p {
+  max-width: 500px;
+}
+
+.ch-slider-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ch-slider-btns button {
+  transform: uppercase;
+  height: 25px;
+  width: 100px;
+  color: white;
+  background-color: var(--primaryFive);
+  border: 0.3px solid black;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ch-slider-btns button:hover {
+  color: var(--primaryFour);
+  background-color: var(--primaryThree);
+  border: 0.3px solid white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: all 0.3s ease-in-out;
 }
 
 /*
@@ -285,6 +326,9 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   /* Slider */
+  .ch-slider {
+    border-radius: 50%;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -309,4 +353,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   /* Slider */
+  .ch-slider {
+    border-radius: 50%;
+  }
 }

@@ -77,8 +77,9 @@ export const ChildrenHealth = () => {
           </p>
         </div>
         <p className="ch-reason-spacer">
-          CLICK to explore some common factors that lead to mis how Encurage can
-          transform your approach to managing your child's health.
+          <span>CLICK</span> to explore some common factors that lead to
+          mis-dosage and how the Encurage App can transform your approach to
+          managing your child's health.
         </p>
         <ul>
           <li>
