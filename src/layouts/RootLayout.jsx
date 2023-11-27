@@ -50,8 +50,8 @@ export const RootLayout = () => {
               <NavLink to={"Reviews"} onClick={toggleMenu}>
                 Reviews
               </NavLink>
-              <NavLink to={"FaqLayout"} onClick={toggleMenu}>
-                Contact Us
+              <NavLink to={"HelpCenterLayout"} onClick={toggleMenu}>
+                Help Center
               </NavLink>
             </ul>
           </nav>
@@ -73,7 +73,7 @@ export const RootLayout = () => {
             <NavLink to={"AppFeatures"}>Explore Our App</NavLink>
             <NavLink to={"Founder"}>Our Story</NavLink>
             <NavLink to={"Reviews"}>Reviews</NavLink>
-            <NavLink to={"FaqLayout"}>Contact Us</NavLink>
+            <NavLink to={"HelpCenterLayout"}>Help Center</NavLink>
           </div>
           <div className="subscribe-btn-container">
             <h2>Get All The Latest News!</h2>

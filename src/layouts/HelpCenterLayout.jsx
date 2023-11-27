@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-export const FaqLayout = () => {
+export const HelpCenterLayout = () => {
   return (
     <div className="help-layout">
       <h2>Website Help</h2>

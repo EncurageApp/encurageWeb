@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 // CSS
+import "./css/HelpCenter.css";
 import "./css/Founder.css";
 import "./css/Root.css";
 import "./css/NavBars.css";

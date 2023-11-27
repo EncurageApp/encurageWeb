@@ -1,6 +1,5 @@
 // Pictures
 import DadTwoKids from "../imgs/dadtwokids.jpg";
-import MultiTask from "../imgs/mommultitasking.jpg";
 
 // Components
 import { HealthSlider } from "../components/HealthSlider";

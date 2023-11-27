@@ -169,7 +169,7 @@ export const Home = () => {
                 <p>Got questions? We've got answers</p>
               </div>
 
-              <NavLink to={"FaqLayOut"}>
+              <NavLink to={"HelpCenterLayout"}>
                 <button className="cta-btn-home">Vist Help Center</button>
               </NavLink>
             </div>
@@ -189,7 +189,7 @@ export const Home = () => {
                 <p>Problems with your App? We can help fix it!</p>
               </div>
 
-              <NavLink to={"FaqLayout"}>
+              <NavLink to={"HelpCenterLayout"}>
                 <button className="cta-btn-home">Report a Issue</button>
               </NavLink>
             </div>
