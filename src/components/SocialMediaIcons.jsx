@@ -9,13 +9,13 @@ import {
 import "../css/NavBars.css";
 
 export const SocialMediaIcons = () => {
-  const [iconSize, setIconSize] = useState("l");
+  const [iconSize, setIconSize] = useState("lg");
 
   const updateIconSize = () => {
     if (window.innerWidth > 1100) {
       setIconSize("xl");
     } else {
-      setIconSize("l");
+      setIconSize("lg");
     }
   };
 

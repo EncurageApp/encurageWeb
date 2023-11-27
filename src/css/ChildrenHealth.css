@@ -1,0 +1,380 @@
+@import "./Root.css";
+
+.health-page p {
+  font-size: 1.2rem;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.health-page h2 {
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3),
+    0px 0.1px 10px rgba(255, 255, 255, 0.3);
+}
+
+/*
+=================================================
+Hero
+=================================================
+*/
+
+.ch-intro {
+  height: 95vh;
+}
+
+.ch-intro-text {
+  margin: 0 auto;
+  padding-top: 10rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.ch-intro-text h2 {
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.55),
+    0px 0.1px 10px rgba(255, 255, 255, 0.3);
+  border: none;
+  font-size: 3rem;
+}
+
+.ch-intro-text p {
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.55),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+  font-size: 1.2rem;
+}
+
+/*
+=================================================
+Stats
+=================================================
+*/
+
+.ch-card-wrapper {
+  margin: 5vh auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ch-stats-container h2 {
+  padding-top: 4rem;
+  color: var(--primaryFour);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.ch-stats-card {
+  background-color: var(--primaryFour);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+  height: 530px;
+  margin: 30px;
+  border-radius: 20px;
+  border-bottom-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+  box-shadow: 0 0 40px 0 var(--primaryFour), 0 15px 0 var(--primaryTwo),
+    inset 0 -15px 0 var(--primaryOne), 0 25px 0 var(--primaryFour);
+  overflow: hidden;
+}
+
+.ch-stats-card::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  left: -40%;
+  padding: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
+  transform: rotate(35deg);
+  pointer-events: none;
+  filter: blur(5px);
+}
+
+.ch-stats-card .ch-card-content {
+  width: 100%;
+  padding: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.ch-stats-card .ch-card-content p {
+  padding-top: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 2em;
+}
+
+.ch-download-btn-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animated Numbers */
+.stats {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.stats > div {
+  color: white;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+/*
+=================================================
+Reasons
+=================================================
+*/
+
+.ch-reason-container {
+  margin: 10rem auto;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.ch-reason-container h2 {
+  font-size: 2.3rem;
+}
+
+.ch-reason-container > div {
+  margin: 0 auto;
+  padding: 5em 2rem;
+  max-width: 1000px;
+  background-color: var(--primaryFour);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 5px 30px 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.ch-reason-spacer {
+  margin: 0 auto;
+  color: var(--primaryOne);
+  font-size: 1.2rem;
+  padding: 5rem 2rem;
+  max-width: 1200px;
+}
+
+.ch-reason-spacer span {
+  font-size: 2rem;
+}
+
+.ch-reason-container > ul {
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: var(--primaryFour);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 50px 5px;
+}
+
+.ch-reason-container li {
+  max-width: 700px;
+  margin: 20px 0;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.ch-collapse {
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.collapse-toggle {
+  margin: 0 auto;
+  padding: 2rem;
+  border: 0.8px var(--primaryFive);
+  border-bottom: 1px solid var(--primaryThree);
+  transition: all 0.3s ease-in-out;
+}
+
+.collapse-content {
+  padding: 2rem;
+  line-height: 2rem;
+  border-bottom: 1px solid var(--primaryThree);
+  transition: all 0.3s ease-in-out;
+}
+
+.collapse-wrapper {
+  padding-top: 10px;
+  overflow: hidden;
+  transition: height ease 1s;
+}
+
+/*
+=================================================
+Health Slider
+=================================================
+*/
+
+.ch-slider-info {
+  margin: 0 auto;
+  text-align: center;
+  color: var(--primaryOne);
+  padding: 1rem;
+  line-height: 2.5rem;
+}
+
+.ch-slider-info p {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.ch-slider-info span {
+  font-size: 2rem;
+}
+
+.ch-slider {
+  border-radius: 0%;
+  min-height: 500px;
+  max-width: 800px;
+  color: white;
+  background-color: var(--primaryFour);
+  margin: 5rem auto;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 10px 60px -10px;
+}
+
+.ch-slider h2 {
+  font-size: 2rem;
+}
+
+.ch-slider p {
+  max-width: 500px;
+}
+
+.ch-slider-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ch-slider-btns button {
+  transform: uppercase;
+  height: 25px;
+  width: 100px;
+  color: white;
+  background-color: var(--primaryFive);
+  border: 0.3px solid black;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ch-slider-btns button:hover {
+  color: var(--primaryFour);
+  background-color: var(--primaryThree);
+  border: 0.3px solid white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*
+=================================================
+
+=================================================
+*/
+/*
+=================================================
+
+=================================================
+*/
+
+/*
+=====================================================================
+Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
+=====================================================================
+*/
+
+/* Hero */
+/* Stats */
+/* Reason */
+/* Slider */
+
+@media (min-width: 550px) and (max-width: 1100px) {
+  /* Hero */
+  .ch-intro-text h2 {
+    font-size: 3.5rem;
+  }
+  /* Stats */
+  .ch-card-wrapper {
+    flex-direction: row;
+  }
+
+  /* Reason */
+
+  .ch-reason-container > div {
+    border-radius: 150px 150px 0 0;
+  }
+
+  .ch-reason-container > ul {
+    border-radius: 0 0 10% 10%;
+  }
+
+  /* Slider */
+  .ch-slider {
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+  /* Hero */
+
+  .ch-intro-text h2 {
+    font-size: 5rem;
+  }
+  /* Stats */
+  .ch-card-wrapper {
+    flex-direction: row;
+  }
+
+  /* Reason */
+
+  .ch-reason-container > div {
+    border-radius: 150px 150px 0 0;
+  }
+
+  .ch-reason-container > ul {
+    border-radius: 0 0 10% 10%;
+  }
+
+  /* Slider */
+  .ch-slider {
+    border-radius: 50%;
+  }
+}
