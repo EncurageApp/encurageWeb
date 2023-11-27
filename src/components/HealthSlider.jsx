@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
 export const HealthSlider = () => {
@@ -38,11 +39,6 @@ export const HealthSlider = () => {
       title: "Common Medications Involved",
       content:
         "Certain medications, like antibiotics, pain relievers, and medications with narrow therapeutic indices (where small dose variations can cause significant effects), are more commonly associated with dosing errors.",
-    },
-    {
-      title: "Healthcare Setting",
-      content:
-        "Errors might occur more frequently in specific healthcare settings, such as emergency departments or pediatric intensive care units.",
     },
   ];
 

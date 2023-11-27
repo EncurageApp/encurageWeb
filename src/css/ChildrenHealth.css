@@ -175,7 +175,7 @@ Reasons
 
 .ch-reason-spacer {
   margin: 0 auto;
-  color: var(--primaryFour);
+  color: var(--primaryOne);
   font-size: 1.2rem;
   padding: 5rem 2rem;
   max-width: 1200px;
@@ -202,7 +202,6 @@ Reasons
   margin: 20px 0;
   padding: 20px 0;
   list-style: none;
-  border-bottom: 1px solid var(--primaryThree);
 }
 
 .ch-collapse {
@@ -214,16 +213,21 @@ Reasons
   margin: 0 auto;
   padding: 2rem;
   border: 0.8px var(--primaryFive);
+  border-bottom: 1px solid var(--primaryThree);
+  transition: all 0.3s ease-in-out;
 }
 
 .collapse-content {
   padding: 2rem;
-  border-radius: 5px;
+  line-height: 2rem;
+  border-bottom: 1px solid var(--primaryThree);
+  transition: all 0.3s ease-in-out;
 }
 
 .collapse-wrapper {
+  padding-top: 10px;
   overflow: hidden;
-  transition: height ease 0.9s;
+  transition: height ease 1s;
 }
 
 /*
@@ -231,6 +235,23 @@ Reasons
 Health Slider
 =================================================
 */
+
+.ch-slider-info {
+  margin: 0 auto;
+  text-align: center;
+  color: var(--primaryOne);
+  padding: 1rem;
+  line-height: 2.5rem;
+}
+
+.ch-slider-info p {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.ch-slider-info span {
+  font-size: 2rem;
+}
 
 .ch-slider {
   border-radius: 0%;

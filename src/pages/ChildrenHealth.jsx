@@ -1,6 +1,6 @@
 // Pictures
 import DadTwoKids from "../imgs/dadtwokids.jpg";
-// import MultiTask from "../imgs/mommultitasking.jpg";
+import MultiTask from "../imgs/mommultitasking.jpg";
 
 // Components
 import { HealthSlider } from "../components/HealthSlider";
@@ -138,9 +138,19 @@ export const ChildrenHealth = () => {
       </section>
 
       <section className="ch-slider-container">
-        <Parallax strength={500}>
-          <HealthSlider />
-        </Parallax>
+        <div className="ch-slider-info">
+          <h2>Understanding the Impact of Medication Errors</h2>
+          <p>
+            Dig deeper into the critical facts surrounding medication
+            mis-dosages. <span>Explore</span> below to uncover key insights,
+            including the frequency of medication errors, types of errors,
+            age-related considerations, severity implications, and the common
+            medications involved. Knowledge empowers you to safeguard your
+            child's health—get informed to prevent errors and ensure accurate
+            medication administration.
+          </p>
+        </div>
+        <HealthSlider />
       </section>
     </main>
   );
