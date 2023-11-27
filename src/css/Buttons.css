@@ -93,6 +93,33 @@ Download Buttons
 
 /*
 ==========================
+Collapse Buttons
+==========================
+*/
+
+.collapse-btn {
+  font-size: 1rem;
+  width: 300px;
+  color: white;
+  background: linear-gradient(
+    80deg,
+    hsla(272, 58%, 42%, 1) 0%,
+    hsla(290, 43%, 42%, 1) 12%,
+    hsla(360, 100%, 75%, 1) 100%
+  );
+  padding: 10px;
+  border: 0 solid;
+  border-radius: 5px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*
+==========================
 CTA Button
 ==========================
 */
