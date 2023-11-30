@@ -2,7 +2,7 @@ import React from "react";
 
 export const Terms = () => {
   return (
-    <div>
+    <div className="terms-conditions">
       <h2>Terms & Conditions</h2>
 
       <p>

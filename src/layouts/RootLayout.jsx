@@ -91,9 +91,9 @@ export const RootLayout = () => {
               &#169; Copyright 2023 Myrtus Enterprises LLC. All rights reserved.
             </p>
             <div className="terms-privacy">
-              <NavLink to={"Terms"}>Terms & Conditions </NavLink>
+              <NavLink to="HelpCenterLayout">Terms & Conditions </NavLink>
               <span>|</span>
-              <NavLink to={"Privacy"}> Privacy Policy</NavLink>
+              <NavLink to="HelpCenterLayout">Privacy Policy</NavLink>
             </div>
           </div>
           <div className="social-icons">
