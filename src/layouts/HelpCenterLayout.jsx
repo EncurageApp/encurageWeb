@@ -4,7 +4,7 @@ import { NavLink, Outlet } from "react-router-dom";
 export const HelpCenterLayout = () => {
   return (
     <div className="help-layout">
-      <h2>Website Help</h2>
+      <h2>Help Center</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel.
       </p>

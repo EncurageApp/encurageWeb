@@ -1,0 +1,22 @@
+@import "../css/Root.css";
+
+/* 
+=====================================
+Help Layout
+=====================================
+*/
+
+.help-layout {
+  text-align: center;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.help-layout nav {
+  gap: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
