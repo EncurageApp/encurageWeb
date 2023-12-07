@@ -1,0 +1,119 @@
+@import "../css/Root.css";
+
+/* 
+=====================================
+Help Layout
+=====================================
+*/
+
+.help-layout {
+  text-align: center;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.help-layout div {
+  gap: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hcNavLink {
+  min-width: 300px;
+  min-height: 80px;
+  border: 6px ridge var(--primaryOne);
+  color: var(--primaryOne);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+=====================================
+Contact Section
+=====================================
+*/
+
+/* 
+=====================================
+Faq Section
+=====================================
+*/
+
+/* 
+=====================================
+Terms & Conditions
+=====================================
+*/
+
+.terms-conditions {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-conditions h2 {
+  color: var(--primaryOne);
+}
+
+.terms-conditions h3 {
+  color: var(--primaryOne);
+  font-size: 1.7rem;
+}
+
+.terms-conditions p {
+  padding: 2rem 0;
+  color: var(--primaryOne);
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+/* 
+=====================================
+Privacy Policy
+=====================================
+*/
+
+.privacy-policy {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy-policy h2 {
+  color: var(--primaryOne);
+}
+
+.privacy-policy h3 {
+  color: var(--primaryOne);
+  font-size: 1.7rem;
+}
+
+.privacy-policy p {
+  padding: 2rem 0;
+  color: var(--primaryOne);
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.privacy-policy ul li {
+  margin: 0 1.2rem;
+  padding: 0 1.2rem;
+  color: var(--primaryOne);
+}
+
+/*
+=====================================================================
+Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
+=====================================================================
+*/
+
+@media (min-width: 550px) and (max-width: 1100px) {
+}
+
+@media (min-width: 1101px) {
+}
