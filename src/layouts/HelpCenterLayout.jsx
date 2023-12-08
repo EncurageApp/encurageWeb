@@ -12,18 +12,19 @@ export const HelpCenterLayout = () => {
 
   return (
     <div className="help-layout">
-      <div className="help-layout-intro">
-        <h2>Help Center</h2>
-        <p>
-          Welcome to our Help Center! Here, you can Contact Us with questions or
-          concerns, you'll also find quick access to our FAQs, Terms and
-          Conditions, and Privacy Policy sections. From getting in touch to
-          understanding our policies, everything you need is just a click away.
-          Empowering you with clarity and support.
-        </p>
+      <div className="help-layout-img">
+        <div className="help-layout-intro">
+          <h2>Help Center</h2>
+        </div>
       </div>
-
-      <div>
+      <p>
+        Welcome to our Help Center! Here, you can Contact Us with questions or
+        concerns, you'll also find quick access to our FAQs, Terms and
+        Conditions, and Privacy Policy sections. From getting in touch to
+        understanding our policies, everything you need is just a click away.
+        Empowering you with clarity and support.
+      </p>
+      <div className="hc-nav-container">
         <NavLink to="Contact" className="hcNavLink" onClick={scrollToOutlet}>
           Contact Us
         </NavLink>
