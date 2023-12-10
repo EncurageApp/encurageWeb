@@ -140,7 +140,6 @@ export const Founder = () => {
                   type="email"
                   name="Email"
                   placeholder="Enter your email address"
-                  autoFocus
                   autoComplete
                   required
                   checked
