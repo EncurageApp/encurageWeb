@@ -28,7 +28,7 @@ const testimonialData = [
   },
 ];
 
-export function TestimonialSlider() {
+export const TestimonialSlider = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [fadeIn, setFadeIn] = useState(true);
 
@@ -75,4 +75,4 @@ export function TestimonialSlider() {
       </div>
     </div>
   );
-}
+};
