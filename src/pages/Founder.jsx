@@ -6,9 +6,9 @@ import EmailIcon from "../imgs/email-icon.png";
 
 //components
 import { AnimateText } from "../components/AnimateText";
-import { FounderAnimation } from "../components/FounderAnimation";
+import { FounderAnimation } from "../components/animations/FounderAnimation";
 import { TimeLine } from "../components/TimeLine";
-import { MissionAnimation } from "../components/MissionAnimation";
+import { MissionAnimation } from "../components/animations/MissionAnimation";
 
 export const Founder = () => {
   return (

@@ -6,11 +6,10 @@ import MomKids from "../imgs/mom-kids.jpg";
 
 // Components
 import { CardContainer } from "../components/CardContainer";
-import { PhoneAnimation } from "../components/PhoneAnimation";
+import { PhoneAnimation } from "../components/animations/PhoneAnimation";
 import { NavLink } from "react-router-dom";
-import { SupportAnimation } from "../components/SupportAnimation";
+import { SupportAnimation } from "../components/animations/SupportAnimation";
 import { TestimonialSlider } from "../components/TestimonialSlider";
-import { ScrollToTop } from "../components/ScrollToTop";
 
 export const Home = () => {
   return (
