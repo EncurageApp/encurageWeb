@@ -17,9 +17,9 @@ export const HelpCenterLayout = () => {
           <h2>Help Center</h2>
         </div>
       </div>
+
+      <h3>Welcome to our Help Center!</h3>
       <p>
-        <span>Welcome to our Help Center!</span>
-        <br />
         Here, you can Contact Us with questions or concerns, you'll also find
         quick access to our FAQs, Terms and Conditions, and Privacy Policy
         sections. From getting in touch to understanding our policies,

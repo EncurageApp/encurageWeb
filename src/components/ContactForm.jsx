@@ -11,7 +11,6 @@ export const ContactForm = () => {
     const templateID = "template_78imrxc";
     const userID = "OP9s9s4CNaoyWMibg";
 
-    // Fetch values from the form using refs or state
     const name = e.target.elements.name.value;
     const email = e.target.elements.email.value;
     const message = e.target.elements.message.value;
@@ -30,7 +29,7 @@ export const ContactForm = () => {
       .then((response) => {
         console.log("Email sent!", response);
         setResponseMessage("Thank you for your message!");
-        e.target.reset(); // Clear the form
+        e.target.reset();
       })
       .catch((error) => {
         console.error("Error sending email:", error);
@@ -39,7 +38,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-form-container">
       {responseMessage && (
         <div className="response-message">{responseMessage}</div>
       )}
