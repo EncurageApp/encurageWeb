@@ -39,6 +39,7 @@ export const Faq = () => {
               addressing your specific and ever evolving needs.
               <br />
               Encurage currently includes:
+              <br />
               <ul>
                 <li>As-needed medicine management </li>
                 <li>Medicine-on-a-schedule management </li>

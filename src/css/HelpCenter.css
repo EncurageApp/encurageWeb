@@ -17,7 +17,6 @@ Help Layout
 */
 
 .help-layout {
-  text-align: center;
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -48,15 +47,17 @@ Help Layout
     -3px 0px 7px rgba(0, 128, 128, 0.5), 0px 4px 7px rgba(0, 128, 128, 0.5);
 }
 
-.help-layout h3 {
+.help-layout > h3 {
   margin: 3rem auto 0;
+  text-align: center;
   max-width: 400px;
   color: var(--primaryFour);
   font-size: 1.8rem;
   border-bottom: 0.3px solid var(--primaryFour);
 }
 
-.help-layout p {
+.help-layout > p {
+  text-align: center;
   color: var(--primaryOne);
   margin: 0 auto 2rem;
   padding: 2rem;
@@ -108,6 +109,7 @@ Contact Section
 */
 
 .contact-page {
+  text-align: center;
   margin: 2rem auto;
 }
 
@@ -117,6 +119,15 @@ Contact Section
   font-size: 3rem;
   border-bottom: 0.3px solid var(--primaryFour);
   max-width: 350px;
+}
+
+.contact-page p {
+  color: var(--primaryOne);
+  margin: 0 auto 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
 }
 
 .contact-container {
@@ -249,45 +260,52 @@ Faq Section
   font-size: 3rem;
 }
 
-.custom-collapsible {
-  max-width: 500px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  position: relative;
+.faq-page h2 {
+  text-align: center;
+  color: var(--primaryFour);
+  font-size: 2.3rem;
 }
 
-.collapsible-content {
-  font-size: 16px;
-  color: #333;
+.Collapsible {
+  max-width: 1000px;
+  padding: 1rem;
 }
-
+.Collapsible__contentInner {
+  padding: 0 1rem;
+  border: 1px solid var(--primaryFour);
+  border-top: 0;
+  border-radius: 0px 0px 20px 20px;
+  color: var(--primaryFour);
+}
+.Collapsible__contentInner p {
+  padding: 2rem;
+  font-size: 1rem;
+}
+.Collapsible__contentInner p:last-child {
+  margin-bottom: 0;
+}
 .Collapsible__trigger {
-  width: 100%;
-  cursor: pointer;
-  font-weight: bold;
+  display: block;
+  position: relative;
+  border: 1px solid var(--primaryFour);
+  padding: 10px;
+  background: var(--primaryThree);
+  color: var(--primaryOne);
+  font-size: 1.1rem;
 }
 
-.trigger-header {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.Collapsible__trigger:after {
+  font-family: "Poppins";
+  content: "\25BE";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  transition: transform 300ms;
 }
 
-.arrow {
-  margin-left: 4rem;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 5px 0 5px;
-  border-color: #000 transparent transparent transparent;
-  transition: transform 0.3s ease;
-}
-
-.arrow.collapsed {
-  transform: rotate(180deg);
+.Collapsible__trigger.is-open:after {
+  transform: rotateZ(180deg);
 }
 
 /* 
@@ -297,6 +315,7 @@ Terms & Conditions
 */
 
 .terms-conditions {
+  text-align: center;
   margin: 2rem auto;
   max-width: 1200px;
   padding: 0 1.5rem;
@@ -317,7 +336,7 @@ Terms & Conditions
   padding: 2rem 0;
   color: var(--primaryOne);
   font-size: 1.1rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 /* 
@@ -327,6 +346,7 @@ Privacy Policy
 */
 
 .privacy-policy {
+  text-align: center;
   margin: 2rem auto;
   max-width: 1200px;
   padding: 0 1.5rem;
@@ -347,7 +367,7 @@ Privacy Policy
   padding: 2rem 0;
   color: var(--primaryOne);
   font-size: 1.1rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 .privacy-policy ul li {
