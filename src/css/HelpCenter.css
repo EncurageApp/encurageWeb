@@ -237,12 +237,20 @@ Faq Section
 =====================================
 */
 
+.faq-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .faq-page h1 {
   color: var(--primaryFour);
   font-size: 3rem;
 }
 
 .custom-collapsible {
+  max-width: 500px;
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -269,6 +277,7 @@ Faq Section
 }
 
 .arrow {
+  margin-left: 4rem;
   width: 0;
   height: 0;
   border-style: solid;
