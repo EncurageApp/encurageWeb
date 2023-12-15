@@ -2,34 +2,54 @@ import React, { useState } from "react";
 import Collapsible from "react-collapsible";
 
 export const Faq = () => {
-  const [collapsed, setCollapsed] = useState(true);
-
-  const handleCollapse = () => {
-    setCollapsed(!collapsed);
-  };
-
   return (
     <main className="faq-page">
       <h1>FAQ's</h1>
-      <p></p>
+      <p>
+        Welcome to our Frequently Asked Questions (FAQs) section! We've
+        organized our FAQs into different sections to help you navigate and find
+        answers efficiently. Here are the areas covered:
+        <br />
+        <ul>
+          <li>
+            General: Basic information about the platform and its
+            functionalities.
+          </li>
+          <li>
+            Account: Managing your account, settings, and profile. Children's
+          </li>
+          <li>Profiles: Creating and managing profiles for children.</li>
+          <li>
+            Subscriptions and Free Services: Details about paid subscriptions
+            and available free services.
+          </li>
+          <li>
+            Medicine and Other Treatments on a Schedule: Information on tracking
+            doses and schedules for medications and treatments.
+          </li>
+          <li>
+            Care Family: Understanding how to connect and manage family members'
+            accounts.
+          </li>
+          <li>
+            Tracking Hub: Exploring the features and utilities of the tracking
+            hub.
+          </li>
+          <li>
+            Journal: How to utilize and maintain your journal for tracking
+            purposes.
+          </li>
+        </ul>
+        <br />
+        Feel free to explore each section to find answers related to your
+        queries. If you can't find what you're looking for, don't hesitate to
+        reach out to our support team.
+      </p>
 
       <div>
         <h2>General</h2>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What is the Encurage app about?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
-          <div className="collapsible-content">
+        <Collapsible trigger={<div>What is the Encurage app about?</div>}>
+          <div>
             <p>
               We developed Encurage to help parents (and other caregivers) care
               for their children safely, and efficiently.
@@ -61,18 +81,7 @@ export const Faq = () => {
           </div>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              Does Encurage provide medical advice or services?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>Does Encurage provide medical advice or services?</div>}
         >
           <p>
             No. We are strictly a management tool for the life in between
@@ -82,18 +91,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do you handle the data collected by the app?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>How do you handle the data collected by the app?</div>}
         >
           <p>
             We take you and your child’s privacy very seriously, and treat it
@@ -103,18 +101,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do I contact your technical support?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>How do I contact your technical support?</div>}
         >
           <p>
             Tap the “Contact Support” option on your settings menu, and send us
@@ -125,18 +112,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I have a feature request for future releases; or I want to provide
               some feedback. Who should I contact?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             Please share all your thoughts, feedbacks and requests with us
@@ -149,17 +129,10 @@ export const Faq = () => {
         <h2>Account</h2>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               Why do you ask for my date of birth during account creation?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             The sole reason we ask for your date of birth is to help us in
@@ -168,18 +141,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How can I log in following account creation?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>How can I log in following account creation?</div>}
         >
           <p>
             If you use the app frequently, and don’t force close it or log out
@@ -189,20 +151,7 @@ export const Faq = () => {
             the corresponding buttons available on the sign in screen.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How can I edit my profile?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>How can I edit my profile?</div>}>
           <p>
             Tap your profile photo to access “My Profile”, and there you can
             edit any values on your profile. Tap “Save” when you’re done to
@@ -210,20 +159,7 @@ export const Faq = () => {
             menu.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              Can I delete my account?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>Can I delete my account?</div>}>
           <p>
             Yes, you can delete your account through the “Delete Account” option
             on the settings menu of the app.You can also contact us through the
@@ -231,20 +167,7 @@ export const Faq = () => {
             once your account is deleted, it cannot be restored.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              Can I delete my data?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>Can I delete my data?</div>}>
           <p>
             If you are interested in deleting all of your data from our servers,
             please contact us through the Contact Support option on the settings
@@ -256,35 +179,13 @@ export const Faq = () => {
         </Collapsible>
         <h2>Children's Profiles</h2>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How many children’s profiles can I add?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>How many children’s profiles can I add?</div>}
         >
           <p>You can add as many children as you like to your account.</p>
         </Collapsible>
 
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What’s the relevance of my child’s weight?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>What’s the relevance of my child’s weight?</div>}
         >
           <p>
             While adding your child’s weight is optional, we recommend adding
@@ -293,39 +194,13 @@ export const Faq = () => {
             thing to remember!
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do I edit my child’s profile?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>How do I edit my child’s profile?</div>}>
           <p>
             You can edit the profile through the edit button (pencil icon)
             available next to your child’s photo space.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do I remove a child’s profile?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>How do I remove a child’s profile?</div>}>
           <p>
             You can delete the profile through the edit button (pencil icon)
             available next to your child’s photo space. Please note, that a
@@ -333,20 +208,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <h2>Subscriptions and Free Services</h2>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What can I do on the app for free?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>What can I do on the app for free?</div>}>
           <p>
             You can use the app for free for the following services:
             <ul>
@@ -363,17 +225,8 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What additional services do I get for the subscription?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
+            <div>What additional services do I get for the subscription?</div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             In addition to the free services, you can:
@@ -411,38 +264,18 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               If I added a Care Family member, do they need to pay for a
               subscription as well?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             One subscription payment covers the entire care family. All added
             care family members will have the same access to Encurage Premium.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do I cancel my subscription?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>How do I cancel my subscription?</div>}>
           <p>
             You can cancel your subscription at any time, without contacting us,
             through your Apple ID (for iOS users), or your Google Play account
@@ -455,18 +288,11 @@ export const Faq = () => {
         <h2>As-needed Medicine (As-needed Wizard)</h2>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               What is the purpose of the As-needed Wizard? Why is it a separate
               feature?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             As-needed medications are given frequently to babies and children,
@@ -487,18 +313,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I want to give my child ibuprofen. Why am I asked about my child’s
               acetaminophen dose as well?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             The setup process for acetaminophen and ibuprofen episodes is a
@@ -514,18 +333,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I want to switch from acetaminophen to ibuprofen. I want to switch
               from ibuprofen to acetaminophen. How do I do it?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             You can make the switch from the edit button available on the top
@@ -538,19 +350,12 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I’m alternating acetaminophen and ibuprofen and want to switch to
               giving only one of them. I’m giving either acetaminophen or
               ibuprofen, and want to switch to alternating. How do I do it?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             You can make the switch from the edit button available on the top
@@ -561,18 +366,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I need to update my child’s dosage of an as-needed medication. How
               do I do that?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             All dosages can be edited through the edit button (pencil icon) on
@@ -582,18 +380,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I’m giving an as-needed medicine that is not on the list of
               as-needed medications on the app. How do I add it?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             You can type the medicine name to add it manually, and then continue
@@ -602,18 +393,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               Will I get multiple reminders for each dose? What if I want to
               delay a dose?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             You will get a total of 4 reminders for each dose. To delay a dose,
@@ -621,18 +405,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              Why is the Episode paused after 4 reminders?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>Why is the Episode paused after 4 reminders?</div>}
         >
           <p>
             Reminders for each dose are sent during the first hour after the
@@ -644,20 +417,7 @@ export const Faq = () => {
             will auto update for future doses.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              Can I pause the schedule?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>Can I pause the schedule?</div>}>
           <p>
             Yes, you can do that through the edit button available on the top
             right corner of the schedule. Reminders will be paused until you’re
@@ -670,18 +430,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I accidentally tapped “Dose Given”, can I edit the administration
               time of a single dose?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             This option is not available for as-needed medication schedules,
@@ -691,18 +444,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What is the administration site option?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>What is the administration site option?</div>}
         >
           <p>
             Medications that are not given orally, such as creams or injections,
@@ -717,18 +459,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I just want to track some occasional doses I give my child without
               managing a schedule. How do I do that?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             From your child’s dashboard, or the Navigator button, go to the
@@ -738,18 +473,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               Will I get multiple reminders for each dose? What if I want to
               delay a dose?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             You will get a total of 4 reminders for each dose. To delay a dose,
@@ -757,18 +485,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              Why is the Episode paused after 4 reminders?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>Why is the Episode paused after 4 reminders?</div>}
         >
           <p>
             Reminders for each dose are sent during the first hour after the
@@ -780,20 +497,7 @@ export const Faq = () => {
             will auto update for future doses.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              Can I pause the schedule?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>Can I pause the schedule?</div>}>
           <p>
             Yes, you can do that through the edit button available on the top
             right corner of the schedule. Reminders will be paused until you’re
@@ -806,18 +510,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I accidentally tapped “Dose Given”, can I edit the administration
               time of a single dose?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             This option is not available for as-needed medication schedules,
@@ -827,18 +524,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What is the administration site option?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>What is the administration site option?</div>}
         >
           <p>
             Medications that are not given orally, such as creams or injections,
@@ -853,18 +539,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I just want to track some occasional doses I give my child without
               managing a schedule. How do I do that?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             From your child’s dashboard, or the Navigator button, go to the
@@ -875,18 +554,11 @@ export const Faq = () => {
         <h2>Medicine and Other Treatments on a Schedule</h2>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               What is the difference between a short-term schedule and an
               ongoing one?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             When your child is getting a treatment with a final number of doses
@@ -904,18 +576,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I’m giving a medicine or treatment that is not on the list of
               medications on the app. How do I add it?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             You can type the medicine name to add it manually, and then continue
@@ -924,18 +589,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               Will I get multiple reminders for each dose? What if I want to
               delay a dose?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             You will get a total of 4 reminders for each dose. To delay a dose,
@@ -944,17 +602,10 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               What happens if I didn’t respond to any of the 4 reminders?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             For short-term schedules: you will be asked to choose between “Give
@@ -968,18 +619,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               How do I edit the dose; reminder times; or any other value on the
               schedule?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             From the edit button, available on the top right corner of the
@@ -987,20 +631,7 @@ export const Faq = () => {
             “Save” when you're done to apply the edits made.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              Can I pause the schedule?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>Can I pause the schedule?</div>}>
           <p>
             Yes, you can do that from the edit button available on the top right
             corner of the schedule. Reminders will be paused until you’re ready
@@ -1009,17 +640,8 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What about provider’s follow ups or medication refills?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
+            <div>What about provider’s follow ups or medication refills?</div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             The option to set reminders for these will be available to you in
@@ -1028,18 +650,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I accidentally tapped “Dose Given”, can I edit the administration
               time of a single dose?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             Yes, this option is available from the given doses column of the
@@ -1049,18 +664,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I gave my child some doses before adding the schedule on the app.
               How do I track those?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             For short-term schedules, tracking the doses given previously is
@@ -1070,18 +678,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What is the administration site option?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>What is the administration site option?</div>}
         >
           <p>
             Medications that are not given orally, such as creams or injections,
@@ -1096,18 +693,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I just want to track some occasional doses I give my child without
               managing a schedule. How do I do that?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             From your child’s dashboard, or the Navigator button, go to the
@@ -1117,18 +707,7 @@ export const Faq = () => {
         </Collapsible>
         <h2>Care Family</h2>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How many Care Family Members can I add?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>How many Care Family Members can I add?</div>}
         >
           <p>
             There is no limit on the number of people you can add as care family
@@ -1138,18 +717,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               If I added a Care Family member, do they need to pay for a
               subscription as well?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             One subscription payment covers the entire care family. All added
@@ -1158,18 +730,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               Do my Care Family members need to login to my account to use the
               app?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             Each care family member will have their own account. No need to
@@ -1179,18 +744,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              Who can add and remove Care Family members?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>Who can add and remove Care Family members?</div>}
         >
           <p>
             The user that subscribed to Encurage Premium and started the Care
@@ -1198,20 +752,7 @@ export const Faq = () => {
             including adding and removing members.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do I remove a Care Family Member?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>How do I remove a Care Family Member?</div>}>
           <p>
             Tap the card of the care family member you want to remove. A
             “Remove” option will appear.
@@ -1219,18 +760,11 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               I was added as a Care Family member, and I don’t see any
               children’s profiles on my account?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             If the data does not immediately show on your account after you have
@@ -1243,18 +777,11 @@ export const Faq = () => {
         <h2>Tracking Hub</h2>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               How do I track a symptom, side effect, vital or therapy that is
               not included in the corresponding categories’ lists?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             We comprised extensive lists, covering the most common tracked
@@ -1266,20 +793,7 @@ export const Faq = () => {
             button on the settings menu.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What are the folders?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>What are the folders?</div>}>
           <p>
             The folders available for each tracking category are a convenient
             way to organize the various trackings. They allow quick access to
@@ -1291,40 +805,14 @@ export const Faq = () => {
             all of the trackings under the default “General” folder.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do I edit trackings?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>How do I edit trackings?</div>}>
           <p>
             Through the edit button, you can edit the various values you added
             to each tracking. Tap “Save” when you're done to apply the edits
             made.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do I delete trackings?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>How do I delete trackings?</div>}>
           <p>
             The edit button is available for each tracking category, and you can
             edit all values, including deletion of the entire tracking, at any
@@ -1335,18 +823,11 @@ export const Faq = () => {
         <h2>Journal</h2>
         <Collapsible
           trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
+            <div>
               What is the purpose of the Journal? How is it different from
               tracking in the Tracking Hub?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
             </div>
           }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
         >
           <p>
             We want to help parents with monitoring and assessing children’s
@@ -1359,20 +840,7 @@ export const Faq = () => {
             plan.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              What are the folders?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>What are the folders?</div>}>
           <p>
             The folders are a convenient way to organize your child’s various
             health journeys. They allow quick access to separate aspects you may
@@ -1381,20 +849,7 @@ export const Faq = () => {
             Stories under the default “General” folder.
           </p>
         </Collapsible>
-        <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do I edit Stories?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
-        >
+        <Collapsible trigger={<div>How do I edit Stories?</div>}>
           <p>
             Through the edit button, you can edit the various values you added
             to each Story, including editing or deleting each subject added to
@@ -1402,18 +857,7 @@ export const Faq = () => {
           </p>
         </Collapsible>
         <Collapsible
-          trigger={
-            <div
-              className={`trigger-header ${collapsed ? "collapsed" : ""}`}
-              onClick={handleCollapse}
-            >
-              How do I delete Stories added to the Journal?
-              <span className={`arrow ${collapsed ? "collapsed" : ""}`}></span>
-            </div>
-          }
-          className={`custom-collapsible ${collapsed ? "collapsed" : ""}`}
-          onTriggerOpening={handleCollapse}
-          onTriggerClosing={handleCollapse}
+          trigger={<div>How do I delete Stories added to the Journal?</div>}
         >
           <p>
             The edit button is available for each Story added to the Journal,

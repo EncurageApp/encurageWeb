@@ -266,41 +266,47 @@ Faq Section
   font-size: 2.3rem;
 }
 
+.faq-page p {
+  text-align: center;
+}
+
 .Collapsible {
   max-width: 1000px;
   padding: 1rem;
 }
+
 .Collapsible__contentInner {
-  padding: 0 1rem;
+  background-color: var(--primaryOne);
+  padding: 2rem;
   border: 1px solid var(--primaryFour);
   border-top: 0;
   border-radius: 0px 0px 20px 20px;
-  color: var(--primaryFour);
+  color: white;
 }
+
 .Collapsible__contentInner p {
-  padding: 2rem;
   font-size: 1rem;
+  text-shadow: none;
 }
-.Collapsible__contentInner p:last-child {
-  margin-bottom: 0;
-}
+
 .Collapsible__trigger {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   position: relative;
   border: 1px solid var(--primaryFour);
-  padding: 10px;
+  padding: 15px;
   background: var(--primaryThree);
   color: var(--primaryOne);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .Collapsible__trigger:after {
   font-family: "Poppins";
   content: "\25BE";
   position: absolute;
-  right: 10px;
-  top: 10px;
-  display: block;
+  right: 5px;
+  top: 30%;
+  display: flex;
   transition: transform 300ms;
 }
 
