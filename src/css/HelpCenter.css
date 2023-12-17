@@ -67,14 +67,15 @@ Help Layout
 }
 
 .hc-nav-container {
+  background-color: var(--primaryOne);
   margin: 0 auto;
   padding: 2rem;
-  max-width: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
 }
 
 .hcNavLink {
@@ -98,7 +99,7 @@ Help Layout
 
 .hcNavLink:hover {
   color: white;
-  background-color: var(--primaryFour);
+  background-color: var(--primaryFive);
   transition: all 0.3s ease-in-out;
 }
 
@@ -256,6 +257,7 @@ Faq Section
 }
 
 .faq-page h1 {
+  margin-top: 3rem;
   color: var(--primaryFour);
   font-size: 3rem;
 }
@@ -266,8 +268,45 @@ Faq Section
   font-size: 2.3rem;
 }
 
-.faq-page p {
+.faq-page > p {
   text-align: center;
+  color: var(--primaryOne);
+  margin: 0 auto 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+}
+
+.faq-examples {
+  width: 100%;
+  border: 0.3px solid var(--primaryFour);
+  background-color: var(--primaryFour);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-examples > ul {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  padding: 0 2rem;
+  color: white;
+}
+
+.faq-examples > ul span {
+  font-size: 1.3rem;
+  border-bottom: 0.3px solid white;
+}
+
+.faq-examples > ul li {
+  padding: 0.75rem 0;
+  max-width: 400px;
+  font-size: 1rem;
 }
 
 .Collapsible {
@@ -408,6 +447,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .contact-container {
     flex-direction: row;
   }
+
+  .faq-examples {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1101px) {
@@ -427,6 +470,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .contact-container {
+    flex-direction: row;
+  }
+
+  .faq-examples {
     flex-direction: row;
   }
 }

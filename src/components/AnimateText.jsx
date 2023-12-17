@@ -6,7 +6,9 @@ export const AnimateText = ({ children }) => {
 
   const handleIntersection = (entries) => {
     const entry = entries[0];
-    setIsVisible(entry.isIntersecting);
+    if (entry.isIntersecting) {
+      setIsVisible(true);
+    }
   };
 
   useEffect(() => {
@@ -16,7 +18,7 @@ export const AnimateText = ({ children }) => {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  });
 
   const animationClass = isVisible ? "animate-paragraph" : "";
 

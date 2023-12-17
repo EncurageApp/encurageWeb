@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Collapsible from "react-collapsible";
+import { AnimateText } from "../../components/AnimateText";
 
 export const Faq = () => {
   return (
@@ -9,38 +10,82 @@ export const Faq = () => {
         Welcome to our Frequently Asked Questions (FAQs) section! We've
         organized our FAQs into different sections to help you navigate and find
         answers efficiently. Here are the areas covered:
-        <br />
+      </p>
+
+      <div className="faq-examples">
         <ul>
-          <li>
-            General: Basic information about the platform and its
-            functionalities.
-          </li>
-          <li>
-            Account: Managing your account, settings, and profile. Children's
-          </li>
-          <li>Profiles: Creating and managing profiles for children.</li>
-          <li>
-            Subscriptions and Free Services: Details about paid subscriptions
-            and available free services.
-          </li>
-          <li>
-            Medicine and Other Treatments on a Schedule: Information on tracking
-            doses and schedules for medications and treatments.
-          </li>
-          <li>
-            Care Family: Understanding how to connect and manage family members'
-            accounts.
-          </li>
-          <li>
-            Tracking Hub: Exploring the features and utilities of the tracking
-            hub.
-          </li>
-          <li>
-            Journal: How to utilize and maintain your journal for tracking
-            purposes.
-          </li>
+          <AnimateText>
+            <li>
+              <span>General:</span>
+              <br />
+              Basic information about the platform and its functionalities.
+            </li>
+          </AnimateText>
+          <AnimateText>
+            <li>
+              <span>Account:</span>
+              <br />
+              Managing your account, settings, and profile. Children's
+            </li>
+          </AnimateText>
+          <AnimateText>
+            <li>
+              <span>Profiles:</span>
+              <br />
+              Creating and managing profiles for children.
+            </li>
+          </AnimateText>
+          <AnimateText>
+            <li>
+              <span>Subscriptions and Free Services:</span>
+              <br />
+              Details about paid subscriptions and available free services.
+            </li>
+          </AnimateText>
+          <AnimateText>
+            <li>
+              <span>As-needed Wizard:</span> <br />
+              Information on the As-needed Wizard feature.
+            </li>
+          </AnimateText>
         </ul>
-        <br />
+        <ul>
+          <AnimateText>
+            <li>
+              <span>Medicine and Other Treatments on a Schedule:</span>
+              <br /> Information on tracking doses and schedules for medications
+              and treatments.
+            </li>
+          </AnimateText>
+          <AnimateText>
+            <li>
+              <span>Care Family:</span>
+              <br /> Understanding how to connect and manage family members'
+              accounts.
+            </li>
+          </AnimateText>
+          <AnimateText>
+            <li>
+              <span>Tracking Hub:</span>
+              <br /> Exploring the features and utilities of the tracking hub.
+            </li>
+          </AnimateText>
+          <AnimateText>
+            <li>
+              <span>Journal:</span>
+              <br />
+              How to utilize and maintain your journal for tracking purposes.
+            </li>
+          </AnimateText>
+          <AnimateText>
+            <li>
+              <span>Contact Us</span> <br />
+              Can't find an answer? Contact our team and we can help!
+            </li>
+          </AnimateText>
+        </ul>
+      </div>
+      <p>
         Feel free to explore each section to find answers related to your
         queries. If you can't find what you're looking for, don't hesitate to
         reach out to our support team.
@@ -58,26 +103,27 @@ export const Faq = () => {
               with many unique aspects. We put extensive research and work into
               addressing your specific and ever evolving needs.
               <br />
+              <br />
               Encurage currently includes:
               <br />
-              <ul>
-                <li>As-needed medicine management </li>
-                <li>Medicine-on-a-schedule management </li>
-                <li>
-                  A comprehensive tracking system for symptoms, side effects,
-                  vitals, therapies, medicine w/o a schedule, and growth
-                </li>
-                <li>
-                  Daily Life - a baby tracker, including feeding, pumping,
-                  sleep, diapers, introducing solids, and potty training.
-                </li>
-                <li>
-                  Journal for tracking and monitoring your child's reaction to,
-                  and progress with, their treatment plan
-                </li>
-                <li>Multiple caregivers sync and co-management system </li>
-              </ul>
             </p>
+            <ul>
+              <li>As-needed medicine management </li>
+              <li>Medicine-on-a-schedule management </li>
+              <li>
+                A comprehensive tracking system for symptoms, side effects,
+                vitals, therapies, medicine w/o a schedule, and growth
+              </li>
+              <li>
+                Daily Life - a baby tracker, including feeding, pumping, sleep,
+                diapers, introducing solids, and potty training.
+              </li>
+              <li>
+                Journal for tracking and monitoring your child's reaction to,
+                and progress with, their treatment plan
+              </li>
+              <li>Multiple caregivers sync and co-management system </li>
+            </ul>
           </div>
         </Collapsible>
         <Collapsible
@@ -95,9 +141,10 @@ export const Faq = () => {
         >
           <p>
             We take you and your child’s privacy very seriously, and treat it
-            with the utmost respect. Please visit our Privacy Policy page to
-            read the full details about the handling of you and your child’s
-            data.{" "}
+            with the utmost respect. Please visit our
+            <Link to="/HelpCenterLayout/Privacy">Privacy Policy</Link> page to
+            read the full details about the handling of you and your child's
+            data.
           </p>
         </Collapsible>
         <Collapsible
@@ -209,58 +256,52 @@ export const Faq = () => {
         </Collapsible>
         <h2>Subscriptions and Free Services</h2>
         <Collapsible trigger={<div>What can I do on the app for free?</div>}>
-          <p>
-            You can use the app for free for the following services:
-            <ul>
-              <li>
-                Manage acetaminophen and ibuprofen episodes. No limit on the
-                number of episodes.
-              </li>
-              <li>
-                Manage up to 2 medicine or other treatments on a schedule.
-              </li>
-              <li>Track symptoms. No limit on the number of symptoms.</li>
-            </ul>
-          </p>
+          <p>You can use the app for free for the following services:</p>
+          <ul>
+            <li>
+              Manage acetaminophen and ibuprofen episodes. No limit on the
+              number of episodes.
+            </li>
+            <li>Manage up to 2 medicine or other treatments on a schedule.</li>
+            <li>Track symptoms. No limit on the number of symptoms.</li>
+          </ul>
         </Collapsible>
         <Collapsible
           trigger={
             <div>What additional services do I get for the subscription?</div>
           }
         >
-          <p>
-            In addition to the free services, you can:
-            <ul>
-              <li>
-                Manage additional as-needed medicine with the As-needed Wizard.
-              </li>
+          <p>In addition to the free services, you can:</p>
+          <ul>
+            <li>
+              Manage additional as-needed medicine with the As-needed Wizard.
+            </li>
 
-              <li>
-                Manage an unlimited number of medicine and other treatments on a
-                schedule.
-              </li>
+            <li>
+              Manage an unlimited number of medicine and other treatments on a
+              schedule.
+            </li>
 
-              <li>
-                Add Care Family Members of your choice and sync management
-                across devices.
-              </li>
+            <li>
+              Add Care Family Members of your choice and sync management across
+              devices.
+            </li>
 
-              <li>
-                Track: side effects; vitals; growth; therapies; and medicine
-                without a schedule.
-              </li>
+            <li>
+              Track: side effects; vitals; growth; therapies; and medicine
+              without a schedule.
+            </li>
 
-              <li>
-                Use our baby tracker - Daily Life: feeding, pumping, sleep,
-                diapers, potty training and introducing solids.
-              </li>
+            <li>
+              Use our baby tracker - Daily Life: feeding, pumping, sleep,
+              diapers, potty training and introducing solids.
+            </li>
 
-              <li>
-                Journal your child’s reaction to, and progress with their
-                treatment plan{" "}
-              </li>
-            </ul>
-          </p>
+            <li>
+              Journal your child’s reaction to, and progress with their
+              treatment plan{" "}
+            </li>
+          </ul>
         </Collapsible>
         <Collapsible
           trigger={
