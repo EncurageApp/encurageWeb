@@ -9,7 +9,7 @@ export function ScrollToTop() {
 
   useEffect(() => {
     const handleNavLinkClick = () => {
-      setIsLoading(true); // Activate loading icon
+      setIsLoading(true);
 
       const outletContent = document.querySelector(".outlet-content");
       outletContent.style.transition = "opacity .1s ease";
@@ -23,11 +23,11 @@ export function ScrollToTop() {
 
         setTimeout(() => {
           outletContent.style.opacity = 1;
-          setIsLoading(false); // Deactivate loading icon after transition
-        }, 3000); // Adjust the timing based on your transition duration
+          setIsLoading(false);
+        }, 3000);
       };
 
-      setTimeout(scrollToTop, 500); // Adding a slight delay for the scroll to allow the fade-out effect to be visible
+      setTimeout(scrollToTop, 500);
     };
 
     const navLinks = document.querySelectorAll("ul.navlinks a");
