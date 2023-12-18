@@ -59,7 +59,6 @@ export const RootLayout = () => {
       </Headroom>
       <main>
         <ScrollToTop />
-        <Outlet />
       </main>
 
       <footer>
