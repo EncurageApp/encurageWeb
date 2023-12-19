@@ -46,6 +46,12 @@ export const TestimonialSlider = () => {
     return () => clearInterval(interval);
   }, [currentTestimonial]);
 
+  const handleLink = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="review-wrapper">
       <div className="review-quote">
@@ -68,9 +74,11 @@ export const TestimonialSlider = () => {
           <br />
         </h4>
         <div className="review-btn">
-          <NavLink to={"Reviews"}>
-            <button className="cta-btn-home">Read More Reviews</button>
-          </NavLink>
+          <button className="cta-btn-home">
+            <NavLink to="Reviews" onClick={handleLink}>
+              Read More Reviews
+            </NavLink>
+          </button>
         </div>
       </div>
     </div>

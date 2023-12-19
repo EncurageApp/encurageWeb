@@ -7,7 +7,7 @@ import MomKids from "../imgs/mom-kids.jpg";
 // Components
 import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/animations/PhoneAnimation";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { SupportAnimation } from "../components/animations/SupportAnimation";
 import { TestimonialSlider } from "../components/TestimonialSlider";
 
@@ -68,9 +68,11 @@ export const Home = () => {
                 child's individual needs. Start now and make their well-being a
                 top priority.
               </p>
-              <NavLink to={"AppFeatures"}>
-                <button className="cta-btn-home">Learn More</button>
-              </NavLink>
+              <button className="cta-btn-home">
+                <Link to="AppFeatures" onClick={handleLink}>
+                  Learn More
+                </Link>
+              </button>
             </div>
           </div>
           <div className="duo">
@@ -81,10 +83,11 @@ export const Home = () => {
                 their well-being and give them the personalized care they
                 deserve. Get started today.
               </p>
-
-              <NavLink to={"AppFeatures"}>
-                <button className="cta-btn-home">Explore Now</button>
-              </NavLink>
+              <button className="cta-btn-home">
+                <Link to="AppFeatures" onClick={handleLink}>
+                  Explore Now
+                </Link>
+              </button>
             </div>
           </div>
           <div className="duo">
@@ -98,9 +101,12 @@ export const Home = () => {
                 how to protect your child. Let your curiosity lead the way to
                 essential knowledge.
               </p>
-              <NavLink to={"ChildrenHealth"}>
-                <button className="cta-btn-home">Get Started Today</button>
-              </NavLink>
+
+              <button className="cta-btn-home">
+                <Link to="ChildrenHealth" onClick={handleLink}>
+                  Get Started Today
+                </Link>
+              </button>
             </div>
             <div className="duo-img-container">
               <img src={MomKids} alt="" />
@@ -121,11 +127,11 @@ export const Home = () => {
               know the backstory and the inspiration behind our innovative app.
             </p>
 
-            <NavLink to={"Founder"}>
-              <button className="cta-btn-home">
+            <button className="cta-btn-home">
+              <Link to="Founder" onClick={handleLink}>
                 Discover the Heart Behind the App
-              </button>
-            </NavLink>
+              </Link>
+            </button>
           </div>
         </div>
       </section>
