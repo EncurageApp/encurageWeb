@@ -114,20 +114,31 @@ Contact Section
   margin: 2rem auto;
 }
 
+.contact-img {
+  background-image: url(../imgs/handsexplaining.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .contact-page h1 {
   margin: 0 auto;
   color: var(--primaryFour);
   font-size: 3rem;
   border-bottom: 0.3px solid var(--primaryFour);
   max-width: 350px;
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3),
+    0px 0.1px 10px rgba(255, 255, 255, 0.3);
 }
 
 .contact-page p {
-  color: var(--primaryOne);
+  color: var(--primaryFour);
   margin: 0 auto 2rem;
   padding: 2rem;
   max-width: 1000px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2.2rem;
 }
 
@@ -440,8 +451,8 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     transition: all 0.3s ease-in-out;
   }
 
-  .help-layout p {
-    font-size: 1.2rem;
+  .help-layout > p {
+    font-size: 1.3rem;
   }
 
   .contact-container {
@@ -465,8 +476,8 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     transition: all 0.3s ease-in-out;
   }
 
-  .help-layout p {
-    font-size: 1.4rem;
+  .help-layout > p {
+    font-size: 1.5rem;
   }
 
   .contact-container {
