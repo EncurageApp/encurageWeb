@@ -12,7 +12,7 @@ export function ScrollToTop() {
       setIsLoading(true);
 
       const outletContent = document.querySelector(".outlet-content");
-      outletContent.style.transition = "opacity .1s ease";
+      outletContent.style.transition = "opacity .1s ease-in-out";
       outletContent.style.opacity = 0;
 
       const scrollToTop = () => {
@@ -24,7 +24,7 @@ export function ScrollToTop() {
         setTimeout(() => {
           outletContent.style.opacity = 1;
           setIsLoading(false);
-        }, 3000);
+        }, 2000);
       };
 
       setTimeout(scrollToTop, 500);

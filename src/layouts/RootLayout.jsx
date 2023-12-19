@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Headroom from "react-headroom";
 
 // Components
@@ -14,6 +14,13 @@ export const RootLayout = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleQuickLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -66,14 +73,26 @@ export const RootLayout = () => {
           <h1 className="logo">
             <NavLink to={"/"}>Encurage</NavLink>
           </h1>
-          <div className="quick-links">
-            <NavLink to={"/"}>Home</NavLink>
-            <NavLink to={"ChildrenHealth"}>Children's Health</NavLink>
-            <NavLink to={"AppFeatures"}>Explore Our App</NavLink>
-            <NavLink to={"Founder"}>Our Story</NavLink>
-            <NavLink to={"Reviews"}>Reviews</NavLink>
-            <NavLink to={"HelpCenterLayout"}>Help Center</NavLink>
-          </div>
+          <ul className="quick-links">
+            <NavLink to={"/"} onClick={handleQuickLinkClick}>
+              Home
+            </NavLink>
+            <NavLink to={"ChildrenHealth"} onClick={handleQuickLinkClick}>
+              Children's Health
+            </NavLink>
+            <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
+              Explore Our App
+            </NavLink>
+            <NavLink to={"Founder"} onClick={handleQuickLinkClick}>
+              Our Story
+            </NavLink>
+            <NavLink to={"Reviews"} onClick={handleQuickLinkClick}>
+              Reviews
+            </NavLink>
+            <NavLink to={"HelpCenterLayout"} onClick={handleQuickLinkClick}>
+              Help Center
+            </NavLink>
+          </ul>
           <div className="subscribe-btn-container">
             <h2>Get All The Latest News!</h2>
             <div>
