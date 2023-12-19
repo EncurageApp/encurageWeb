@@ -7,11 +7,18 @@ import MomKids from "../imgs/mom-kids.jpg";
 // Components
 import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/animations/PhoneAnimation";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { SupportAnimation } from "../components/animations/SupportAnimation";
 import { TestimonialSlider } from "../components/TestimonialSlider";
 
 export const Home = () => {
+  const handleFooterLink = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <main>
       <section className="home-hero-container">
@@ -169,9 +176,11 @@ export const Home = () => {
                 <p>Got questions? We've got answers</p>
               </div>
 
-              <NavLink to={"HelpCenterLayout"}>
-                <button className="cta-btn-home">Visit Help Center</button>
-              </NavLink>
+              <button className="cta-btn-home">
+                <Link to="/HelpCenterLayout" onClick={handleFooterLink}>
+                  Email Us
+                </Link>
+              </button>
             </div>
             <div className="contact-card">
               <svg className="svg-icon" viewBox="0 0 20 20">
@@ -189,9 +198,11 @@ export const Home = () => {
                 <p>Problems with your App? We can help fix it!</p>
               </div>
 
-              <NavLink to={"HelpCenterLayout"}>
-                <button className="cta-btn-home">Report a Issue</button>
-              </NavLink>
+              <button className="cta-btn-home">
+                <Link to="/HelpCenterLayout" onClick={handleFooterLink}>
+                  Email Us
+                </Link>
+              </button>
             </div>
             <div className="contact-card">
               <svg className="svg-icon" viewBox="0 0 20 20">
@@ -204,8 +215,11 @@ export const Home = () => {
                 <h3>Comments? Concerns?</h3>
                 <p>Email us! We would love to hear from you!</p>
               </div>
-              {/* Figure out Email Situation */}
-              <button className="cta-btn-home">Email Us</button>
+              <button className="cta-btn-home">
+                <Link to="/HelpCenterLayout" onClick={handleFooterLink}>
+                  Email Us
+                </Link>
+              </button>
             </div>
           </div>
         </div>
