@@ -12,7 +12,7 @@ import { SupportAnimation } from "../components/animations/SupportAnimation";
 import { TestimonialSlider } from "../components/TestimonialSlider";
 
 export const Home = () => {
-  const handleFooterLink = () => {
+  const handleLink = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -177,7 +177,7 @@ export const Home = () => {
               </div>
 
               <button className="cta-btn-home">
-                <Link to="/HelpCenterLayout" onClick={handleFooterLink}>
+                <Link to="/HelpCenterLayout" onClick={handleLink}>
                   Email Us
                 </Link>
               </button>
@@ -199,7 +199,7 @@ export const Home = () => {
               </div>
 
               <button className="cta-btn-home">
-                <Link to="/HelpCenterLayout" onClick={handleFooterLink}>
+                <Link to="/HelpCenterLayout" onClick={handleLink}>
                   Email Us
                 </Link>
               </button>
@@ -216,7 +216,7 @@ export const Home = () => {
                 <p>Email us! We would love to hear from you!</p>
               </div>
               <button className="cta-btn-home">
-                <Link to="/HelpCenterLayout" onClick={handleFooterLink}>
+                <Link to="/HelpCenterLayout" onClick={handleLink}>
                   Email Us
                 </Link>
               </button>
