@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-export const Collapsible = (props) => {
+export const HealthCollapsible = (props) => {
   const [isOpen, SetIsOpen] = useState(false);
 
   const contentRef = useRef();

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Headroom from "react-headroom";
 
 // Components
@@ -14,6 +14,13 @@ export const RootLayout = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleQuickLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -50,8 +57,8 @@ export const RootLayout = () => {
               <NavLink to={"Reviews"} onClick={toggleMenu}>
                 Reviews
               </NavLink>
-              <NavLink to={"FaqLayout"} onClick={toggleMenu}>
-                Contact Us
+              <NavLink to={"HelpCenterLayout"} onClick={toggleMenu}>
+                Help Center
               </NavLink>
             </ul>
           </nav>
@@ -59,7 +66,6 @@ export const RootLayout = () => {
       </Headroom>
       <main>
         <ScrollToTop />
-        <Outlet />
       </main>
 
       <footer>
@@ -67,14 +73,26 @@ export const RootLayout = () => {
           <h1 className="logo">
             <NavLink to={"/"}>Encurage</NavLink>
           </h1>
-          <div className="quick-links">
-            <NavLink to={"/"}>Home</NavLink>
-            <NavLink to={"ChildrenHealth"}>Children's Health</NavLink>
-            <NavLink to={"AppFeatures"}>Explore Our App</NavLink>
-            <NavLink to={"Founder"}>Our Story</NavLink>
-            <NavLink to={"Reviews"}>Reviews</NavLink>
-            <NavLink to={"FaqLayout"}>Contact Us</NavLink>
-          </div>
+          <ul className="quick-links">
+            <NavLink to={"/"} onClick={handleQuickLinkClick}>
+              Home
+            </NavLink>
+            <NavLink to={"ChildrenHealth"} onClick={handleQuickLinkClick}>
+              Children's Health
+            </NavLink>
+            <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
+              Explore Our App
+            </NavLink>
+            <NavLink to={"Founder"} onClick={handleQuickLinkClick}>
+              Our Story
+            </NavLink>
+            <NavLink to={"Reviews"} onClick={handleQuickLinkClick}>
+              Reviews
+            </NavLink>
+            <NavLink to={"HelpCenterLayout"} onClick={handleQuickLinkClick}>
+              Help Center
+            </NavLink>
+          </ul>
           <div className="subscribe-btn-container">
             <h2>Get All The Latest News!</h2>
             <div>
@@ -91,9 +109,9 @@ export const RootLayout = () => {
               &#169; Copyright 2023 Myrtus Enterprises LLC. All rights reserved.
             </p>
             <div className="terms-privacy">
-              <NavLink to={"Terms"}>Terms & Conditions </NavLink>
+              <NavLink to="HelpCenterLayout">Terms & Conditions </NavLink>
               <span>|</span>
-              <NavLink to={"Privacy"}> Privacy Policy</NavLink>
+              <NavLink to="HelpCenterLayout">Privacy Policy</NavLink>
             </div>
           </div>
           <div className="social-icons">

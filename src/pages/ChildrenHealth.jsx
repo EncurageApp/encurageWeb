@@ -1,6 +1,5 @@
 // Pictures
 import DadTwoKids from "../imgs/dadtwokids.jpg";
-import MultiTask from "../imgs/mommultitasking.jpg";
 
 // Components
 import { HealthSlider } from "../components/HealthSlider";
@@ -8,7 +7,7 @@ import { Parallax } from "react-parallax";
 import { ChildrenStats } from "../components/ChildrenStats";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
-import { Collapsible } from "../components/Collapsible";
+import { HealthCollapsible } from "../components/HealthCollapsible";
 
 export const ChildrenHealth = () => {
   return (
@@ -83,7 +82,7 @@ export const ChildrenHealth = () => {
         </p>
         <ul>
           <li>
-            <Collapsible label="Multiple Caregivers">
+            <HealthCollapsible label="Multiple Caregivers">
               <h3>Synchronized Care Across Multiple Caregivers</h3>
               <p>
                 Encurage simplifies coordination among multiple caregivers.
@@ -93,11 +92,11 @@ export const ChildrenHealth = () => {
                 seamless care, providing a unified approach to your child's
                 health
               </p>
-            </Collapsible>
+            </HealthCollapsible>
           </li>
 
           <li>
-            <Collapsible label="Multiple Children">
+            <HealthCollapsible label="Multiple Children">
               <h3>Effortless Management for Multiple Children</h3>
               <p>
                 With Encurage, managing medication for multiple children becomes
@@ -106,11 +105,11 @@ export const ChildrenHealth = () => {
                 for each one. Simplify your routine and ensure every child's
                 health needs are met without confusion.
               </p>
-            </Collapsible>
+            </HealthCollapsible>
           </li>
 
           <li>
-            <Collapsible label="Everyday Life">
+            <HealthCollapsible label="Everyday Life">
               <h3>Streamlining Medication amidst Everyday Life</h3>
               <p>
                 We understand the demands of modern life. Encurage fits
@@ -119,11 +118,11 @@ export const ChildrenHealth = () => {
                 meetings, or other commitments, our app ensures you never miss a
                 medication time, providing convenience and peace of mind.
               </p>
-            </Collapsible>
+            </HealthCollapsible>
           </li>
 
           <li>
-            <Collapsible label="Experience">
+            <HealthCollapsible label="Experience">
               <h3>Guidance for Novice Medicator's</h3>
               <p>
                 Encurage offers guidance and support, especially for those new
@@ -132,7 +131,7 @@ export const ChildrenHealth = () => {
                 you to confidently navigate this aspect of caregiving, ensuring
                 your child's safety and well-being.
               </p>
-            </Collapsible>
+            </HealthCollapsible>
           </li>
         </ul>
       </section>

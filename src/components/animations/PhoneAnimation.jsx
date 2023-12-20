@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import animationData from "../assets/Animation - 1697616794178 (1).json";
+import animationData from "../../assets/phone.json";
 
 export const PhoneAnimation = () => {
   return (

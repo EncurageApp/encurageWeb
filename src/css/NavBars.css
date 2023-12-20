@@ -305,7 +305,7 @@ footer .logo a {
 
 .terms-privacy a:hover {
   transition: all 0.3s ease-in-out;
-  color: var(--primaryFive);
+  color: var(--primaryOne);
 }
 
 .social-icons {

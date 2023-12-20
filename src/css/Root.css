@@ -16,3 +16,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* 
+====================================
+Screen Transition Animation
+====================================
+*/
+
+.loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Set a high z-index to ensure it's above other content */
+}
+
+.loading-icon {
+  font-size: 3.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-animation {
+  width: 500px;
+}

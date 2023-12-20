@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import missionAnimation from "../assets/mission.json";
+import missionAnimation from "../../assets/mission.json";
 
 export const MissionAnimation = () => {
   return (
