@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import MomCheckingKid from "../imgs/momcheckingkid.jpg";
 import KidSurprised from "../imgs/kidsurprised.jpg";
 import FingerPaint from "../imgs/fingerprintpaint.jpg";
@@ -33,6 +33,13 @@ export const CardContainer = () => {
     }
   };
 
+  const handleLink = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -55,9 +62,11 @@ export const CardContainer = () => {
               dangers of medication mishaps.
             </p>
 
-            <NavLink to={"ChildrenHealth"}>
-              <button className="cta-btn-home">Know The Risk </button>
-            </NavLink>
+            <button className="cta-btn-home">
+              <Link to="ChildrenHealth" onClick={handleLink}>
+                Know The Risk
+              </Link>
+            </button>
           </div>
         </div>
 
@@ -72,10 +81,11 @@ export const CardContainer = () => {
               experience with our app. We value their feedback and are proud to
               share their stories of successful health management with you.
             </p>
-
-            <NavLink to={"Reviews"}>
-              <button className="cta-btn-home">Read Reviews</button>
-            </NavLink>
+            <button className="cta-btn-home">
+              <Link to={"Reviews"} onClick={handleLink}>
+                Read Reviews
+              </Link>
+            </button>
           </div>
         </div>
         <div className={`card card-3 ${visibleCard === 3 ? "hovered" : ""}`}>
@@ -89,10 +99,11 @@ export const CardContainer = () => {
               Learn how our passion for children's health led to the creation of
               our app and the incredible journey that brought us here.
             </p>
-
-            <NavLink to={"Founder"}>
-              <button className="cta-btn-home">Explore Our Story</button>
-            </NavLink>
+            <button className="cta-btn-home">
+              <Link to={"Founder"} onClick={handleLink}>
+                Explore Our Story
+              </Link>
+            </button>
           </div>
         </div>
       </div>

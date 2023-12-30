@@ -1,0 +1,91 @@
+@import "./Root.css";
+
+.appFeatures-page p {
+  font-size: 1.2rem;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.5), 0px -5px 35px rgba(1, 1, 1, 0.5);
+}
+
+.appFeatures-page h2 {
+  border: none;
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5),
+    0px 0.1px 10px rgba(14, 13, 13, 0.5);
+}
+
+/*
+=================================================
+Hero
+=================================================
+*/
+
+.af-hero {
+  height: 100svh;
+  background-image: url(../imgs/phonescreen.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  position: relative;
+}
+
+.af-intro-text {
+  max-width: 800px;
+  padding: 0 1rem;
+  padding-top: 8rem;
+  text-align: center;
+  color: white;
+}
+
+.af-intro-text h2 {
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.55),
+    0px 0.1px 10px rgba(255, 255, 255, 0.3);
+  border: none;
+  font-size: 3rem;
+  border-bottom: 0.5px solid white;
+}
+
+.af-intro-text p {
+  margin: 0 auto;
+  max-width: 600px;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0), 0px -5px 35px rgba(1, 1, 1, 0.5);
+}
+
+/*
+=================================================
+Hero
+=================================================
+*/
+
+/*
+=====================================================================
+Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
+=====================================================================
+*/
+
+@media (min-width: 550px) and (max-width: 1100px) {
+  /* Hero */
+
+  .af-intro-text {
+    padding-top: 10rem;
+  }
+
+  .af-intro-text h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  /* Hero */
+
+  .af-intro-text {
+    padding-top: 12rem;
+  }
+  .af-intro-text h2 {
+    font-size: 4rem;
+  }
+}

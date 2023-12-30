@@ -18,13 +18,12 @@ Help Layout
 
 .help-layout {
   margin: 0 auto;
-  min-height: 100vh;
 }
 
 .help-layout-img {
   background-image: url(../imgs/lightbulb.jpg);
-  height: 500px;
-  background-position: center;
+  height: 100svh;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

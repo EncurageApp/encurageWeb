@@ -8,6 +8,7 @@ import { ChildrenStats } from "../components/ChildrenStats";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 import { HealthCollapsible } from "../components/HealthCollapsible";
+import { AnimateText } from "../components/AnimateText";
 
 export const ChildrenHealth = () => {
   return (
@@ -15,13 +16,15 @@ export const ChildrenHealth = () => {
       <section className="ch-hero">
         <Parallax strength={500} bgImage={DadTwoKids}>
           <div className="ch-intro">
-            <div className="ch-intro-text">
-              <h2>Navigating the Numbers,</h2>
-              <p>
-                Exploring Children's Medication Errors and How We Are Preventing
-                Them!
-              </p>
-            </div>
+            <AnimateText>
+              <div className="ch-intro-text">
+                <h2>Navigating the Numbers,</h2>
+                <p>
+                  Exploring Children's Medication Errors and How We Are
+                  Preventing Them!
+                </p>
+              </div>
+            </AnimateText>
           </div>
         </Parallax>
       </section>
