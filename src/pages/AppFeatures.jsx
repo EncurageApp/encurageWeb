@@ -10,12 +10,12 @@ export const AppFeatures = () => {
             <h2>Discover the Power of Encurage</h2>
             <p>
               Encurage offers a rich array of features designed to simplify and
-              streamline medication management for your child.{" "}
+              streamline medication management for your child.
             </p>
           </div>
         </AnimateText>
       </section>
-      <section>
+      <section className="af-info">
         <h2>
           Unlock the Full Potential: Explore the Boundless Capabilities of
           Encurage
@@ -26,9 +26,6 @@ export const AppFeatures = () => {
           expert guidance. Dive into a world of possibilities for your child's
           health journey.
         </p>
-        <div className="af-icon-container">
-          <div className="af-icon"></div>
-        </div>
       </section>
     </main>
   );

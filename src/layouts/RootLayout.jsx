@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import Headroom from "react-headroom";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 // Components
 import { SubscribeBtn } from "../components/SubscribeBtn";
@@ -68,6 +69,26 @@ export const RootLayout = () => {
       </Headroom>
       <main>
         <Outlet />
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept!"
+          cookieName="EnCurage Cookies"
+          enableDeclineButton
+          declineButtonText="Decline (Optional)"
+          overlay
+          flipButtons
+        >
+          <p>
+            This website uses cookies to improve our users' experience. Click
+            'Accept' to join the fun!
+          </p>
+          <p>
+            Questions about Cookies?
+            <button>
+              <Link to="/HelpCenterLayout"> Learn More</Link>
+            </button>
+          </p>
+        </CookieConsent>
       </main>
 
       <footer>
