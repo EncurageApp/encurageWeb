@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Headroom from "react-headroom";
-import CookieConsent, { Cookies } from "react-cookie-consent";
 
 // Components
 import { SubscribeBtn } from "../components/SubscribeBtn";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 import { SocialMediaIcons } from "../components/SocialMediaIcons";
+import { CookieConsentBanner } from "../components/CookieConsentBanner";
 
 export const RootLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,26 +69,7 @@ export const RootLayout = () => {
       </Headroom>
       <main>
         <Outlet />
-        <CookieConsent
-          location="bottom"
-          buttonText="Accept!"
-          cookieName="EnCurage Cookies"
-          enableDeclineButton
-          declineButtonText="Decline (Optional)"
-          overlay
-          flipButtons
-        >
-          <p>
-            This website uses cookies to improve our users' experience. Click
-            'Accept' to join the fun!
-          </p>
-          <p>
-            Questions about Cookies?
-            <button>
-              <Link to="/HelpCenterLayout"> Learn More</Link>
-            </button>
-          </p>
-        </CookieConsent>
+        <CookieConsentBanner />
       </main>
 
       <footer>
