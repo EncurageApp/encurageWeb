@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
-import Cookie from "../imgs/cookies.png";
+import CookieImg from "../imgs/cookies.png";
 import { Link } from "react-router-dom";
 
 export const CookieConsentBanner = () => {
@@ -9,10 +9,10 @@ export const CookieConsentBanner = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowBanner(true);
-    }, 5000); // 10 seconds in milliseconds
+    }, 5000);
 
     return () => clearTimeout(timer);
-  }, []); // Empty dependency array to run the effect only once
+  }, []);
 
   return (
     <>
@@ -27,6 +27,12 @@ export const CookieConsentBanner = () => {
           enableDeclineButton
           declineButtonText="Decline (Optional)"
           flipButtons
+          onAccept={() => {
+            console.log("User Accepted Cookies");
+          }}
+          onDecline={() => {
+            console.log("User Declined Cookies");
+          }}
           style={{
             fontSize: ".8rem",
             background: "#2e9593",
@@ -49,7 +55,7 @@ export const CookieConsentBanner = () => {
 
           <div>
             <img
-              src={Cookie}
+              src={CookieImg}
               alt="cookie in a web browser"
               style={{ width: "50px", marginTop: "10px" }}
             />
@@ -62,7 +68,8 @@ export const CookieConsentBanner = () => {
               }}
             >
               This website uses cookies to improve our users' experience. Click
-              'Accept' to Help us Out! Questions about Cookies?{" "}
+              'Accept' to Help us Out! Questions about Cookies? Visit Our
+              Privacy Policy to{" "}
               <Link to="/HelpCenterLayout" className="cookie-btn">
                 Learn More
               </Link>

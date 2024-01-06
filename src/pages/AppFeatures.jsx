@@ -1,5 +1,6 @@
 import React from "react";
 import { AnimateText } from "../components/AnimateText";
+import { AppSlider } from "../components/AppSlider";
 
 export const AppFeatures = () => {
   return (
@@ -26,6 +27,10 @@ export const AppFeatures = () => {
           expert guidance. Dive into a world of possibilities for your child's
           health journey.
         </p>
+      </section>
+
+      <section className="asNeededWizard">
+        <AppSlider />
       </section>
     </main>
   );

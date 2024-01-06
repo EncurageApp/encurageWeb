@@ -1,11 +1,15 @@
 @import "./Root.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 .appFeatures-page p {
+  text-align: center;
   font-size: 1.2rem;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.5), 0px -5px 35px rgba(1, 1, 1, 0.5);
 }
 
 .appFeatures-page h2 {
+  text-align: center;
   border: none;
   text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5),
     0px 0.1px 10px rgba(14, 13, 13, 0.5);
@@ -70,6 +74,16 @@ icons
 =================================================
 */
 
+/*
+=================================================
+Slider - As Needed Wizard
+=================================================
+*/
+
+.app-slider {
+  background-color: var(--primaryOne);
+  min-height: 400px;
+}
 /*
 =====================================================================
 Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
