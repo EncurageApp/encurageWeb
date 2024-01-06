@@ -5,13 +5,13 @@
 .appFeatures-page p {
   text-align: center;
   font-size: 1.2rem;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.5), 0px -5px 35px rgba(1, 1, 1, 0.5);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0px -5px 35px rgba(1, 1, 1, 0.5);
 }
 
 .appFeatures-page h2 {
   text-align: center;
   border: none;
-  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5),
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
     0px 0.1px 10px rgba(14, 13, 13, 0.5);
 }
 
@@ -66,6 +66,31 @@ info
 */
 
 .af-info {
+  padding: 4rem 2rem;
+  color: var(--primaryOne);
+}
+
+.af-info h2 {
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: right;
+  text-shadow: none;
+  padding: 1rem;
+  border-top: 2px solid var(--primaryOne);
+  border-right: 2px solid var(--primaryOne);
+  margin-bottom: 4rem;
+  transition: all 1s ease-in-out;
+}
+
+.af-info p {
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: left;
+  text-shadow: none;
+  padding: 1rem;
+  border-bottom: 2px solid var(--primaryOne);
+  border-left: 2px solid var(--primaryOne);
+  transition: all 1s ease-in-out;
 }
 
 /*
@@ -79,11 +104,15 @@ icons
 Slider - As Needed Wizard
 =================================================
 */
+.as-needed-wizard {
+  background-color: var(--primaryOne);
+  padding: 4rem 2rem;
+}
 
 .app-slider {
-  background-color: var(--primaryOne);
-  min-height: 400px;
-  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 80%;
 }
 /*
 =====================================================================

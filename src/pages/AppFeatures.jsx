@@ -1,6 +1,7 @@
 import React from "react";
 import { AnimateText } from "../components/AnimateText";
 import { AppSlider } from "../components/AppSlider";
+import { AppFeatureAnimation } from "../components/animations/AppFeatureAnimation";
 
 export const AppFeatures = () => {
   return (
@@ -16,24 +17,39 @@ export const AppFeatures = () => {
           </div>
         </AnimateText>
       </section>
+
       <section className="af-info">
-        <h2>
-          Unlock the Full Potential: Explore the Boundless Capabilities of
-          Encurage
-        </h2>
-        <p>
-          Begin an exploration of Encurage's versatile features, designed for
-          seamless medication management, synchronized caregiver support, and
-          expert guidance. Dive into a world of possibilities for your child's
-          health journey.
-        </p>
+        <div>
+          <h2>
+            Unlock the Full Potential: Explore the Boundless Capabilities of
+            Encurage
+          </h2>
+          <p>
+            Begin an exploration of Encurage's versatile features, designed for
+            seamless medication management, synchronized caregiver support, and
+            expert guidance. Dive into a world of possibilities for your child's
+            health journey.
+          </p>
+        </div>
+        <AppFeatureAnimation />
       </section>
 
-      <section className="asNeededWizard">
-        <AppSlider>
-          <p>First</p>
-          <p>second</p>
-        </AppSlider>
+      <section className="as-needed-wizard">
+        <div>
+          <p>
+            Specifically designed for as-needed (PRN) medications, our unique
+            schedule builder generates a dynamic medication schedule with
+            enhanced editing capabilities, that updates itself automatically in
+            alignment with your child’s needs, while keeping safe time gaps.
+            <br />
+            All done with a few taps. No reminder setting, no updating, no
+            calculating.
+          </p>
+          <AppSlider>
+            <p>First</p>
+            <p>second</p>
+          </AppSlider>
+        </div>
       </section>
     </main>
   );
