@@ -3,6 +3,12 @@ import { AnimateText } from "../components/AnimateText";
 import { AppSlider } from "../components/AppSlider";
 import { AppFeatureAnimation } from "../components/animations/AppFeatureAnimation";
 
+//images
+import TH1 from "../imgs/appFeatureScreens/sliderOne/TH1.png";
+import TH2 from "../imgs/appFeatureScreens/sliderOne/TH2.png";
+import TH3 from "../imgs/appFeatureScreens/sliderOne/TH3.png";
+import TH4 from "../imgs/appFeatureScreens/sliderOne/TH4.png";
+
 export const AppFeatures = () => {
   return (
     <main className="appFeatures-page">
@@ -32,6 +38,27 @@ export const AppFeatures = () => {
           </p>
         </div>
         <AppFeatureAnimation />
+      </section>
+
+      <section className="tracking-hub">
+        <div>
+          <p>
+            Track and log everything related to your child’s health, whether
+            it’s an occasional bug or an ongoing condition requiring daily
+            monitoring.
+            <br />
+            Symptoms, side effects, vitals, therapies, and growth categories
+            include detailed and guided trackers, covering important information
+            for you and your child’s pediatrician, and helping you navigate a
+            sea of data easily and effectively.
+          </p>
+          <AppSlider>
+            <img src={TH1} alt="tracking hub screen" />
+            <img src={TH2} alt="tracking hub screen" />
+            <img src={TH3} alt="tracking hub screen" />
+            <img src={TH4} alt="tracking hub screen" />
+          </AppSlider>
+        </div>
       </section>
 
       <section className="as-needed-wizard">

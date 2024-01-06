@@ -2,6 +2,16 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+/*
+APP FEATURES IN ORDER
+1.Tracking Hub
+2.Car Family Feature
+3.Everything On A Schedule
+4.Daily Life
+5.As-Needed Wizard
+6.Journal
+*/
+
 .appFeatures-page p {
   text-align: center;
   font-size: 1.2rem;
@@ -71,7 +81,7 @@ info
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -110,19 +120,32 @@ icons
 
 /*
 =================================================
-Slider - As Needed Wizard
+Slider
 =================================================
 */
-.as-needed-wizard {
+
+.app-slider-container {
   background-color: var(--primaryOne);
+  margin: 0 auto;
   padding: 4rem 2rem;
 }
 
-.app-slider {
-  margin: 0 auto;
-  padding: 2rem;
-  max-width: 80%;
+/*
+=================================================
+Tracking Hub - Slider
+=================================================
+*/
+
+/*
+=================================================
+As-Needed Wizard - Slider
+=================================================
+*/
+
+.as-needed-wizard p {
+  text-align: left;
 }
+
 /*
 =====================================================================
 Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
@@ -152,6 +175,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .af-info {
+    margin: 5rem auto;
     flex-direction: row;
     padding: 2rem 2rem;
   }
