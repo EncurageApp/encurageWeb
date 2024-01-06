@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MomCheckingKid from "../imgs/momcheckingkid.jpg";
 import KidSurprised from "../imgs/kidsurprised.jpg";
 import FingerPaint from "../imgs/fingerprintpaint.jpg";

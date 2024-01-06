@@ -68,6 +68,11 @@ info
 .af-info {
   padding: 4rem 2rem;
   color: var(--primaryOne);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .af-info h2 {
@@ -91,6 +96,10 @@ info
   border-bottom: 2px solid var(--primaryOne);
   border-left: 2px solid var(--primaryOne);
   transition: all 1s ease-in-out;
+}
+
+.app-animation {
+  max-width: 600px;
 }
 
 /*
@@ -140,5 +149,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
   .af-intro-text h2 {
     font-size: 4rem;
+  }
+
+  .af-info {
+    flex-direction: row;
+    padding: 2rem 2rem;
   }
 }
