@@ -41,6 +41,7 @@ export const AppFeatures = () => {
       </section>
 
       <section className="tracking-hub">
+        <h2>Tracking Hub</h2>
         <div>
           <p>
             Track and log everything related to your child’s health, whether
@@ -53,15 +54,23 @@ export const AppFeatures = () => {
             sea of data easily and effectively.
           </p>
           <AppSlider>
-            <img src={TH1} alt="tracking hub screen" />
-            <img src={TH2} alt="tracking hub screen" />
-            <img src={TH3} alt="tracking hub screen" />
-            <img src={TH4} alt="tracking hub screen" />
+            <div>
+              <img src={TH1} alt="tracking hub screen" width={225} />
+            </div>
+            <div>
+              <img src={TH2} alt="tracking hub screen" width={225} />
+            </div>
+            <div>
+              <img src={TH3} alt="tracking hub screen" width={225} />
+            </div>
+            <div>
+              <img src={TH4} alt="tracking hub screen" width={225} />
+            </div>
           </AppSlider>
         </div>
       </section>
 
-      <section className="as-needed-wizard">
+      {/* <section className="as-needed-wizard">
         <div>
           <p>
             Specifically designed for as-needed (PRN) medications, our unique
@@ -77,7 +86,7 @@ export const AppFeatures = () => {
             <p>second</p>
           </AppSlider>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

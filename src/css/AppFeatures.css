@@ -43,6 +43,7 @@ Hero
   align-items: flex-start;
   text-align: center;
   position: relative;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .af-intro-text {
@@ -76,8 +77,9 @@ info
 */
 
 .af-info {
+  background-color: var(--primaryFour);
   padding: 4rem 2rem;
-  color: var(--primaryOne);
+  color: var(--primaryThree);
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -91,8 +93,8 @@ info
   text-align: right;
   text-shadow: none;
   padding: 1rem;
-  border-top: 2px solid var(--primaryOne);
-  border-right: 2px solid var(--primaryOne);
+  border-top: 2px solid var(--primaryThree);
+  border-right: 2px solid var(--primaryThree);
   margin-bottom: 4rem;
   transition: all 1s ease-in-out;
 }
@@ -103,8 +105,8 @@ info
   text-align: left;
   text-shadow: none;
   padding: 1rem;
-  border-bottom: 2px solid var(--primaryOne);
-  border-left: 2px solid var(--primaryOne);
+  border-bottom: 2px solid var(--primaryThree);
+  border-left: 2px solid var(--primaryThree);
   transition: all 1s ease-in-out;
 }
 
@@ -128,6 +130,12 @@ Slider
   background-color: var(--primaryOne);
   margin: 0 auto;
   padding: 4rem 2rem;
+}
+
+.app-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
@@ -175,8 +183,8 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .af-info {
-    margin: 5rem auto;
+    margin: 0 0 5rem auto;
     flex-direction: row;
-    padding: 2rem 2rem;
+    padding: 6rem 2rem;
   }
 }
