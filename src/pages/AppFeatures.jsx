@@ -30,7 +30,10 @@ export const AppFeatures = () => {
       </section>
 
       <section className="asNeededWizard">
-        <AppSlider />
+        <AppSlider>
+          <p>First</p>
+          <p>second</p>
+        </AppSlider>
       </section>
     </main>
   );

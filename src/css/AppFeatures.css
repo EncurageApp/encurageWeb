@@ -83,6 +83,7 @@ Slider - As Needed Wizard
 .app-slider {
   background-color: var(--primaryOne);
   min-height: 400px;
+  max-width: 100%;
 }
 /*
 =====================================================================
