@@ -1,44 +1,14 @@
 import Slider from "react-slick";
 
 export const AppSlider = ({ children }) => {
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <div className="app-slider-container">
-      <Slider className="app-slider" {...settings} adaptiveHeight={true}>
+      <Slider
+        className="app-slider"
+        adaptiveHeight={true}
+        centerMode={true}
+        dots={true}
+      >
         {children}
       </Slider>
     </div>

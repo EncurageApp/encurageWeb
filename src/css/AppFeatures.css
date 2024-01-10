@@ -127,15 +127,13 @@ Slider
 */
 
 .app-slider-container {
-  background-color: var(--primaryOne);
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 2rem;
+  max-width: 500px;
 }
 
 .app-slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
 /*
@@ -143,6 +141,10 @@ Slider
 Tracking Hub - Slider
 =================================================
 */
+
+.tracking-hub > div {
+  background-color: var(--primaryFour);
+}
 
 /*
 =================================================
