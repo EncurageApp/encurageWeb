@@ -1,24 +1,18 @@
 import React from "react";
-
-// import Swiper core and required modules
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 export const AppCarousel = ({ children }) => {
   return (
     <div className="swiper-container">
       <Swiper
-        navigation={true}
+        navigation
         pagination={{
           dynamicBullets: true,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
       >
         {React.Children.map(children, (child, index) => (
           <SwiperSlide key={index}>{child}</SwiperSlide>

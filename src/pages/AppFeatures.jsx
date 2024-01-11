@@ -40,17 +40,8 @@ export const AppFeatures = () => {
         <AppFeatureAnimation />
       </section>
 
-      <section>
-        <AppCarousel>
-          <img src={TH1} alt="" />
-          <img src={TH2} alt="" />
-          <img src={TH3} alt="" />
-          <img src={TH4} alt="" />
-        </AppCarousel>
-      </section>
-
-      {/* <section className="tracking-hub">
-        <h2>Tracking Hub</h2>
+      <section className="tracking-hub">
+        <h1>Tracking Hub</h1>
         <div>
           <p>
             Track and log everything related to your child’s health, whether
@@ -59,44 +50,24 @@ export const AppFeatures = () => {
             <br />
             Symptoms, side effects, vitals, therapies, and growth categories
             include detailed and guided trackers, covering important information
-            for you and your child’s pediatrician, and helpimport { AppCarousel } from '../components/AppCarousel';
-ing you navigate a
-            sea of data easily and effectively.
+            for you and your child’s pediatrician
           </p>
-          <AppSlider>
-            <div>
-              <img src={TH1} alt="tracking hub screen" width={225} />
-            </div>
-            <div>
-              <img src={TH2} alt="tracking hub screen" width={225} />
-            </div>
-            <div>
-              <img src={TH3} alt="tracking hub screen" width={225} />
-            </div>
-            <div>
-              <img src={TH4} alt="tracking hub screen" width={225} />
-            </div>
-          </AppSlider>
         </div>
-      </section> */}
-
-      {/* <section className="as-needed-wizard">
-        <div>
-          <p>
-            Specifically designed for as-needed (PRN) medications, our unique
-            schedule builder generates a dynamic medication schedule with
-            enhanced editing capabilities, that updates itself automatically in
-            alignment with your child’s needs, while keeping safe time gaps.
-            <br />
-            All done with a few taps. No reminder setting, no updating, no
-            calculating.
-          </p>
-          <AppSlider>
-            <p>First</p>
-            <p>second</p>
-          </AppSlider>
-        </div>
-      </section> */}
+        <AppCarousel>
+          <div>
+            <img src={TH1} alt="tracking hub screen" width={225} />
+          </div>
+          <div>
+            <img src={TH2} alt="tracking hub screen" width={225} />
+          </div>
+          <div>
+            <img src={TH3} alt="tracking hub screen" width={225} />
+          </div>
+          <div>
+            <img src={TH4} alt="tracking hub screen" width={225} />
+          </div>
+        </AppCarousel>
+      </section>
     </main>
   );
 };
