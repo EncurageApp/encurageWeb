@@ -1,6 +1,5 @@
 import React from "react";
 import { AnimateText } from "../components/AnimateText";
-import { AppSlider } from "../components/AppSlider";
 import { AppFeatureAnimation } from "../components/animations/AppFeatureAnimation";
 
 //images
@@ -8,6 +7,7 @@ import TH1 from "../imgs/appFeatureScreens/sliderOne/TH1.png";
 import TH2 from "../imgs/appFeatureScreens/sliderOne/TH2.png";
 import TH3 from "../imgs/appFeatureScreens/sliderOne/TH3.png";
 import TH4 from "../imgs/appFeatureScreens/sliderOne/TH4.png";
+import { AppCarousel } from "../components/AppCarousel";
 
 export const AppFeatures = () => {
   return (
@@ -40,7 +40,16 @@ export const AppFeatures = () => {
         <AppFeatureAnimation />
       </section>
 
-      <section className="tracking-hub">
+      <section>
+        <AppCarousel>
+          <img src={TH1} alt="" />
+          <img src={TH2} alt="" />
+          <img src={TH3} alt="" />
+          <img src={TH4} alt="" />
+        </AppCarousel>
+      </section>
+
+      {/* <section className="tracking-hub">
         <h2>Tracking Hub</h2>
         <div>
           <p>
@@ -50,7 +59,8 @@ export const AppFeatures = () => {
             <br />
             Symptoms, side effects, vitals, therapies, and growth categories
             include detailed and guided trackers, covering important information
-            for you and your child’s pediatrician, and helping you navigate a
+            for you and your child’s pediatrician, and helpimport { AppCarousel } from '../components/AppCarousel';
+ing you navigate a
             sea of data easily and effectively.
           </p>
           <AppSlider>
@@ -68,7 +78,7 @@ export const AppFeatures = () => {
             </div>
           </AppSlider>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="as-needed-wizard">
         <div>
