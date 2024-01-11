@@ -54,18 +54,10 @@ export const AppFeatures = () => {
           </p>
         </div>
         <AppCarousel>
-          <div>
-            <img src={TH1} alt="tracking hub screen" width={225} />
-          </div>
-          <div>
-            <img src={TH2} alt="tracking hub screen" width={225} />
-          </div>
-          <div>
-            <img src={TH3} alt="tracking hub screen" width={225} />
-          </div>
-          <div>
-            <img src={TH4} alt="tracking hub screen" width={225} />
-          </div>
+          <img src={TH1} alt="tracking hub screen" width={225} />
+          <img src={TH2} alt="tracking hub screen" width={225} />
+          <img src={TH3} alt="tracking hub screen" width={225} />
+          <img src={TH4} alt="tracking hub screen" width={225} />
         </AppCarousel>
       </section>
     </main>
