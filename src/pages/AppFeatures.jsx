@@ -40,14 +40,12 @@ export const AppFeatures = () => {
         <AppFeatureAnimation />
       </section>
 
-      <section className="features-intro">
-        <div>
-          <h2>Encurage: Empowering Health Tracking for Your Child</h2>
+      <section className="features-container">
+        <div className="feature-info">
           <p>
-            Discover the comprehensive features of Encurage, designed to
-            simplify and enhance the way you track and manage your child's
-            medications, health data, and daily activities. From personalized
-            schedules to seamless family coordination, we've got you covered.
+            <span>Discover</span> the features of Encurage, designed to simplify
+            and enhance the way you track and manage your child's medications,
+            health data, and daily activities.
           </p>
         </div>
         <div className="feature-card-wrapper">
@@ -67,7 +65,7 @@ export const AppFeatures = () => {
             </p>
           </div>
           <div className="feature-card fc-3">
-            <h3>Everything on a Schedule</h3>
+            <h3>Everything on a Schedule (EOS)</h3>
             <p>
               Comprehensive medication tracker and reminder built for your
               child’s ever-changing health journey.
@@ -82,7 +80,10 @@ export const AppFeatures = () => {
             </p>
           </div>
           <div className="feature-card fc-5">
-            <h3>As-Needed Wizard</h3>
+            <h3>
+              As-Needed Wizard <br />
+              (ANW)
+            </h3>
             <p>
               Designed for as-needed (PRN) medications, our schedule builder
               generates a dynamic medication schedule that updates
@@ -125,27 +126,32 @@ export const AppFeatures = () => {
         </div>
       </section>
 
-      <section className="as-needed-wizard"></section>
-      <h1>As-Needed Wizard</h1>
-      <div>
+      <section className="feature-divider"></section>
+
+      <section className="as-needed-wizard">
         <div>
-          <p>
-            Specifically designed for as-needed (PRN) medications, our unique
-            schedule builder generates a dynamic medication schedule with
-            enhanced editing capabilities, that updates itself automatically in
-            alignment with your child’s needs, while keeping safe time gaps.
-            <br />
-            All done with a few taps. No reminder setting, no updating, no
-            calculating.
-          </p>
+          <div className="anw-info">
+            <h3>As-Needed Wizard</h3>
+            <p>
+              Specifically designed for as-needed (PRN) medications, our unique
+              schedule builder generates a dynamic medication schedule with
+              enhanced editing capabilities, that updates itself automatically
+              in alignment with your child’s needs, while keeping safe time
+              gaps.
+              <br />
+              All done with a few taps. No reminder setting, no updating, no
+              calculating.
+            </p>
+          </div>
+          <AppCarousel>
+            <img src={TH1} alt="tracking hub screen" width={225} />
+            <img src={TH2} alt="tracking hub screen" width={225} />
+            <img src={TH3} alt="tracking hub screen" width={225} />
+            <img src={TH4} alt="tracking hub screen" width={225} />
+          </AppCarousel>
         </div>
-        <AppCarousel>
-          <img src={TH1} alt="tracking hub screen" width={225} />
-          <img src={TH2} alt="tracking hub screen" width={225} />
-          <img src={TH3} alt="tracking hub screen" width={225} />
-          <img src={TH4} alt="tracking hub screen" width={225} />
-        </AppCarousel>
-      </div>
+      </section>
+      <section className="feature-divider"></section>
     </main>
   );
 };
