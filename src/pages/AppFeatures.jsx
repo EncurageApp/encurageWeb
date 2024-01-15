@@ -40,10 +40,72 @@ export const AppFeatures = () => {
         <AppFeatureAnimation />
       </section>
 
-      <section className="tracking-hub">
-        <h1>Tracking Hub</h1>
+      <section className="features-intro">
         <div>
-          <div>
+          <h2>Encurage: Empowering Health Tracking for Your Child</h2>
+          <p>
+            Discover the comprehensive features of Encurage, designed to
+            simplify and enhance the way you track and manage your child's
+            medications, health data, and daily activities. From personalized
+            schedules to seamless family coordination, we've got you covered.
+          </p>
+        </div>
+        <div className="feature-card-wrapper">
+          <div className="feature-card fc-1">
+            <h3>Tracking Hub</h3>
+            <p>
+              Track and log everything related to your child’s health, from
+              occasional bugs to ongoing conditions. Detailed trackers for
+              symptoms, side effects, vitals, therapies, and growth.
+            </p>
+          </div>
+          <div className="feature-card fc-2">
+            <h3>Care Family</h3>
+            <p>
+              An essential tool for seamless care coordination. Everyone
+              connected, updated, and ready at the tap of a button.
+            </p>
+          </div>
+          <div className="feature-card fc-3">
+            <h3>Everything on a Schedule</h3>
+            <p>
+              Comprehensive medication tracker and reminder built for your
+              child’s ever-changing health journey.
+            </p>
+          </div>
+          <div className="feature-card fc-4">
+            <h3>Daily Life</h3>
+            <p>
+              Complete baby tracker with easy tools for feeding, sleep, and
+              diapers. Track your baby’s experience with introducing solids and
+              your child’s potty training journey.
+            </p>
+          </div>
+          <div className="feature-card fc-5">
+            <h3>As-Needed Wizard</h3>
+            <p>
+              Designed for as-needed (PRN) medications, our schedule builder
+              generates a dynamic medication schedule that updates
+              automatically, all with a few taps. No reminders, no updates, no
+              calculations.
+            </p>
+          </div>
+
+          <div className="feature-card fc-6">
+            <h3>Journal</h3>
+            <p>
+              Follow and monitor your child’s experience with medications and
+              treatments. Guided Journal Stories provide insights into sleep,
+              appetite, energy, focus, mood, and more.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="tracking-hub">
+        <div>
+          <div className="tracking-info">
+            <h3>Tracking Hub</h3>
             <p>
               Track and log everything related to your child’s health, whether
               it’s an occasional bug or an ongoing condition requiring daily
@@ -64,6 +126,26 @@ export const AppFeatures = () => {
       </section>
 
       <section className="as-needed-wizard"></section>
+      <h1>As-Needed Wizard</h1>
+      <div>
+        <div>
+          <p>
+            Specifically designed for as-needed (PRN) medications, our unique
+            schedule builder generates a dynamic medication schedule with
+            enhanced editing capabilities, that updates itself automatically in
+            alignment with your child’s needs, while keeping safe time gaps.
+            <br />
+            All done with a few taps. No reminder setting, no updating, no
+            calculating.
+          </p>
+        </div>
+        <AppCarousel>
+          <img src={TH1} alt="tracking hub screen" width={225} />
+          <img src={TH2} alt="tracking hub screen" width={225} />
+          <img src={TH3} alt="tracking hub screen" width={225} />
+          <img src={TH4} alt="tracking hub screen" width={225} />
+        </AppCarousel>
+      </div>
     </main>
   );
 };

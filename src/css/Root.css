@@ -9,7 +9,9 @@
   --primarySix: #284747; /* Dark Teal */
   --primarySeven: #f8f4ee; /* Cream */
   --primaryEight: #f7e9ce; /* Sand */
+  --swiper-pagination-color: var(--primaryFive);
   --swiper-navigation-color: var(--primaryFive);
+  --swiper-scrollbar-drag-bg-color: var(--primaryFive);
 }
 
 * {

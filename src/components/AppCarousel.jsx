@@ -1,6 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Keyboard,
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,8 +18,11 @@ export const AppCarousel = ({ children }) => {
   return (
     <div className="swiper-container">
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={100}
+        modules={[Keyboard, Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={0}
+        keyboard={{
+          enabled: true,
+        }}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
@@ -22,10 +31,10 @@ export const AppCarousel = ({ children }) => {
             slidesPerView: 1,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           1200: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
         }}
       >

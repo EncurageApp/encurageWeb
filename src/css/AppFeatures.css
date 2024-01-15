@@ -123,16 +123,17 @@ icons
 
 /*
 =================================================
-Swiper
+Swiper.js / App Carousel Component
 =================================================
 */
 
 .swiper-container {
   height: 700px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .swiper {
-  margin: 4rem auto;
   width: 80%;
   height: 100%;
 }
@@ -143,11 +144,81 @@ Swiper
 
 /*
 =================================================
+features intro
+=================================================
+*/
+
+.features-intro {
+  height: 100%;
+  background-image: url(../imgs/kidontopdad.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-card-wrapper {
+  margin: 2rem auto;
+  padding: 2rem;
+  height: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+.feature-card {
+  background-color: var(--primaryThree);
+  margin: 0 auto;
+  width: 300px;
+  border: 2px solid var(--primaryFour);
+  border-radius: 15% 10px;
+  padding: 2rem 1.5rem;
+}
+
+.feature-card h3 {
+  color: var(--primaryOne);
+  border-bottom: 0.3px solid var(--primaryFive);
+  margin-bottom: 20px;
+}
+
+.feature-card p {
+  color: var(--primaryOne);
+  font-size: 0.9rem;
+  text-align: right;
+  text-shadow: 2px 8px 6px var(--primaryThree), 0px 1px 10px rgba(1, 1, 1, 0.5);
+}
+
+/*
+=================================================
 Tracking Hub
 =================================================
 */
 
+.tracking-hub h3 {
+  letter-spacing: 0.5rem;
+  color: var(--primaryFive);
+  text-align: center;
+  margin: 4rem auto;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px var(--primaryFour), 0px 5px 5px rgba(14, 13, 13, 0.5);
+}
+
 .tracking-hub > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tracking-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
 }
 
 /*
@@ -172,6 +243,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .af-intro-text h2 {
     font-size: 3.5rem;
   }
+
+  .features-intro > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1100px) {
@@ -188,5 +263,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     margin: 0 0 5rem auto;
     flex-direction: row;
     padding: 6rem 2rem;
+  }
+
+  .tracking-hub > div {
+    flex-direction: row;
+  }
+
+  .features-intro > div {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
