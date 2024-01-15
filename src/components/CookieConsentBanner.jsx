@@ -18,7 +18,6 @@ export const CookieConsentBanner = () => {
     <>
       {showBanner && (
         <CookieConsent
-          debug={true}
           location="bottom"
           overlay
           overlayStyle={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
