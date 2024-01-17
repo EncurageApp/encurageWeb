@@ -116,12 +116,6 @@ info
 
 /*
 =================================================
-icons
-=================================================
-*/
-
-/*
-=================================================
 Swiper.js / App Carousel Component
 =================================================
 */
@@ -195,7 +189,7 @@ features intro
 .feature-card {
   background-color: var(--primaryThree);
   margin: 0 auto;
-  width: 300px;
+  max-width: 300px;
   border-radius: 15% 10px;
   padding: 2rem 1.5rem;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
@@ -235,10 +229,101 @@ feature-divider
     hsla(179, 58%, 52%, 1) 74%,
     hsla(180, 100%, 25%, 1) 100%
   );
-
-  height: 100px;
-  margin: 2rem auto;
+  min-height: 100px;
+  margin: 0 auto;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+}
+
+/*
+=================================================
+App Features download btns
+=================================================
+*/
+
+.af-download-container {
+  margin: 1rem auto;
+  background-color: var(--primaryThree);
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  max-width: 1200px;
+  min-width: ;
+}
+
+.af-download-container h2 {
+  padding: 2rem 0;
+  color: var(--primaryOne);
+  text-shadow: 2px 2px 5px var(--primaryThree);
+}
+
+.af-download-wrapper {
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+}
+
+.af-download-img {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.af-download-info {
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primaryFive);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 1rem;
+  height: 270px;
+  max-width: 550px;
+  bottom: -30px;
+  right: 15px;
+  left: 15px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  z-index: 3;
+}
+
+.af-download-info p {
+  color: white;
+  text-align: center;
+}
+
+.af-download-info span {
+  font-size: 2rem;
+  background: -webkit-linear-gradient(var(--primaryFive), var(--primaryFive));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 2px 10px var(--primaryFive), 1px 2px 5px var(--primaryThree);
+}
+
+.af-download-info-square {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  background: #40cccb;
+  background: radial-gradient(at right bottom, #40cccb, #008080);
+  border-radius: 10px 20% 20% 0;
+  top: -20px;
+  right: 70px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+}
+
+.af-download-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  padding: 2rem 0;
 }
 
 /*
@@ -251,6 +336,7 @@ Tracking Hub
 }
 
 .tracking-hub h3 {
+  border-bottom: 1px solid var(--primaryFive);
   letter-spacing: 3px;
   color: white;
   text-align: center;
@@ -267,7 +353,8 @@ Tracking Hub
 }
 
 .tracking-info {
-  background-color: var(--primaryFour);
+  background: #40cccb;
+  background: radial-gradient(at right bottom, #40cccb, #008080);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -290,6 +377,7 @@ Care Family
 }
 
 .care-family h3 {
+  border-bottom: 1px solid var(--primaryFive);
   letter-spacing: 3px;
   color: white;
   text-align: center;
@@ -306,7 +394,8 @@ Care Family
 }
 
 .cf-info {
-  background-color: var(--primaryFour);
+  background: #40cccb;
+  background: radial-gradient(at right bottom, #40cccb, #008080);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -329,6 +418,7 @@ EOS
 }
 
 .eos h3 {
+  border-bottom: 1px solid var(--primaryFive);
   letter-spacing: 3px;
   color: white;
   text-align: center;
@@ -345,7 +435,8 @@ EOS
 }
 
 .eos-info {
-  background-color: var(--primaryFour);
+  background: #40cccb;
+  background: radial-gradient(at right bottom, #40cccb, #008080);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -368,6 +459,7 @@ Daily Life
 }
 
 .daily-life h3 {
+  border-bottom: 1px solid var(--primaryFive);
   letter-spacing: 3px;
   color: white;
   text-align: center;
@@ -384,7 +476,8 @@ Daily Life
 }
 
 .dl-info {
-  background-color: var(--primaryFour);
+  background: #40cccb;
+  background: radial-gradient(at right bottom, #40cccb, #008080);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -407,6 +500,7 @@ As-Needed Wizard
 }
 
 .as-needed-wizard h3 {
+  border-bottom: 1px solid var(--primaryFive);
   letter-spacing: 3px;
   color: white;
   text-align: center;
@@ -423,7 +517,8 @@ As-Needed Wizard
 }
 
 .anw-info {
-  background-color: var(--primaryFour);
+  background: #40cccb;
+  background: radial-gradient(at right bottom, #40cccb, #008080);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -446,6 +541,7 @@ Journal
 }
 
 .journal h3 {
+  border-bottom: 1px solid var(--primaryFive);
   letter-spacing: 3px;
   color: white;
   text-align: center;
@@ -462,7 +558,8 @@ Journal
 }
 
 .j-info {
-  background-color: var(--primaryFour);
+  background: #40cccb;
+  background: radial-gradient(at right bottom, #40cccb, #008080);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -507,6 +604,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* tracking hub */
 
   .tracking-info {
+    margin: 1rem;
     border-radius: 10px;
     padding-left: 10px;
   }
@@ -514,6 +612,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* Care-family */
 
   .cf-info {
+    margin: 1rem;
     border-radius: 10px;
     padding-left: 10px;
   }
@@ -521,6 +620,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* Eos */
 
   .eos-info {
+    margin: 1rem;
     border-radius: 10px;
     padding-left: 10px;
   }
@@ -528,6 +628,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* Daily Life */
 
   .dl-info {
+    margin: 1rem;
     border-radius: 10px;
     padding-left: 10px;
   }
@@ -535,6 +636,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* ANW */
 
   .anw-info {
+    margin: 1rem;
     border-radius: 10px;
     padding-left: 10px;
   }
@@ -542,6 +644,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* Journal */
 
   .j-info {
+    margin: 1rem;
     border-radius: 10px;
     padding-left: 10px;
   }
@@ -621,7 +724,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* ANW */
 
   .as-needed-wizard > div {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   .anw-info {
@@ -632,7 +735,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* Journal */
 
   .journal > div {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 
   .j-info {

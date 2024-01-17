@@ -18,6 +18,7 @@ import DL2 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life -
 import DL3 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Diapers.png";
 import DL4 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Diapers (2).png";
 import DL5 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Breastfeeding.png";
+import DadBaby from "../imgs/dadbaby.jpg";
 
 export const AppFeatures = () => {
   return (
@@ -176,22 +177,28 @@ export const AppFeatures = () => {
         </div>
       </section>
 
-      <div className="feature-divider"></div>
-      <section className="af-page-download">
-        <div>
-          <h2>Take Control of Your Child's Health</h2>
-          <p>
-            Download Encurage now to experience effortless medication tracking,
-            family coordination, and comprehensive health monitoring. Empower
-            your child's well-being with just a tap.
-          </p>
-          <div>
-            <GooglePlayBtn />
-            <AppStoreBtn />
+      <section className="af-download-container">
+        <h2>Take Control of Your Child's Health</h2>
+        <div className="af-download-wrapper">
+          <img
+            src={DadBaby}
+            alt="dad laying next to baby"
+            className="af-download-img"
+          />
+          <div className="af-download-info">
+            <p>
+              <span>Download Encurage</span> <br /> Experience effortless
+              medication tracking, family coordination, and comprehensive health
+              monitoring. Empower your child's well-being with just a tap.
+            </p>
           </div>
+          <div className="af-download-info-square"></div>
+        </div>
+        <div className="af-download-btns">
+          <GooglePlayBtn />
+          <AppStoreBtn />
         </div>
       </section>
-      <div className="feature-divider"></div>
 
       <section className="daily-life">
         <div>
