@@ -236,6 +236,88 @@ feature-divider
 
 /*
 =================================================
+Tracking Hub
+=================================================
+*/
+.tracking-hub {
+  margin: 4rem auto;
+}
+
+.tracking-hub h3 {
+  border-bottom: 1px solid var(--primaryFive);
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.tracking-hub > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tracking-info {
+  background: #40cccb;
+  background: radial-gradient(at right bottom, #40cccb, #008080);
+  color: white;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  min-height: 400px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+}
+
+/*
+=================================================
+Care Family
+=================================================
+*/
+.care-family {
+  margin: 4rem auto;
+}
+
+.care-family h3 {
+  border-bottom: 1px solid var(--primaryFive);
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.care-family > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cf-info {
+  background: #40cccb;
+  background: radial-gradient(at left bottom, #40cccb, #008080);
+  color: white;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  min-height: 400px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+}
+
+/*
+=================================================
 App Features download btns
 =================================================
 */
@@ -255,7 +337,7 @@ App Features download btns
 }
 
 .af-download-wrapper {
-  padding: 2rem;
+  padding: 4rem 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -317,94 +399,16 @@ App Features download btns
 }
 
 .af-download-btns {
+  z-index: 3;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   margin-top: 4rem;
-  padding: 2rem 0;
-}
-
-/*
-=================================================
-Tracking Hub
-=================================================
-*/
-.tracking-hub {
-  margin: 4rem auto;
-}
-
-.tracking-hub h3 {
-  border-bottom: 1px solid var(--primaryFive);
-  letter-spacing: 3px;
-  color: white;
-  text-align: center;
-  margin: 1rem auto;
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-}
-
-.tracking-hub > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.tracking-info {
-  background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
-  color: white;
   padding: 2rem;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  min-height: 400px;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
-}
-
-/*
-=================================================
-Care Family
-=================================================
-*/
-.care-family {
-  margin: 4rem auto;
-}
-
-.care-family h3 {
-  border-bottom: 1px solid var(--primaryFive);
-  letter-spacing: 3px;
-  color: white;
-  text-align: center;
-  margin: 1rem auto;
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-}
-
-.care-family > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.cf-info {
-  background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
-  color: white;
-  padding: 2rem;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  min-height: 400px;
+  background: radial-gradient(at bottom, #40cccb, #008080);
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
@@ -419,7 +423,7 @@ EOS
 
 .eos h3 {
   border-bottom: 1px solid var(--primaryFive);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: white;
   text-align: center;
   margin: 1rem auto;
@@ -460,7 +464,7 @@ Daily Life
 
 .daily-life h3 {
   border-bottom: 1px solid var(--primaryFive);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: white;
   text-align: center;
   margin: 1rem auto;
@@ -477,7 +481,7 @@ Daily Life
 
 .dl-info {
   background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
+  background: radial-gradient(at left bottom, #40cccb, #008080);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -501,7 +505,7 @@ As-Needed Wizard
 
 .as-needed-wizard h3 {
   border-bottom: 1px solid var(--primaryFive);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: white;
   text-align: center;
   margin: 1rem auto;
@@ -542,7 +546,7 @@ Journal
 
 .journal h3 {
   border-bottom: 1px solid var(--primaryFive);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: white;
   text-align: center;
   margin: 1rem auto;
@@ -559,7 +563,7 @@ Journal
 
 .j-info {
   background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
+  background: radial-gradient(at left bottom, #40cccb, #008080);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -615,6 +619,16 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     margin: 1rem;
     border-radius: 10px;
     padding-left: 10px;
+  }
+
+  /* download */
+
+  .af-download-wrapper {
+    max-width: 900px;
+  }
+
+  .af-download-info {
+    transition: all 0.5s ease-in-out;
   }
 
   /* Eos */
@@ -697,6 +711,22 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .cf-info {
     border-radius: 10px;
     margin-right: 20px;
+  }
+
+  /* download */
+
+  .af-download-wrapper {
+    left: 100px;
+    max-width: 900px;
+  }
+
+  .af-download-info {
+    left: 400px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .af-download-btns {
+    flex-direction: row;
   }
 
   /* EOS */
