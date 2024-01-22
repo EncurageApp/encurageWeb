@@ -15,9 +15,7 @@ export const HelpCenterLayout = () => {
     <div className="help-layout">
       <div className="help-layout-img">
         <div className="help-layout-intro">
-          <AnimateText>
-            <h2>Help Center</h2>
-          </AnimateText>
+          <h2>Help Center</h2>
         </div>
       </div>
 

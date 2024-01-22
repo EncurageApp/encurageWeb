@@ -1,6 +1,6 @@
 import React from "react";
-import { AnimateText } from "../components/AnimateText";
 import { AppFeatureAnimation } from "../components/animations/AppFeatureAnimation";
+import { AppFeatureAnimation2 } from "../components/animations/AppFeatureAnimation2";
 import { AppCarousel } from "../components/AppCarousel";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
@@ -19,20 +19,25 @@ import DL3 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life -
 import DL4 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Diapers (2).png";
 import DL5 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Breastfeeding.png";
 import DadBaby from "../imgs/dadbaby.jpg";
+import { Link } from "react-router-dom";
 
 export const AppFeatures = () => {
+  const handleLink = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <main className="appFeatures-page">
       <section className="af-hero">
-        <AnimateText>
-          <div className="af-intro-text">
-            <h2>Discover the Power of Encurage</h2>
-            <p>
-              Encurage offers a rich array of features designed to simplify and
-              streamline medication management for your child.
-            </p>
-          </div>
-        </AnimateText>
+        <div className="af-intro-text">
+          <h2>Discover the Power of Encurage</h2>
+          <p>
+            Encurage offers a rich array of features designed to simplify and
+            streamline medication management for your child.
+          </p>
+        </div>
       </section>
 
       <section className="af-info">
@@ -270,6 +275,28 @@ export const AppFeatures = () => {
           <AppCarousel>
             <img src={TH1} alt="tracking hub screen" width={225} />
           </AppCarousel>
+        </div>
+      </section>
+
+      <section className="af-contact-container">
+        <div className="heading-container">
+          <div class="heading-frame">
+            <h2>
+              REACH OUT
+              <br />
+              TO OUR TEAM
+            </h2>
+          </div>
+        </div>
+        <div className="af-contact-info">
+          <h3>Have Question or Concerns?</h3>
+          <p>
+            We value your feedback! Get in touch with a support staff for any
+            issues in our app!
+          </p>
+          <Link to="/HelpCenterLayout" onClick={handleLink}>
+            <button className="cta-btn-home">Email Us </button>
+          </Link>
         </div>
       </section>
     </main>

@@ -327,13 +327,12 @@ App Features download btns
   background-color: var(--primaryThree);
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
   max-width: 1200px;
-  min-width: ;
 }
 
 .af-download-container h2 {
   padding: 2rem 0;
-  color: var(--primaryOne);
-  text-shadow: 2px 2px 5px var(--primaryThree);
+  color: var(--primaryFour);
+  text-shadow: 2px 2px 5px var(--primaryThree), 1px 2px 5px black;
 }
 
 .af-download-wrapper {
@@ -361,7 +360,7 @@ App Features download btns
   justify-content: center;
   align-items: center;
   border: 2px solid var(--primaryFive);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem 1rem;
   height: 270px;
   max-width: 550px;
@@ -379,6 +378,7 @@ App Features download btns
 
 .af-download-info span {
   font-size: 2rem;
+  border-bottom: 0.5px solid var(--primaryThree);
   background: -webkit-linear-gradient(var(--primaryFive), var(--primaryFive));
   background-clip: text;
   -webkit-background-clip: text;
@@ -405,7 +405,7 @@ App Features download btns
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 4rem;
   padding: 2rem;
   background: radial-gradient(at bottom, #40cccb, #008080);
@@ -540,6 +540,7 @@ As-Needed Wizard
 Journal
 =================================================
 */
+
 .journal {
   margin: 4rem auto;
 }
@@ -574,6 +575,102 @@ Journal
   max-width: 800px;
   min-height: 400px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+}
+
+/*
+=================================================
+App Feature Contact
+=================================================
+*/
+
+.af-contact-container {
+  background-color: var(--primaryFour);
+  box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.43);
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.af-contact-info {
+  color: white;
+  max-width: 500px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  gap: 20px;
+}
+
+.af-contact-info:before,
+.af-contact-info:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  box-shadow: 1px 5px 30px 5px rgba(0, 0, 0, 0.43);
+}
+
+.af-contact-info:before {
+  grid-row: 1 / 2;
+  border-right: none;
+  border-bottom: none;
+}
+
+.af-contact-info:after {
+  grid-row: 1 / span 2;
+  border-left: none;
+}
+
+.heading-container {
+  margin: 3rem auto;
+  display: flex;
+  place-items: center;
+  box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.43);
+}
+
+.heading-frame {
+  display: grid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  grid-template-columns: max-content auto;
+  grid-template-rows: auto max-content;
+  background: #333 url(../imgs/handsexplaining.jpg) center;
+  background-size: cover;
+  color: white;
+  min-width: 330px;
+  max-width: 500px;
+  height: 450px;
+  padding: 2rem;
+}
+
+.heading-frame:before,
+.heading-frame:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.heading-frame:before {
+  grid-row: 1 / 2;
+  border-right: none;
+  border-bottom: none;
+}
+
+.heading-frame:after {
+  grid-row: 1 / span 2;
+  border-left: none;
+}
+
+.heading-frame h2 {
+  margin: 2rem 1rem -0.5rem 0;
+  font-size: 2rem;
+  text-align: left;
 }
 
 /*
@@ -771,5 +868,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .j-info {
     border-radius: 10px;
     margin-left: 10px;
+  }
+
+  /* Contact  */
+
+  .af-contact-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .af-contact-info {
+    margin-right: 6rem;
   }
 }
