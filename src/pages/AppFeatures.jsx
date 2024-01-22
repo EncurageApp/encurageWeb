@@ -288,6 +288,7 @@ export const AppFeatures = () => {
             </h2>
           </div>
         </div>
+
         <div className="af-contact-info">
           <h3>Have Question or Concerns?</h3>
           <p>
