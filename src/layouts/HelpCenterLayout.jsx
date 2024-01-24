@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import { AnimateText } from "../components/AnimateText";
 
 export const HelpCenterLayout = () => {
   const outletRef = useRef(null);

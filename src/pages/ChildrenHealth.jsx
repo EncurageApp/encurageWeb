@@ -8,6 +8,7 @@ import { ChildrenStats } from "../components/ChildrenStats";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 import { HealthCollapsible } from "../components/HealthCollapsible";
+import { AnimateText } from "../components/AnimateText";
 
 export const ChildrenHealth = () => {
   return (

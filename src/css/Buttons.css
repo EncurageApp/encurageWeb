@@ -93,6 +93,22 @@ Download Buttons
 
 /*
 ==========================
+Cookie btn
+==========================
+*/
+
+.cookie-btn {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.cookie-btn:hover {
+  color: var(--primaryFive);
+  transition: all 0.3s ease-in-out;
+}
+
+/*
+==========================
 Collapse Buttons
 ==========================
 */

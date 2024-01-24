@@ -68,11 +68,10 @@ export const Home = () => {
                 child's individual needs. Start now and make their well-being a
                 top priority.
               </p>
-              <button className="cta-btn-home">
-                <Link to="AppFeatures" onClick={handleLink}>
-                  Learn More
-                </Link>
-              </button>
+
+              <Link to="AppFeatures" onClick={handleLink}>
+                <button className="cta-btn-home">Learn More</button>
+              </Link>
             </div>
           </div>
           <div className="duo">
@@ -83,11 +82,10 @@ export const Home = () => {
                 their well-being and give them the personalized care they
                 deserve. Get started today.
               </p>
-              <button className="cta-btn-home">
-                <Link to="AppFeatures" onClick={handleLink}>
-                  Explore Now
-                </Link>
-              </button>
+
+              <Link to="AppFeatures" onClick={handleLink}>
+                <button className="cta-btn-home">Explore Now </button>
+              </Link>
             </div>
           </div>
           <div className="duo">
@@ -102,11 +100,9 @@ export const Home = () => {
                 essential knowledge.
               </p>
 
-              <button className="cta-btn-home">
-                <Link to="ChildrenHealth" onClick={handleLink}>
-                  Get Started Today
-                </Link>
-              </button>
+              <Link to="ChildrenHealth" onClick={handleLink}>
+                <button className="cta-btn-home">Get Started Today</button>
+              </Link>
             </div>
             <div className="duo-img-container">
               <img src={MomKids} alt="" />
@@ -127,11 +123,11 @@ export const Home = () => {
               know the backstory and the inspiration behind our innovative app.
             </p>
 
-            <button className="cta-btn-home">
-              <Link to="Founder" onClick={handleLink}>
+            <Link to="Founder" onClick={handleLink}>
+              <button className="cta-btn-home">
                 Discover the Heart Behind the App
-              </Link>
-            </button>
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -182,11 +178,9 @@ export const Home = () => {
                 <p>Got questions? We've got answers</p>
               </div>
 
-              <button className="cta-btn-home">
-                <Link to="/HelpCenterLayout" onClick={handleLink}>
-                  Email Us
-                </Link>
-              </button>
+              <Link to="/HelpCenterLayout" onClick={handleLink}>
+                <button className="cta-btn-home">FAQ's</button>
+              </Link>
             </div>
             <div className="contact-card">
               <svg className="svg-icon" viewBox="0 0 20 20">
@@ -204,11 +198,9 @@ export const Home = () => {
                 <p>Problems with your App? We can help fix it!</p>
               </div>
 
-              <button className="cta-btn-home">
-                <Link to="/HelpCenterLayout" onClick={handleLink}>
-                  Email Us
-                </Link>
-              </button>
+              <Link to="/HelpCenterLayout" onClick={handleLink}>
+                <button className="cta-btn-home">Email Us</button>
+              </Link>
             </div>
             <div className="contact-card">
               <svg className="svg-icon" viewBox="0 0 20 20">
@@ -221,11 +213,10 @@ export const Home = () => {
                 <h3>Comments? Concerns?</h3>
                 <p>Email us! We would love to hear from you!</p>
               </div>
-              <button className="cta-btn-home">
-                <Link to="/HelpCenterLayout" onClick={handleLink}>
-                  Email Us
-                </Link>
-              </button>
+
+              <Link to="/HelpCenterLayout" onClick={handleLink}>
+                <button className="cta-btn-home">Email Us</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -105,18 +105,22 @@ export const Founder = () => {
       <section className="f-mission-container">
         <h2>Our Lifelong Mission</h2>
         <div>
+          <MissionAnimation />
+
           <div>
-            <MissionAnimation />
+            <p>
+              Our Commitment to Innovation drives everything we do at Encurage.
+              <br />
+              We're dedicated to staying ahead of the curve, creating
+              state-of-the-art solutions for parents and caregivers.
+              Collaborating with experts, we continuously push boundaries to
+              redefine child healthcare. <br />
+              With Encurage, you can trust that you'll have access to the most
+              advanced and user-friendly solutions for your child's well-being.
+              <br />
+              Join us in redefining child care through innovation.
+            </p>
           </div>
-          <p>
-            Our Commitment to Innovation drives everything we do at Encurage.
-            We're dedicated to staying ahead of the curve, creating
-            state-of-the-art solutions for parents and caregivers. Collaborating
-            with experts, we continuously push boundaries to redefine child
-            healthcare. With OnCure, you can trust that you'll have access to
-            the most advanced and user-friendly solutions for your child's
-            well-being. Join us in redefining child care through innovation.
-          </p>
         </div>
       </section>
 

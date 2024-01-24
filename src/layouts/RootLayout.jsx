@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Headroom from "react-headroom";
 
 // Components
-import { ScrollToTop } from "../components/ScrollToTop";
 import { SubscribeBtn } from "../components/SubscribeBtn";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 import { SocialMediaIcons } from "../components/SocialMediaIcons";
+import { CookieConsentBanner } from "../components/CookieConsentBanner";
 
 export const RootLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,23 +41,26 @@ export const RootLayout = () => {
                 <div className="bar"></div>
               </div>
             </div>
-            <ul className={`navlinks ${isMenuOpen ? "open" : ""}`}>
-              <NavLink to={"/"} onClick={toggleMenu}>
+            <ul
+              className={`navlinks ${isMenuOpen ? "open" : ""}`}
+              onClick={toggleMenu}
+            >
+              <NavLink to={"/"} onClick={handleQuickLinkClick}>
                 Home
               </NavLink>
-              <NavLink to={"ChildrenHealth"} onClick={toggleMenu}>
+              <NavLink to={"ChildrenHealth"} onClick={handleQuickLinkClick}>
                 Children's Health
               </NavLink>
-              <NavLink to={"AppFeatures"} onClick={toggleMenu}>
+              <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
                 Explore Our App
               </NavLink>
-              <NavLink to={"Founder"} onClick={toggleMenu}>
+              <NavLink to={"Founder"} onClick={handleQuickLinkClick}>
                 Our Story
               </NavLink>
-              <NavLink to={"Reviews"} onClick={toggleMenu}>
+              <NavLink to={"Reviews"} onClick={handleQuickLinkClick}>
                 Reviews
               </NavLink>
-              <NavLink to={"HelpCenterLayout"} onClick={toggleMenu}>
+              <NavLink to={"HelpCenterLayout"} onClick={handleQuickLinkClick}>
                 Help Center
               </NavLink>
             </ul>
@@ -65,7 +68,8 @@ export const RootLayout = () => {
         </header>
       </Headroom>
       <main>
-        <ScrollToTop />
+        <Outlet />
+        <CookieConsentBanner />
       </main>
 
       <footer>

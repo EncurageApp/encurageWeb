@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MomCheckingKid from "../imgs/momcheckingkid.jpg";
 import KidSurprised from "../imgs/kidsurprised.jpg";
 import FingerPaint from "../imgs/fingerprintpaint.jpg";
@@ -33,6 +33,13 @@ export const CardContainer = () => {
     }
   };
 
+  const handleLink = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -55,9 +62,9 @@ export const CardContainer = () => {
               dangers of medication mishaps.
             </p>
 
-            <NavLink to={"ChildrenHealth"}>
-              <button className="cta-btn-home">Know The Risk </button>
-            </NavLink>
+            <Link to="ChildrenHealth" onClick={handleLink}>
+              <button className="cta-btn-home"> Know The Risk</button>
+            </Link>
           </div>
         </div>
 
@@ -73,9 +80,9 @@ export const CardContainer = () => {
               share their stories of successful health management with you.
             </p>
 
-            <NavLink to={"Reviews"}>
-              <button className="cta-btn-home">Read Reviews</button>
-            </NavLink>
+            <Link to={"Reviews"} onClick={handleLink}>
+              <button className="cta-btn-home">Read Reviews </button>
+            </Link>
           </div>
         </div>
         <div className={`card card-3 ${visibleCard === 3 ? "hovered" : ""}`}>
@@ -90,9 +97,9 @@ export const CardContainer = () => {
               our app and the incredible journey that brought us here.
             </p>
 
-            <NavLink to={"Founder"}>
-              <button className="cta-btn-home">Explore Our Story</button>
-            </NavLink>
+            <Link to={"Founder"} onClick={handleLink}>
+              <button className="cta-btn-home"> Explore Our Story </button>
+            </Link>
           </div>
         </div>
       </div>
