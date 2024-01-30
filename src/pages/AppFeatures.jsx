@@ -1,9 +1,11 @@
 import React from "react";
+
+//components
 import { AppFeatureAnimation } from "../components/animations/AppFeatureAnimation";
-import { AppFeatureAnimation2 } from "../components/animations/AppFeatureAnimation2";
 import { AppCarousel } from "../components/AppCarousel";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
+import { AnimateText } from "../components/AnimateText";
 
 //images
 import TH1 from "../imgs/appFeatureScreens/trackingHub/TH1.png";
@@ -31,13 +33,15 @@ export const AppFeatures = () => {
   return (
     <main className="appFeatures-page">
       <section className="af-hero">
-        <div className="af-intro-text">
-          <h2>Discover the Power of Encurage</h2>
-          <p>
-            Encurage offers a rich array of features designed to simplify and
-            streamline medication management for your child.
-          </p>
-        </div>
+        <AnimateText>
+          <div className="af-intro-text">
+            <h2>Discover the Power of Encurage</h2>
+            <p>
+              Encurage offers a rich array of features designed to simplify and
+              streamline medication management for your child.
+            </p>
+          </div>
+        </AnimateText>
       </section>
 
       <section className="af-info">

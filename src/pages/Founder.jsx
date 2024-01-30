@@ -14,10 +14,14 @@ export const Founder = () => {
   return (
     <main className="founder-page">
       <section className="f-hero-container">
-        <h2>
-          From Idea to <span>Innovation</span>
-        </h2>
-        <FounderAnimation />
+        <AnimateText>
+          <h2>
+            From Idea to <span>Innovation</span>
+          </h2>
+        </AnimateText>
+        <AnimateText>
+          <FounderAnimation />
+        </AnimateText>
       </section>
       <section>
         <div className="f-story-container">

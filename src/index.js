@@ -10,6 +10,7 @@ import "./css/Buttons.css";
 import "./css/Home.css";
 import "./css/ChildrenHealth.css";
 import "./css/AppFeatures.css";
+import "./css/Reviews.css";
 
 import App from "./App";
 
