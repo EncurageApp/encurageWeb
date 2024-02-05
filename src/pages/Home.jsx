@@ -10,6 +10,7 @@ import { PhoneAnimation } from "../components/animations/PhoneAnimation";
 import { Link } from "react-router-dom";
 import { SupportAnimation } from "../components/animations/SupportAnimation";
 import { TestimonialSlider } from "../components/TestimonialSlider";
+import { HomeIntroAnimation } from "../components/animations/HomeIntroAnimation";
 
 export const Home = () => {
   const handleLink = () => {
@@ -32,8 +33,7 @@ export const Home = () => {
             <li></li>
           </ul>
           <div className="home-hero-inner">
-            <p>Peace of Mind, One Dose at a Time with </p>
-            <h1>Encurage!</h1>
+            <HomeIntroAnimation />
           </div>
         </div>
       </section>
