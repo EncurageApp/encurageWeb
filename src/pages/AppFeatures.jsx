@@ -15,11 +15,18 @@ import TH4 from "../imgs/appFeatureScreens/trackingHub/TH4.png";
 import CF1 from "../imgs/appFeatureScreens/careFamily/Care Family.png";
 import EOS1 from "../imgs/appFeatureScreens/EOS/EOAS - Dashboard.png";
 import EOS2 from "../imgs/appFeatureScreens/EOS/Schedule.png";
+import EOS3 from "../imgs/appFeatureScreens/EOS/Edit Schedule.png";
+import EOS4 from "../imgs/appFeatureScreens/EOS/Available Dose-Admin Site pressed.png";
+import EOS5 from "../imgs/appFeatureScreens/EOS/Available Dose-Admin Site pressed (2) (1).png";
 import DL1 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life.png";
 import DL2 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Introducing Solids.png";
 import DL3 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Diapers.png";
 import DL4 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Diapers (2).png";
 import DL5 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Breastfeeding.png";
+import J1 from "../imgs/appFeatureScreens/Journal/Journal - Dashboard.png";
+import J2 from "../imgs/appFeatureScreens/Journal/Frame 93809.png";
+import J3 from "../imgs/appFeatureScreens/Journal/Frame 93809 (1).png";
+import J4 from "../imgs/appFeatureScreens/Journal/Frame 93807.png";
 import DadBaby from "../imgs/dadbaby.jpg";
 import { Link } from "react-router-dom";
 
@@ -69,7 +76,7 @@ export const AppFeatures = () => {
           </p>
         </div>
         <div className="feature-card-wrapper">
-          <div className="feature-card fc-1">
+          <div className="feature-card ">
             <h3>Tracking Hub</h3>
             <p>
               Track and log everything related to your child’s health, from
@@ -77,21 +84,7 @@ export const AppFeatures = () => {
               symptoms, side effects, vitals, therapies, and growth.
             </p>
           </div>
-          <div className="feature-card fc-2">
-            <h3>Care Family</h3>
-            <p>
-              An essential tool for seamless care coordination. Everyone
-              connected, updated, and ready at the tap of a button.
-            </p>
-          </div>
-          <div className="feature-card fc-3">
-            <h3>Everything on a Schedule (EOS)</h3>
-            <p>
-              Comprehensive medication tracker and reminder built for your
-              child’s ever-changing health journey.
-            </p>
-          </div>
-          <div className="feature-card fc-4">
+          <div className="feature-card ">
             <h3>Daily Life</h3>
             <p>
               Complete baby tracker with easy tools for feeding, sleep, and
@@ -99,7 +92,15 @@ export const AppFeatures = () => {
               your child’s potty training journey.
             </p>
           </div>
-          <div className="feature-card fc-5">
+          <div className="feature-card">
+            <h3>Care Family</h3>
+            <p>
+              An essential tool for seamless care coordination. Everyone
+              connected, updated, and ready at the tap of a button.
+            </p>
+          </div>
+
+          <div className="feature-card ">
             <h3>
               As-Needed Wizard <br />
               (ANW)
@@ -112,7 +113,15 @@ export const AppFeatures = () => {
             </p>
           </div>
 
-          <div className="feature-card fc-6">
+          <div className="feature-card ">
+            <h3>Everything on a Schedule (EOS)</h3>
+            <p>
+              Comprehensive medication tracker and reminder built for your
+              child’s ever-changing health journey.
+            </p>
+          </div>
+
+          <div className="feature-card ">
             <h3>Journal</h3>
             <p>
               Follow and monitor your child’s experience with medications and
@@ -146,7 +155,29 @@ export const AppFeatures = () => {
         </div>
       </section>
 
-      <div className="feature-divider"></div>
+      <section className="daily-life">
+        <div>
+          <div className="dl-info">
+            <h3>Daily Life</h3>
+            <p>
+              A complete baby tracker with easy and efficient tracking tools for
+              your baby’s feeding (including breastfeeding, bottle feeding and
+              pumping), sleep and diapers.
+              <br />
+              Beyond the daily happenings, you can also track your baby’s
+              experience with introducing solids, and your child’s potty
+              training journey.
+            </p>
+          </div>
+          <AppCarousel>
+            <img src={DL1} alt="daily life screen" width={225} />
+            <img src={DL2} alt="introducing solids screen" width={225} />
+            <img src={DL3} alt="Daiper's screen" width={225} />
+            <img src={DL4} alt="Daiper's hub screen" width={225} />
+            <img src={DL5} alt="breastfeeding screen" width={225} />
+          </AppCarousel>
+        </div>
+      </section>
 
       <section className="care-family">
         <div>
@@ -162,26 +193,6 @@ export const AppFeatures = () => {
           </div>
           <AppCarousel>
             <img src={CF1} alt="care family app screen" width={325} />
-          </AppCarousel>
-        </div>
-      </section>
-
-      <div className="feature-divider"></div>
-
-      <section className="eos">
-        <div>
-          <div className="eos-info">
-            <h3>Everything on a Schedule</h3>
-            <p>
-              Built for your child’s ever changing health journey, a
-              comprehensive, advanced medication tracker and reminder, with
-              specific solutions for short-term and ongoing treatments of all
-              types.
-            </p>
-          </div>
-          <AppCarousel>
-            <img src={EOS1} alt="EOS dashboard screen" width={225} />
-            <img src={EOS2} alt="EOS schedule screen" width={225} />
           </AppCarousel>
         </div>
       </section>
@@ -209,32 +220,6 @@ export const AppFeatures = () => {
         </div>
       </section>
 
-      <section className="daily-life">
-        <div>
-          <div className="dl-info">
-            <h3>Daily Life</h3>
-            <p>
-              A complete baby tracker with easy and efficient tracking tools for
-              your baby’s feeding (including breastfeeding, bottle feeding and
-              pumping), sleep and diapers.
-              <br />
-              Beyond the daily happenings, you can also track your baby’s
-              experience with introducing solids, and your child’s potty
-              training journey.
-            </p>
-          </div>
-          <AppCarousel>
-            <img src={DL1} alt="daily life screen" width={225} />
-            <img src={DL2} alt="introducing solids screen" width={225} />
-            <img src={DL3} alt="Daiper's screen" width={225} />
-            <img src={DL4} alt="Daiper's hub screen" width={225} />
-            <img src={DL5} alt="breastfeeding screen" width={225} />
-          </AppCarousel>
-        </div>
-      </section>
-
-      <div className="feature-divider"></div>
-
       <section className="as-needed-wizard">
         <div>
           <div className="anw-info">
@@ -259,7 +244,26 @@ export const AppFeatures = () => {
         </div>
       </section>
 
-      <div className="feature-divider"></div>
+      <section className="eos">
+        <div>
+          <div className="eos-info">
+            <h3>Everything on a Schedule</h3>
+            <p>
+              Built for your child’s ever changing health journey, a
+              comprehensive, advanced medication tracker and reminder, with
+              specific solutions for short-term and ongoing treatments of all
+              types.
+            </p>
+          </div>
+          <AppCarousel>
+            <img src={EOS1} alt="EOS dashboard screen" width={225} />
+            <img src={EOS2} alt="EOS schedule screen" width={225} />
+            <img src={EOS3} alt="EOS schedule screen" width={225} />
+            <img src={EOS4} alt="EOS schedule screen" width={225} />
+            <img src={EOS5} alt="EOS schedule screen" width={225} />
+          </AppCarousel>
+        </div>
+      </section>
 
       <section className="journal">
         <div>
@@ -277,7 +281,10 @@ export const AppFeatures = () => {
             </p>
           </div>
           <AppCarousel>
-            <img src={TH1} alt="tracking hub screen" width={225} />
+            <img src={J1} alt="Journal screen" width={225} />
+            <img src={J2} alt="Journal screen" width={225} />
+            <img src={J3} alt="Journal screen" width={225} />
+            <img src={J4} alt="Journal screen" width={225} />
           </AppCarousel>
         </div>
       </section>
