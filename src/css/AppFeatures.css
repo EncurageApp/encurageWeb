@@ -47,7 +47,7 @@ Hero
 }
 
 .af-intro-text {
-  max-width: 800px;
+  max-width: 1400px;
   padding: 0 1rem;
   padding-top: 8rem;
   text-align: center;
@@ -66,7 +66,7 @@ Hero
 
 .af-intro-text p {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 900px;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0), 0px -5px 35px rgba(1, 1, 1, 0.5);
 }
 
@@ -146,7 +146,7 @@ features intro
   padding: 3rem 1rem;
   color: white;
   height: 100%;
-  background-image: url(../imgs/dadreadingbaby.jpg);
+  background-image: url(../imgs/kidontopdad.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -218,29 +218,11 @@ features intro
 
 /*
 =================================================
-feature-divider
-=================================================
-*/
-
-.feature-divider {
-  background: radial-gradient(
-    circle,
-    hsla(180, 100%, 25%, 1) 27%,
-    hsla(179, 58%, 52%, 1) 74%,
-    hsla(180, 100%, 25%, 1) 100%
-  );
-  min-height: 100px;
-  margin: 0 auto;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
-}
-
-/*
-=================================================
 Tracking Hub
 =================================================
 */
 .tracking-hub {
-  margin: 4rem auto;
+  margin: 10rem auto;
 }
 
 .tracking-hub h3 {
@@ -277,11 +259,52 @@ Tracking Hub
 
 /*
 =================================================
+Daily Life
+=================================================
+*/
+.daily-life {
+  margin: 10rem auto;
+}
+
+.daily-life h3 {
+  border-bottom: 1px solid var(--primaryFive);
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.daily-life > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dl-info {
+  background: #40cccb;
+  background: radial-gradient(at left bottom, #40cccb, #008080);
+  color: white;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  min-height: 400px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+}
+
+/*
+=================================================
 Care Family
 =================================================
 */
 .care-family {
-  margin: 4rem auto;
+  margin: 10rem auto;
 }
 
 .care-family h3 {
@@ -323,7 +346,7 @@ App Features download btns
 */
 
 .af-download-container {
-  margin: 1rem auto;
+  margin: 10rem auto;
   background-color: var(--primaryThree);
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
   max-width: 1200px;
@@ -414,93 +437,11 @@ App Features download btns
 
 /*
 =================================================
-EOS
-=================================================
-*/
-.eos {
-  margin: 4rem auto;
-}
-
-.eos h3 {
-  border-bottom: 1px solid var(--primaryFive);
-  letter-spacing: 2px;
-  color: white;
-  text-align: center;
-  margin: 1rem auto;
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-}
-
-.eos > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.eos-info {
-  background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
-  color: white;
-  padding: 2rem;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  min-height: 400px;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
-}
-
-/*
-=================================================
-Daily Life
-=================================================
-*/
-.daily-life {
-  margin: 4rem auto;
-}
-
-.daily-life h3 {
-  border-bottom: 1px solid var(--primaryFive);
-  letter-spacing: 2px;
-  color: white;
-  text-align: center;
-  margin: 1rem auto;
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-}
-
-.daily-life > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dl-info {
-  background: #40cccb;
-  background: radial-gradient(at left bottom, #40cccb, #008080);
-  color: white;
-  padding: 2rem;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  min-height: 400px;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
-}
-
-/*
-=================================================
 As-Needed Wizard
 =================================================
 */
 .as-needed-wizard {
-  margin: 4rem auto;
+  margin: 10rem auto;
 }
 
 .as-needed-wizard h3 {
@@ -537,12 +478,53 @@ As-Needed Wizard
 
 /*
 =================================================
+EOS
+=================================================
+*/
+.eos {
+  margin: 10rem auto;
+}
+
+.eos h3 {
+  border-bottom: 1px solid var(--primaryFive);
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.eos > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eos-info {
+  background: #40cccb;
+  background: radial-gradient(at right bottom, #40cccb, #008080);
+  color: white;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  min-height: 400px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+}
+
+/*
+=================================================
 Journal
 =================================================
 */
 
 .journal {
-  margin: 4rem auto;
+  margin: 10rem auto;
 }
 
 .journal h3 {
@@ -632,7 +614,21 @@ App Feature Contact
 
 .af-contact-container {
   max-width: 1600px;
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to left,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.43);
   margin: 3rem auto;
   display: flex;
@@ -651,6 +647,10 @@ App Feature Contact
   padding: 1rem;
   gap: 20px;
   margin-bottom: 2rem;
+}
+
+.af-contact-info h3 {
+  font-size: 1.8rem;
 }
 
 .af-contact-info:before,
@@ -679,6 +679,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 3.5rem;
   }
 
+  .af-intro-text p {
+    font-size: 1.3rem;
+  }
+
   /* features container */
   .features-container > div {
     grid-template-columns: repeat(2, 1fr);
@@ -695,6 +699,14 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* tracking hub */
 
   .tracking-info {
+    margin: 1rem;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+
+  /* Daily Life */
+
+  .dl-info {
     margin: 1rem;
     border-radius: 10px;
     padding-left: 10px;
@@ -718,25 +730,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     transition: all 0.5s ease-in-out;
   }
 
-  /* Eos */
-
-  .eos-info {
-    margin: 1rem;
-    border-radius: 10px;
-    padding-left: 10px;
-  }
-
-  /* Daily Life */
-
-  .dl-info {
-    margin: 1rem;
-    border-radius: 10px;
-    padding-left: 10px;
-  }
-
   /* ANW */
 
   .anw-info {
+    margin: 1rem;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+
+  /* Eos */
+
+  .eos-info {
     margin: 1rem;
     border-radius: 10px;
     padding-left: 10px;
@@ -756,8 +760,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .af-intro-text {
     padding-top: 12rem;
   }
+
   .af-intro-text h2 {
     font-size: 4rem;
+  }
+
+  .af-intro-text p {
+    font-size: 1.5rem;
   }
 
   .af-info {
@@ -789,10 +798,21 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     margin-left: 20px;
   }
 
+  /* Daily Life */
+
+  .daily-life > div {
+    flex-direction: row-reverse;
+  }
+
+  .dl-info {
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
   /* Care-family */
 
   .care-family > div {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   .cf-info {
@@ -816,6 +836,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     flex-direction: row;
   }
 
+  /* ANW */
+
+  .as-needed-wizard > div {
+    flex-direction: row-reverse;
+  }
+
+  .anw-info {
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
   /* EOS */
 
   .eos > div {
@@ -825,28 +856,6 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .eos-info {
     border-radius: 10px;
     margin-left: 10px;
-  }
-
-  /* Daily Life */
-
-  .daily-life > div {
-    flex-direction: row-reverse;
-  }
-
-  .dl-info {
-    border-radius: 10px;
-    margin-right: 10px;
-  }
-
-  /* ANW */
-
-  .as-needed-wizard > div {
-    flex-direction: row;
-  }
-
-  .anw-info {
-    border-radius: 10px;
-    margin-left: 20px;
   }
 
   /* Journal */

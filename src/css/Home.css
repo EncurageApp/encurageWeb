@@ -20,6 +20,118 @@ main p {
     0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
+/* 
+====================================
+Animation Squares
+====================================
+*/
+
+.animation-squares {
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
+  width: 95%;
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 30%;
+  border-radius: 10px 70px;
+  border: 10px double var(--primaryFive); /* FIGURE OUT HOW TO PUT LINEAR GRADIENT TO MATCH APP, GRAPE TO CORAL */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.43);
+  transition: all 0.5s ease-in-out;
+}
+
+.square-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.square-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+
+.square-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.square-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+
+.square-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+
+.square-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+
+.square-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+
+.square-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-duration: 3.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
 /*
 ============================================
 Hero
@@ -27,7 +139,7 @@ Hero
 */
 
 .home-hero-container {
-  height: 45vh;
+  height: 100svh;
   background-image: url(../imgs/home-hero.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -41,34 +153,10 @@ Hero
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
-.home-hero {
-  position: absolute;
-  background-color: var(--primaryFour);
-  width: 95%;
-  max-width: 800px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  bottom: -100px;
-  border-radius: 10px 70px;
-  border: 10px double var(--primaryFive); /* FIGURE OUT HOW TO PUT LINEAR GRADIENT TO MATCH APP, GRAPE TO CORAL */
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.43);
-}
-
-.home-hero-inner h1 {
+.home-intro-animation {
   color: white;
-  font-size: 3.5rem;
+  font-size: 2rem;
   text-shadow: 3px 5px 2px #474747;
-  transition: all 0.3s ease-in-out;
-}
-
-.home-hero-inner p {
-  color: white;
-  font-size: 1.1rem;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
-    0px -5px 35px rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease-in-out;
 }
 
@@ -80,12 +168,28 @@ Main Section
 
 .home-main-container {
   width: 100%;
-  margin-top: 150px;
   font-family: "Poppins";
+  background-color: var(--primaryThree);
+  padding: 4rem 0;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .home-main {
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to bottom,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   color: white;
   display: flex;
   flex-direction: column;
@@ -93,7 +197,7 @@ Main Section
   align-items: center;
   text-align: center;
   max-width: 1100px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 30px 30px;
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
@@ -193,10 +297,21 @@ App Section
 */
 
 .home-app-intro {
+  text-align: center;
+}
+
+.home-app-intro h2 {
+  margin-top: 4rem;
+  padding: 1rem;
+  color: var(--primaryFour);
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.home-app-intro > div {
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
-  max-width: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,17 +319,53 @@ App Section
   text-align: center;
 }
 
-.home-app-intro h2 {
-  color: var(--primaryFour);
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
+.home-app-inner {
+  margin-top: 2rem;
+  padding: 20px;
+  color: white;
+  font-size: 1.3rem;
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
-.home-app-intro p {
-  padding-top: 20px;
-  color: var(--primaryFour);
-  font-size: 1.3rem;
-  max-width: 900px;
+.home-app-inner h3 {
+  font-size: 1.5rem;
+  border-bottom: 10px ridge var(--primaryFive);
+  border-top: 10px ridge var(--primaryFive);
+  border-radius: 15px;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.home-app-inner p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.phone-animation {
+  width: 100%;
+  max-width: 500px;
 }
 
 .duo-container {
@@ -227,7 +378,21 @@ App Section
 }
 
 .duo {
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to top,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -238,6 +403,7 @@ App Section
 }
 
 .duo:nth-child(2) {
+  background-image: none;
   width: 100%;
   background-color: white;
   box-shadow: none;
@@ -312,7 +478,21 @@ Founder Section
 }
 
 .home-founder {
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to right,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   height: 100%;
   width: 100%;
   max-width: 1000px;
@@ -359,59 +539,6 @@ Founder Section
 
 .founder-wrapper {
   background-color: var(--primaryFour);
-}
-
-/*            Image Pop Out          */
-
-.person img {
-  max-width: 100%;
-  display: block;
-}
-
-.person {
-  position: relative;
-  max-width: 20rem;
-  left: 5%;
-  top: -250px;
-}
-
-.person-container {
-  aspect-ratio: 1/1.5;
-  display: grid;
-  align-items: flex-end;
-  border-radius: 0 0 100vw 100vw;
-  overflow: hidden;
-  transition: transform 250ms ease-in-out;
-}
-
-.person-container:hover {
-  transform: scale(1.1);
-}
-
-.person-container div {
-  background-color: var(--primaryFour);
-  position: absolute;
-  inset: auto 0 0;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  margin-inline: auto;
-  object-fit: cover;
-  box-shadow: 0px 30px 35px -10px rgba(0, 0, 0, 0.43);
-}
-
-.person-img {
-  width: 80%;
-  height: 80%;
-  position: relative;
-  left: 2.5rem;
-  bottom: -7.5rem;
-  transform: scale(1.6);
-  transition: transform 250ms ease-in-out;
-}
-
-.person-container:hover .person-img {
-  transform: scale(1.8) translateY(-2rem);
 }
 
 /*
@@ -481,7 +608,7 @@ Review Section
   border-radius: 0 50px 0 0;
   width: 60px;
   height: 60px;
-  bottom: -62px;
+  bottom: -61px;
   left: 50px;
   border-bottom: none;
   border-left: none;
@@ -625,7 +752,21 @@ Contact Section
   gap: 20px;
   display: flex;
   flex-direction: column;
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to top,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   justify-content: space-evenly;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
@@ -673,9 +814,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 @media (min-width: 550px) and (max-width: 1100px) {
   /*       Hero Section       */
 
-  main h2 {
-    font-size: 2.3rem;
-    transition: all 0.3s ease-in-out;
+  .animation-squares {
+    top: 40%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .home-intro-animation {
+    font-size: 2.5rem;
   }
 
   .hero-container {
@@ -718,6 +863,19 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   /*       App Section       */
+
+  .home-app-intro h2 {
+    font-size: 2.5rem;
+    margin: 2rem auto;
+  }
+
+  .home-app-inner h3 {
+    font-size: 2rem;
+  }
+
+  .home-app-inner p {
+    font-size: 1.3rem;
+  }
 
   .duo-info h2 {
     font-size: 2.5rem;
@@ -768,9 +926,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 }
 
 @media (min-width: 1101px) {
-  main h2 {
-    font-size: 2.5rem;
-    transition: all 0.3s ease-in-out;
+  .animation-squares {
+    top: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .home-intro-animation {
+    font-size: 3.5rem;
   }
 
   /*         Hero Section          */
@@ -786,18 +948,14 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .hero-inner h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     transition: all 0.3s ease-in-out;
   }
 
   .hero-inner p {
+    margin-top: 20px;
     font-size: 1.5rem;
     transition: all 0.3s ease-in-out;
-  }
-
-  .hero-inner div {
-    display: flex;
-    justify-content: space-around;
   }
 
   .home-main-img {
@@ -820,9 +978,29 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   /*       App Section       */
 
+  .home-app-intro > div {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .home-app-intro h2 {
+    font-size: 3rem;
+    margin: 4rem auto;
+  }
+
   .home-app-intro p {
+    max-width: 600px;
     font-size: 1.6rem;
     transition: all 0.5s ease-in-out;
+  }
+
+  .home-app-inner h3 {
+    font-size: 2rem;
+  }
+
+  .phone-animation {
+    max-width: 800px;
   }
 
   .duo {

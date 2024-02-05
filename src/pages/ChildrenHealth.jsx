@@ -17,11 +17,13 @@ export const ChildrenHealth = () => {
         <Parallax strength={500} bgImage={DadTwoKids}>
           <div className="ch-intro">
             <div className="ch-intro-text">
-              <h2>Navigating the Numbers,</h2>
-              <p>
-                Exploring Children's Medication Errors and How We Are Preventing
-                Them!
-              </p>
+              <AnimateText>
+                <h2>Navigating the Numbers,</h2>
+                <p>
+                  Exploring Children's Medication Errors and How We Are
+                  Preventing Them!
+                </p>
+              </AnimateText>
             </div>
           </div>
         </Parallax>
