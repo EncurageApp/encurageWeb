@@ -1,5 +1,5 @@
 import React from "react";
 
 export const TestimonialCarousel = () => {
-  return <>Slider</>;
+  return <div>TestimonialCarousel</div>;
 };

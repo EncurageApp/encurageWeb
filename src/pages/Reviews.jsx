@@ -20,19 +20,28 @@ export const Reviews = () => {
         </AnimateText>
       </section>
 
+      <section className="review-cube-container">
+        <h2>See What Our User's Are Saying!</h2>
+        <ReviewSlider />
+      </section>
+
       <section className="full-testimonial-container">
-        <div class="full-testimonial">
-          <div class="shadow"></div>
-          <span class="top border"></span>
+        <div className="full-testimonial">
+          <div className="shadow"></div>
+          <span className="top border"></span>
           <h1>I Love This App!</h1>
           <p>
             I have two kids who are sick and as a busy mom it’s not easy
             remembering everything. This app is perfect for documenting and
             helping me stay ahead!
           </p>
-          <p class="source">&mdash; Adrianna Embry</p>
-          <span class="bottom border"></span>
+          <p className="source">&mdash; Adrianna Embry</p>
+          <span className="bottom border"></span>
         </div>
+      </section>
+
+      <section>
+        <TestimonialCarousel />
       </section>
 
       <section className="review-download-container">
@@ -56,14 +65,6 @@ export const Reviews = () => {
           <AppStoreBtn />
         </div>
       </section>
-
-      {/* <section>
-        <ReviewSlider />
-      </section>
-
-      <section>
-        <TestimonialCarousel />
-      </section> */}
     </main>
   );
 };

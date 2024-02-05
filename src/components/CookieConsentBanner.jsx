@@ -33,20 +33,34 @@ export const CookieConsentBanner = () => {
             console.log("User Declined Cookies");
           }}
           style={{
-            fontSize: ".8rem",
-            background: "#2e9593",
+            background: "linear-gradient(#008080,#2e9593,#3fccca)",
+            display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
+            alignItems: "center",
             textAlign: "center",
           }}
-          buttonStyle={{ background: "#d8eeed", fontSize: ".8rem" }}
-          declineButtonStyle={{ background: "#284747", fontSize: ".8rem" }}
+          buttonStyle={{
+            background: "#d8eeed",
+            fontSize: "1rem",
+            borderRadius: "10px",
+            padding: ".5rem 1rem",
+          }}
+          declineButtonStyle={{
+            background: "#284747",
+            fontSize: "1rem",
+            borderRadius: "10px",
+            padding: ".5rem 1rem",
+          }}
+          buttonWrapperClasses="cookie-btn-container"
         >
           <h3
             style={{
               paddingBottom: "15px",
               borderBottom: ".3px solid white",
-              maxWidth: "400px",
+              maxWidth: "800px",
               fontSize: "1.3rem",
+              margin: "0 auto",
             }}
           >
             Cookie Policy
@@ -56,14 +70,15 @@ export const CookieConsentBanner = () => {
             <img
               src={CookieImg}
               alt="cookie in a web browser"
-              style={{ width: "50px", marginTop: "10px" }}
+              style={{ width: "100px", marginTop: "30px" }}
             />
             <p
               style={{
-                maxWidth: "400px",
-                fontSize: ".8rem",
+                maxWidth: "800px",
+                fontSize: ".9rem",
                 borderBottom: "0.3px solid white",
-                padding: "10px 0",
+                padding: "2rem",
+                margin: "0 auto",
               }}
             >
               This website uses cookies to improve our users' experience. Click

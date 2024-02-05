@@ -27,8 +27,8 @@ export const AnimateText = ({ children }) => {
   const animationClass = isVisible ? "animate-paragraph" : "";
 
   return (
-    <p ref={textRef} className={`animated-paragraph ${animationClass}`}>
+    <div ref={textRef} className={`animated-paragraph ${animationClass}`}>
       {children}
-    </p>
+    </div>
   );
 };

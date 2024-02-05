@@ -222,7 +222,7 @@ Founder
 }
 
 .animated-border-quote blockquote {
-  border: 5px solid var(--primaryFive);
+  border: 5px solid #e30b5c;
   margin: 0;
   padding: 20px;
 }

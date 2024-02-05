@@ -168,7 +168,21 @@ Reasons
   margin: 0 auto;
   padding: 5em 2rem;
   max-width: 1000px;
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to bottom,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,7 +206,21 @@ Reasons
 .ch-reason-container > ul {
   margin: 0 auto;
   max-width: 1000px;
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to top,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -262,7 +290,21 @@ Health Slider
   min-height: 500px;
   max-width: 800px;
   color: white;
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to bottom,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   margin: 5rem auto;
   padding: 1rem;
   text-align: center;
@@ -289,14 +331,22 @@ Health Slider
 }
 
 .ch-slider-btns button {
+  color: white;
   transform: uppercase;
   height: 25px;
   width: 100px;
-  color: white;
-  background-color: var(--primaryFive);
-  border: 0.3px solid black;
-  border-radius: 20px;
-  transition: all 0.3s ease-in-out;
+  background: linear-gradient(
+    80deg,
+    hsla(272, 58%, 42%, 1) 0%,
+    hsla(290, 43%, 42%, 1) 12%,
+    hsla(360, 100%, 75%, 1) 100%
+  );
+  border: 0 solid;
+  border-radius: 5px;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .ch-slider-btns button:hover {

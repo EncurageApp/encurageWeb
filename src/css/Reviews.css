@@ -11,9 +11,6 @@
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
 }
 
-main {
-  min-height: 100vh;
-}
 /*
 =================================================
 Hero
@@ -22,7 +19,6 @@ Hero
 .review-hero {
   height: 100svh;
   background-image: url(../imgs/kidlooking.jpg);
-
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,6 +53,107 @@ Hero
   margin: 0 auto;
   max-width: 900px;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0), 0px -5px 35px rgba(1, 1, 1, 0.5);
+}
+
+/*
+=====================================================================
+Review Cube
+=====================================================================
+*/
+
+.review-cube-container {
+  margin: 0 auto;
+  background-color: var(--primaryThree);
+  padding: 4rem 1rem;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+}
+
+.review-cube-container h2 {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 800px;
+  font-size: 2.5rem;
+  border: none;
+}
+
+/* Swiper Cube */
+
+.review-cube {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-slider-container .swiper-slide > div {
+  border: 1px solid var(--primaryFour);
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
+  justify-content: center;
+  align-items: center;
+  border: 0.3px solid var(--primaryFive);
+}
+
+.review-card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-card > div {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-card blockquote {
+  margin: 3rem;
+  font-size: 1.1rem;
+}
+
+.review-card cite {
+  margin-bottom: 3rem;
+}
+
+.review-star {
+  margin-top: 2rem;
+  height: 50px;
+  width: 50px;
+  background-color: gold;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
 }
 
 /*
@@ -243,12 +340,6 @@ Review Download
 
 /*
 =====================================================================
-Review Slider
-=====================================================================
-*/
-
-/*
-=====================================================================
 Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 =====================================================================
 */
@@ -261,6 +352,18 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .review-intro-text h2 {
     font-size: 3.5rem;
+  }
+
+  .review-cube-container h2 {
+    font-size: 2.7rem;
+  }
+
+  .review-slider-container .swiper-slide > div {
+    min-height: 60vh;
+  }
+
+  .review-card blockquote {
+    font-size: 1.3rem;
   }
 }
 
@@ -275,5 +378,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .review-info {
     flex-direction: row;
+  }
+
+  .review-cube-container h2 {
+    font-size: 3rem;
+  }
+
+  .review-slider-container .swiper-slide > div {
+    min-height: 60vh;
+  }
+
+  .review-card blockquote {
+    font-size: 1.4rem;
   }
 }

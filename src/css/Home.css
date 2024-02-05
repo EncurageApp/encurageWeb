@@ -27,7 +27,7 @@ Hero
 */
 
 .home-hero-container {
-  height: 45vh;
+  height: 100svh;
   background-image: url(../imgs/home-hero.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -43,7 +43,21 @@ Hero
 
 .home-hero {
   position: absolute;
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to bottom,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   width: 95%;
   max-width: 800px;
   height: 200px;
@@ -51,7 +65,7 @@ Hero
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  bottom: -100px;
+  top: 40%;
   border-radius: 10px 70px;
   border: 10px double var(--primaryFive); /* FIGURE OUT HOW TO PUT LINEAR GRADIENT TO MATCH APP, GRAPE TO CORAL */
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.43);
@@ -85,7 +99,21 @@ Main Section
 }
 
 .home-main {
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to bottom,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   color: white;
   display: flex;
   flex-direction: column;
@@ -227,7 +255,21 @@ App Section
 }
 
 .duo {
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to top,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -238,6 +280,7 @@ App Section
 }
 
 .duo:nth-child(2) {
+  background-image: none;
   width: 100%;
   background-color: white;
   box-shadow: none;
@@ -312,7 +355,21 @@ Founder Section
 }
 
 .home-founder {
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to right,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   height: 100%;
   width: 100%;
   max-width: 1000px;
@@ -359,59 +416,6 @@ Founder Section
 
 .founder-wrapper {
   background-color: var(--primaryFour);
-}
-
-/*            Image Pop Out          */
-
-.person img {
-  max-width: 100%;
-  display: block;
-}
-
-.person {
-  position: relative;
-  max-width: 20rem;
-  left: 5%;
-  top: -250px;
-}
-
-.person-container {
-  aspect-ratio: 1/1.5;
-  display: grid;
-  align-items: flex-end;
-  border-radius: 0 0 100vw 100vw;
-  overflow: hidden;
-  transition: transform 250ms ease-in-out;
-}
-
-.person-container:hover {
-  transform: scale(1.1);
-}
-
-.person-container div {
-  background-color: var(--primaryFour);
-  position: absolute;
-  inset: auto 0 0;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  margin-inline: auto;
-  object-fit: cover;
-  box-shadow: 0px 30px 35px -10px rgba(0, 0, 0, 0.43);
-}
-
-.person-img {
-  width: 80%;
-  height: 80%;
-  position: relative;
-  left: 2.5rem;
-  bottom: -7.5rem;
-  transform: scale(1.6);
-  transition: transform 250ms ease-in-out;
-}
-
-.person-container:hover .person-img {
-  transform: scale(1.8) translateY(-2rem);
 }
 
 /*
@@ -481,7 +485,7 @@ Review Section
   border-radius: 0 50px 0 0;
   width: 60px;
   height: 60px;
-  bottom: -62px;
+  bottom: -61px;
   left: 50px;
   border-bottom: none;
   border-left: none;
@@ -625,7 +629,21 @@ Contact Section
   gap: 20px;
   display: flex;
   flex-direction: column;
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to top,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   justify-content: space-evenly;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);

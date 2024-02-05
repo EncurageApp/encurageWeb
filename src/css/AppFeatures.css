@@ -632,7 +632,21 @@ App Feature Contact
 
 .af-contact-container {
   max-width: 1600px;
-  background-color: var(--primaryFour);
+  background-image: linear-gradient(
+    to left,
+    #008080,
+    #0e8483,
+    #178887,
+    #1f8c8a,
+    #26908e,
+    #2a9694,
+    #2e9c9a,
+    #32a2a0,
+    #35acaa,
+    #38b7b5,
+    #3cc1bf,
+    #3fccca
+  );
   box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.43);
   margin: 3rem auto;
   display: flex;
