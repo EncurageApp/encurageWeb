@@ -22,13 +22,23 @@ export const Home = () => {
   return (
     <main>
       <section className="home-hero-container">
-        <div className="home-hero">
+        <div className="animation-squares">
+          <ul className="square-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
           <div className="home-hero-inner">
             <p>Peace of Mind, One Dose at a Time with </p>
             <h1>Encurage!</h1>
           </div>
         </div>
       </section>
+
+      <section></section>
 
       <section className="home-main-container">
         <div className="home-main">
@@ -56,7 +66,7 @@ export const Home = () => {
         <div className="duo-container">
           <div className="duo">
             <div className="duo-img-container">
-              <img src={KidJumping} alt="" />
+              <img src={KidJumping} alt=" kid jumping" />
             </div>
 
             <div className="duo-info">
@@ -105,7 +115,7 @@ export const Home = () => {
               </Link>
             </div>
             <div className="duo-img-container">
-              <img src={MomKids} alt="" />
+              <img src={MomKids} alt="mom with kids" />
             </div>
           </div>
         </div>

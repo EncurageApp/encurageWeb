@@ -374,6 +374,11 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .ch-intro-text h2 {
     font-size: 3.5rem;
   }
+
+  .ch-intro-text p {
+    font-size: 1.3rem;
+  }
+
   /* Stats */
   .ch-card-wrapper {
     flex-direction: row;
@@ -401,6 +406,11 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .ch-intro-text h2 {
     font-size: 5rem;
   }
+
+  .ch-intro-text p {
+    font-size: 1.5rem;
+  }
+
   /* Stats */
   .ch-card-wrapper {
     flex-direction: row;

@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 import { EffectCube, Pagination, Autoplay } from "swiper/modules";
 
-export const ReviewSlider = () => {
+export const ReviewCube = () => {
   return (
     <div className="review-slider-container">
       <Swiper

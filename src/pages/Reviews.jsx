@@ -1,7 +1,7 @@
 import React from "react";
 import { TestimonialCarousel } from "../components/TestimonialCarousel";
 import { AnimateText } from "../components/AnimateText";
-import { ReviewSlider } from "../components/ReviewSlider";
+import { ReviewCube } from "../components/ReviewCube";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 
@@ -13,8 +13,8 @@ export const Reviews = () => {
           <div className="review-intro-text">
             <h2>See What Everyone's Saying</h2>
             <p>
-              Encurage offers a rich array of features designed to simplify and
-              streamline medication management for your child.
+              From simplifying medication management to providing peace of
+              minds, discover why our users are raving about the Encurage app.
             </p>
           </div>
         </AnimateText>
@@ -22,7 +22,7 @@ export const Reviews = () => {
 
       <section className="review-cube-container">
         <h2>See What Our User's Are Saying!</h2>
-        <ReviewSlider />
+        <ReviewCube />
       </section>
 
       <section className="full-testimonial-container">

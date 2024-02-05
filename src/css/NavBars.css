@@ -12,17 +12,21 @@ Nav
   right: 0;
   z-index: 1000;
 }
+
 .headroom--unfixed {
   position: relative;
   transform: translateY(0);
 }
+
 .headroom--scrolled {
   transition: transform 100ms ease-in-out;
 }
+
 .headroom--unpinned {
   position: fixed;
   transform: translateX(-100%);
 }
+
 .headroom--pinned {
   position: fixed;
   transform: translateX(0%);
@@ -59,6 +63,7 @@ header nav {
   display: flex;
   margin-right: 15px;
   gap: 15px;
+  transition: all 0.4s ease-in-out;
 }
 
 .navlinks a {
@@ -68,6 +73,7 @@ header nav {
   font-size: 1.1rem;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease-in-out;
 }
 
 .navlinks a:hover {
@@ -76,9 +82,8 @@ header nav {
 }
 
 .navlinks a.active {
-  transition: all 0.4s ease-in-out;
   color: var(--primaryFive);
-  border-bottom: 0.5px solid var(--primaryFive);
+  transition: all 0.4s ease-in-out;
 }
 
 .menu-icon {

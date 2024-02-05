@@ -693,6 +693,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 3.5rem;
   }
 
+  .af-intro-text p {
+    font-size: 1.3rem;
+  }
+
   /* features container */
   .features-container > div {
     grid-template-columns: repeat(2, 1fr);
@@ -770,8 +774,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .af-intro-text {
     padding-top: 12rem;
   }
+
   .af-intro-text h2 {
     font-size: 4rem;
+  }
+
+  .af-intro-text p {
+    font-size: 1.5rem;
   }
 
   .af-info {
