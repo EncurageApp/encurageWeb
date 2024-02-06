@@ -3,11 +3,13 @@
 .founder-page p {
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.8px;
 }
 
 .founder-page h2 {
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
 }
 
 /*
@@ -222,7 +224,7 @@ Founder
 }
 
 .animated-border-quote blockquote {
-  border: 5px solid #e30b5c;
+  border: 5px solid var(--primaryFive);
   margin: 0;
   padding: 20px;
 }

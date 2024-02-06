@@ -38,8 +38,6 @@ export const Home = () => {
         </div>
       </section>
 
-      <section></section>
-
       <section className="home-main-container">
         <div className="home-main">
           <h2>Your Child's Health, is Our Priority</h2>

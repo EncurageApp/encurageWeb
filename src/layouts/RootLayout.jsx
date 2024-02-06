@@ -9,18 +9,27 @@ import { AppStoreBtn } from "../components/AppStoreBtn";
 import { SocialMediaIcons } from "../components/SocialMediaIcons";
 import { CookieConsentBanner } from "../components/CookieConsentBanner";
 
+import { LoaderAnimation } from "../components/animations/LoaderAnimation";
+
 export const RootLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleQuickLinkClick = () => {
+    setLoading(true);
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
   };
 
   return (
@@ -70,6 +79,7 @@ export const RootLayout = () => {
       <main>
         <Outlet />
         <CookieConsentBanner />
+        {loading && <LoaderAnimation />}
       </main>
 
       <footer>

@@ -13,8 +13,8 @@ export const Reviews = () => {
           <div className="review-intro-text">
             <h2>See What Everyone's Saying</h2>
             <p>
-              From simplifying medication management to providing peace of
-              minds, discover why our users are raving about the Encurage app.
+              Every story matters, and we're here to listen. Share your journey
+              with us and Discover other families experiences with Encurage!
             </p>
           </div>
         </AnimateText>

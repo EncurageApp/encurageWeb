@@ -6,7 +6,6 @@ export const AnimateText = ({ children }) => {
 
   const handleIntersection = (entries) => {
     const entry = entries[0];
-    console.log("Intersection:", entry.isIntersecting);
     if (entry.isIntersecting) {
       setIsVisible(true);
     }
@@ -14,7 +13,7 @@ export const AnimateText = ({ children }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5,
+      threshold: 1,
     });
 
     observer.observe(textRef.current);
