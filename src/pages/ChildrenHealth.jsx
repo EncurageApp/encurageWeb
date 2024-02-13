@@ -35,7 +35,7 @@ export const ChildrenHealth = () => {
           <div className="ch-stats-card">
             <div className="ch-card-icon"></div>
             <div className="ch-card-content">
-              <ChildrenStats animateNumber={300000} />
+              <ChildrenStats animateNumber={200000} />
               <p>
                 Incidents happen every year, according to the Poison Controls
                 Centers in the United States. 90% of these medication errors
