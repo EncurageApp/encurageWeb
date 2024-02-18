@@ -38,20 +38,38 @@ Screen Transition Animation
 
 .loader-container {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999; /* Set a high z-index to ensure it's above other content */
-}
-
-.loading-icon {
-  font-size: 3.5rem;
-  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primaryThree);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .loader-animation {
-  width: 500px;
+  width: 350px;
+  transition: all 0.5s ease-in-out;
+}
+
+/*
+=====================================================================
+Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
+=====================================================================
+*/
+
+@media (min-width: 550px) and (max-width: 1100px) {
+  .loader-animation {
+    width: 500px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+@media (min-width: 1101px) {
+  .loader-animation {
+    width: 700px;
+    transition: all 0.5s ease-in-out;
+  }
 }

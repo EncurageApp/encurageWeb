@@ -8,7 +8,7 @@ export const GooglePlayBtn = () => {
       <GooglePlayButton
         url={APKUrl}
         theme={"dark"}
-        className={"custom-style"}
+        className="google-play-btn"
       />
     </div>
   );

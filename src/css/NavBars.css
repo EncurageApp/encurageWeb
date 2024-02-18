@@ -48,7 +48,7 @@ header nav {
 
 .logo a {
   font-family: "Poppins", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   margin-left: 20px;
   color: white;
   text-decoration: none;
@@ -70,7 +70,7 @@ header nav {
   text-align: center;
   text-decoration: none;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
   transition: all 0.4s ease-in-out;
@@ -151,7 +151,7 @@ header nav {
     padding: 10px 0 0 0;
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem;
     justify-self: center;
   }
 
@@ -391,6 +391,7 @@ footer .logo a {
     grid-area: 5 / 1 / 6 / 3;
     padding: 0;
     padding-top: 20px;
+    font-size: 0.9rem;
   }
   .social-icons {
     grid-area: 5 / 3 / 6 / 5;
@@ -435,7 +436,7 @@ footer .logo a {
   }
 
   .quick-links a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .subscribe-btn-container {
@@ -471,7 +472,7 @@ footer .logo a {
   .copyright {
     grid-area: 3 / 1 / 4 / 3;
     padding: 20px 0 10px 0;
-    font-size: smaller;
+    font-size: 1rem;
     margin-bottom: 0;
     display: flex;
     justify-content: space-around;

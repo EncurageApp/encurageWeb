@@ -12,14 +12,18 @@ export const HelpCenterLayout = () => {
   };
 
   return (
-    <div className="help-layout">
-      <div className="help-layout-img">
-        <div className="help-layout-intro">
-          <AnimateText>
+    <main className="help-layout">
+      <section className="help-layout-hero">
+        <AnimateText>
+          <div className="hl-intro-text">
             <h2>Help Center</h2>
-          </AnimateText>
-        </div>
-      </div>
+            <p>
+              Need a hand? You're in the right place! From FAQs to personalized
+              support, our Help Center has you covered.
+            </p>
+          </div>
+        </AnimateText>
+      </section>
 
       <h3>Welcome to our Help Center!</h3>
       <p>
@@ -47,6 +51,6 @@ export const HelpCenterLayout = () => {
       <div ref={outletRef}>
         <Outlet />
       </div>
-    </div>
+    </main>
   );
 };

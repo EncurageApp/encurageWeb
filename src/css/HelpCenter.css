@@ -1,13 +1,16 @@
 @import "../css/Root.css";
 
 .help-layout p {
+  font-size: 1.2rem;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
+  letter-spacing: 1px;
 }
 
 .help-layout h2 {
   text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.2rem;
 }
 
 /* 
@@ -20,42 +23,61 @@ Help Layout
   margin: 0 auto;
 }
 
-.help-layout-img {
+.help-layout-hero {
+  height: 100vh;
   background-image: url(../imgs/lightbulb.jpg);
-  height: 100svh;
-  background-position: left;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
   position: relative;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  position: relative;
 }
 
-.help-layout-intro {
-  text-align: center;
+.help-layout-hero::before {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
-  color: white;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
-.help-layout-intro h2 {
+.hl-intro-text {
+  max-width: 1400px;
+  padding: 0 1rem;
+  padding-top: 8rem;
+  text-align: center;
+  color: white;
+}
+
+.hl-intro-text h2 {
   margin: 1rem;
   padding-bottom: 0.5rem;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.55),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
   border: none;
-  font-size: 6rem;
+  font-size: 4rem;
+  border-bottom: 0.5px solid white;
+}
+
+.hl-intro-text p {
+  margin: 0 auto;
+  max-width: 900px;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0), 0px -5px 35px rgba(1, 1, 1, 0.5);
+  font-size: 1.2rem;
 }
 
 .help-layout > h3 {
   margin: 3rem auto 0;
   text-align: center;
-  max-width: 400px;
+  max-width: 800px;
   color: var(--primaryFour);
   font-size: 1.8rem;
   border-bottom: 0.3px solid var(--primaryFour);
@@ -344,7 +366,7 @@ Faq Section
 }
 
 .faq-examples > ul span {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   border-bottom: 0.3px solid white;
 }
 
@@ -493,10 +515,16 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .help-layout-intro {
-    top: 40%;
-    left: 70%;
-    transition: all 0.3s ease-in-out;
+  .hl-intro-text h2 {
+    font-size: 6rem;
+  }
+
+  .hl-intro-text p {
+    font-size: 1.4rem;
+  }
+
+  .help-layout > h3 {
+    font-size: 3rem;
   }
 
   .help-layout > p {
@@ -518,14 +546,20 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .help-layout-intro {
-    top: 40%;
-    left: 70%;
-    transition: all 0.3s ease-in-out;
+  .hl-intro-text h2 {
+    font-size: 8rem;
+  }
+
+  .hl-intro-text p {
+    font-size: 1.6rem;
+  }
+
+  .help-layout > h3 {
+    font-size: 4rem;
   }
 
   .help-layout > p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .contact-container {

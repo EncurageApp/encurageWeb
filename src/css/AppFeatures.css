@@ -16,6 +16,7 @@ APP FEATURES IN ORDER
   text-align: center;
   font-size: 1.2rem;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0px -5px 35px rgba(1, 1, 1, 0.5);
+  letter-spacing: 0.8px;
 }
 
 .appFeatures-page h2 {
@@ -23,6 +24,7 @@ APP FEATURES IN ORDER
   border: none;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
     0px 0.1px 10px rgba(14, 13, 13, 0.5);
+  letter-spacing: 2px;
 }
 
 /*
