@@ -37,17 +37,11 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(
-    var(--primaryFive) 0%,
-
-    var(--primaryFour) 60%
-  );
+  background: var(--primaryFour);
   height: 4rem;
-  font-family: "Poppins", sans-serif;
 }
 
 .logo a {
-  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   margin-left: 20px;
   color: white;
@@ -59,7 +53,6 @@ header nav {
 }
 
 .navlinks {
-  font-family: "Poppins", sans-serif;
   display: flex;
   margin-right: 15px;
   gap: 15px;
@@ -132,11 +125,7 @@ header nav {
     width: 100%;
     position: absolute;
     top: 60px;
-    background: linear-gradient(
-      var(--primaryFour) 0%,
-      var(--primaryFour) 90%,
-      var(--primaryFive) 100%
-    );
+    background: var(--primaryFour);
     transition: all 0.5s ease-in-out;
   }
 
@@ -193,12 +182,7 @@ Footer
 footer {
   bottom: 0;
   width: 100%;
-  background: linear-gradient(
-    var(--primaryFour) 0%,
-    var(--primaryFour) 30%,
-    var(--primaryFive) 100%
-  );
-  font-family: "Poppins", sans-serif;
+  background: var(--primaryFour);
 }
 
 footer nav {
@@ -310,7 +294,7 @@ footer .logo a {
 
 .terms-privacy a:hover {
   transition: all 0.3s ease-in-out;
-  color: var(--primaryOne);
+  color: var(--primaryFive);
 }
 
 .social-icons {

@@ -2,7 +2,6 @@
 
 main {
   height: 100%;
-  font-family: "Poppins", sans-serif;
   background-color: var(--primaryThree);
 }
 
@@ -32,21 +31,7 @@ Animation Squares
 
 .animation-squares {
   position: absolute;
-  background-image: linear-gradient(
-    to bottom,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background: var(--primaryFour);
   width: 95%;
   max-width: 1200px;
   height: 300px;
@@ -56,7 +41,7 @@ Animation Squares
   align-items: center;
   top: 30%;
   border-radius: 10px 70px;
-  border: 10px double var(--primaryFive); /* FIGURE OUT HOW TO PUT LINEAR GRADIENT TO MATCH APP, GRAPE TO CORAL */
+  border: 10px double var(--primaryFive);
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.43);
   transition: all 0.5s ease-in-out;
 }
@@ -172,28 +157,11 @@ Main Section
 
 .home-main-container {
   width: 100%;
-  font-family: "Poppins";
-  background-color: var(--primaryThree);
   padding: 4rem 0;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .home-main {
-  background-image: linear-gradient(
-    to bottom,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background: var(--primaryFour);
   color: white;
   display: flex;
   flex-direction: column;
@@ -307,7 +275,7 @@ App Section
 .home-app-intro h2 {
   margin-top: 4rem;
   padding: 1rem;
-  color: var(--primaryFour);
+  border: none;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
     1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -334,21 +302,7 @@ App Section
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background: var(--primaryFour);
   border-radius: 20px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
@@ -381,25 +335,10 @@ App Section
   gap: 30px;
   transition: all 0.3s ease-in-out;
   background-color: var(--primaryThree);
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .duo {
-  background-image: linear-gradient(
-    to top,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background: var(--primaryFour);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -419,7 +358,7 @@ App Section
 
 .duo:nth-child(2) p,
 .duo:nth-child(2) h2 {
-  color: var(--primaryFour);
+  color: black;
   border: none;
 }
 
@@ -456,7 +395,6 @@ App Section
   color: var(--primaryFour);
   font-size: 1.6rem;
   margin-bottom: 30px;
-
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
     1px 1px 1px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
@@ -487,21 +425,7 @@ Founder Section
 }
 
 .home-founder {
-  background-image: linear-gradient(
-    to right,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background: var(--primaryFour);
   height: 100%;
   width: 100%;
   max-width: 1000px;
@@ -558,7 +482,7 @@ Review Section
 
 .home-review-container {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: var(--primaryFour);
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
@@ -657,7 +581,6 @@ Review Section
 
 blockquote {
   position: relative;
-  font-family: "Poppins", sans-serif;
 }
 
 blockquote::before,
@@ -726,7 +649,7 @@ Contact Section
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: var(--primaryFive);
+  fill: black;
 }
 
 .svg-icon circle {
@@ -737,11 +660,12 @@ Contact Section
 .home-contact-container {
   margin: 60px auto;
   text-align: center;
-  color: var(--primaryFour);
+  color: black;
 }
 
 .home-contact-container h2 {
   font-size: 3rem;
+  border: none;
 }
 
 .home-contact-container > p {
@@ -761,21 +685,7 @@ Contact Section
   gap: 20px;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-    to top,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background: var(--primaryFour);
   justify-content: space-evenly;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
@@ -919,6 +829,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   /*      Review Section       */
 
+  .home-review-container {
+    min-height: 600px;
+  }
+
   .review-wrapper {
     min-height: 50vh;
   }
@@ -1060,6 +974,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   /*       Founder Section       */
 
+  .home-review-container {
+    min-height: 600px;
+  }
+
   .home-founder {
     max-width: 1400px;
   }
@@ -1125,7 +1043,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .contact-card-wrapper {
-    height: 50vh;
+    max-height: 50vh;
   }
 
   .contact-card {

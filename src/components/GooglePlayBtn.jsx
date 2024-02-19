@@ -5,11 +5,7 @@ export const GooglePlayBtn = () => {
     "https://apps.apple.com/us/app/oncure-medicine-reminder/id1417312275";
   return (
     <div>
-      <GooglePlayButton
-        url={APKUrl}
-        theme={"dark"}
-        className="google-play-btn"
-      />
+      <GooglePlayButton url={APKUrl} theme={"dark"} width={190} />
     </div>
   );
 };
