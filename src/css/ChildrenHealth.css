@@ -12,7 +12,6 @@
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
   letter-spacing: 2px;
 }
-
 /*
 =================================================
 Hero
@@ -70,9 +69,10 @@ Stats
 
 .ch-stats-container h2 {
   padding-top: 4rem;
-  color: var(--primaryFour);
+
   font-size: 2.5rem;
   text-align: center;
+  border: none;
 }
 
 .ch-stats-card {
@@ -170,21 +170,7 @@ Reasons
   margin: 0 auto;
   padding: 5em 2rem;
   max-width: 1000px;
-  background-image: linear-gradient(
-    to bottom,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryFour);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +181,7 @@ Reasons
 
 .ch-reason-spacer {
   margin: 0 auto;
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.2rem;
   padding: 5rem 2rem;
   max-width: 1200px;
@@ -208,21 +194,7 @@ Reasons
 .ch-reason-container > ul {
   margin: 0 auto;
   max-width: 1000px;
-  background-image: linear-gradient(
-    to top,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryFour);
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -282,9 +254,13 @@ Health Slider
 .ch-slider-info {
   margin: 0 auto;
   text-align: center;
-  color: var(--primaryOne);
+  color: black;
   padding: 1rem;
   line-height: 2.5rem;
+}
+
+.ch-slider-info h2 {
+  border: none;
 }
 
 .ch-slider-info p {
@@ -301,22 +277,8 @@ Health Slider
   min-height: 500px;
   max-width: 800px;
   color: white;
-  background-image: linear-gradient(
-    to bottom,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
-  margin: 5rem auto;
+  background-color: var(--primaryFour);
+  margin: 0 auto;
   padding: 1rem;
   text-align: center;
   display: flex;
@@ -433,10 +395,5 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .ch-reason-container > ul {
     border-radius: 0 0 10% 10%;
-  }
-
-  /* Slider */
-  .ch-slider {
-    border-radius: 50%;
   }
 }

@@ -658,7 +658,8 @@ Contact Section
 }
 
 .home-contact-container {
-  margin: 60px auto;
+  margin: 0 auto;
+  padding: 4rem 0;
   text-align: center;
   color: black;
 }
@@ -681,7 +682,7 @@ Contact Section
   margin: 0 auto;
   height: 100%;
   max-width: 800px;
-  padding: 20px 20px;
+  padding: 20px 10px;
   gap: 20px;
   display: flex;
   flex-direction: column;
@@ -700,7 +701,7 @@ Contact Section
 }
 
 .contact-card {
-  background-color: white;
+  background-color: var(--primaryThree);
   width: 100%;
   border: 0.3px solid var(--primaryFive);
   border-radius: 10px;

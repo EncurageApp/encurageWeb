@@ -78,14 +78,14 @@ Help Layout
   margin: 3rem auto 0;
   text-align: center;
   max-width: 800px;
-  color: var(--primaryFour);
+  color: black;
   font-size: 1.8rem;
-  border-bottom: 0.3px solid var(--primaryFour);
+  border-bottom: 0.3px solid black;
 }
 
 .help-layout > p {
   text-align: center;
-  color: var(--primaryOne);
+  color: black;
   margin: 0 auto 2rem;
   padding: 2rem;
   max-width: 1000px;
@@ -94,21 +94,7 @@ Help Layout
 }
 
 .hc-nav-container {
-  background-image: linear-gradient(
-    to top,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryFour);
   margin: 0 auto;
   padding: 2rem;
   display: flex;
@@ -128,7 +114,7 @@ Help Layout
   text-decoration: none;
   border: 2px solid var(--primaryOne);
   border-radius: 10px;
-  color: var(--primaryOne);
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,7 +138,8 @@ Contact Section
 
 .contact-page {
   text-align: center;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .contact-img {
@@ -166,16 +153,16 @@ Contact Section
 
 .contact-page h1 {
   margin: 0 auto;
-  color: var(--primaryFour);
+  color: black;
   font-size: 3rem;
-  border-bottom: 0.3px solid var(--primaryFour);
+  border-bottom: 0.3px solid black;
   max-width: 350px;
   text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
 }
 
 .contact-page p {
-  color: var(--primaryFour);
+  color: black;
   margin: 0 auto 2rem;
   padding: 2rem;
   max-width: 1000px;
@@ -190,7 +177,6 @@ Contact Section
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .email-animation {
@@ -228,7 +214,7 @@ Contact Section
 }
 
 .label {
-  color: var(--primaryFour);
+  color: black;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -279,7 +265,7 @@ input[type="email"]:focus {
   width: 150px;
   padding: 10px 20px;
   background-color: var(--primaryThree);
-  color: var(--primaryFour);
+  color: black;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -311,19 +297,20 @@ Faq Section
 
 .faq-page h1 {
   margin-top: 3rem;
-  color: var(--primaryFour);
+  color: black;
   font-size: 3rem;
 }
 
 .faq-page h2 {
   text-align: center;
-  color: var(--primaryFour);
+  color: black;
   font-size: 2.3rem;
+  border: none;
 }
 
 .faq-page > p {
   text-align: center;
-  color: var(--primaryOne);
+  color: black;
   margin: 0 auto 2rem;
   padding: 2rem;
   max-width: 1000px;
@@ -334,21 +321,7 @@ Faq Section
 .faq-examples {
   width: 100%;
   border: 0.3px solid var(--primaryFour);
-  background-image: linear-gradient(
-    to bottom,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryFour);
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
   padding: 1rem;
   display: flex;
@@ -382,21 +355,7 @@ Faq Section
 }
 
 .Collapsible__contentInner {
-  background-image: linear-gradient(
-    to top,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryFour);
   padding: 2rem;
   border: 1px solid var(--primaryFour);
   border-top: 0;
@@ -405,7 +364,7 @@ Faq Section
 }
 
 .Collapsible__contentInner p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-shadow: none;
 }
 
@@ -416,12 +375,12 @@ Faq Section
   border: 1px solid var(--primaryFour);
   padding: 15px;
   background: var(--primaryThree);
-  color: var(--primaryOne);
-  font-size: 1rem;
+  color: black;
+  font-size: 1.1rem;
 }
 
 .Collapsible__trigger:after {
-  font-family: "Poppins";
+  font-family: "Quicksand";
   content: "\25BE";
   position: absolute;
   right: 5px;
@@ -442,25 +401,26 @@ Terms & Conditions
 
 .terms-conditions {
   text-align: center;
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 1200px;
-  padding: 0 1.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .terms-conditions h2 {
-  color: var(--primaryOne);
+  color: black;
+  border: none;
 }
 
 .terms-conditions h3 {
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.7rem;
 }
 
 .terms-conditions p {
   padding: 2rem 0;
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.1rem;
   line-height: 2.5rem;
 }
@@ -473,25 +433,26 @@ Privacy Policy
 
 .privacy-policy {
   text-align: center;
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 1200px;
-  padding: 0 1.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .privacy-policy h2 {
-  color: var(--primaryOne);
+  color: black;
+  border: none;
 }
 
 .privacy-policy h3 {
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.7rem;
 }
 
 .privacy-policy p {
   padding: 2rem 0;
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.1rem;
   line-height: 2.5rem;
 }
@@ -499,7 +460,7 @@ Privacy Policy
 .privacy-policy ul li {
   margin: 0 1.2rem;
   padding: 0 1.2rem;
-  color: var(--primaryOne);
+  color: black;
 }
 
 /*

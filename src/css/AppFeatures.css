@@ -152,7 +152,6 @@ features intro
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0px 5px 20px 6px rgba(0, 0, 0, 0.43);
 }
 
 .feature-info {
@@ -189,7 +188,7 @@ features intro
 }
 
 .feature-card {
-  background-color: var(--primaryThree);
+  background-color: var(--primaryFour);
   margin: 0 auto;
   max-width: 300px;
   border-radius: 15% 10px;
@@ -204,18 +203,17 @@ features intro
 }
 
 .feature-card h3 {
-  color: var(--primaryOne);
+  color: white;
   border-bottom: 0.3px solid var(--primaryFive);
   margin-bottom: 20px;
-  text-shadow: 2px 2px 6px var(--primaryThree), 0px 1px 10px rgba(1, 1, 1, 0.5);
+  text-shadow: 2px 2px 2px black, 0px 1px 10px rgba(1, 1, 1, 0.5);
 }
 
 .feature-card p {
-  color: var(--primaryOne);
-  font-size: 0.9rem;
+  color: white;
+  font-size: 1rem;
   letter-spacing: 1.5px;
   text-align: right;
-  text-shadow: 2px 2px 6px var(--primaryThree), 0px 1px 10px rgba(1, 1, 1, 0.5);
 }
 
 /*
@@ -225,6 +223,7 @@ Tracking Hub
 */
 .tracking-hub {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .tracking-hub h3 {
@@ -245,8 +244,7 @@ Tracking Hub
 }
 
 .tracking-info {
-  background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
+  background: var(--primaryFour);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -266,6 +264,7 @@ Daily Life
 */
 .daily-life {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .daily-life h3 {
@@ -286,8 +285,7 @@ Daily Life
 }
 
 .dl-info {
-  background: #40cccb;
-  background: radial-gradient(at left bottom, #40cccb, #008080);
+  background: var(--primaryFour);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -307,6 +305,7 @@ Care Family
 */
 .care-family {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .care-family h3 {
@@ -327,8 +326,7 @@ Care Family
 }
 
 .cf-info {
-  background: #40cccb;
-  background: radial-gradient(at left bottom, #40cccb, #008080);
+  background: var(--primaryFour);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -349,14 +347,12 @@ App Features download btns
 
 .af-download-container {
   margin: 10rem auto;
-  background-color: var(--primaryThree);
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
   max-width: 1200px;
 }
 
 .af-download-container h2 {
   padding: 2rem 0;
-  color: var(--primaryFour);
+  color: black;
   text-shadow: 2px 2px 5px var(--primaryThree), 1px 2px 5px black;
 }
 
@@ -408,7 +404,7 @@ App Features download btns
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 1px 2px 10px var(--primaryFive), 1px 2px 5px var(--primaryThree);
+  text-shadow: 1px 2px 10px var(--primaryFour), 1px 2px 5px var(--primaryFour);
 }
 
 .af-download-info-square {
@@ -433,7 +429,7 @@ App Features download btns
   gap: 1rem;
   margin-top: 4rem;
   padding: 2rem;
-  background: radial-gradient(at bottom, #40cccb, #008080);
+  background: var(--primaryFour);
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
@@ -444,6 +440,7 @@ As-Needed Wizard
 */
 .as-needed-wizard {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .as-needed-wizard h3 {
@@ -465,7 +462,7 @@ As-Needed Wizard
 
 .anw-info {
   background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
+  background: var(--primaryFour);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -485,6 +482,7 @@ EOS
 */
 .eos {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .eos h3 {
@@ -506,7 +504,7 @@ EOS
 
 .eos-info {
   background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
+  background: var(--primaryFour);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -527,6 +525,7 @@ Journal
 
 .journal {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .journal h3 {
@@ -548,7 +547,7 @@ Journal
 
 .j-info {
   background: #40cccb;
-  background: radial-gradient(at left bottom, #40cccb, #008080);
+  background: var(--primaryFour);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
