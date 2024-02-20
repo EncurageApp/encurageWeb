@@ -727,6 +727,37 @@ Contact Section
 
 /*
 =====================================================================
+Disclaimer
+=====================================================================
+*/
+
+.disclaimer-container {
+  padding: 4rem;
+}
+
+.disclaimer {
+  background-color: var(--primaryFour);
+  padding: 2rem;
+  border-radius: 50px;
+  color: white;
+}
+
+.disclaimer span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.disclaimer-terms-btn {
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.disclaimer-terms-btn:hover {
+  color: var(--primaryFive);
+  transition: all 0.5s ease-in-out;
+}
+/*
+=====================================================================
 Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 =====================================================================
 */

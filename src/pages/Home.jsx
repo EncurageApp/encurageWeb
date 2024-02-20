@@ -7,7 +7,7 @@ import MomKids from "../imgs/mom-kids.jpg";
 // Components
 import { CardContainer } from "../components/CardContainer";
 import { PhoneAnimation } from "../components/animations/PhoneAnimation";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { SupportAnimation } from "../components/animations/SupportAnimation";
 import { TestimonialSlider } from "../components/TestimonialSlider";
 import { HomeIntroAnimation } from "../components/animations/HomeIntroAnimation";
@@ -227,6 +227,26 @@ export const Home = () => {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="disclaimer-container">
+        <div className="disclaimer">
+          <p>
+            <span>*Important: </span>Encurage is here to help you manage your
+            child's medicine and track symptoms and progress, in accordance with
+            the instructions given to you by your child's healthcare provider.{" "}
+            <span>
+              IT IS NOT INTENDED TO, AND DOES NOT, PROVIDE ANY MEDICINE ADVICE.{" "}
+            </span>
+            Always make sure you are following your pediatrician's instructions
+            and reading carefully all of the information and instructions
+            provided with the medicine by manufactures or your pharmacy. Please
+            read our{" "}
+            <NavLink to="HelpCenterLayout" className="disclaimer-terms-btn">
+              Terms & Conditions{" "}
+            </NavLink>{" "}
+            for complete information.
+          </p>
         </div>
       </section>
     </main>
