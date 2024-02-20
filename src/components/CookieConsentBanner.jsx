@@ -33,7 +33,7 @@ export const CookieConsentBanner = () => {
             console.log("User Declined Cookies");
           }}
           style={{
-            background: "linear-gradient(#008080,#2e9593,#3fccca)",
+            background: "#008080",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
