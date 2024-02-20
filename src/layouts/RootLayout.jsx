@@ -8,8 +8,11 @@ import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 import { SocialMediaIcons } from "../components/SocialMediaIcons";
 import { CookieConsentBanner } from "../components/CookieConsentBanner";
-
 import { LoaderAnimation } from "../components/animations/LoaderAnimation";
+
+//Imgs
+import Elogo from "../imgs/figmaImgs/encurage.png";
+import Elogo2 from "../imgs/figmaImgs/Layer_1.png";
 
 export const RootLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,9 +41,9 @@ export const RootLayout = () => {
         <header>
           <nav>
             <div className="nav-header">
-              <h1 className="logo">
-                <NavLink to={"/"}>Encurage</NavLink>
-              </h1>
+              <div className="logo-container">
+                <img src={Elogo} alt="encurage" />
+              </div>
               <div
                 className={`menu-icon ${isMenuOpen ? "open" : ""}`}
                 onClick={toggleMenu}
@@ -84,9 +87,9 @@ export const RootLayout = () => {
 
       <footer>
         <nav>
-          <h1 className="logo">
-            <NavLink to={"/"}>Encurage</NavLink>
-          </h1>
+          <div className="logo-container">
+            <img src={Elogo} alt="encurage" />
+          </div>
           <ul className="quick-links">
             <NavLink to={"/"} onClick={handleQuickLinkClick}>
               Home
