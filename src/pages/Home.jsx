@@ -62,7 +62,7 @@ export const Home = () => {
       <section className="home-app-container">
         <PhoneAnimation />
         <div className="duo-container">
-          <div className="duo">
+          <div data-aos="fade-down" className="duo">
             <div className="duo-img-container">
               <img src={KidJumping} alt=" kid jumping" />
             </div>
@@ -84,19 +84,19 @@ export const Home = () => {
           </div>
           <div className="duo">
             <div className="duo-info">
-              <h2>Your Child's Health, Your Way</h2>
-              <p>
+              <h2 data-aos="fade-right">Your Child's Health, Your Way</h2>
+              <p data-aos="fade-left">
                 Take control of your child's health with our app. Prioritize
                 their well-being and give them the personalized care they
                 deserve. Get started today.
               </p>
 
-              <Link to="AppFeatures" onClick={handleLink}>
+              <Link data-aos="fade-right" to="AppFeatures" onClick={handleLink}>
                 <button className="cta-btn-home">Explore Now </button>
               </Link>
             </div>
           </div>
-          <div className="duo">
+          <div data-aos="fade-up" className="duo">
             <div className="duo-info">
               <h3>Curiosity Unleashed: The Untold Dangers of Mis-Dosage</h3>
               <p>
@@ -120,7 +120,7 @@ export const Home = () => {
       </section>
 
       <section className="home-founder-container">
-        <div className="home-founder">
+        <div data-aos="fade-right" className="home-founder">
           <div className="home-founder-info">
             <h2>Meet the Heart Behind The Mission</h2>
             <p>
@@ -140,7 +140,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="home-review-container">
+      <section data-aos="fade-in" className="home-review-container">
         <div>
           <h2>See What Parents Say</h2>
         </div>
@@ -154,7 +154,7 @@ export const Home = () => {
           <SupportAnimation />
           <div className="contact-card-wrapper">
             <div className="contact-card">
-              <svg className="svg-icon" viewBox="0 0 20 20">
+              <svg data-aos="fade-in" className="svg-icon" viewBox="0 0 20 20">
                 <path
                   fill="none"
                   d="M14.9,6.707c-0.804-2.497-3.649-4.351-7.035-4.351c-4.008,0-7.27,2.594-7.27,5.782
@@ -191,7 +191,7 @@ export const Home = () => {
               </Link>
             </div>
             <div className="contact-card">
-              <svg className="svg-icon" viewBox="0 0 20 20">
+              <svg data-aos="fade-in" className="svg-icon" viewBox="0 0 20 20">
                 <path
                   fill="none"
                   d="M10.032,8.367c-1.112,0-2.016,0.905-2.016,2.018c0,1.111,0.904,2.014,2.016,2.014c1.111,0,2.014-0.902,2.014-2.014C12.046,9.271,11.143,8.367,10.032,8.367z M10.032,11.336c-0.525,0-0.953-0.427-0.953-0.951c0-0.526,0.427-0.955,0.953-0.955c0.524,0,0.951,0.429,0.951,0.955C10.982,10.909,10.556,11.336,10.032,11.336z"
@@ -211,7 +211,7 @@ export const Home = () => {
               </Link>
             </div>
             <div className="contact-card">
-              <svg className="svg-icon" viewBox="0 0 20 20">
+              <svg data-aos="fade-in" className="svg-icon" viewBox="0 0 20 20">
                 <path
                   fill="none"
                   d="M16.999,4.975L16.999,4.975C16.999,4.975,16.999,4.975,16.999,4.975c-0.419-0.4-0.979-0.654-1.604-0.654H4.606c-0.584,0-1.104,0.236-1.514,0.593C3.076,4.928,3.05,4.925,3.037,4.943C3.034,4.945,3.035,4.95,3.032,4.953C2.574,5.379,2.276,5.975,2.276,6.649v6.702c0,1.285,1.045,2.329,2.33,2.329h10.79c1.285,0,2.328-1.044,2.328-2.329V6.649C17.724,5.989,17.441,5.399,16.999,4.975z M15.396,5.356c0.098,0,0.183,0.035,0.273,0.055l-5.668,4.735L4.382,5.401c0.075-0.014,0.145-0.045,0.224-0.045H15.396z M16.688,13.351c0,0.712-0.581,1.294-1.293,1.294H4.606c-0.714,0-1.294-0.582-1.294-1.294V6.649c0-0.235,0.081-0.445,0.192-0.636l6.162,5.205c0.096,0.081,0.215,0.122,0.334,0.122c0.118,0,0.235-0.041,0.333-0.12l6.189-5.171c0.099,0.181,0.168,0.38,0.168,0.6V13.351z"

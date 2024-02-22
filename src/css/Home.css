@@ -3,6 +3,7 @@
 main {
   height: 100%;
   background-color: var(--primaryTwo);
+  overflow: hidden;
 }
 
 main h2 {

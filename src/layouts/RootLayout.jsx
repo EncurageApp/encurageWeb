@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Headroom from "react-headroom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Components
 import { SubscribeBtn } from "../components/SubscribeBtn";
@@ -33,6 +35,14 @@ export const RootLayout = () => {
       setLoading(false);
     }, 1500);
   };
+
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-quart",
+      delay: 800,
+      duration: 3000,
+    });
+  }, []);
 
   return (
     <div className="root-layout">

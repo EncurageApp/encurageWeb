@@ -6,12 +6,12 @@ export const PhoneAnimation = () => {
     <div className="home-app-intro">
       <h2>Welcome to the Future of Child Health Management</h2>
       <div>
-        <Lottie
+        {/* <Lottie
           loop={true}
           animationData={animationData}
           className="phone-animation"
-        />
-        <div className="home-app-inner">
+        /> */}
+        <div data-aos="fade-up" className="home-app-inner">
           <h3>Revolutionize Your Child's Health Management</h3>
           <p>
             Our cutting-edge app is here to transform the way you care for your
