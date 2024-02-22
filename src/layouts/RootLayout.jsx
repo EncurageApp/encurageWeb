@@ -12,7 +12,6 @@ import { LoaderAnimation } from "../components/animations/LoaderAnimation";
 
 //Imgs
 import Elogo from "../imgs/figmaImgs/encurage.png";
-import Elogo2 from "../imgs/figmaImgs/Layer_1.png";
 
 export const RootLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

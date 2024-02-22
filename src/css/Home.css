@@ -2,7 +2,7 @@
 
 main {
   height: 100%;
-  background-color: var(--primaryThree);
+  background-color: var(--primaryTwo);
 }
 
 main h2 {
@@ -31,7 +31,7 @@ Animation Squares
 
 .animation-squares {
   position: absolute;
-  background: var(--primaryFour);
+  background: var(--primaryOne);
   width: 95%;
   max-width: 1200px;
   height: 300px;
@@ -161,7 +161,7 @@ Main Section
 }
 
 .home-main {
-  background: var(--primaryFour);
+  background: var(--primaryOne);
   color: white;
   display: flex;
   flex-direction: column;
@@ -302,7 +302,7 @@ App Section
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--primaryFour);
+  background: var(--primaryOne);
   border-radius: 20px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
@@ -334,11 +334,11 @@ App Section
   justify-content: space-between;
   gap: 30px;
   transition: all 0.3s ease-in-out;
-  background-color: var(--primaryThree);
+  background-color: var(--primaryTwo);
 }
 
 .duo {
-  background: var(--primaryFour);
+  background: var(--primaryOne);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -353,7 +353,7 @@ App Section
   width: 100%;
   background-color: white;
   box-shadow: none;
-  background-color: var(--primaryThree);
+  background-color: var(--primaryTwo);
 }
 
 .duo:nth-child(2) p,
@@ -392,7 +392,6 @@ App Section
 }
 
 .duo-info h2 {
-  color: var(--primaryFour);
   font-size: 1.6rem;
   margin-bottom: 30px;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
@@ -425,7 +424,7 @@ Founder Section
 }
 
 .home-founder {
-  background: var(--primaryFour);
+  background: var(--primaryOne);
   height: 100%;
   width: 100%;
   max-width: 1000px;
@@ -470,10 +469,6 @@ Founder Section
   font-size: 1rem;
 }
 
-.founder-wrapper {
-  background-color: var(--primaryFour);
-}
-
 /*
 =============================================================
 Review Section
@@ -483,7 +478,7 @@ Review Section
 .home-review-container {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--primaryFour);
+  background-color: var(--primaryOne);
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
@@ -541,7 +536,7 @@ Review Section
   border-radius: 0 50px 0 0;
   width: 60px;
   height: 60px;
-  bottom: -61px;
+  bottom: -62px;
   left: 50px;
   border-bottom: none;
   border-left: none;
@@ -552,8 +547,8 @@ Review Section
   content: "";
   position: absolute;
   width: 80px;
-  border: 6px solid var(--primaryFour);
-  bottom: -3px;
+  border: 6px solid var(--primaryOne);
+  bottom: -3.5px;
   left: 50px;
   z-index: 2;
 }
@@ -686,7 +681,7 @@ Contact Section
   gap: 20px;
   display: flex;
   flex-direction: column;
-  background: var(--primaryFour);
+  background: var(--primaryOne);
   justify-content: space-evenly;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
@@ -737,7 +732,7 @@ Disclaimer
 
 .disclaimer {
   margin: 0 auto;
-  background-color: var(--primaryFour);
+  background-color: var(--primaryOne);
   padding: 2rem;
   border-radius: 50px;
   color: white;
@@ -1077,7 +1072,8 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .contact-card-wrapper {
-    max-height: 50vh;
+    height: 100%;
+    min-height: 40vh;
   }
 
   .contact-card {

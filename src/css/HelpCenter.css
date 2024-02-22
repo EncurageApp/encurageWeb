@@ -75,12 +75,12 @@ Help Layout
 }
 
 .help-layout > h3 {
-  margin: 3rem auto 0;
+  margin: 3rem auto;
   text-align: center;
   max-width: 800px;
   color: black;
   font-size: 1.8rem;
-  border-bottom: 0.3px solid black;
+  padding: 0.5rem;
 }
 
 .help-layout > p {
@@ -94,7 +94,7 @@ Help Layout
 }
 
 .hc-nav-container {
-  background-color: var(--primaryFour);
+  background-color: var(--primaryOne);
   margin: 0 auto;
   padding: 2rem;
   display: flex;
@@ -106,7 +106,7 @@ Help Layout
 }
 
 .hcNavLink {
-  background-color: var(--primaryThree);
+  background-color: var(--primaryTwo);
   margin: 0 auto;
   min-width: 250px;
   padding: 1rem;
@@ -126,7 +126,7 @@ Help Layout
 
 .hcNavLink:hover {
   color: white;
-  background-color: var(--primaryFive);
+  background-color: var(--primaryFour);
   transition: all 0.3s ease-in-out;
 }
 
@@ -171,7 +171,7 @@ Contact Section
 }
 
 .contact-container {
-  background-color: var(--primaryThree);
+  background-color: var(--primaryTwo);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -199,7 +199,7 @@ Contact Section
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--primaryFour);
+  background-color: var(--primaryOne);
   color: white;
   padding: 20px;
   border-radius: 5px;
@@ -321,7 +321,7 @@ Faq Section
 .faq-examples {
   width: 100%;
   border: 0.3px solid var(--primaryFour);
-  background-color: var(--primaryFour);
+  background-color: var(--primaryOne);
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
   padding: 1rem;
   display: flex;
@@ -355,7 +355,7 @@ Faq Section
 }
 
 .Collapsible__contentInner {
-  background-color: var(--primaryFour);
+  background-color: var(--primaryOne);
   padding: 2rem;
   border: 1px solid var(--primaryFour);
   border-top: 0;
