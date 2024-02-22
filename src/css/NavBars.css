@@ -45,16 +45,23 @@ header nav {
   display: flex;
   justify-content: left;
   align-items: center;
-  width: 500px;
   padding-left: 1rem;
+  gap: 5px;
 }
 
 .logo-container img {
+  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container img:nth-child(2) {
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 1rem;
-  max-width: 200px;
-  background-position: center;
-  background-size: contain;
-  z-index: 1;
 }
 
 .navlinks {
@@ -156,6 +163,10 @@ header nav {
   .navlinks a:last-child {
     margin-bottom: 30px;
   }
+
+  .logo-container img:nth-child(2) {
+    max-width: 200px;
+  }
 }
 
 @media (min-width: 551px) and (max-width: 900px) {
@@ -208,13 +219,25 @@ footer .logo-container {
   grid-area: 1 / 1 / 2 / 3;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+footer .logo-container img {
+  max-width: 50px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .logo-container a {
-  font-size: 4rem;
-  padding-bottom: 20px;
+footer .logo-container img:nth-child(2) {
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
 }
 
 .quick-links {
@@ -348,7 +371,8 @@ footer .logo-container a {
   }
 
   footer .logo-container {
-    grid-area: 1 / 1 / 2 / 5;
+    grid-area: 1 / 2 / 2 / 3;
+    min-height: 150px;
   }
 
   .quick-links {
@@ -417,10 +441,6 @@ footer .logo-container a {
   footer .logo-container {
     grid-area: 1 / 1 / 2 / 2;
     border-right: solid 0.5px white;
-  }
-
-  footer .logo-container a {
-    font-size: 4.2rem;
   }
 
   .quick-links {

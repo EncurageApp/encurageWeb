@@ -14,6 +14,7 @@ import { LoaderAnimation } from "../components/animations/LoaderAnimation";
 
 //Imgs
 import Elogo from "../imgs/figmaImgs/encurage.png";
+import Elogo2 from "../imgs/figmaImgs/Layer_1.png";
 
 export const RootLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,6 +52,7 @@ export const RootLayout = () => {
           <nav>
             <div className="nav-header">
               <div className="logo-container">
+                <img src={Elogo2} alt="cup of pink medicine" />
                 <img src={Elogo} alt="encurage" />
               </div>
               <div
@@ -96,7 +98,8 @@ export const RootLayout = () => {
 
       <footer>
         <nav>
-          <div className="logo-container">
+          <div className="logo-container ">
+            <img src={Elogo2} alt="cup of pink medicine" />
             <img src={Elogo} alt="encurage" />
           </div>
           <ul className="quick-links">
