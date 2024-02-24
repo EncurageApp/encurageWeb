@@ -678,7 +678,7 @@ Contact Section
   margin: 0 auto;
   height: 100%;
   max-width: 800px;
-  padding: 20px 10px;
+  padding: 20px 20px;
   gap: 20px;
   display: flex;
   flex-direction: column;
@@ -754,6 +754,7 @@ Disclaimer
   color: var(--primaryFive);
   transition: all 0.5s ease-in-out;
 }
+
 /*
 =====================================================================
 Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop

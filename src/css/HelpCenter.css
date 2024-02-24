@@ -81,6 +81,7 @@ Help Layout
   color: black;
   font-size: 1.8rem;
   padding: 0.5rem;
+  text-shadow: 2 px 3px 6px rgba(0, 0, 0, 0.55);
 }
 
 .help-layout > p {
@@ -425,6 +426,10 @@ Terms & Conditions
   line-height: 2.5rem;
 }
 
+.terms-conditions p span {
+  font-weight: 600;
+}
+
 /* 
 =====================================
 Privacy Policy
@@ -443,11 +448,13 @@ Privacy Policy
 .privacy-policy h2 {
   color: black;
   border: none;
+  text-transform: uppercase;
 }
 
 .privacy-policy h3 {
   color: black;
   font-size: 1.7rem;
+  text-transform: uppercase;
 }
 
 .privacy-policy p {
@@ -457,10 +464,18 @@ Privacy Policy
   line-height: 2.5rem;
 }
 
+.privacy-policy p span {
+  font-weight: 600;
+}
+
 .privacy-policy ul li {
   margin: 0 1.2rem;
   padding: 0 1.2rem;
   color: black;
+}
+
+.privacy-policy ul li span {
+  font-weight: 600;
 }
 
 /*

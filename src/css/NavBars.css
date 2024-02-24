@@ -11,6 +11,7 @@ Nav
   left: 0;
   right: 0;
   z-index: 1000;
+  border-bottom: 2px solid var(--primaryOne);
 }
 
 .headroom--unfixed {
@@ -37,7 +38,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--primaryOne);
+  background: white;
   height: 4.5rem;
 }
 
@@ -74,7 +75,7 @@ header nav {
 .navlinks a {
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.1rem;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
@@ -82,12 +83,12 @@ header nav {
 }
 
 .navlinks a:hover {
-  color: var(--primaryFive);
+  color: var(--primaryOne);
   transition: all 0.4s ease-in-out;
 }
 
 .navlinks a.active {
-  color: var(--primaryFive);
+  color: var(--primaryOne);
   transition: all 0.4s ease-in-out;
 }
 
@@ -100,7 +101,7 @@ header nav {
 .menu-icon .bar {
   width: 30px;
   height: 3px;
-  background-color: white;
+  background-color: var(--primaryOne);
   margin: 3px 0;
   transition: 0.5s;
 }
@@ -137,7 +138,7 @@ header nav {
     width: 100%;
     position: absolute;
     top: 60px;
-    background: var(--primaryOne);
+    background: white;
     transition: all 0.5s ease-in-out;
   }
 
@@ -145,12 +146,13 @@ header nav {
     display: flex;
     transition: all 0.5s ease-in-out;
     border-radius: 0 0 5px 5px;
+    border-bottom: 2px solid var(--primaryOne);
   }
 
   .navlinks a {
     margin: 0 30%;
     padding: 10px 0 0 0;
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-size: 1rem;
     justify-self: center;
@@ -204,7 +206,8 @@ Footer
 footer {
   bottom: 0;
   width: 100%;
-  background: var(--primaryOne);
+  background: white;
+  border-top: 2px solid var(--primaryOne);
 }
 
 footer nav {
@@ -215,11 +218,16 @@ footer nav {
   grid-template-rows: repeat(3, 1fr) repeat(2, 0.2fr);
 }
 
+/* 
+=======================================
+Logo
+=======================================
+*/
+
 footer .logo-container {
   grid-area: 1 / 1 / 2 / 3;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-right: 2rem;
@@ -233,12 +241,18 @@ footer .logo-container img {
 }
 
 footer .logo-container img:nth-child(2) {
-  max-width: 250px;
+  max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
 }
+
+/* 
+=======================================
+Quick Links
+=======================================
+*/
 
 .quick-links {
   grid-area: 2 / 2 / 3 / 3;
@@ -252,7 +266,7 @@ footer .logo-container img:nth-child(2) {
 
 .quick-links a {
   text-decoration: none;
-  color: white;
+  color: black;
   margin-bottom: 5px;
   transition: all 0.4s ease-in-out;
   text-align: center;
@@ -260,14 +274,21 @@ footer .logo-container img:nth-child(2) {
 }
 
 .quick-links a:hover {
-  color: var(--primaryFive);
+  color: var(--primaryOne);
   transition: all 0.4s ease-in-out;
 }
 
 .quick-links a.active {
   transition: all 0.4s ease-in-out;
-  color: var(--primaryFive);
+  color: var(--primaryOne);
+  font-size: 1.15rem;
 }
+
+/* 
+=======================================
+Subscribe button
+=======================================
+*/
 
 .subscribe-btn-container {
   grid-area: 3 / 1 / 4 / 3;
@@ -275,14 +296,14 @@ footer .logo-container img:nth-child(2) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 0.5px solid white;
+  border-bottom: 0.5px solid black;
   margin: 30px 0 20px 0;
   padding: 0 0 25px 0;
   gap: 10px;
 }
 
 .subscribe-btn-container h2 {
-  color: white;
+  color: black;
 }
 
 .download-btn-container {
@@ -291,10 +312,16 @@ footer .logo-container img:nth-child(2) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-right: 0.5px solid white;
+  border-right: 0.5px solid black;
   padding-right: 15px;
   gap: 10px;
 }
+
+/* 
+=======================================
+Download Buttons
+=======================================
+*/
 
 .download-btn-container :nth-child(1):hover {
   transform: scale(1.02);
@@ -306,13 +333,25 @@ footer .logo-container img:nth-child(2) {
   transition: all 0.5s ease-in-out;
 }
 
+/* 
+=======================================
+Copyright
+=======================================
+*/
+
 .copyright {
   grid-area: 5 / 1 / 6 / 3;
   font-size: 0.7rem;
   width: 100%;
   text-align: center;
-  color: white;
+  color: black;
 }
+
+/* 
+=======================================
+Terms / Privacy
+=======================================
+*/
 
 .terms-privacy {
   display: flex;
@@ -322,14 +361,20 @@ footer .logo-container img:nth-child(2) {
 }
 
 .terms-privacy a {
-  color: white;
+  color: black;
   padding: 0 10px;
 }
 
 .terms-privacy a:hover {
   transition: all 0.3s ease-in-out;
-  color: var(--primaryFive);
+  color: var(--primaryOne);
 }
+
+/* 
+=======================================
+Social Icons
+=======================================
+*/
 
 .social-icons {
   grid-area: 4 / 1 / 5 / 3;
@@ -344,7 +389,7 @@ footer .logo-container img:nth-child(2) {
 }
 
 .icons a {
-  color: white;
+  color: black;
   transition: all 0.5s ease-in-out;
 }
 
@@ -352,6 +397,12 @@ footer .logo-container img:nth-child(2) {
   transform: scale(1.4);
   transition: all 0.5s ease-in-out;
 }
+
+/*
+=====================================================================
+Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
+=====================================================================
+*/
 
 @media (min-width: 550px) and (max-width: 1100px) {
   .headroom--unpinned {
@@ -365,7 +416,7 @@ footer .logo-container img:nth-child(2) {
   }
 
   footer nav {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.5fr 0.2fr 0.5fr repeat(2, 0.2fr);
     padding: 0;
   }

@@ -51,10 +51,12 @@ export const RootLayout = () => {
         <header>
           <nav>
             <div className="nav-header">
-              <div className="logo-container">
-                <img src={Elogo2} alt="cup of pink medicine" />
-                <img src={Elogo} alt="encurage" />
-              </div>
+              <NavLink to={"/"} onClick={handleQuickLinkClick}>
+                <div className="logo-container">
+                  <img src={Elogo2} alt="cup of pink medicine" />
+                  <img src={Elogo} alt="encurage" />
+                </div>
+              </NavLink>
               <div
                 className={`menu-icon ${isMenuOpen ? "open" : ""}`}
                 onClick={toggleMenu}
@@ -98,9 +100,13 @@ export const RootLayout = () => {
 
       <footer>
         <nav>
-          <div className="logo-container ">
+          <div className="logo-container">
             <img src={Elogo2} alt="cup of pink medicine" />
             <img src={Elogo} alt="encurage" />
+          </div>
+          <div className="download-btn-container">
+            <GooglePlayBtn />
+            <AppStoreBtn />
           </div>
           <ul className="quick-links">
             <NavLink to={"/"} onClick={handleQuickLinkClick}>
@@ -128,14 +134,10 @@ export const RootLayout = () => {
               <SubscribeBtn />
             </div>
           </div>
-          <div className="download-btn-container">
-            <GooglePlayBtn />
-            <AppStoreBtn />
-          </div>
           <span className="footer-bar"></span>
           <div className="copyright">
             <p>
-              &#169; Copyright 2023 Myrtus Enterprises LLC. All rights reserved.
+              &#169; Copyright 2024 Myrtus Enterprises LLC. All rights reserved.
             </p>
             <div className="terms-privacy">
               <NavLink to="HelpCenterLayout">Terms & Conditions </NavLink>
