@@ -51,12 +51,18 @@ export const RootLayout = () => {
         <header>
           <nav>
             <div className="nav-header">
-              <NavLink to={"/"} onClick={handleQuickLinkClick}>
-                <div className="logo-container">
-                  <img src={Elogo2} alt="cup of pink medicine" />
-                  <img src={Elogo} alt="encurage" />
+              <div className="nav-logo-download-container">
+                <NavLink to={"/"} onClick={handleQuickLinkClick}>
+                  <div className="logo-container">
+                    <img src={Elogo2} alt="cup of pink medicine" />
+                    <img src={Elogo} alt="encurage" />
+                  </div>
+                </NavLink>
+                <div className="nav-download-container-full">
+                  <GooglePlayBtn />
+                  <AppStoreBtn />
                 </div>
-              </NavLink>
+              </div>
               <div
                 className={`menu-icon ${isMenuOpen ? "open" : ""}`}
                 onClick={toggleMenu}
@@ -88,7 +94,19 @@ export const RootLayout = () => {
               <NavLink to={"HelpCenterLayout"} onClick={handleQuickLinkClick}>
                 Help Center
               </NavLink>
+              <div className="nav-download-container">
+                <h3>Download and Join Today!</h3>
+                <GooglePlayBtn />
+                <AppStoreBtn />
+              </div>
             </ul>
+            <div className="nav-download-container-mid">
+              <h3>Download and Join Today!</h3>
+              <div>
+                <GooglePlayBtn />
+                <AppStoreBtn />
+              </div>
+            </div>
           </nav>
         </header>
       </Headroom>
@@ -100,7 +118,7 @@ export const RootLayout = () => {
 
       <footer>
         <nav>
-          <div className="logo-container">
+          <div className="logo-container-footer">
             <img src={Elogo2} alt="cup of pink medicine" />
             <img src={Elogo} alt="encurage" />
           </div>
@@ -129,12 +147,12 @@ export const RootLayout = () => {
             </NavLink>
           </ul>
           <div className="subscribe-btn-container">
-            <h2>Get All The Latest News!</h2>
+            <h3>Join our community and get our news and updates!</h3>
             <div>
               <SubscribeBtn />
             </div>
           </div>
-          <span className="footer-bar"></span>
+
           <div className="copyright">
             <p>
               &#169; Copyright 2024 Myrtus Enterprises LLC. All rights reserved.

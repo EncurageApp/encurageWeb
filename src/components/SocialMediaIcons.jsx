@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
-  faTwitter,
+  faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -13,9 +13,9 @@ export const SocialMediaIcons = () => {
 
   const updateIconSize = () => {
     if (window.innerWidth > 1100) {
-      setIconSize("xl");
+      setIconSize("2xl");
     } else {
-      setIconSize("lg");
+      setIconSize("xl");
     }
   };
 
@@ -28,22 +28,19 @@ export const SocialMediaIcons = () => {
   }, []);
 
   return (
-    <div className="icons">
-      <a
-        href="https://www.facebook.com/learnbuildteach/"
-        className="facebook social"
-      >
-        <FontAwesomeIcon icon={faFacebook} size={iconSize} />
-      </a>
-      <a href="https://www.twitter.com/jamesqquick" className="twitter social">
-        <FontAwesomeIcon icon={faTwitter} size={iconSize} />
-      </a>
-      <a
-        href="https://www.instagram.com/learnbuildteach"
-        className="instagram social"
-      >
-        <FontAwesomeIcon icon={faInstagram} size={iconSize} />
-      </a>
+    <div className="icons-container">
+      <h3>Get in Touch With Us!</h3>
+      <div className="icons">
+        <a href="https://www.facebook.com/" className="facebook social">
+          <FontAwesomeIcon icon={faFacebook} size={iconSize} />
+        </a>
+        <a href="https://www.instagram.com/" className="instagram social">
+          <FontAwesomeIcon icon={faInstagram} size={iconSize} />
+        </a>
+        <a href="https://www.linkedin.com/" className="linkedin social">
+          <FontAwesomeIcon icon={faLinkedin} size={iconSize} />
+        </a>
+      </div>
     </div>
   );
 };

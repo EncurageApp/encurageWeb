@@ -577,6 +577,7 @@ Review Section
 
 blockquote {
   position: relative;
+  min-height: 40vh;
 }
 
 blockquote::before,
@@ -1029,27 +1030,23 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     transition: all 0.3s ease-in-out;
   }
 
-  /*       Image PopOut        */
-
-  .person {
-    position: relative;
-    max-width: 35rem;
-    left: 40%;
-    top: -650px;
-  }
-
   /*       Review Section       */
 
   .home-review-container {
-    height: 650px;
+    height: 100%;
   }
 
   .review-wrapper {
-    min-height: 50vh;
+    min-height: 40vh;
   }
 
   blockquote span {
     font-size: 2rem;
+  }
+
+  blockquote {
+    position: relative;
+    min-height: 30vh;
   }
 
   /*       Contact Section       */
