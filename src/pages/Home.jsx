@@ -1,8 +1,8 @@
 import React from "react";
 
 // imgs
-import KidJumping from "../imgs/kidjumping.jpg";
-import MomKids from "../imgs/mom-kids.jpg";
+import KidJumping from "../imgs/encurage/kidjumping.jpg";
+import MomKids from "../imgs/encurage/mom-kids.jpg";
 
 // Components
 import { CardContainer } from "../components/CardContainer";
@@ -10,7 +10,6 @@ import { PhoneAnimation } from "../components/animations/PhoneAnimation";
 import { Link, NavLink } from "react-router-dom";
 import { SupportAnimation } from "../components/animations/SupportAnimation";
 import { TestimonialSlider } from "../components/TestimonialSlider";
-import { HomeIntroAnimation } from "../components/animations/HomeIntroAnimation";
 
 export const Home = () => {
   const handleLink = () => {
@@ -23,19 +22,35 @@ export const Home = () => {
   return (
     <main>
       <section className="home-hero-container">
-        <div className="animation-squares">
-          <ul className="square-area">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <div className="home-hero-inner">
-            <HomeIntroAnimation />
-          </div>
+        <div>
+          <h2 data-aos="fade-in" data-aos-delay="500">
+            Manage and track your child's health.
+          </h2>
+          <p data-aos="fade-in" data-aos-delay="1000">
+            Easily.
+          </p>
+          <p data-aos="fade-in" data-aos-delay="2000">
+            Safely.
+          </p>
+          <p data-aos="fade-in" data-aos-delay="3000">
+            Effectively.
+          </p>
         </div>
+      </section>
+
+      <section className="home-main-intro">
+        <p>
+          Reliable, comprehensive, intuitive, all-around kids’ health management
+          digital platform developed especially for parents and caregivers.
+          <br />
+          Addressing the various, and unique aspects and challenges you
+          encounter while caring for a sick child, managing a child’s ongoing
+          condition, and the ever changing landscape of their health journeys
+          through baby, toddler, childhood and teenage years.
+          <br />
+          Everything you need is bundled into a digital companion, so you can
+          focus on love, hugs and cuddles ❤️
+        </p>
       </section>
 
       <section className="home-main-container">

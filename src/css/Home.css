@@ -24,104 +24,6 @@ main p {
   letter-spacing: 0.8px;
 }
 
-/* 
-====================================
-Animation Squares
-====================================
-*/
-
-.animation-squares {
-  position: absolute;
-  background: var(--primaryOne);
-  width: 95%;
-  max-width: 1200px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 20%;
-  border-radius: 10px 70px;
-  border: 10px double var(--primaryFive);
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.43);
-  transition: all 0.5s ease-in-out;
-}
-
-.square-area {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.square-area li {
-  position: absolute;
-  display: block;
-  list-style: none;
-  width: 25px;
-  height: 25px;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 20s linear infinite;
-  bottom: -150px;
-}
-
-.square-area li:nth-child(1) {
-  left: 86%;
-  width: 80px;
-  height: 80px;
-  animation-delay: 0s;
-}
-
-.square-area li:nth-child(2) {
-  left: 12%;
-  width: 30px;
-  height: 30px;
-  animation-delay: 1.5s;
-  animation-duration: 10s;
-}
-
-.square-area li:nth-child(3) {
-  left: 70%;
-  width: 100px;
-  height: 100px;
-  animation-delay: 5.5s;
-}
-
-.square-area li:nth-child(4) {
-  left: 42%;
-  width: 150px;
-  height: 150px;
-  animation-delay: 0s;
-  animation-duration: 15s;
-}
-
-.square-area li:nth-child(5) {
-  left: 65%;
-  width: 40px;
-  height: 40px;
-  animation-delay: 0s;
-}
-
-.square-area li:nth-child(6) {
-  left: 15%;
-  width: 110px;
-  height: 110px;
-  animation-duration: 3.5s;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-800px) rotate(360deg);
-    opacity: 0;
-  }
-}
-
 /*
 ============================================
 Hero
@@ -130,24 +32,57 @@ Hero
 
 .home-hero-container {
   height: 100svh;
-  background-image: url(../imgs/kidwashinghand.jpg);
+  max-width: 75%;
+  background-image: url(../imgs/encurage/homephoto.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  box-shadow: -10px -10px 30px 1px;
 }
 
-.home-intro-animation {
-  color: white;
+.home-hero-container > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  text-align: right;
+  position: absolute;
+  top: -60px;
+  padding-right: 1rem;
+}
+
+.home-hero-container h2 {
+  border: none;
+  font-size: 2.4rem;
+  transition: all 2s ease-in-out;
+}
+
+.home-hero-container p {
   font-size: 2rem;
-  text-shadow: 3px 5px 2px #474747;
-  transition: all 0.3s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+/*
+============================================
+Main Intro
+============================================
+*/
+
+.home-main-intro {
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  border-top: 3px solid var(--primaryOne);
+  border-bottom: 3px solid var(--primaryOne);
+}
+
+.home-main-intro p {
+  text-shadow: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
 }
 
 /*
@@ -765,41 +700,30 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 @media (min-width: 550px) and (max-width: 1100px) {
   /*       Hero Section       */
 
-  .animation-squares {
-    top: 40%;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .home-intro-animation {
-    font-size: 2.5rem;
-  }
-
   .hero-container {
     height: 50vh;
     transition: all 0.3s ease-in-out;
   }
 
-  .hero {
-    border-radius: 10px 120px;
-    transition: all 0.3s ease-in-out;
+  .home-hero-container h2 {
+    border: none;
+    font-size: 2.8rem;
+    padding-right: 2rem;
+    transition: all 2s ease-in-out;
   }
 
-  .hero-inner h1 {
-    font-size: 4.5rem;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .hero-inner p {
-    font-size: 1.6rem;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .home-main-img {
-    height: 350px;
-    transition: all 0.3s ease-in-out;
+  .home-hero-container p {
+    font-size: 2.2rem;
+    padding-right: 2rem;
+    transition: all 2s ease-in-out;
   }
 
   /*         Home Section         */
+
+  .home-main-intro p {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
 
   /* CTA Cards */
 
@@ -881,15 +805,6 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 }
 
 @media (min-width: 1101px) {
-  .animation-squares {
-    top: 50%;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .home-intro-animation {
-    font-size: 3.5rem;
-  }
-
   /*         Hero Section          */
 
   .hero-container {
@@ -897,27 +812,25 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     transition: all 0.3s ease-in-out;
   }
 
-  .hero {
-    border-radius: 10px 150px;
-    transition: all 0.3s ease-in-out;
+  .home-hero-container h2 {
+    border: none;
+    font-size: 3.4rem;
+    transition: all 2s ease-in-out;
+    padding-right: 2rem;
   }
 
-  .hero-inner h1 {
-    font-size: 5rem;
-    transition: all 0.3s ease-in-out;
+  .home-hero-container p {
+    font-size: 2.6rem;
+    transition: all 2s ease-in-out;
+    padding-right: 2rem;
   }
 
-  .hero-inner p {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .home-main-img {
-    height: 410px;
-    transition: all 0.3s ease-in-out;
-  }
   /*             Home Section               */
+
+  .home-main-intro p {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
 
   /* CTA Cards */
 

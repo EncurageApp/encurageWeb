@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import MomCheckingKid from "../imgs/momcheckingkid.jpg";
-import KidSurprised from "../imgs/kidsurprised.jpg";
-import FingerPaint from "../imgs/fingerprintpaint.jpg";
+import MomCheckingKid from "../imgs/encurage/momcheckingkid.jpg";
+import KidSurprised from "../imgs/encurage/kidsurprised.jpg";
+import FingerPaint from "../imgs/encurage/fingerprintpaint.jpg";
 
 export const CardContainer = () => {
   const [visibleCard, setVisibleCard] = useState(null);
@@ -90,6 +90,57 @@ export const CardContainer = () => {
             <img src={FingerPaint} alt="kid holding book, looking surprised" />
           </div>
           <div className="card-3 card-info">
+            <h2>Discover Our Journey</h2>
+            <p>
+              Take a step back in time and explore the story behind our mission.
+              Learn how our passion for children's health led to the creation of
+              our app and the incredible journey that brought us here.
+            </p>
+
+            <Link to={"Founder"} onClick={handleLink}>
+              <button className="cta-btn-home"> Explore Our Story </button>
+            </Link>
+          </div>
+        </div>
+        <div className={`card card-4 ${visibleCard === 4 ? "hovered" : ""}`}>
+          <div className="card-4-img">
+            <img src={FingerPaint} alt="kid holding book, looking surprised" />
+          </div>
+          <div className="card-4 card-info">
+            <h2>Discover Our Journey</h2>
+            <p>
+              Take a step back in time and explore the story behind our mission.
+              Learn how our passion for children's health led to the creation of
+              our app and the incredible journey that brought us here.
+            </p>
+
+            <Link to={"Founder"} onClick={handleLink}>
+              <button className="cta-btn-home"> Explore Our Story </button>
+            </Link>
+          </div>
+        </div>
+        <div className={`card card-5 ${visibleCard === 5 ? "hovered" : ""}`}>
+          <div className="card-5-img">
+            <img src={FingerPaint} alt="kid holding book, looking surprised" />
+          </div>
+          <div className="card-5 card-info">
+            <h2>Discover Our Journey</h2>
+            <p>
+              Take a step back in time and explore the story behind our mission.
+              Learn how our passion for children's health led to the creation of
+              our app and the incredible journey that brought us here.
+            </p>
+
+            <Link to={"Founder"} onClick={handleLink}>
+              <button className="cta-btn-home"> Explore Our Story </button>
+            </Link>
+          </div>
+        </div>
+        <div className={`card card-6 ${visibleCard === 6 ? "hovered" : ""}`}>
+          <div className="card-6-img">
+            <img src={FingerPaint} alt="kid holding book, looking surprised" />
+          </div>
+          <div className="card-6 card-info">
             <h2>Discover Our Journey</h2>
             <p>
               Take a step back in time and explore the story behind our mission.

@@ -72,6 +72,13 @@ export const RootLayout = () => {
                 <div className="bar"></div>
               </div>
             </div>
+            <div className="nav-download-container-mid">
+              <h3>Download and Join Today!</h3>
+              <div>
+                <GooglePlayBtn />
+                <AppStoreBtn />
+              </div>
+            </div>
             <ul
               className={`navlinks ${isMenuOpen ? "open" : ""}`}
               onClick={toggleMenu}
@@ -100,13 +107,6 @@ export const RootLayout = () => {
                 <AppStoreBtn />
               </div>
             </ul>
-            <div className="nav-download-container-mid">
-              <h3>Download and Join Today!</h3>
-              <div>
-                <GooglePlayBtn />
-                <AppStoreBtn />
-              </div>
-            </div>
           </nav>
         </header>
       </Headroom>

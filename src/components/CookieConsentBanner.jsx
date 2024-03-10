@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
-import CookieImg from "../imgs/cookies.png";
+import CookieImg from "../imgs/encurage/cookies.png";
 import { Link } from "react-router-dom";
 
 export const CookieConsentBanner = () => {
