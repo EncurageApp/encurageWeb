@@ -156,6 +156,7 @@ Main Section
 }
 
 .card .card-info {
+  width: 100%;
   background-color: var(--primaryOne);
   position: relative;
   max-height: 0;
@@ -569,111 +570,21 @@ blockquote span {
 }
 
 /*
-=============================================================
-Contact Section
-=============================================================
-*/
-
-.svg-icon {
-  height: 4rem;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: black;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-}
-
-.home-contact-container {
-  margin: 0 auto;
-  padding: 4rem 0;
-  text-align: center;
-  color: black;
-}
-
-.home-contact-container h2 {
-  font-size: 3rem;
-  border: none;
-}
-
-.home-contact-container > p {
-  font-size: 1.1rem;
-}
-
-.contact-card-container {
-  margin-top: 20px;
-  padding: 0 20px;
-}
-
-.contact-card-wrapper {
-  margin: 0 auto;
-  height: 100%;
-  max-width: 800px;
-  padding: 20px 20px;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  background: var(--primaryOne);
-  justify-content: space-evenly;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-}
-
-.support-animation {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 700px;
-}
-
-.contact-card {
-  background-color: var(--primaryThree);
-  width: 100%;
-  border: 0.3px solid var(--primaryFive);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 15px;
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-}
-
-.contact-card button {
-  width: 150px;
-}
-
-.contact-card h3 {
-  text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2),
-    0px -5px 35px rgba(255, 255, 255, 0.2);
-}
-
-/*
 =====================================================================
 Disclaimer
 =====================================================================
 */
 
 .disclaimer-container {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .disclaimer {
   margin: 0 auto;
   background-color: var(--primaryOne);
   padding: 2rem;
-  border-radius: 50px;
+
   color: white;
-  max-width: 800px;
 }
 
 .disclaimer span {
@@ -795,12 +706,6 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   blockquote span {
     font-size: 1.7rem;
-  }
-
-  /*      Contact Section       */
-
-  .home-contact-container > p {
-    font-size: 1.6rem;
   }
 }
 
@@ -960,44 +865,5 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   blockquote {
     position: relative;
     min-height: 30vh;
-  }
-
-  /*       Contact Section       */
-
-  .home-contact-container h2 {
-    font-size: 4rem;
-  }
-
-  .home-contact-container h3 {
-    font-size: 1.5rem;
-  }
-  .home-contact-container p {
-    padding-bottom: 10px;
-  }
-
-  .home-contact-container > p {
-    font-size: 2rem;
-  }
-
-  .home-contact-container div {
-    display: flex;
-  }
-
-  .contact-card-wrapper {
-    height: 100%;
-    min-height: 40vh;
-  }
-
-  .contact-card {
-    flex-direction: row;
-    gap: 50px;
-  }
-
-  .contact-card div {
-    flex-direction: column;
-  }
-
-  .contact-card button {
-    margin-right: 15px;
   }
 }
