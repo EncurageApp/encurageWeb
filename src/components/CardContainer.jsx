@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import MomCheckingKid from "../imgs/encurage/momcheckingkid.jpg";
-import KidSurprised from "../imgs/encurage/kidsurprised.jpg";
-import FingerPaint from "../imgs/encurage/fingerprintpaint.jpg";
 
 export const CardContainer = () => {
   const [visibleCard, setVisibleCard] = useState(null);
@@ -15,7 +12,7 @@ export const CardContainer = () => {
       cardElements.forEach((element, index) => {
         const rect = element.getBoundingClientRect();
         const thresholdMin = 200;
-        const thresholdMax = 350;
+        const thresholdMax = 250;
 
         const isInViewport =
           rect.top < window.innerHeight - thresholdMax &&
@@ -51,10 +48,7 @@ export const CardContainer = () => {
     <div className="cta-cards-container">
       <div className="card-component-container">
         <div className={`card card-1 ${visibleCard === 1 ? "hovered" : ""}`}>
-          <div className="card-1-img">
-            <img src={MomCheckingKid} alt="mom checking temperature of child" />
-          </div>
-          <div className="card-1 card-info">
+          <div className="card-info">
             <h2>Taylor Made</h2>
             <p>
               The exact tools you need, with capabilities you will not find
@@ -68,10 +62,7 @@ export const CardContainer = () => {
         </div>
 
         <div className={`card card-2 ${visibleCard === 2 ? "hovered" : ""}`}>
-          <div className="card-2-img">
-            <img src={KidSurprised} alt="mom checking temperature of child" />
-          </div>
-          <div className="card-2 card-info">
+          <div className="card-info">
             <h2>One-Stop Shop</h2>
             <p>
               Every aspect of your child’s health management at home, thoroughly
@@ -85,10 +76,7 @@ export const CardContainer = () => {
         </div>
 
         <div className={`card card-3 ${visibleCard === 3 ? "hovered" : ""}`}>
-          <div className="card-3-img">
-            <img src={FingerPaint} alt="kid holding book, looking surprised" />
-          </div>
-          <div className="card-3 card-info">
+          <div className="card-info">
             <h2>Protects Your Family</h2>
             <p>Medication error risks are significantly reduced.</p>
 
@@ -99,10 +87,7 @@ export const CardContainer = () => {
         </div>
 
         <div className={`card card-4 ${visibleCard === 4 ? "hovered" : ""}`}>
-          <div className="card-4-img">
-            <img src={FingerPaint} alt="kid holding book, looking surprised" />
-          </div>
-          <div className="card-4 card-info">
+          <div className="card-info">
             <h2>Safe and Reliable</h2>
             <p>
               Nothing is more important than your child. Safety was, and
@@ -113,10 +98,7 @@ export const CardContainer = () => {
         </div>
 
         <div className={`card card-5 ${visibleCard === 5 ? "hovered" : ""}`}>
-          <div className="card-5-img">
-            <img src={FingerPaint} alt="kid holding book, looking surprised" />
-          </div>
-          <div className="card-5 card-info">
+          <div className="card-info">
             <h2>Comprehensive</h2>
             <p>
               A variety of categories, options and variables to fit your child’s
@@ -130,10 +112,7 @@ export const CardContainer = () => {
         </div>
 
         <div className={`card card-6 ${visibleCard === 6 ? "hovered" : ""}`}>
-          <div className="card-6-img">
-            <img src={FingerPaint} alt="kid holding book, looking surprised" />
-          </div>
-          <div className="card-6 card-info">
+          <div className="card-info">
             <h2>Easy to Use</h2>
             <p>A few taps and you’re done, so you can focus on caring.</p>
           </div>
