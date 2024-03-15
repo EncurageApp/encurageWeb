@@ -38,7 +38,7 @@ export const Home = () => {
       </section>
 
       <section className="home-main-intro">
-        <p>
+        <p data-aos="fade-in">
           Reliable, comprehensive, intuitive, all-around kids’ health management
           digital platform developed especially for parents and caregivers.
           <br />
@@ -53,7 +53,7 @@ export const Home = () => {
       </section>
 
       <section className="home-main-container">
-        <div className="home-main">
+        <div data-aos="fade-in" className="home-main">
           <h2>Your Child's Health, is Our Priority</h2>
           <p>
             We understand the challenges that parents face in managing their

@@ -42,6 +42,7 @@ export const RootLayout = () => {
       easing: "ease-out-quart",
       delay: 800,
       duration: 3000,
+      once: true,
     });
   }, []);
 
