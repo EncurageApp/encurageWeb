@@ -1,14 +1,13 @@
-import React from "react";
-
-// imgs
-import KidJumping from "../imgs/encurage/kidjumping.jpg";
-import MomKids from "../imgs/encurage/mom-kids.jpg";
-
 // Components
 import { CardContainer } from "../components/CardContainer";
-import { PhoneAnimation } from "../components/animations/PhoneAnimation";
 import { Link, NavLink } from "react-router-dom";
 import { TestimonialSlider } from "../components/TestimonialSlider";
+
+//Imgs
+import HomeIllustration from "../imgs/homeImgsRevisions/illustration/HomeIllustration1.png";
+import HomeIllustration2 from "../imgs/homeImgsRevisions/illustration/HomeIllustration2.png";
+import HomeIllustration3 from "../imgs/homeImgsRevisions/illustration/HomeIllustration3.png";
+import HomeIllustration4 from "../imgs/homeImgsRevisions/illustration/HomeIllustration4.png";
 
 export const Home = () => {
   const handleLink = () => {
@@ -74,82 +73,149 @@ export const Home = () => {
       </section>
 
       <section className="home-app-container">
-        <PhoneAnimation />
-        <div className="duo-container">
-          <div data-aos="fade-down" className="duo">
-            <div className="duo-img-container">
-              <img src={KidJumping} alt=" kid jumping" />
-            </div>
+        <h2 data-aos="fade-in">
+          Welcome to the Future of Child Health Management
+        </h2>
 
-            <div className="duo-info">
-              <h3>Tailored for Your Child</h3>
-              <p>
-                Ensure your child's health receives the personalized attention
-                it deserves. With numerous options to customize, you'll have the
-                power to create a unique healthcare plan that caters to your
-                child's individual needs. Start now and make their well-being a
-                top priority.
-              </p>
-
-              <Link to="AppFeatures" onClick={handleLink}>
-                <button className="cta-btn-home">Learn More</button>
-              </Link>
-            </div>
-          </div>
-          <div className="duo">
-            <div className="duo-info">
-              <h2 data-aos="fade-right">Your Child's Health, Your Way</h2>
-              <p data-aos="fade-left">
-                Take control of your child's health with our app. Prioritize
-                their well-being and give them the personalized care they
-                deserve. Get started today.
-              </p>
-
-              <Link data-aos="fade-right" to="AppFeatures" onClick={handleLink}>
-                <button className="cta-btn-home">Explore Now </button>
-              </Link>
-            </div>
-          </div>
-          <div data-aos="fade-up" className="duo">
-            <div className="duo-info">
-              <h3>Curiosity Unleashed: The Untold Dangers of Mis-Dosage</h3>
-              <p>
-                Are you curious to know the untold dangers of mis-dosage when it
-                comes to your child's health? It's a story that every parent
-                should explore. Our app offers a fascinating journey into these
-                risks, providing a deeper understanding of the consequences and
-                how to protect your child. Let your curiosity lead the way to
-                essential knowledge.
-              </p>
-
-              <Link to="ChildrenHealth" onClick={handleLink}>
-                <button className="cta-btn-home">Get Started Today</button>
-              </Link>
-            </div>
-            <div className="duo-img-container">
-              <img src={MomKids} alt="mom with kids" />
+        <div>
+          <div data-aos="fade-left" className="home-app-square square-1">
+            <div className="home-app-inner">
+              <div className="home-app-square-inner-box-1">
+                <h3>
+                  Care more.
+                  <br />
+                  Stress less.
+                </h3>
+                <img src={HomeIllustration} alt="encurage - mom holding baby" />
+              </div>
+              <div className="home-app-square-inner-box-2">
+                <p>
+                  So many details to remember. Times to calculate. Notes to
+                  take. People to notify. And they’re all so important for your
+                  child’s health and treatment plans, yet also confusing,
+                  overwhelming, and time consuming.
+                  <br />
+                  Whether it’s the flu, ADHD, asthma, or anything in between,
+                  you can safely navigate the sea of data and multitude of
+                  tasks.
+                  <br />
+                  Your child’s medicine schedules are managed for you,
+                  specifically designed for children’s medicine tracking.
+                  <br />
+                  Their symptoms, side effects, vitals, therapies and growth,
+                  easily tracked, stored and accessed.
+                  <br />
+                  Their health journey, journaled and saved, providing you and
+                  your child’s healthcare team meaningful insights. Your family,
+                  synced and ready to take charge at any time through a seamless
+                  caregiving management system.
+                  <br />
+                  And if a new bundle of joy has arrived, their sleep, diapers,
+                  and feeding (including breastfeeding, pumping, and bottle
+                  feeding) are conveniently tracked and saved, so you can have
+                  everything easily accessible in one place.
+                </p>
+                <Link to="AppFeatures" onClick={handleLink}>
+                  <button className="cta-btn-home">Explore Our Tools</button>
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="home-founder-container">
-        <div data-aos="fade-right" className="home-founder">
-          <div className="home-founder-info">
-            <h2>Meet the Heart Behind The Mission</h2>
-            <p>
-              Discover the foundation of our app by exploring the story of our
-              founder. It all started with a mother's concern for her daughter's
-              medicine tracking. Learn how <span>Hadas Kanner-Golan</span>
-              embarked on a mission to create a user-friendly solution. Get to
-              know the backstory and the inspiration behind our innovative app.
-            </p>
-
-            <Link to="Founder" onClick={handleLink}>
-              <button className="cta-btn-home">
-                Discover the Heart Behind the App
-              </button>
-            </Link>
+          <div data-aos="fade-right" className="home-app-square square-2">
+            <div className="home-app-inner">
+              <div className="home-app-square-inner-box-1">
+                <h3>Avoid the Risk of Medication Errors.</h3>
+                <img
+                  src={HomeIllustration2}
+                  alt="encurage - mom holding baby"
+                />
+              </div>
+              <div className="home-app-square-inner-box-2">
+                <p>
+                  Children are more sensitive to medication errors, and
+                  unfortunately much more exposed to them as well.
+                  <br />
+                  Multiple infections per year in their early years is a well
+                  known reality to every parent, which means a lot of fever
+                  reducers, antibiotics, and other infection treatments.
+                  <br />
+                  Add multiple caregivers; more than one sick child in the
+                  family; ongoing conditions that are managed at the same time;
+                  stress and tiredness; and the result is a staggering rate of
+                  medication errors in children in the US.
+                  <br />
+                  Read more about the unique aspects at the root of this
+                  problem, and how you can minimize the risk for your child with
+                  encurage.
+                </p>
+                <Link to="ChildrenHealth" onClick={handleLink}>
+                  <button className="cta-btn-home">
+                    Medication Error Risks
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-left" className="home-app-square square-3">
+            <div className="home-app-inner">
+              <div className="home-app-square-inner-box-1">
+                <h3>Why We Developed Encurage.</h3>
+                <img
+                  src={HomeIllustration3}
+                  alt="encurage - mom holding baby"
+                />
+              </div>
+              <div className="home-app-square-inner-box-2">
+                <p>
+                  Need is the mother of invention. Facing various challenges
+                  while caring for our children during sickness episodes, as
+                  well as their ongoing conditions, we couldn’t find a single
+                  digital tool addressing parents’ needs.
+                  <br />
+                  Diving into research about childrens’ health management at
+                  home, we discovered the magnitude of the problem, and realized
+                  that parents need help.
+                  <br />
+                  Our mission: provide each and every family with the right
+                  toolkit for their children’s unique health management journey.
+                </p>
+                <Link to="AppFeatures" onClick={handleLink}>
+                  <button className="cta-btn-home">About Us</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-right" className="home-app-square square-4">
+            <div className="home-app-inner">
+              <div className="home-app-square-inner-box-1">
+                <h3>Always Here For You.</h3>
+                <img
+                  src={HomeIllustration4}
+                  alt="encurage - mom holding baby"
+                />
+              </div>
+              <div className="home-app-square-inner-box-2">
+                <p>
+                  Caring is 24/7, year round.
+                  <br />
+                  Our support team is available for extended hours, and we
+                  strive to reply as quickly as possible.
+                  <br />
+                  You can also browse our extensive FAQs, where we gathered
+                  helpful instructions and tips to help you navigate quickly and
+                  address your inquiries with ease. The FAQs are also available
+                  in the app, and can be accessed directly from your profile
+                  menu.
+                  <br />
+                  Have any feature requests, general questions, suggestions, or
+                  feedback you’d like to share? We would love to hear from you.
+                  Your valuable input helps us keep improving encurage.
+                </p>
+                <Link to="AppFeatures" onClick={handleLink}>
+                  <button className="cta-btn-home">Help Center</button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

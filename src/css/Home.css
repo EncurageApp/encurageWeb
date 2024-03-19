@@ -66,7 +66,7 @@ Hero
 
 /*
 ============================================
-Main Intro
+Main Intro // REVISIONS
 ============================================
 */
 
@@ -110,6 +110,7 @@ Main Section
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 1rem;
 }
 
 .home-main p {
@@ -233,205 +234,73 @@ App Section
 =============================================================
 */
 
-.home-app-intro {
-  text-align: center;
-}
-
-.home-app-intro h2 {
-  margin-top: 4rem;
-  padding: 1rem;
-  border: none;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.home-app-intro > div {
+.home-app-container {
   margin: 0 auto;
-  padding: 0 20px;
-  width: 100%;
+}
+
+.home-app-container h2 {
+  color: black;
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+.home-app-container > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  margin: 2rem 0;
+  color: white;
+  gap: 4rem;
+  padding: 10px;
+}
+
+.home-app-square {
+  background-color: var(--primaryOne);
+  max-width: 1000px;
+  border-radius: 1rem;
+  padding: 10px;
 }
 
 .home-app-inner {
-  margin-top: 2rem;
-  padding: 20px;
-  color: white;
-  font-size: 1.3rem;
-  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.home-app-square-inner-box-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-app-square-inner-box-1 > h3 {
+  max-width: 400px;
+  text-align: center;
+}
+
+.home-app-square-inner-box-2 {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--primaryOne);
-  border-radius: 20px;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  gap: 2rem;
 }
 
-.home-app-inner h3 {
-  font-size: 1.5rem;
-  border-bottom: 10px ridge var(--primaryFive);
-  border-top: 10px ridge var(--primaryFive);
-  border-radius: 15px;
-  margin: 2rem;
-  padding: 1rem;
+.home-app-square-inner-box-2 p {
+  letter-spacing: 3px;
+  line-height: 1.5rem;
 }
 
-.home-app-inner p {
-  font-size: 1rem;
-  padding-bottom: 1rem;
-}
-
-.phone-animation {
-  width: 100%;
-  max-width: 500px;
-}
-
-.duo-container {
-  margin: 10vh 0;
-  padding: 6rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--primaryTwo);
-}
-
-.duo {
-  background: var(--primaryOne);
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-  transition: all 0.3s ease-in-out;
-}
-
-.duo:nth-child(2) {
-  background-image: none;
-  width: 100%;
-  background-color: white;
-  box-shadow: none;
-  background-color: var(--primaryTwo);
-}
-
-.duo:nth-child(2) p,
-.duo:nth-child(2) h2 {
-  color: black;
-  border: none;
-}
-
-.duo-img-container {
-  display: flex;
-}
-
-.duo img {
-  width: 100%;
-  height: 100%;
-}
-
-.duo-info {
-  padding: 40px 40px 40px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.duo-info h3 {
-  color: white;
-  font-size: 1.6rem;
-  margin-bottom: 30px;
-  border-bottom: 0.5px solid white;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
-}
-
-.duo-info h2 {
-  font-size: 1.6rem;
-  margin-bottom: 30px;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
-}
-
-.duo-info p {
-  color: white;
-  font-size: 1.2rem;
-}
-
-.duo-info button {
-  width: 150px;
-  margin-top: 20px;
-}
-
-/*
-=============================================================
-Founder Section
-=============================================================
-*/
-
-.home-founder-container {
-  margin: 10rem auto;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.home-founder {
-  background: var(--primaryOne);
-  height: 100%;
-  width: 100%;
-  max-width: 1000px;
-  border-radius: 0 3px 600px 0;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
-}
-
-.home-founder-info {
-  width: 95%;
-  height: 100%;
-  min-height: 720px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-  padding: 35px 15px 10px 10px;
-  transition: all 0.5s ease-in-out;
-}
-
-.home-founder-info h2 {
-  border-bottom: 0.2px solid white;
-  text-align: center;
-}
-
-.home-founder-info p {
-  width: 100%;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.home-founder-info button {
-  margin: 15px 60px 0 20px;
-  width: 280px;
-  transition: all 0.3s ease-in-out;
-  font-size: 1rem;
+.home-app-square:nth-child(4) img {
+  border-radius: 50px;
 }
 
 /*
@@ -691,14 +560,6 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 1.3rem;
   }
 
-  .duo-info h2 {
-    font-size: 2.5rem;
-  }
-
-  .duo-info p {
-    font-size: 1.3rem;
-  }
-
   /*       Founder Section       */
 
   .home-founder-info {
@@ -779,75 +640,24 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   /*       App Section       */
 
-  .home-app-intro > div {
+  .home-app-inner {
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
   }
 
-  .home-app-intro h2 {
-    font-size: 3rem;
-    margin: 4rem auto;
+  .square-1 {
+    max-width: 1200px;
   }
 
-  .home-app-intro p {
-    max-width: 600px;
-    font-size: 1.6rem;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .home-app-inner h3 {
-    font-size: 2rem;
-  }
-
-  .phone-animation {
+  .square-2 {
     max-width: 800px;
   }
 
-  .duo {
+  .square-3 {
+    max-width: 800px;
+  }
+
+  .square-4 {
     max-width: 1200px;
-    flex-direction: row;
-    border-radius: 100px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .duo:nth-child(1) img {
-    border-radius: 100px 0 0 100px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .duo:nth-child(1) {
-    width: 95%;
-    margin: 0 auto;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .duo:nth-child(2) {
-    max-width: 70%;
-    margin: 0 auto;
-  }
-
-  .duo:nth-child(2) p {
-    font-size: 1.5rem;
-  }
-
-  .duo:nth-child(3) img {
-    border-radius: 0 100px 100px 0;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .duo:nth-child(3) {
-    width: 95%;
-    margin: 0 auto;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .duo-info h2 {
-    font-size: 3rem;
-  }
-
-  .duo-info p {
-    font-size: 1.3rem;
   }
 
   /*       Founder Section       */
