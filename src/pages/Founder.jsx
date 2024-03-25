@@ -1,8 +1,8 @@
 import React from "react";
 
 //imgs
-import Hadas from "../imgs/hadas.jpg";
-import EmailIcon from "../imgs/email-icon.png";
+import Hadas from "../imgs/encurage/hadas.jpg";
+import EmailIcon from "../imgs/encurage/email-icon.png";
 
 //components
 import { AnimateText } from "../components/AnimateText";

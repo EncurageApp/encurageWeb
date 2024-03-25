@@ -1,9 +1,5 @@
-// Pictures
-import DadTwoKids from "../imgs/dadtwokids.jpg";
-
 // Components
 import { HealthSlider } from "../components/HealthSlider";
-import { Parallax } from "react-parallax";
 import { ChildrenStats } from "../components/ChildrenStats";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
@@ -14,19 +10,15 @@ export const ChildrenHealth = () => {
   return (
     <main className="health-page">
       <section className="ch-hero">
-        <Parallax strength={500} bgImage={DadTwoKids}>
-          <div className="ch-intro">
-            <div className="ch-intro-text">
-              <AnimateText>
-                <h2>Navigating the Numbers,</h2>
-                <p>
-                  Exploring Children's Medication Errors and How We Are
-                  Preventing Them!
-                </p>
-              </AnimateText>
-            </div>
+        <AnimateText>
+          <div className="ch-intro-text">
+            <h2>Navigating the Numbers,</h2>
+            <p>
+              Exploring Children's Medication Errors and How We Are Preventing
+              Them!
+            </p>
           </div>
-        </Parallax>
+        </AnimateText>
       </section>
 
       <section className="ch-stats-container">

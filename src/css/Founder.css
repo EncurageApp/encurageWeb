@@ -25,14 +25,12 @@ Hero
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--primaryThree);
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .f-hero-container h2 {
   font-size: 2rem;
   text-align: center;
-  color: var(--primarySix);
+  color: black;
   text-transform: uppercase;
   letter-spacing: 0.45em;
   padding: 4rem 1rem 2rem;
@@ -43,13 +41,13 @@ Hero
 }
 
 .f-hero-container h2 span {
-  font: 900 3.5rem/1 "Poppins", sans-serif;
+  font: 900 3.5rem/1 "Quicksand", sans-serif;
   letter-spacing: 0;
   padding: 20px 0;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background: url(../imgs/colorsmoke4.jpg);
+  background: url(../imgs/encurage/colorsmoke4.jpg);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -109,24 +107,26 @@ Story
 
 .f-story-container h2 {
   font-size: 3rem;
-  color: var(--primaryFour);
+  color: white;
   text-align: center;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
   margin: 0 auto;
   margin-top: 10rem;
-  background-color: var(--primaryThree);
+  padding: 1rem;
+  background-color: var(--primaryOne);
   border-radius: 10px 10px 0 0;
   width: 85%;
   max-width: 800px;
-  box-shadow: 0px 20px 10px 2px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.43);
+  border: none;
 }
 
 .f-story-container p {
   width: 100%;
   text-align: center;
   font-size: 1.3rem;
-  color: var(--primaryFour);
+  color: white;
   padding: 30px 0;
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
@@ -144,12 +144,16 @@ Story
 .f-animate-wrapper {
   margin: 0 auto;
   max-width: 900px;
-  background-color: var(--primaryThree);
+  background-color: var(--primaryOne);
   padding: 20px;
 }
 
-.f-animate-wrapper:nth-child(3) {
-  background-color: white;
+.f-animate-wrapper:nth-child(2) {
+  border-radius: 10px 10px 0 0;
+}
+
+.f-animate-wrapper:nth-child(4) {
+  border-radius: 0 0 10px 10px;
 }
 
 .f-animate-wrapper p {
@@ -174,16 +178,14 @@ Founder
 */
 
 .f-founder-container {
-  background: var(--primaryThree);
   margin: 6rem auto;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .f-founder-container h2 {
   font-size: 3rem;
-  color: var(--primaryFour);
+  color: black;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
   border: none;
@@ -191,7 +193,7 @@ Founder
 
 .f-founder-intro {
   padding-bottom: 40px;
-  color: var(--primaryFour);
+  color: black;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
 }
@@ -213,7 +215,8 @@ Founder
 .founder-title {
   font-style: italic;
   font-size: 1rem;
-  color: var(--primaryFour);
+  padding-top: 0.8rem;
+  color: black;
 }
 
 .animated-border-quote {
@@ -254,7 +257,7 @@ Founder
 }
 
 .animated-border-quote blockquote p {
-  color: var(--primaryOne);
+  color: black;
   line-height: 2rem;
 }
 
@@ -262,7 +265,7 @@ Founder
   display: block;
   font-style: italic;
   text-align: right;
-  color: var(--primaryOne);
+  color: black;
 }
 
 .animated-border-quote blockquote cite:before {
@@ -299,14 +302,15 @@ TimeLine
 */
 
 .timeline {
-  color: var(--primaryFour);
+  color: black;
   margin: 10vh auto;
+  overflow: hidden;
 }
 
 .timeline h2 {
   text-align: center;
   font-size: 3rem;
-  color: var(--primaryFour);
+  color: black;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
   border: none;
@@ -325,7 +329,7 @@ Mission
 .f-mission-container {
   margin: 8rem auto;
   text-align: center;
-  color: var(--primaryFour);
+  color: black;
 }
 
 .f-mission-container h2 {
@@ -351,8 +355,8 @@ Mission
   line-height: 2rem;
   padding: 1rem;
   max-width: 700px;
-  border-top: 0.5px solid var(--primaryFour);
-  border-bottom: 0.5px solid var(--primaryFour);
+  border-top: 0.5px solid var(--primaryOne);
+  border-bottom: 0.5px solid var(--primaryOne);
 }
 
 /*
@@ -369,8 +373,7 @@ Subscribe Box
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--primaryThree);
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
+  background: var(--primaryTwo);
 }
 
 .subscribe-wrapper {
@@ -381,7 +384,7 @@ Subscribe Box
 
 .subscribe-wrapper > h3 {
   max-width: 600px;
-  color: var(--primaryFour);
+  color: black;
   margin-bottom: 4rem;
   font-size: 1.2rem;
 }
@@ -394,11 +397,7 @@ Subscribe Box
   position: relative;
   border: 0.3px solid #bbb;
   border-radius: 10px;
-  background: linear-gradient(
-    180deg,
-    var(--primaryFive) 0%,
-    var(--primaryFour) 100%
-  );
+  background-color: var(--primaryOne);
   box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.43);
 }
 .ribbon {
@@ -423,7 +422,7 @@ Subscribe Box
   width: 100px;
   display: block;
   background: #79a70a;
-  background: linear-gradient(var(--primaryFour) 0%, var(--primaryFive) 100%);
+  background: var(--primaryFive);
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
   position: absolute;
   top: 19px;

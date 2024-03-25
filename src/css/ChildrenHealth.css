@@ -12,7 +12,6 @@
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
   letter-spacing: 2px;
 }
-
 /*
 =================================================
 Hero
@@ -20,36 +19,42 @@ Hero
 */
 
 .ch-hero {
+  height: 100svh;
+  background-image: url(../imgs/encurage/dadtwokids.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  position: relative;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
-.ch-intro {
-  height: 100svh;
-}
-
 .ch-intro-text {
-  margin: 0 auto;
-  padding-top: 14rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  max-width: 1400px;
+  padding: 0 1rem;
+  padding-top: 8rem;
   text-align: center;
   color: white;
 }
 
 .ch-intro-text h2 {
+  margin: 1rem;
+  padding-bottom: 0.5rem;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.55),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
-  margin: 1rem;
+  border: none;
   font-size: 3rem;
+  border-bottom: 0.5px solid white;
 }
 
 .ch-intro-text p {
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.55),
-    0px -5px 35px rgba(255, 255, 255, 0.3);
-  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0), 0px -5px 35px rgba(1, 1, 1, 0.5);
 }
 
 /*
@@ -70,13 +75,14 @@ Stats
 
 .ch-stats-container h2 {
   padding-top: 4rem;
-  color: var(--primaryFour);
+
   font-size: 2.5rem;
   text-align: center;
+  border: none;
 }
 
 .ch-stats-card {
-  background-color: var(--primaryFour);
+  background-color: var(--primaryOne);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -88,8 +94,8 @@ Stats
   border-radius: 20px;
   border-bottom-left-radius: 160px;
   border-bottom-right-radius: 160px;
-  box-shadow: 0 0 40px 0 var(--primaryFour), 0 15px 0 var(--primaryTwo),
-    inset 0 -15px 0 var(--primaryOne), 0 25px 0 var(--primaryFour);
+  box-shadow: 0 0 40px 0 var(--primaryOne), 0 15px 0 var(--primaryTwo),
+    inset 0 -15px 0 var(--primaryOne), 0 25px 0 var(--primaryOne);
   overflow: hidden;
 }
 
@@ -170,21 +176,7 @@ Reasons
   margin: 0 auto;
   padding: 5em 2rem;
   max-width: 1000px;
-  background-image: linear-gradient(
-    to bottom,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryOne);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +187,7 @@ Reasons
 
 .ch-reason-spacer {
   margin: 0 auto;
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.2rem;
   padding: 5rem 2rem;
   max-width: 1200px;
@@ -208,21 +200,7 @@ Reasons
 .ch-reason-container > ul {
   margin: 0 auto;
   max-width: 1000px;
-  background-image: linear-gradient(
-    to top,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryOne);
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -282,9 +260,13 @@ Health Slider
 .ch-slider-info {
   margin: 0 auto;
   text-align: center;
-  color: var(--primaryOne);
+  color: black;
   padding: 1rem;
   line-height: 2.5rem;
+}
+
+.ch-slider-info h2 {
+  border: none;
 }
 
 .ch-slider-info p {
@@ -301,22 +283,8 @@ Health Slider
   min-height: 500px;
   max-width: 800px;
   color: white;
-  background-image: linear-gradient(
-    to bottom,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
-  margin: 5rem auto;
+  background-color: var(--primaryOne);
+  margin: 0 auto;
   padding: 1rem;
   text-align: center;
   display: flex;
@@ -433,10 +401,5 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .ch-reason-container > ul {
     border-radius: 0 0 10% 10%;
-  }
-
-  /* Slider */
-  .ch-slider {
-    border-radius: 50%;
   }
 }

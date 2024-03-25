@@ -27,7 +27,7 @@ import J1 from "../imgs/appFeatureScreens/Journal/Journal - Dashboard.png";
 import J2 from "../imgs/appFeatureScreens/Journal/Frame 93809.png";
 import J3 from "../imgs/appFeatureScreens/Journal/Frame 93809 (1).png";
 import J4 from "../imgs/appFeatureScreens/Journal/Frame 93807.png";
-import DadBaby from "../imgs/dadbaby.jpg";
+import DadBaby from "../imgs/encurage/dadbaby.jpg";
 import { Link } from "react-router-dom";
 
 export const AppFeatures = () => {

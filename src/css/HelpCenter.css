@@ -25,7 +25,7 @@ Help Layout
 
 .help-layout-hero {
   height: 100vh;
-  background-image: url(../imgs/lightbulb.jpg);
+  background-image: url(../imgs/encurage/lightbulb.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,17 +75,18 @@ Help Layout
 }
 
 .help-layout > h3 {
-  margin: 3rem auto 0;
+  margin: 3rem auto;
   text-align: center;
   max-width: 800px;
-  color: var(--primaryFour);
+  color: black;
   font-size: 1.8rem;
-  border-bottom: 0.3px solid var(--primaryFour);
+  padding: 0.5rem;
+  text-shadow: 2 px 3px 6px rgba(0, 0, 0, 0.55);
 }
 
 .help-layout > p {
   text-align: center;
-  color: var(--primaryOne);
+  color: black;
   margin: 0 auto 2rem;
   padding: 2rem;
   max-width: 1000px;
@@ -94,21 +95,7 @@ Help Layout
 }
 
 .hc-nav-container {
-  background-image: linear-gradient(
-    to top,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryOne);
   margin: 0 auto;
   padding: 2rem;
   display: flex;
@@ -120,7 +107,7 @@ Help Layout
 }
 
 .hcNavLink {
-  background-color: var(--primaryThree);
+  background-color: var(--primaryTwo);
   margin: 0 auto;
   min-width: 250px;
   padding: 1rem;
@@ -128,7 +115,7 @@ Help Layout
   text-decoration: none;
   border: 2px solid var(--primaryOne);
   border-radius: 10px;
-  color: var(--primaryOne);
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,8 +127,97 @@ Help Layout
 
 .hcNavLink:hover {
   color: white;
-  background-color: var(--primaryFive);
+  background-color: var(--primaryFour);
   transition: all 0.3s ease-in-out;
+}
+
+/*
+=============================================================
+Animation Section
+=============================================================
+*/
+
+.svg-icon {
+  height: 4rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: black;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.home-contact-container {
+  margin: 0 auto;
+  padding: 4rem 0;
+  text-align: center;
+  color: black;
+}
+
+.home-contact-container h2 {
+  font-size: 3rem;
+  border: none;
+}
+
+.home-contact-container > p {
+  font-size: 1.1rem;
+}
+
+.contact-card-container {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.contact-card-wrapper {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 800px;
+  padding: 20px 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  background: var(--primaryOne);
+  justify-content: space-evenly;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+}
+
+.support-animation {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+.contact-card {
+  background-color: var(--primaryThree);
+  width: 100%;
+  border: 0.3px solid var(--primaryFive);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 15px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+}
+
+.contact-card button {
+  width: 150px;
+}
+
+.contact-card h3 {
+  text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.2);
 }
 
 /* 
@@ -152,11 +228,12 @@ Contact Section
 
 .contact-page {
   text-align: center;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .contact-img {
-  background-image: url(../imgs/handsexplaining.jpg);
+  background-image: url(../imgs/encurage/handsexplaining.jpg);
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,16 +243,16 @@ Contact Section
 
 .contact-page h1 {
   margin: 0 auto;
-  color: var(--primaryFour);
+  color: black;
   font-size: 3rem;
-  border-bottom: 0.3px solid var(--primaryFour);
+  border-bottom: 0.3px solid black;
   max-width: 350px;
   text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
 }
 
 .contact-page p {
-  color: var(--primaryFour);
+  color: black;
   margin: 0 auto 2rem;
   padding: 2rem;
   max-width: 1000px;
@@ -184,13 +261,12 @@ Contact Section
 }
 
 .contact-container {
-  background-color: var(--primaryThree);
+  background-color: var(--primaryTwo);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
 .email-animation {
@@ -213,7 +289,7 @@ Contact Section
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--primaryFour);
+  background-color: var(--primaryOne);
   color: white;
   padding: 20px;
   border-radius: 5px;
@@ -228,7 +304,7 @@ Contact Section
 }
 
 .label {
-  color: var(--primaryFour);
+  color: black;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -279,7 +355,7 @@ input[type="email"]:focus {
   width: 150px;
   padding: 10px 20px;
   background-color: var(--primaryThree);
-  color: var(--primaryFour);
+  color: black;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -311,19 +387,20 @@ Faq Section
 
 .faq-page h1 {
   margin-top: 3rem;
-  color: var(--primaryFour);
+  color: black;
   font-size: 3rem;
 }
 
 .faq-page h2 {
   text-align: center;
-  color: var(--primaryFour);
+  color: black;
   font-size: 2.3rem;
+  border: none;
 }
 
 .faq-page > p {
   text-align: center;
-  color: var(--primaryOne);
+  color: black;
   margin: 0 auto 2rem;
   padding: 2rem;
   max-width: 1000px;
@@ -334,21 +411,7 @@ Faq Section
 .faq-examples {
   width: 100%;
   border: 0.3px solid var(--primaryFour);
-  background-image: linear-gradient(
-    to bottom,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryOne);
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
   padding: 1rem;
   display: flex;
@@ -382,21 +445,7 @@ Faq Section
 }
 
 .Collapsible__contentInner {
-  background-image: linear-gradient(
-    to top,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryOne);
   padding: 2rem;
   border: 1px solid var(--primaryFour);
   border-top: 0;
@@ -405,7 +454,7 @@ Faq Section
 }
 
 .Collapsible__contentInner p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-shadow: none;
 }
 
@@ -416,12 +465,12 @@ Faq Section
   border: 1px solid var(--primaryFour);
   padding: 15px;
   background: var(--primaryThree);
-  color: var(--primaryOne);
-  font-size: 1rem;
+  color: black;
+  font-size: 1.1rem;
 }
 
 .Collapsible__trigger:after {
-  font-family: "Poppins";
+  font-family: "Quicksand";
   content: "\25BE";
   position: absolute;
   right: 5px;
@@ -442,27 +491,32 @@ Terms & Conditions
 
 .terms-conditions {
   text-align: center;
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 1200px;
-  padding: 0 1.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .terms-conditions h2 {
-  color: var(--primaryOne);
+  color: black;
+  border: none;
 }
 
 .terms-conditions h3 {
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.7rem;
 }
 
 .terms-conditions p {
   padding: 2rem 0;
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.1rem;
   line-height: 2.5rem;
+}
+
+.terms-conditions p span {
+  font-weight: 600;
 }
 
 /* 
@@ -473,33 +527,44 @@ Privacy Policy
 
 .privacy-policy {
   text-align: center;
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 1200px;
-  padding: 0 1.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .privacy-policy h2 {
-  color: var(--primaryOne);
+  color: black;
+  border: none;
+  text-transform: uppercase;
 }
 
 .privacy-policy h3 {
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.7rem;
+  text-transform: uppercase;
 }
 
 .privacy-policy p {
   padding: 2rem 0;
-  color: var(--primaryOne);
+  color: black;
   font-size: 1.1rem;
   line-height: 2.5rem;
+}
+
+.privacy-policy p span {
+  font-weight: 600;
 }
 
 .privacy-policy ul li {
   margin: 0 1.2rem;
   padding: 0 1.2rem;
-  color: var(--primaryOne);
+  color: black;
+}
+
+.privacy-policy ul li span {
+  font-weight: 600;
 }
 
 /*
@@ -529,6 +594,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .help-layout > p {
     font-size: 1.3rem;
+  }
+
+  /*      Contact Section       */
+
+  .home-contact-container > p {
+    font-size: 1.6rem;
   }
 
   .contact-container {
@@ -568,5 +639,44 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .faq-examples {
     flex-direction: row;
+  }
+
+  /*       Contact Section       */
+
+  .home-contact-container h2 {
+    font-size: 4rem;
+  }
+
+  .home-contact-container h3 {
+    font-size: 1.5rem;
+  }
+  .home-contact-container p {
+    padding-bottom: 10px;
+  }
+
+  .home-contact-container > p {
+    font-size: 2rem;
+  }
+
+  .home-contact-container div {
+    display: flex;
+  }
+
+  .contact-card-wrapper {
+    height: 100%;
+    min-height: 40vh;
+  }
+
+  .contact-card {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .contact-card div {
+    flex-direction: column;
+  }
+
+  .contact-card button {
+    margin-right: 15px;
   }
 }

@@ -57,7 +57,7 @@ export const TimeLine = () => {
     },
   ];
 
-  const iconOdd = { background: "#2e9593" };
+  const iconOdd = { background: "#008080" };
   const iconEven = { background: "#3fccca" };
 
   return (

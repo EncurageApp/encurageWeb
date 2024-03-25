@@ -56,7 +56,11 @@ export const Reviews = () => {
           </p>
           <p>
             Sharing your story is easy! Visit our{" "}
-            <span className="review-download-span">App Download Page</span>
+            <span className="review-download-span">
+              <a href="https://apps.apple.com/us/app/oncure-medicine-reminder/id1417312275">
+                App Download Page
+              </a>
+            </span>
             below to leave a review!
           </p>
         </div>

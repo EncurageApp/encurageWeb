@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
-import CookieImg from "../imgs/cookies.png";
+import CookieImg from "../imgs/encurage/cookies.png";
 import { Link } from "react-router-dom";
 
 export const CookieConsentBanner = () => {
@@ -33,7 +33,7 @@ export const CookieConsentBanner = () => {
             console.log("User Declined Cookies");
           }}
           style={{
-            background: "linear-gradient(#008080,#2e9593,#3fccca)",
+            background: "#008080",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",

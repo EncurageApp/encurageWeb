@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Headroom from "react-headroom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Components
 import { SubscribeBtn } from "../components/SubscribeBtn";
@@ -8,8 +10,11 @@ import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 import { SocialMediaIcons } from "../components/SocialMediaIcons";
 import { CookieConsentBanner } from "../components/CookieConsentBanner";
-
 import { LoaderAnimation } from "../components/animations/LoaderAnimation";
+
+//Imgs
+import Elogo from "../imgs/figmaImgs/encurage.png";
+import Elogo2 from "../imgs/figmaImgs/Layer_1.png";
 
 export const RootLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,15 +37,33 @@ export const RootLayout = () => {
     }, 1500);
   };
 
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-quart",
+      delay: 800,
+      duration: 3000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="root-layout">
-      <Headroom disableInlineStyles upTolerance={15} downTolerance={20}>
+      <Headroom disableInlineStyles upTolerance={50} downTolerance={50}>
         <header>
           <nav>
             <div className="nav-header">
-              <h1 className="logo">
-                <NavLink to={"/"}>Encurage</NavLink>
-              </h1>
+              <div className="nav-logo-download-container">
+                <NavLink to={"/"} onClick={handleQuickLinkClick}>
+                  <div className="logo-container">
+                    <img src={Elogo2} alt="cup of pink medicine" />
+                    <img src={Elogo} alt="encurage" />
+                  </div>
+                </NavLink>
+                <div className="nav-download-container-full">
+                  <GooglePlayBtn />
+                  <AppStoreBtn />
+                </div>
+              </div>
               <div
                 className={`menu-icon ${isMenuOpen ? "open" : ""}`}
                 onClick={toggleMenu}
@@ -48,6 +71,13 @@ export const RootLayout = () => {
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
+              </div>
+            </div>
+            <div className="nav-download-container-mid">
+              <h3>Download and Join Today!</h3>
+              <div>
+                <GooglePlayBtn />
+                <AppStoreBtn />
               </div>
             </div>
             <ul
@@ -72,6 +102,11 @@ export const RootLayout = () => {
               <NavLink to={"HelpCenterLayout"} onClick={handleQuickLinkClick}>
                 Help Center
               </NavLink>
+              <div className="nav-download-container">
+                <h3>Download and Join Today!</h3>
+                <GooglePlayBtn />
+                <AppStoreBtn />
+              </div>
             </ul>
           </nav>
         </header>
@@ -84,9 +119,14 @@ export const RootLayout = () => {
 
       <footer>
         <nav>
-          <h1 className="logo">
-            <NavLink to={"/"}>Encurage</NavLink>
-          </h1>
+          <div className="logo-container-footer">
+            <img src={Elogo2} alt="cup of pink medicine" />
+            <img src={Elogo} alt="encurage" />
+          </div>
+          <div className="download-btn-container">
+            <GooglePlayBtn />
+            <AppStoreBtn />
+          </div>
           <ul className="quick-links">
             <NavLink to={"/"} onClick={handleQuickLinkClick}>
               Home
@@ -108,19 +148,15 @@ export const RootLayout = () => {
             </NavLink>
           </ul>
           <div className="subscribe-btn-container">
-            <h2>Get All The Latest News!</h2>
+            <h3>Join our community and get our news and updates!</h3>
             <div>
               <SubscribeBtn />
             </div>
           </div>
-          <div className="download-btn-container">
-            <GooglePlayBtn />
-            <AppStoreBtn />
-          </div>
-          <span className="footer-bar"></span>
+
           <div className="copyright">
             <p>
-              &#169; Copyright 2023 Myrtus Enterprises LLC. All rights reserved.
+              &#169; Copyright 2024 Myrtus Enterprises LLC. All rights reserved.
             </p>
             <div className="terms-privacy">
               <NavLink to="HelpCenterLayout">Terms & Conditions </NavLink>

@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import MomCheckingKid from "../imgs/momcheckingkid.jpg";
-import KidSurprised from "../imgs/kidsurprised.jpg";
-import FingerPaint from "../imgs/fingerprintpaint.jpg";
 
 export const CardContainer = () => {
   const [visibleCard, setVisibleCard] = useState(null);
@@ -14,8 +11,8 @@ export const CardContainer = () => {
 
       cardElements.forEach((element, index) => {
         const rect = element.getBoundingClientRect();
-        const thresholdMin = 200;
-        const thresholdMax = 550;
+        const thresholdMin = 300;
+        const thresholdMax = 350;
 
         const isInViewport =
           rect.top < window.innerHeight - thresholdMax &&
@@ -51,55 +48,73 @@ export const CardContainer = () => {
     <div className="cta-cards-container">
       <div className="card-component-container">
         <div className={`card card-1 ${visibleCard === 1 ? "hovered" : ""}`}>
-          <div className="card-1-img">
-            <img src={MomCheckingKid} alt="mom checking temperature of child" />
-          </div>
-          <div className="card-1 card-info">
-            <h2>Protecting Your Child's Wellness</h2>
+          <div className="card-info">
+            <h2>Taylor Made</h2>
             <p>
-              Discover the critical importance of precise administration and
-              tracking, and how to safeguard your little one from the potential
-              dangers of medication mishaps.
+              The exact tools you need, with capabilities you will not find
+              anywhere else.
             </p>
 
-            <Link to="ChildrenHealth" onClick={handleLink}>
-              <button className="cta-btn-home"> Know The Risk</button>
+            <Link to={"AppFeatures"} onClick={handleLink}>
+              <button className="cta-btn-home">Explore Our Tools</button>
             </Link>
           </div>
         </div>
 
         <div className={`card card-2 ${visibleCard === 2 ? "hovered" : ""}`}>
-          <div className="card-2-img">
-            <img src={KidSurprised} alt="mom checking temperature of child" />
-          </div>
-          <div className="card-2 card-info">
-            <h2>Hear What Our Users Say</h2>
+          <div className="card-info">
+            <h2>One-Stop Shop</h2>
             <p>
-              Discover what parents and caregivers have to say about their
-              experience with our app. We value their feedback and are proud to
-              share their stories of successful health management with you.
+              Every aspect of your child’s health management at home, thoroughly
+              addressed.
             </p>
 
-            <Link to={"Reviews"} onClick={handleLink}>
-              <button className="cta-btn-home">Read Reviews </button>
+            <Link to={"AppFeatures"} onClick={handleLink}>
+              <button className="cta-btn-home">Explore Our Tools</button>
             </Link>
           </div>
         </div>
+
         <div className={`card card-3 ${visibleCard === 3 ? "hovered" : ""}`}>
-          <div className="card-3-img">
-            <img src={FingerPaint} alt="kid holding book, looking surprised" />
+          <div className="card-info">
+            <h2>Protects Your Family</h2>
+            <p>Medication error risks are significantly reduced.</p>
+
+            <Link to={"ChildrenHealth"} onClick={handleLink}>
+              <button className="cta-btn-home">Medication Error Risks</button>
+            </Link>
           </div>
-          <div className="card-3 card-info">
-            <h2>Discover Our Journey</h2>
+        </div>
+
+        <div className={`card card-4 ${visibleCard === 4 ? "hovered" : ""}`}>
+          <div className="card-info">
+            <h2>Safe and Reliable</h2>
             <p>
-              Take a step back in time and explore the story behind our mission.
-              Learn how our passion for children's health led to the creation of
-              our app and the incredible journey that brought us here.
+              Nothing is more important than your child. Safety was, and
+              continues to be, top of mind throughout development and day-to-day
+              monitoring.
+            </p>
+          </div>
+        </div>
+
+        <div className={`card card-5 ${visibleCard === 5 ? "hovered" : ""}`}>
+          <div className="card-info">
+            <h2>Comprehensive</h2>
+            <p>
+              A variety of categories, options and variables to fit your child’s
+              unique journey.
             </p>
 
-            <Link to={"Founder"} onClick={handleLink}>
-              <button className="cta-btn-home"> Explore Our Story </button>
+            <Link to={"AppFeatures"} onClick={handleLink}>
+              <button className="cta-btn-home">Explore Our Tools</button>
             </Link>
+          </div>
+        </div>
+
+        <div className={`card card-6 ${visibleCard === 6 ? "hovered" : ""}`}>
+          <div className="card-info">
+            <h2>Easy to Use</h2>
+            <p>A few taps and you’re done, so you can focus on caring.</p>
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ Hero
 
 .af-hero {
   height: 100svh;
-  background-image: url(../imgs/phonescreen.jpg);
+  background-image: url(../imgs/encurage/phonescreen.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,11 +79,11 @@ info
 */
 
 .af-info {
-  background-color: var(--primaryThree);
+  background-color: var(--primaryOne);
   min-height: 100svh;
   padding: 4rem 2rem;
-  color: var(--primaryFour);
   display: flex;
+  color: white;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -95,8 +95,8 @@ info
   text-align: right;
   text-shadow: none;
   padding: 1rem;
-  border-top: 2px solid var(--primaryFour);
-  border-right: 2px solid var(--primaryFour);
+  border-top: 2px solid var(--primaryTwo);
+  border-right: 2px solid var(--primaryTwo);
   margin-bottom: 4rem;
   transition: all 1s ease-in-out;
 }
@@ -107,8 +107,8 @@ info
   text-align: left;
   text-shadow: none;
   padding: 1rem;
-  border-bottom: 2px solid var(--primaryFour);
-  border-left: 2px solid var(--primaryFour);
+  border-bottom: 2px solid var(--primaryTwo);
+  border-left: 2px solid var(--primaryTwo);
   transition: all 1s ease-in-out;
 }
 
@@ -148,11 +148,10 @@ features intro
   padding: 3rem 1rem;
   color: white;
   height: 100%;
-  background-image: url(../imgs/kidontopdad.jpg);
+  background-image: url(../imgs/encurage/kidontopdad.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0px 5px 20px 6px rgba(0, 0, 0, 0.43);
 }
 
 .feature-info {
@@ -189,7 +188,7 @@ features intro
 }
 
 .feature-card {
-  background-color: var(--primaryThree);
+  background-color: var(--primaryOne);
   margin: 0 auto;
   max-width: 300px;
   border-radius: 15% 10px;
@@ -204,18 +203,18 @@ features intro
 }
 
 .feature-card h3 {
-  color: var(--primaryOne);
+  color: white;
   border-bottom: 0.3px solid var(--primaryFive);
   margin-bottom: 20px;
-  text-shadow: 2px 2px 6px var(--primaryThree), 0px 1px 10px rgba(1, 1, 1, 0.5);
+  padding-bottom: 10px;
+  text-shadow: 2px 2px 2px black, 0px 1px 10px rgba(1, 1, 1, 0.5);
 }
 
 .feature-card p {
-  color: var(--primaryOne);
-  font-size: 0.9rem;
+  color: white;
+  font-size: 1rem;
   letter-spacing: 1.5px;
   text-align: right;
-  text-shadow: 2px 2px 6px var(--primaryThree), 0px 1px 10px rgba(1, 1, 1, 0.5);
 }
 
 /*
@@ -225,6 +224,7 @@ Tracking Hub
 */
 .tracking-hub {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .tracking-hub h3 {
@@ -245,8 +245,7 @@ Tracking Hub
 }
 
 .tracking-info {
-  background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
+  background: var(--primaryOne);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -266,6 +265,7 @@ Daily Life
 */
 .daily-life {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .daily-life h3 {
@@ -286,8 +286,7 @@ Daily Life
 }
 
 .dl-info {
-  background: #40cccb;
-  background: radial-gradient(at left bottom, #40cccb, #008080);
+  background: var(--primaryOne);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -307,6 +306,7 @@ Care Family
 */
 .care-family {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .care-family h3 {
@@ -327,8 +327,7 @@ Care Family
 }
 
 .cf-info {
-  background: #40cccb;
-  background: radial-gradient(at left bottom, #40cccb, #008080);
+  background: var(--primaryOne);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -349,14 +348,12 @@ App Features download btns
 
 .af-download-container {
   margin: 10rem auto;
-  background-color: var(--primaryThree);
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
   max-width: 1200px;
 }
 
 .af-download-container h2 {
   padding: 2rem 0;
-  color: var(--primaryFour);
+  color: black;
   text-shadow: 2px 2px 5px var(--primaryThree), 1px 2px 5px black;
 }
 
@@ -408,7 +405,7 @@ App Features download btns
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 1px 2px 10px var(--primaryFive), 1px 2px 5px var(--primaryThree);
+  text-shadow: 1px 2px 10px var(--primaryFour), 1px 2px 5px var(--primaryOne);
 }
 
 .af-download-info-square {
@@ -433,7 +430,7 @@ App Features download btns
   gap: 1rem;
   margin-top: 4rem;
   padding: 2rem;
-  background: radial-gradient(at bottom, #40cccb, #008080);
+  background: var(--primaryOne);
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
@@ -444,6 +441,7 @@ As-Needed Wizard
 */
 .as-needed-wizard {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .as-needed-wizard h3 {
@@ -465,7 +463,7 @@ As-Needed Wizard
 
 .anw-info {
   background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
+  background: var(--primaryOne);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -485,6 +483,7 @@ EOS
 */
 .eos {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .eos h3 {
@@ -506,7 +505,7 @@ EOS
 
 .eos-info {
   background: #40cccb;
-  background: radial-gradient(at right bottom, #40cccb, #008080);
+  background: var(--primaryOne);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -527,6 +526,7 @@ Journal
 
 .journal {
   margin: 10rem auto;
+  padding: 2rem;
 }
 
 .journal h3 {
@@ -548,7 +548,7 @@ Journal
 
 .j-info {
   background: #40cccb;
-  background: radial-gradient(at left bottom, #40cccb, #008080);
+  background: var(--primaryOne);
   color: white;
   padding: 2rem;
   margin-bottom: 4rem;
@@ -579,7 +579,7 @@ App Feature Contact
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   grid-template-columns: max-content auto;
   grid-template-rows: auto max-content;
-  background: #333 url(../imgs/handsexplaining.jpg) center;
+  background: #333 url(../imgs/encurage/handsexplaining.jpg) center;
   background-size: cover;
   color: white;
   min-width: 330px;
@@ -616,21 +616,7 @@ App Feature Contact
 
 .af-contact-container {
   max-width: 1600px;
-  background-image: linear-gradient(
-    to left,
-    #008080,
-    #0e8483,
-    #178887,
-    #1f8c8a,
-    #26908e,
-    #2a9694,
-    #2e9c9a,
-    #32a2a0,
-    #35acaa,
-    #38b7b5,
-    #3cc1bf,
-    #3fccca
-  );
+  background-color: var(--primaryOne);
   box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.43);
   margin: 3rem auto;
   display: flex;
