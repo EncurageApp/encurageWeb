@@ -185,3 +185,15 @@ Social Media Icons
   height: 100px;
   color: white;
 }
+
+/*
+=====================================================================
+Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
+=====================================================================
+*/
+
+@media (min-width: 550px) and (max-width: 1100px) {
+}
+
+@media (min-width: 1101px) {
+}

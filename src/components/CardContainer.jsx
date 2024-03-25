@@ -80,7 +80,7 @@ export const CardContainer = () => {
             <h2>Protects Your Family</h2>
             <p>Medication error risks are significantly reduced.</p>
 
-            <Link to={"ChildrensHealth"} onClick={handleLink}>
+            <Link to={"ChildrenHealth"} onClick={handleLink}>
               <button className="cta-btn-home">Medication Error Risks</button>
             </Link>
           </div>

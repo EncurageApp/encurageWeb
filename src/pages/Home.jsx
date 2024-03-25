@@ -8,6 +8,7 @@ import HomeIllustration from "../imgs/homeImgsRevisions/illustration/HomeIllustr
 import HomeIllustration2 from "../imgs/homeImgsRevisions/illustration/HomeIllustration2.png";
 import HomeIllustration3 from "../imgs/homeImgsRevisions/illustration/HomeIllustration3.png";
 import HomeIllustration4 from "../imgs/homeImgsRevisions/illustration/HomeIllustration4.png";
+import HomeHero from "../imgs/encurage/homephoto.jpg";
 
 export const Home = () => {
   const handleLink = () => {
@@ -20,6 +21,8 @@ export const Home = () => {
   return (
     <main>
       <section className="home-hero-container">
+        <img className="img-wrap" src={HomeHero} alt="" />
+
         <div>
           <h2 data-aos="fade-in" data-aos-delay="500">
             Manage and track your child's health.
@@ -41,10 +44,12 @@ export const Home = () => {
           Reliable, comprehensive, intuitive, all-around kids’ health management
           digital platform developed especially for parents and caregivers.
           <br />
+          <br />
           Addressing the various, and unique aspects and challenges you
           encounter while caring for a sick child, managing a child’s ongoing
           condition, and the ever changing landscape of their health journeys
           through baby, toddler, childhood and teenage years.
+          <br />
           <br />
           Everything you need is bundled into a digital companion, so you can
           focus on love, hugs and cuddles ❤️
@@ -53,30 +58,11 @@ export const Home = () => {
 
       <section className="home-main-container">
         <div data-aos="fade-in" className="home-main">
-          <h2>Your Child's Health, is Our Priority</h2>
-          <p>
-            We understand the challenges that parents face in managing their
-            children's health, and that's why we've developed a comprehensive
-            app dedicated to making this task easier and more efficient. From
-            medication tracking to timely reminders, our app ensures that you're
-            always in control of your child's well-being.
-          </p>
           <CardContainer />
-
-          <p>
-            We believe that every child deserves the best care, and we're here
-            to provide you with the tools and support to make that happen. With
-            our expertise and your dedication, together, we can give your child
-            the healthiest start in life.
-          </p>
         </div>
       </section>
 
       <section className="home-app-container">
-        <h2 data-aos="fade-in">
-          Welcome to the Future of Child Health Management
-        </h2>
-
         <div>
           <div data-aos="fade-left" className="home-app-square square-1">
             <div className="home-app-inner">
@@ -95,20 +81,25 @@ export const Home = () => {
                   child’s health and treatment plans, yet also confusing,
                   overwhelming, and time consuming.
                   <br />
+                  <br />
                   Whether it’s the flu, ADHD, asthma, or anything in between,
                   you can safely navigate the sea of data and multitude of
                   tasks.
                   <br />
+                  <br />
                   Your child’s medicine schedules are managed for you,
                   specifically designed for children’s medicine tracking.
                   <br />
+                  <br />
                   Their symptoms, side effects, vitals, therapies and growth,
                   easily tracked, stored and accessed.
+                  <br />
                   <br />
                   Their health journey, journaled and saved, providing you and
                   your child’s healthcare team meaningful insights. Your family,
                   synced and ready to take charge at any time through a seamless
                   caregiving management system.
+                  <br />
                   <br />
                   And if a new bundle of joy has arrived, their sleep, diapers,
                   and feeding (including breastfeeding, pumping, and bottle
@@ -121,10 +112,11 @@ export const Home = () => {
               </div>
             </div>
           </div>
+
           <div data-aos="fade-right" className="home-app-square square-2">
             <div className="home-app-inner">
               <div className="home-app-square-inner-box-1">
-                <h3>Avoid the Risk of Medication Errors.</h3>
+                <h3>Avoid the Risk of Medication Errors</h3>
                 <img
                   src={HomeIllustration2}
                   alt="encurage - mom holding baby"
@@ -135,14 +127,17 @@ export const Home = () => {
                   Children are more sensitive to medication errors, and
                   unfortunately much more exposed to them as well.
                   <br />
+                  <br />
                   Multiple infections per year in their early years is a well
                   known reality to every parent, which means a lot of fever
                   reducers, antibiotics, and other infection treatments.
+                  <br />
                   <br />
                   Add multiple caregivers; more than one sick child in the
                   family; ongoing conditions that are managed at the same time;
                   stress and tiredness; and the result is a staggering rate of
                   medication errors in children in the US.
+                  <br />
                   <br />
                   Read more about the unique aspects at the root of this
                   problem, and how you can minimize the risk for your child with
@@ -156,10 +151,11 @@ export const Home = () => {
               </div>
             </div>
           </div>
+
           <div data-aos="fade-left" className="home-app-square square-3">
             <div className="home-app-inner">
               <div className="home-app-square-inner-box-1">
-                <h3>Why We Developed Encurage.</h3>
+                <h3>Why We Developed Encurage</h3>
                 <img
                   src={HomeIllustration3}
                   alt="encurage - mom holding baby"
@@ -172,9 +168,11 @@ export const Home = () => {
                   well as their ongoing conditions, we couldn’t find a single
                   digital tool addressing parents’ needs.
                   <br />
+                  <br />
                   Diving into research about childrens’ health management at
                   home, we discovered the magnitude of the problem, and realized
                   that parents need help.
+                  <br />
                   <br />
                   Our mission: provide each and every family with the right
                   toolkit for their children’s unique health management journey.
@@ -185,10 +183,11 @@ export const Home = () => {
               </div>
             </div>
           </div>
+
           <div data-aos="fade-right" className="home-app-square square-4">
             <div className="home-app-inner">
               <div className="home-app-square-inner-box-1">
-                <h3>Always Here For You.</h3>
+                <h3>Always Here For You</h3>
                 <img
                   src={HomeIllustration4}
                   alt="encurage - mom holding baby"
@@ -198,14 +197,17 @@ export const Home = () => {
                 <p>
                   Caring is 24/7, year round.
                   <br />
+                  <br />
                   Our support team is available for extended hours, and we
                   strive to reply as quickly as possible.
+                  <br />
                   <br />
                   You can also browse our extensive FAQs, where we gathered
                   helpful instructions and tips to help you navigate quickly and
                   address your inquiries with ease. The FAQs are also available
                   in the app, and can be accessed directly from your profile
                   menu.
+                  <br />
                   <br />
                   Have any feature requests, general questions, suggestions, or
                   feedback you’d like to share? We would love to hear from you.
@@ -222,21 +224,23 @@ export const Home = () => {
 
       <section data-aos="fade-in" className="home-review-container">
         <div>
-          <h2>See What Parents Say</h2>
+          <h2>What Parents Say</h2>
         </div>
         <TestimonialSlider />
       </section>
 
-      <section className="disclaimer-container">
+      <section data-aos="fade-in" className="disclaimer-container">
         <div className="disclaimer">
           <p>
             <span>IMPORTANT: </span> Encurage is here to help you track and
             manage your child's health, in accordance with the instructions
             given to you by your child's healthcare team.
+            <br />
             <span>
               IT IS NOT INTENDED TO, AND DOES NOT, PROVIDE ANY KIND OF MEDICAL
               ADVICE.
             </span>
+            <br />
             Always make sure you are following your child’s healthcare team
             instructions and guidelines. Please read our
             <NavLink to="HelpCenterLayout" className="disclaimer-terms-btn">
