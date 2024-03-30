@@ -17,7 +17,6 @@ export const ChildrenStats = ({ animateNumber, icon }) => {
           { mass: 1, tension: 210, friction: 180 },
         ]}
       ></AnimatedNumbers>
-      <div>+</div>
     </div>
   );
 };

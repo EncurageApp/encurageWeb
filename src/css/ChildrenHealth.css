@@ -2,13 +2,13 @@
 
 .health-page p {
   font-size: 1.2rem;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
   letter-spacing: 0.8px;
 }
 
 .health-page h2 {
-  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3),
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
   letter-spacing: 2px;
 }
@@ -18,43 +18,57 @@ Hero
 =================================================
 */
 
-.ch-hero {
-  height: 100svh;
-  background-image: url(../imgs/encurage/dadtwokids.jpg);
-  background-position: center center;
+.ch-hero-container {
+  height: 120svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ch-hero-container-img {
+  background-image: url(../imgs/encurage/challengesandriskphoto.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.3s ease-in-out;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.ch-hero-container-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  position: relative;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  align-items: left;
+  padding: 20px;
 }
 
-.ch-intro-text {
-  max-width: 1400px;
-  padding: 0 1rem;
-  padding-top: 8rem;
-  text-align: center;
-  color: white;
-}
-
-.ch-intro-text h2 {
-  margin: 1rem;
-  padding-bottom: 0.5rem;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.55),
-    0px 0.1px 10px rgba(255, 255, 255, 0.3);
+.ch-hero-container h2 {
   border: none;
-  font-size: 3rem;
-  border-bottom: 0.5px solid white;
+  font-size: 2rem;
+  transition: all 2s ease-in-out;
 }
 
-.ch-intro-text p {
-  margin: 0 auto;
+.ch-hero-container p {
+  font-size: 1.2rem;
+  transition: all 2s ease-in-out;
+  text-align: left;
   max-width: 900px;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0), 0px -5px 35px rgba(1, 1, 1, 0.5);
+}
+
+.ch-download-break {
+  margin: 2rem auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primaryThree);
+  border-top: 1px solid var(--primaryOne);
+  border-bottom: 1px solid var(--primaryOne);
+  font-weight: 600;
 }
 
 /*
@@ -75,7 +89,6 @@ Stats
 
 .ch-stats-container h2 {
   padding-top: 4rem;
-
   font-size: 2.5rem;
   text-align: center;
   border: none;
@@ -89,28 +102,9 @@ Stats
   position: relative;
   width: 80%;
   max-width: 400px;
-  height: 530px;
+  height: 400px;
   margin: 30px;
-  border-radius: 20px;
-  border-bottom-left-radius: 160px;
-  border-bottom-right-radius: 160px;
-  box-shadow: 0 0 40px 0 var(--primaryOne), 0 15px 0 var(--primaryTwo),
-    inset 0 -15px 0 var(--primaryOne), 0 25px 0 var(--primaryOne);
-  overflow: hidden;
-}
-
-.ch-stats-card::before {
-  content: "";
-  position: absolute;
-  top: -140px;
-  left: -40%;
-  padding: 0;
-  width: 100%;
-  height: 120%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
-  transform: rotate(35deg);
-  pointer-events: none;
-  filter: blur(5px);
+  border-radius: 5px;
 }
 
 .ch-stats-card .ch-card-content {
@@ -137,22 +131,62 @@ Stats
 }
 
 /* Animated Numbers */
-.stats {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
 
-.stats > div {
-  color: white;
+.ch-animate-container {
   display: flex;
-
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+}
+
+.ch-animate-container span {
+  font-size: 2rem;
+  color: white;
+  padding-left: 10px;
+}
+
+/*
+=================================================
+Revisions 
+=================================================
+*/
+
+.ch-revision-text p {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.ch-revision-text span {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+/*
+=================================================
+Image Divider
+=================================================
+*/
+
+.ch-image-divider {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30svh;
+  padding: 2rem 1rem 0 1rem;
+}
+
+.ch-image-divider > div {
+  background-image: url(../imgs/encurage/challengesandriskphoto2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  height: 100%;
+  width: 100%;
 }
 
 /*
@@ -163,26 +197,32 @@ Reasons
 
 .ch-reason-container {
   margin: 10rem auto;
-  min-height: 100vh;
-  color: white;
+  color: black;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .ch-reason-container h2 {
   font-size: 2.3rem;
+  border-bottom: none;
+  text-align: left;
 }
 
 .ch-reason-container > div {
   margin: 0 auto;
   padding: 5em 2rem;
-  max-width: 1000px;
-  background-color: var(--primaryOne);
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  box-shadow: rgb(38, 57, 77) 0px 5px 30px 5px;
-  transition: all 0.5s ease-in-out;
+  align-items: left;
+}
+
+.ch-reason-container > div > p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
 }
 
 .ch-reason-spacer {
@@ -199,7 +239,7 @@ Reasons
 
 .ch-reason-container > ul {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1100px;
   background-color: var(--primaryOne);
   min-height: 80vh;
   display: flex;
@@ -210,10 +250,15 @@ Reasons
 }
 
 .ch-reason-container li {
-  max-width: 700px;
+  max-width: 1400px;
   margin: 20px 0;
-  padding: 20px 0;
+  padding: 20px;
   list-style: none;
+  height: 100%;
+}
+
+.ch-reason-container li p {
+  padding-bottom: 2rem;
 }
 
 .ch-collapse {
@@ -221,18 +266,10 @@ Reasons
   font-size: 1rem;
 }
 
-.collapse-toggle {
-  margin: 0 auto;
-  padding: 2rem;
-  border: 0.8px var(--primaryFive);
-  border-bottom: 1px solid var(--primaryThree);
-  transition: all 0.3s ease-in-out;
-}
-
 .collapse-content {
   padding: 2rem;
   line-height: 2rem;
-
+  background-color: white;
   transition: all 0.3s ease-in-out;
 }
 
@@ -240,99 +277,6 @@ Reasons
   padding-top: 10px;
   overflow: hidden;
   transition: height ease 1s;
-}
-
-.collapse-content h3 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  padding: 1rem 0;
-  border-top: 1px solid var(--primaryThree);
-  border-bottom: 1px solid var(--primaryThree);
-  border-radius: 6px;
-}
-
-/*
-=================================================
-Health Slider
-=================================================
-*/
-
-.ch-slider-info {
-  margin: 0 auto;
-  text-align: center;
-  color: black;
-  padding: 1rem;
-  line-height: 2.5rem;
-}
-
-.ch-slider-info h2 {
-  border: none;
-}
-
-.ch-slider-info p {
-  margin: 0 auto;
-  max-width: 700px;
-}
-
-.ch-slider-info span {
-  font-size: 2rem;
-}
-
-.ch-slider {
-  border-radius: 0%;
-  min-height: 500px;
-  max-width: 800px;
-  color: white;
-  background-color: var(--primaryOne);
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  box-shadow: rgb(38, 57, 77) 0px 10px 60px -10px;
-}
-
-.ch-slider h2 {
-  font-size: 2rem;
-}
-
-.ch-slider p {
-  max-width: 500px;
-}
-
-.ch-slider-btns {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.ch-slider-btns button {
-  color: white;
-  transform: uppercase;
-  height: 25px;
-  width: 100px;
-  background: linear-gradient(
-    80deg,
-    hsla(272, 58%, 42%, 1) 0%,
-    hsla(290, 43%, 42%, 1) 12%,
-    hsla(360, 100%, 75%, 1) 100%
-  );
-  border: 0 solid;
-  border-radius: 5px;
-  outline: 1px solid;
-  outline-color: rgba(255, 255, 255, 0.5);
-  text-shadow: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.ch-slider-btns button:hover {
-  color: var(--primaryThree);
-  background-color: var(--primaryThree);
-  border: 0.3px solid white;
-  transition: all 0.3s ease-in-out;
 }
 
 /*
@@ -348,12 +292,43 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
 @media (min-width: 550px) and (max-width: 1100px) {
   /* Hero */
-  .ch-intro-text h2 {
-    font-size: 3.5rem;
+  .ch-hero-container {
+    height: 100svh;
+    flex-direction: row-reverse;
   }
 
-  .ch-intro-text p {
-    font-size: 1.3rem;
+  .ch-hero-container-img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .ch-hero-container h2 {
+    border: none;
+    font-size: 2.6rem;
+    transition: all 2s ease-in-out;
+    padding-right: 2rem;
+  }
+
+  .ch-hero-container p {
+    font-size: 1.4rem;
+    transition: all 2s ease-in-out;
+    padding-right: 2rem;
+  }
+
+  .ch-download-break {
+    flex-direction: row;
+  }
+
+  .ch-revision-text p {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ch-revision-text span {
+    font-weight: 800;
+    font-size: 1.45rem;
   }
 
   /* Stats */
@@ -361,31 +336,74 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     flex-direction: row;
   }
 
+  /* Divider */
+
+  .ch-image-divider {
+    height: 40svh;
+    padding: 4rem 2rem 0 2rem;
+  }
+
   /* Reason */
 
-  .ch-reason-container > div {
-    border-radius: 150px 150px 0 0;
+  .ch-reason-container h2 {
+    font-size: 3.4rem;
+  }
+
+  .ch-reason-container > div > p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .ch-reason-container {
+    flex-direction: column;
   }
 
   .ch-reason-container > ul {
-    border-radius: 0 0 10% 10%;
-  }
-
-  /* Slider */
-  .ch-slider {
-    border-radius: 50%;
+    margin: 1rem;
   }
 }
 
 @media (min-width: 1100px) {
   /* Hero */
 
-  .ch-intro-text h2 {
-    font-size: 5rem;
+  .ch-hero-container {
+    height: 100svh;
+    flex-direction: row-reverse;
   }
 
-  .ch-intro-text p {
-    font-size: 1.5rem;
+  .ch-hero-container-img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .ch-hero-container h2 {
+    border: none;
+    font-size: 3.2rem;
+    transition: all 2s ease-in-out;
+    padding-right: 2rem;
+  }
+
+  .ch-hero-container p {
+    font-size: 1.6rem;
+    transition: all 2s ease-in-out;
+    padding-right: 2rem;
+  }
+
+  .ch-download-break {
+    flex-direction: row;
+  }
+
+  .ch-revision-text p {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .ch-revision-text span {
+    font-weight: 800;
+    font-size: 1.65rem;
   }
 
   /* Stats */
@@ -393,13 +411,30 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     flex-direction: row;
   }
 
+  /* Divider */
+
+  .ch-image-divider {
+    height: 50svh;
+    padding: 4rem 4rem 0 4rem;
+  }
+
   /* Reason */
 
-  .ch-reason-container > div {
-    border-radius: 150px 150px 0 0;
+  .ch-reason-container h2 {
+    font-size: 3.8rem;
+  }
+
+  .ch-reason-container > div > p {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .ch-reason-container {
+    flex-direction: row;
   }
 
   .ch-reason-container > ul {
-    border-radius: 0 0 10% 10%;
+    margin-right: 6rem;
   }
 }
