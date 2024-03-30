@@ -88,7 +88,7 @@ export const RootLayout = () => {
                 Home
               </NavLink>
               <NavLink to={"ChildrenHealth"} onClick={handleQuickLinkClick}>
-                Children's Health
+                Challenges & Risks
               </NavLink>
               <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
                 Explore Our App
@@ -109,6 +109,10 @@ export const RootLayout = () => {
               </div>
             </ul>
           </nav>
+          <div className="nav-download-container-small">
+            <GooglePlayBtn />
+            <AppStoreBtn />
+          </div>
         </header>
       </Headroom>
       <main>
@@ -132,7 +136,7 @@ export const RootLayout = () => {
               Home
             </NavLink>
             <NavLink to={"ChildrenHealth"} onClick={handleQuickLinkClick}>
-              Children's Health
+              Challenges & Risks
             </NavLink>
             <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
               Explore Our App

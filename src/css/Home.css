@@ -33,20 +33,25 @@ Hero
 .home-hero-container {
   height: 100svh;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
-.home-hero-container img {
-  height: 100svh;
-  width: 70%;
+.home-hero-container-img {
+  background-image: url(../imgs/encurage/homephoto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 0 0 10px 10px;
 }
 
-.home-hero-container > div {
+.home-hero-container-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  padding-left: 3rem;
+  padding: 20px;
 }
 
 .home-hero-container h2 {
@@ -69,7 +74,7 @@ Main Intro // REVISIONS
 
 .home-main-intro {
   padding: 1rem;
-  margin: 8rem 0;
+  margin: 8rem 0 0 0;
   text-align: center;
   border-top: 3px solid var(--primaryOne);
   border-bottom: 3px solid var(--primaryOne);
@@ -92,7 +97,7 @@ Main Section
 
 .home-main-container {
   width: 100%;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .home-main {
@@ -524,9 +529,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 @media (min-width: 550px) and (max-width: 1100px) {
   /*       Hero Section       */
 
-  .hero-container {
-    height: 50vh;
-    transition: all 0.3s ease-in-out;
+  .home-hero-container {
+    flex-direction: row-reverse;
+  }
+
+  .home-hero-container-img {
+    width: 100%;
   }
 
   .home-hero-container h2 {
@@ -608,9 +616,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 @media (min-width: 1101px) {
   /*         Hero Section          */
 
-  .hero-container {
-    height: 60vh;
-    transition: all 0.3s ease-in-out;
+  .home-hero-container {
+    flex-direction: row-reverse;
+  }
+
+  .home-hero-container-img {
+    width: 100%;
   }
 
   .home-hero-container h2 {

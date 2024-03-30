@@ -8,7 +8,6 @@ import HomeIllustration from "../imgs/homeImgsRevisions/illustration/HomeIllustr
 import HomeIllustration2 from "../imgs/homeImgsRevisions/illustration/HomeIllustration2.png";
 import HomeIllustration3 from "../imgs/homeImgsRevisions/illustration/HomeIllustration3.png";
 import HomeIllustration4 from "../imgs/homeImgsRevisions/illustration/HomeIllustration4.png";
-import HomeHero from "../imgs/encurage/homephoto.jpg";
 
 export const Home = () => {
   const handleLink = () => {
@@ -21,9 +20,9 @@ export const Home = () => {
   return (
     <main>
       <section className="home-hero-container">
-        <img className="img-wrap" src={HomeHero} alt="" />
+        <div className="home-hero-container-img"></div>
 
-        <div>
+        <div className="home-hero-container-text">
           <h2 data-aos="fade-in" data-aos-delay="500">
             Manage and track your child's health.
           </h2>
