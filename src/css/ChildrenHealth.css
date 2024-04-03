@@ -130,6 +130,16 @@ Stats
   align-items: center;
 }
 
+.ch-card-content > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ch-card-min {
+  gap: 10px;
+}
+
 /* Animated Numbers */
 
 .ch-animate-container {
@@ -169,18 +179,16 @@ Image Divider
 */
 
 .ch-image-divider {
-  margin: 4rem auto;
+  margin: 2rem auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 30svh;
-  padding: 2rem 1rem 0 1rem;
+  height: 40svh;
+  padding: 1rem 1rem 0 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .ch-image-divider > div {
   background-image: url(../imgs/encurage/challengesandriskphoto2.jpg);
-  background-position: center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -196,7 +204,7 @@ Reasons
 */
 
 .ch-reason-container {
-  margin: 10rem auto;
+  margin: 4rem auto;
   color: black;
   text-align: center;
   display: flex;
@@ -339,8 +347,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* Divider */
 
   .ch-image-divider {
-    height: 40svh;
-    padding: 4rem 2rem 0 2rem;
+    height: 50svh;
   }
 
   /* Reason */
@@ -414,14 +421,24 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* Divider */
 
   .ch-image-divider {
-    height: 50svh;
-    padding: 4rem 4rem 0 4rem;
+    height: 70svh;
+  }
+
+  .ch-image-divider > div {
+    background-position: center 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   /* Reason */
 
   .ch-reason-container h2 {
     font-size: 3.8rem;
+  }
+
+  .ch-reason-container > div {
+    max-width: 500px;
+    margin-right: 4rem;
   }
 
   .ch-reason-container > div > p {

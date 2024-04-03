@@ -7,9 +7,13 @@ import { HealthCollapsible } from "../components/HealthCollapsible";
 import { Link } from "react-router-dom";
 
 //Images
-import CaregiverIcon1 from "../imgs/icons/caregiver1.png";
-import CaregiverIcon2 from "../imgs/icons/caregiver2.png";
-import CaregiverIcon3 from "../imgs/icons/caregiver3.png";
+
+import Experience from "../imgs/icons/dailylife.png";
+import HighFrequency from "../imgs/icons/highfrequency.png";
+import YoungChildren from "../imgs/icons/dailylife.png";
+import DailyLife from "../imgs/icons/dailylife.png";
+import BoyIcon from "../imgs/icons/boyicon.png";
+import GirlIcon from "../imgs/icons/girlicon.png";
 
 export const ChildrenHealth = () => {
   const handleLink = () => {
@@ -48,8 +52,8 @@ export const ChildrenHealth = () => {
       </section>
 
       <div className="ch-download-break">
+        <p>Download and Explore</p>
         <GooglePlayBtn />
-        <p>Download and Explore The App Now!</p>
         <AppStoreBtn />
       </div>
 
@@ -68,14 +72,12 @@ export const ChildrenHealth = () => {
           <div className="ch-stats-card">
             <div className="ch-card-icon"></div>
             <div className="ch-card-content">
-              <p>
-                Every{" "}
-                <span data-aos="fade-in" style={{ fontSize: "3rem" }}>
-                  8
-                </span>{" "}
-                minutes - a parent or caregiver in the US makes a medication
-                error
-              </p>
+              <div className="ch-card-min">
+                <p>Every</p>
+                <ChildrenStats animateNumber={8} />
+                <p>minutes</p>
+              </div>
+              <p>- a parent or caregiver in the US makes a medication error</p>
             </div>
           </div>
           <div className="ch-stats-card">
@@ -86,8 +88,7 @@ export const ChildrenHealth = () => {
                 <span data-aos="fade-in">%</span>
               </div>
               <p>
-                Parents who have taken the proactive step of downloading
-                Encurage app
+                of errors related to fever reducers, cough and cold medications
               </p>
             </div>
           </div>
@@ -98,10 +99,7 @@ export const ChildrenHealth = () => {
                 <ChildrenStats animateNumber={27} />
                 <span data-aos="fade-in">%</span>
               </div>
-              <p>
-                Parents who have taken the proactive step of downloading
-                Encurage app
-              </p>
+              <p>of errors related to double dosing</p>
             </div>
           </div>
         </div>
@@ -121,7 +119,7 @@ export const ChildrenHealth = () => {
           In December 2021, the American Academy of Pediatrics released the
           policy: Preventing Home Medication Administration Errors, stressing
           the <span>severity of the problem</span> and the
-          <span>urgent need for adequate solutions</span> for parents.
+          <span> urgent need for adequate solutions</span> for parents.
         </p>
       </section>
 
@@ -131,7 +129,7 @@ export const ChildrenHealth = () => {
 
       <section className="ch-reason-container">
         <div>
-          <h2>What’s Causing This,</h2>
+          <h2>What’s Causing This</h2>
           <p>
             A look into some of the main factors mentioned in Nationwide
             Children’s Hospital research, as well as the AAP’s published policy.{" "}
@@ -140,15 +138,13 @@ export const ChildrenHealth = () => {
         <ul>
           <li>
             <HealthCollapsible label="Multiple Caregivers">
-              <div>
-                <img src={CaregiverIcon1} alt="" />
-                <img src={CaregiverIcon2} alt="" />
-                <img src={CaregiverIcon3} alt="" />
-              </div>
+              3
               <p>
                 The constant back and forth between parents/partners is a major
-                pain point. Add a grandparent, other relative, or a babysitter,
-                and it gets even more challenging.
+                pain point.
+                <br />
+                Add a grandparent, other relative, or a babysitter, and it gets
+                even more challenging.
               </p>
               <Link to="AppFeatures" onClick={handleLink}>
                 <button className="cta-btn-home">Explore Our Solutions</button>
@@ -158,6 +154,7 @@ export const ChildrenHealth = () => {
 
           <li>
             <HealthCollapsible label="Experience and Knowhow">
+              <img src={Experience} alt="medicine pill" />
               <p>
                 Many parents are new to frequent dosing, liquid formulations and
                 unique aspects of children's medicine administration. A
