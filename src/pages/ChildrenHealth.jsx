@@ -7,11 +7,13 @@ import { HealthCollapsible } from "../components/HealthCollapsible";
 import { Link } from "react-router-dom";
 
 //Images
-
-import Experience from "../imgs/icons/dailylife.png";
+import CaregiverIcon1 from "../imgs/icons/caregiver1.png";
+import CaregiverIcon2 from "../imgs/icons/caregiver2.png";
+import CaregiverIcon3 from "../imgs/icons/caregiver3.png";
+import Clipboard from "../imgs/icons/clipboard.png";
 import HighFrequency from "../imgs/icons/highfrequency.png";
 import YoungChildren from "../imgs/icons/dailylife.png";
-import DailyLife from "../imgs/icons/dailylife.png";
+import DailyLife from "../imgs/icons/schedule.png";
 import BoyIcon from "../imgs/icons/boyicon.png";
 import GirlIcon from "../imgs/icons/girlicon.png";
 
@@ -128,7 +130,7 @@ export const ChildrenHealth = () => {
       </section>
 
       <section className="ch-reason-container">
-        <div>
+        <div data-aos="fade-in">
           <h2>What’s Causing This</h2>
           <p>
             A look into some of the main factors mentioned in Nationwide
@@ -138,81 +140,121 @@ export const ChildrenHealth = () => {
         <ul>
           <li>
             <HealthCollapsible label="Multiple Caregivers">
-              3
-              <p>
-                The constant back and forth between parents/partners is a major
-                pain point.
-                <br />
-                Add a grandparent, other relative, or a babysitter, and it gets
-                even more challenging.
-              </p>
-              <Link to="AppFeatures" onClick={handleLink}>
-                <button className="cta-btn-home">Explore Our Solutions</button>
-              </Link>
+              <div className="ch-reason-icon-container">
+                <img src={CaregiverIcon1} alt="man icon" width={40} />
+                <img src={CaregiverIcon2} alt="grandma icon" width={40} />
+                <img src={CaregiverIcon3} alt="grandpa icon" width={40} />
+              </div>
+
+              <div>
+                <p>
+                  The constant back and forth between parents/partners is a
+                  major pain point.
+                  <br />
+                  Add a grandparent, other relative, or a babysitter, and it
+                  gets even more challenging.
+                </p>
+                <Link to="/AppFeatures" onClick={handleLink}>
+                  <button className="cta-btn-home">
+                    Explore Our Solutions
+                  </button>
+                </Link>
+              </div>
             </HealthCollapsible>
           </li>
 
           <li>
             <HealthCollapsible label="Experience and Knowhow">
-              <img src={Experience} alt="medicine pill" />
-              <p>
-                Many parents are new to frequent dosing, liquid formulations and
-                unique aspects of children's medicine administration. A
-                multitude of new instructions elevates error rates.
-              </p>
-              <Link to="AppFeatures" onClick={handleLink}>
-                <button className="cta-btn-home">Explore Our Solutions</button>
-              </Link>
+              <img
+                className="reason-icons"
+                src={DailyLife}
+                alt="medicine pill"
+              />
+              <div>
+                <p>
+                  Many parents are new to frequent dosing, liquid formulations
+                  and unique aspects of children's medicine administration. A
+                  multitude of new instructions elevates error rates.
+                </p>
+                <Link to="/AppFeatures" onClick={handleLink}>
+                  <button className="cta-btn-home">
+                    Explore Our Solutions
+                  </button>
+                </Link>
+              </div>
             </HealthCollapsible>
           </li>
 
           <li>
             <HealthCollapsible label="Tiredness and Stress">
-              <p>
-                Caring for a sick child through the night. Juggling care with
-                work and other commitments. Worrying for your child's health.
-                Confusion is almost inevitable.
-              </p>
-              <Link to="AppFeatures" onClick={handleLink}>
-                <button className="cta-btn-home">Explore Our Solutions</button>
-              </Link>
+              <img className="reason-icons" src={Clipboard} alt="" />
+              <div>
+                <p>
+                  Caring for a sick child through the night. Juggling care with
+                  work and other commitments. Worrying for your child's health.
+                  Confusion is almost inevitable.
+                </p>
+                <Link to="/AppFeatures" onClick={handleLink}>
+                  <button className="cta-btn-home">
+                    Explore Our Solutions
+                  </button>
+                </Link>
+              </div>
             </HealthCollapsible>
           </li>
 
           <li>
             <HealthCollapsible label="High Frequency of Fever Episodes">
-              <p>
-                It's normal for babies and toddlers 0-3 years old to have fever
-                episodes up to 12 times a year. With so many to go through,
-                errors are more frequent.
-              </p>
-              <Link to="AppFeatures" onClick={handleLink}>
-                <button className="cta-btn-home">Explore Our Solutions</button>
-              </Link>
+              <img className="reason-icons" src={HighFrequency} alt="" />
+              <div>
+                <p>
+                  It's normal for babies and toddlers 0-3 years old to have
+                  fever episodes up to 12 times a year. With so many to go
+                  through, errors are more frequent.
+                </p>
+                <Link to="/AppFeatures" onClick={handleLink}>
+                  <button className="cta-btn-home">
+                    Explore Our Solutions
+                  </button>
+                </Link>
+              </div>
             </HealthCollapsible>
           </li>
           <li>
             <HealthCollapsible label="More Than One Child in the Family">
-              <p>
-                Having one sick child means, more often than not, that other
-                children in the house will get sick, too. Dosing multiple
-                children at a time elevates the risk for errors.
-              </p>
-              <Link to="AppFeatures" onClick={handleLink}>
-                <button className="cta-btn-home">Explore Our Solutions</button>
-              </Link>
+              <div>
+                <img className="reason-icons" src={BoyIcon} alt="" />
+                <img className="reason-icons" src={GirlIcon} alt="" />
+              </div>
+              <div>
+                <p>
+                  Having one sick child means, more often than not, that other
+                  children in the house will get sick, too. Dosing multiple
+                  children at a time elevates the risk for errors.
+                </p>
+                <Link to="AppFeatures" onClick={handleLink}>
+                  <button className="cta-btn-home">
+                    Explore Our Solutions
+                  </button>
+                </Link>
+              </div>
             </HealthCollapsible>
           </li>
           <li>
             <HealthCollapsible label="Young Children">
-              <p>
-                Their weight, and as a result their medications’ dosages, keep
-                updating frequently. Parents need to navigate a constantly
-                changing “database”.
-              </p>
-              <Link to="AppFeatures" onClick={handleLink}>
-                <button className="cta-btn-home">Explore Our Solutions</button>
-              </Link>
+              <img className="reason-icons" src={YoungChildren} alt="" />
+              <div>
+                <p>
+                  Their weight, and as a result their medications’ dosages, keep
+                  updating frequently. Parents need to navigate a constantly
+                  changing “database”.
+                </p>
+                <Link to="/AppFeatures" onClick={handleLink}>
+                  <button className="cta-btn-home">
+                    Explore Our Solutions
+                  </button>
+                </Link>
+              </div>
             </HealthCollapsible>
           </li>
         </ul>
