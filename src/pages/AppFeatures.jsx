@@ -39,16 +39,22 @@ export const AppFeatures = () => {
   };
   return (
     <main className="appFeatures-page">
-      <section className="af-hero">
-        <AnimateText>
-          <div className="af-intro-text">
-            <h2>Discover the Power of Encurage</h2>
-            <p>
-              Encurage offers a rich array of features designed to simplify and
-              streamline medication management for your child.
-            </p>
-          </div>
-        </AnimateText>
+      <section className="af-hero-container">
+        <div className="af-hero-container-img"></div>
+
+        <div className="af-hero-container-text">
+          <h2 data-aos="fade-in" data-aos-delay="500">
+            Just Add TLC
+          </h2>
+
+          <p data-aos="fade-in" data-aos-delay="2000">
+            Every aspect of caring for your child at home has its own dedicated
+            feature, built and designed for{" "}
+            <span>the needs of your family</span>, following
+            <span> extensive research</span>, medical vetting, and valuable{" "}
+            <span>feedback from parents.</span>
+          </p>
+        </div>
       </section>
 
       <section className="af-info">

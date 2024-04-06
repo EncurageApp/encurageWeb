@@ -276,7 +276,7 @@ Reasons
 }
 
 .reason-icons {
-  width: 80px;
+  width: 60px;
   margin: 10px;
 }
 
@@ -296,6 +296,31 @@ Reasons
   padding-top: 10px;
   overflow: hidden;
   transition: height ease 1s;
+}
+
+/*
+=================================================
+Link (Revisions)
+=================================================
+*/
+
+.ch-links-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ch-links-container h2 {
+  border: none;
+}
+
+.ch-links-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.2rem;
 }
 
 /*
@@ -371,10 +396,6 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 1.8rem;
     font-weight: 600;
     text-align: left;
-  }
-
-  .ch-reason-container {
-    flex-direction: column;
   }
 
   .ch-reason-container > ul {
@@ -464,19 +485,5 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .ch-reason-container > ul {
     margin-right: 6rem;
-  }
-
-  .ch-reason-icon-container {
-    display: flex;
-    flex-direction: column;
-    padding-right: 30px;
-  }
-
-  .collapse-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: right;
-    padding: 30px;
   }
 }

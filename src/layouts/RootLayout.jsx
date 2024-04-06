@@ -91,7 +91,7 @@ export const RootLayout = () => {
                 Challenges & Risks
               </NavLink>
               <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
-                Explore Our App
+                Explore Encurage
               </NavLink>
               <NavLink to={"Founder"} onClick={handleQuickLinkClick}>
                 Our Story
@@ -139,7 +139,7 @@ export const RootLayout = () => {
               Challenges & Risks
             </NavLink>
             <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
-              Explore Our App
+              Explore Encurage
             </NavLink>
             <NavLink to={"Founder"} onClick={handleQuickLinkClick}>
               Our Story

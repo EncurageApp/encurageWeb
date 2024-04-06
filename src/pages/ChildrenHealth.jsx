@@ -141,9 +141,9 @@ export const ChildrenHealth = () => {
           <li>
             <HealthCollapsible label="Multiple Caregivers">
               <div className="ch-reason-icon-container">
-                <img src={CaregiverIcon1} alt="man icon" width={40} />
-                <img src={CaregiverIcon2} alt="grandma icon" width={40} />
-                <img src={CaregiverIcon3} alt="grandpa icon" width={40} />
+                <img src={CaregiverIcon1} alt="man icon" width={30} />
+                <img src={CaregiverIcon2} alt="grandma icon" width={30} />
+                <img src={CaregiverIcon3} alt="grandpa icon" width={30} />
               </div>
 
               <div>
@@ -258,6 +258,18 @@ export const ChildrenHealth = () => {
             </HealthCollapsible>
           </li>
         </ul>
+      </section>
+
+      <section className="ch-links-container">
+        <h2>For further reading:</h2>
+        <div>
+          <a href="https://www.livescience.com/48413-parents-causing-epidemic-of-childrens-medication-overdoses.html">
+            Nationwide Children's Hospital Research
+          </a>
+          <a href="https://publications.aap.org/pediatrics/article/148/6/e2021054666/183379/Preventing-Home-Medication-Administration-Errors">
+            AAP Policy
+          </a>
+        </div>
       </section>
     </main>
   );
