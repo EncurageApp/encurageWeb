@@ -44,19 +44,23 @@ Hero
 
 .ch-hero-container h2 {
   border: none;
-  font-size: 2rem;
   transition: all 2s ease-in-out;
 }
 
 .ch-hero-container p {
-  font-size: 1.2rem;
   transition: all 2s ease-in-out;
   text-align: left;
   max-width: 900px;
 }
 
+/*
+=================================================
+Download Break (Revisions)
+=================================================
+*/
+
 .ch-download-break {
-  margin: 2rem auto;
+  margin-top: 2rem;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -348,13 +352,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .ch-hero-container h2 {
     border: none;
-    font-size: 2.6rem;
+
     transition: all 2s ease-in-out;
     padding-right: 2rem;
   }
 
   .ch-hero-container p {
-    font-size: 1.4rem;
     transition: all 2s ease-in-out;
     padding-right: 2rem;
   }
@@ -418,13 +421,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .ch-hero-container h2 {
     border: none;
-    font-size: 3.2rem;
+
     transition: all 2s ease-in-out;
     padding-right: 2rem;
   }
 
   .ch-hero-container p {
-    font-size: 1.6rem;
     transition: all 2s ease-in-out;
     padding-right: 2rem;
   }
