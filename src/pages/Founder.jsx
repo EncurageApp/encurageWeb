@@ -6,22 +6,14 @@ import EmailIcon from "../imgs/encurage/email-icon.png";
 
 //components
 import { AnimateText } from "../components/AnimateText";
-import { FounderAnimation } from "../components/animations/FounderAnimation";
 import { TimeLine } from "../components/TimeLine";
 import { MissionAnimation } from "../components/animations/MissionAnimation";
 
 export const Founder = () => {
   return (
     <main className="founder-page">
-      <section className="f-hero-container">
-        <AnimateText>
-          <h2>
-            From Idea to <span>Innovation</span>
-          </h2>
-        </AnimateText>
-        <AnimateText>
-          <FounderAnimation />
-        </AnimateText>
+      <section className="founder-hero">
+        <h2>Meet the Founders</h2>
       </section>
       <section>
         <div className="f-story-container">
