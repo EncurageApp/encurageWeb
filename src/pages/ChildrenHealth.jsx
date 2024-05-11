@@ -261,7 +261,7 @@ export const ChildrenHealth = () => {
       </section>
 
       <section data-aos="fade-in" className="ch-links-container">
-        <h2>For further reading:</h2>
+        <h3>For further reading:</h3>
         <div>
           <a href="https://www.livescience.com/48413-parents-causing-epidemic-of-childrens-medication-overdoses.html">
             Nationwide Children's Hospital Research

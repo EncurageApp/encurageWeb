@@ -40,7 +40,7 @@ Hero
 }
 
 .af-hero-container-img {
-  background-image: url(../imgs/encurage/appFeaturesphoto.jpg);
+  background-image: url(../imgs/encurage/r.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,6 +68,7 @@ Hero
   transition: all 2s ease-in-out;
   text-align: left;
   max-width: 900px;
+  letter-spacing: 3px;
 }
 
 .af-hero-container-text span {
@@ -227,7 +228,7 @@ Daily Life
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  max-width: 900px;
+  max-width: 700px;
   min-height: 250px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
@@ -272,7 +273,7 @@ Care Family
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  max-width: 900px;
+  max-width: 700px;
   min-height: 250px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
@@ -295,7 +296,7 @@ As-Needed Wizard
 }
 
 .as-needed-wizard h2 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   border: none;
   padding-bottom: 4rem;
 }
@@ -323,7 +324,7 @@ As-Needed Wizard
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  max-width: 900px;
+  max-width: 700px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
 
@@ -365,7 +366,7 @@ EOS
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  max-width: 900px;
+  max-width: 700px;
   min-height: 250px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
@@ -412,7 +413,7 @@ Journal
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  max-width: 900px;
+  max-width: 700px;
   min-height: 250px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
 }
