@@ -160,7 +160,7 @@ Review info
 */
 
 .review-info {
-  padding: 4rem;
+  padding: 2rem 0 0 0;
 }
 
 .review-info span {
@@ -168,7 +168,7 @@ Review info
 }
 
 .review-info p {
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .review-info p:nth-child(2) {
@@ -180,6 +180,7 @@ Review info
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .review-email a {
@@ -191,10 +192,19 @@ Review info
   border-radius: 6px;
 }
 
+.review-email a span {
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
 .review-info p:nth-child(4) {
   margin: 0 auto;
   text-align: center;
   padding-top: 4rem;
+}
+
+.review-links {
+  margin: 2rem 0 6rem 0;
 }
 
 /*

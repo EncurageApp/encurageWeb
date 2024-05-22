@@ -19,79 +19,31 @@ Help Layout
 =====================================
 */
 
-.help-layout {
-  margin: 0 auto;
-}
-
-.help-layout-hero {
-  height: 100vh;
-  background-image: url(../imgs/encurage/lightbulb.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 0.3s ease-in-out;
+.hc-hero-container {
+  height: 50svh;
   display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.hc-hero-container-text {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  position: relative;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
-  position: relative;
+  align-items: left;
+  padding: 20px;
 }
 
-.help-layout-hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.hl-intro-text {
-  max-width: 1400px;
-  padding: 0 1rem;
-  padding-top: 8rem;
-  text-align: center;
-  color: white;
-}
-
-.hl-intro-text h2 {
-  margin: 1rem;
-  padding-bottom: 0.5rem;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.55),
-    0px 0.1px 10px rgba(255, 255, 255, 0.3);
+.hc-hero-container h2 {
   border: none;
-  font-size: 4rem;
-  border-bottom: 0.5px solid white;
+  transition: all 2s ease-in-out;
 }
 
-.hl-intro-text p {
-  margin: 0 auto;
+.hc-hero-container p {
+  transition: all 2s ease-in-out;
+  text-align: left;
   max-width: 900px;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0), 0px -5px 35px rgba(1, 1, 1, 0.5);
-  font-size: 1.2rem;
-}
-
-.help-layout > h3 {
-  margin: 3rem auto;
-  text-align: center;
-  max-width: 800px;
-  color: black;
-  font-size: 1.8rem;
-  padding: 0.5rem;
-  text-shadow: 2 px 3px 6px rgba(0, 0, 0, 0.55);
-}
-
-.help-layout > p {
-  text-align: center;
-  color: black;
-  margin: 0 auto 2rem;
-  padding: 2rem;
-  max-width: 1000px;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
+  letter-spacing: 2px;
 }
 
 .hc-nav-container {
@@ -137,87 +89,16 @@ Animation Section
 =============================================================
 */
 
-.svg-icon {
-  height: 4rem;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: black;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-}
-
-.home-contact-container {
+.gear-animation {
   margin: 0 auto;
-  padding: 4rem 0;
-  text-align: center;
-  color: black;
-}
-
-.home-contact-container h2 {
-  font-size: 3rem;
-  border: none;
-}
-
-.home-contact-container > p {
-  font-size: 1.1rem;
-}
-
-.contact-card-container {
-  margin-top: 20px;
-  padding: 0 20px;
-}
-
-.contact-card-wrapper {
-  margin: 0 auto;
-  height: 100%;
-  max-width: 800px;
-  padding: 20px 20px;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  background: var(--primaryOne);
-  justify-content: space-evenly;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  width: 100%;
+  max-width: 250px;
 }
 
 .support-animation {
   margin: 0 auto;
   width: 100%;
-  max-width: 700px;
-}
-
-.contact-card {
-  background-color: var(--primaryThree);
-  width: 100%;
-  border: 0.3px solid var(--primaryFive);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 15px;
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-}
-
-.contact-card button {
-  width: 150px;
-}
-
-.contact-card h3 {
-  text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2),
-    0px -5px 35px rgba(255, 255, 255, 0.2);
+  max-width: 350px;
 }
 
 /* 
@@ -227,149 +108,43 @@ Contact Section
 */
 
 .contact-page {
-  text-align: center;
   margin: 0 auto;
   padding: 2rem;
 }
 
-.contact-img {
-  background-image: url(../imgs/encurage/handsexplaining.jpg);
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.contact-page h1 {
-  margin: 0 auto;
-  color: black;
-  font-size: 3rem;
-  border-bottom: 0.3px solid black;
-  max-width: 350px;
-  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3),
-    0px 0.1px 10px rgba(255, 255, 255, 0.3);
-}
-
-.contact-page p {
-  color: black;
-  margin: 0 auto 2rem;
-  padding: 2rem;
-  max-width: 1000px;
-  font-size: 1.3rem;
-  line-height: 2.2rem;
-}
-
-.contact-container {
-  background-color: var(--primaryTwo);
-  padding: 1rem;
+.contact-card {
+  background-color: white;
+  width: 330px;
+  border: 0.3px solid var(--primaryFive);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin: 2rem 1rem;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
 }
 
-.email-animation {
-  min-width: 400px;
-  max-width: 700px;
+.contact-page p {
+  max-width: 500px;
 }
 
-/* Contact Form */
-
-.contact-form-container {
-  position: relative;
-  min-height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contact-card button {
+  width: 150px;
+  margin-bottom: 20px;
 }
 
-.response-message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--primaryOne);
-  color: white;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  z-index: 999;
-}
-
-.contact-form {
+.tech-support {
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 
-.label {
-  color: black;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.input,
-.textarea {
-  margin: 0 auto;
-  width: 300px;
-  color: var(--primaryFour);
-  background-color: var(--primaryThree);
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid var(--primaryThree);
-  border-radius: 10px;
-  font-size: 16px;
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus {
-  border-color: var(--primaryFour);
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px var(--primaryFour),
-    0 0 8px var(--primaryFour);
-  box-shadow: inset 0 1px 1px var(--primaryFour), 0 0 8px var(--primaryFour);
-}
-
-.textarea {
-  width: 300px;
-  height: 200px;
-  color: var(--primaryFour);
-  resize: vertical;
-}
-
-.textarea:focus {
-  border-color: var(--primaryFour);
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px var(--primaryFour),
-    0 0 8px var(--primaryFour);
-  box-shadow: inset 0 1px 1px var(--primaryFour), 0 0 8px var(--primaryFour);
-}
-
-.submit-button {
-  margin: 1rem auto;
+.contact-support {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  padding: 10px 20px;
-  background-color: var(--primaryThree);
-  color: black;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid var(--primaryFour);
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
-}
-
-.submit-button:hover {
-  border: 1px solid var(--primaryThree);
-  background-color: var(--primaryFour);
-  color: var(--primaryThree);
-  transition: all 0.3s ease-in-out;
+  flex-direction: column;
 }
 
 /* 
@@ -609,6 +384,18 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   .faq-examples {
     flex-direction: row;
   }
+
+  .tech-support {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contact-support {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1101px) {
@@ -662,14 +449,21 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     display: flex;
   }
 
+  .tech-support {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contact-support {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   .contact-card-wrapper {
     height: 100%;
     min-height: 40vh;
-  }
-
-  .contact-card {
-    flex-direction: row;
-    gap: 50px;
   }
 
   .contact-card div {

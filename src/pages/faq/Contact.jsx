@@ -1,23 +1,42 @@
-import React from "react";
-import { ContactForm } from "../../components/ContactForm";
-import { EmailAnimation } from "../../components/animations/EmailAnimation";
+import { GearsAnimation } from "../../components/animations/HelpCenterGearAnimation";
+import { SupportAnimation } from "../../components/animations/SupportAnimation";
 
 export const Contact = () => {
   return (
     <main className="contact-page">
-      <div>
-        <h1>Get In Touch</h1>
+      <div className="tech-support">
         <p>
-          Whether you need technical support, want to share your feedback or
-          reviews, or have any concerns, we're here to assist you. Reach out to
-          our team via the email form located below, and we'll do our best to
-          address your inquiries promptly. Your input helps us improve our
-          service and better cater to your needs.
+          Using Encurage and need technical support, or additional help?
+          <br />
+          <br />
+          Reach out to our support team, with extended-hours availability.
+          <br />
+          <br />
+          You can contact us right here, or directly from your profile.
         </p>
+        <div>
+          <div className="contact-card">
+            <GearsAnimation />
+
+            <button className="cta-btn-home">Contact Support</button>
+          </div>
+        </div>
       </div>
-      <div className="contact-container">
-        <EmailAnimation />
-        <ContactForm />
+      <div className="contact-support">
+        <p>
+          Have any feature requests, general questions, suggestions, or feedback
+          you’d like to share?
+          <br />
+          <br />
+          We would love to hear from you.
+          <br />
+          <br />
+          Your valuable input helps us keep improving encurage.
+        </p>
+        <div className="contact-card">
+          <SupportAnimation />
+          <button className="cta-btn-home">Chat With Us</button>
+        </div>
       </div>
     </main>
   );

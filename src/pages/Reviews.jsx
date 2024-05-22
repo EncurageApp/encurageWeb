@@ -1,3 +1,4 @@
+import { AppStoreButton, GooglePlayButton } from "react-mobile-app-button";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 
@@ -166,13 +167,35 @@ export const Reviews = () => {
           you’d like to share? We would love to hear from you. Your valuable
           input helps us keep improving encurage.
         </p>
-        <div className="review-email"></div>
+        <div className="review-email">
+          <a href="mailto:hello@encurage.app">
+            Waiting to hear from you at: <span>hello@encurage.app</span>
+          </a>
+        </div>
         <p>
           Help more parents learn about encurage.
           <br />
           <br />
           You can easily submit an app review here:
         </p>
+      </section>
+
+      <section className="review-links">
+        <div className="ch-download-break">
+          <p>Share your Story</p>
+          <AppStoreButton
+            url="https://apps.apple.com/us/app/oncure-medicine-reminder/id1417312275"
+            theme={"dark"}
+            title="Review on the"
+            width={190}
+          />
+          <GooglePlayButton
+            url="https://apps.apple.com/us/app/oncure-medicine-reminder/id1417312275"
+            theme={"dark"}
+            title="Review on"
+            width={190}
+          />
+        </div>
       </section>
     </main>
   );
