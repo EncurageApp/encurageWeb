@@ -1,98 +1,143 @@
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 import Collapsible from "react-collapsible";
-import { AnimateText } from "../../components/AnimateText";
+
+//Icons
+import generalIcon from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/helpCenter/general.png";
+import accountIcon from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/helpCenter/account.png";
+import duckIcon from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/helpCenter/rubberDuck.png";
+import lightIcon from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/helpCenter/lightBulb.png";
+import Journal from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/journal.png";
+import Heart from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/heartclipboard.png";
+import Schedule from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/schedule.png";
+import People from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/3people.png";
+import HighFrequency from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/highfrequency.png";
 
 export const Faq = () => {
+  const generalRef = useRef(null);
+  const accountRef = useRef(null);
+  const childrenProfileRef = useRef(null);
+  const subscriptionRef = useRef(null);
+  const wizardRef = useRef(null);
+  const medicineRef = useRef(null);
+  const familyRef = useRef(null);
+  const trackingHubRef = useRef(null);
+  const journalRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main className="faq-page">
-      <h1>FAQ's</h1>
       <p>
-        Welcome to our Frequently Asked Questions (FAQs) section! We've
-        organized our FAQs into different sections to help you navigate and find
-        answers efficiently. Here are the areas covered:
+        Search our extensive library for general information, as well as
+        in-depth explanations and how-tos.
+        <br />
+        <br />
+        If you have more questions, tap the “Contact Us” button to chat with us.
       </p>
 
-      <div className="faq-examples">
-        <ul>
-          <AnimateText>
-            <li>
-              <span>General:</span>
-              <br />
-              Basic information about the platform and its functionalities.
-            </li>
-          </AnimateText>
-          <AnimateText>
-            <li>
-              <span>Account:</span>
-              <br />
-              Managing your account, settings, and profile. Children's
-            </li>
-          </AnimateText>
-          <AnimateText>
-            <li>
-              <span>Profiles:</span>
-              <br />
-              Creating and managing profiles for children.
-            </li>
-          </AnimateText>
-          <AnimateText>
-            <li>
-              <span>Subscriptions and Free Services:</span>
-              <br />
-              Details about paid subscriptions and available free services.
-            </li>
-          </AnimateText>
-          <AnimateText>
-            <li>
-              <span>As-needed Wizard:</span> <br />
-              Information on the As-needed Wizard feature.
-            </li>
-          </AnimateText>
-        </ul>
-        <ul>
-          <AnimateText>
-            <li>
-              <span>Medicine and Other Treatments on a Schedule:</span>
-              <br /> Information on tracking doses and schedules for medications
-              and treatments.
-            </li>
-          </AnimateText>
-          <AnimateText>
-            <li>
-              <span>Care Family:</span>
-              <br /> Understanding how to connect and manage family members'
-              accounts.
-            </li>
-          </AnimateText>
-          <AnimateText>
-            <li>
-              <span>Tracking Hub:</span>
-              <br /> Exploring the features and utilities of the tracking hub.
-            </li>
-          </AnimateText>
-          <AnimateText>
-            <li>
-              <span>Journal:</span>
-              <br />
-              How to utilize and maintain your journal for tracking purposes.
-            </li>
-          </AnimateText>
-          <AnimateText>
-            <li>
-              <span>Contact Us</span> <br />
-              Can't find an answer? Contact our team and we can help!
-            </li>
-          </AnimateText>
-        </ul>
+      <div className="faq-wrapper">
+        <div className="faq-examples">
+          <ul>
+            <div onClick={() => scrollToSection(generalRef)}>
+              <img src={generalIcon} height={60} alt="" />
+              <div>
+                <h3>General :</h3>
+                <p>Information about our services and policies</p>
+              </div>
+            </div>
+
+            <div onClick={() => scrollToSection(accountRef)}>
+              <img src={accountIcon} height={60} alt="" />
+              <div>
+                <h3>Account :</h3>
+                <p>Managing your account and data.</p>
+              </div>
+            </div>
+
+            <div onClick={() => scrollToSection(childrenProfileRef)}>
+              <img src={duckIcon} height={55} alt="" />
+              <div>
+                <h3>Children's Profiles :</h3>
+                <p>Adding, managing and deleting your children's profiles.</p>
+              </div>
+            </div>
+          </ul>
+          <ul>
+            <div onClick={() => scrollToSection(subscriptionRef)}>
+              <img src={lightIcon} height={80} alt="" />
+              <div>
+                <h3>Subscriptions and Free Services :</h3>
+                <p>
+                  What can you do on the app for free, and additional paid
+                  services.
+                </p>
+              </div>
+            </div>
+
+            <div onClick={() => scrollToSection(wizardRef)}>
+              <img src={HighFrequency} height={60} alt="" />
+              <div>
+                <h3>As-needed Wizard :</h3>
+                <p>
+                  In-depth information about our as-needed medication management
+                  feature.
+                </p>
+              </div>
+            </div>
+
+            <div onClick={() => scrollToSection(medicineRef)}>
+              <img src={Schedule} height={60} alt="" />
+              <div>
+                <h3>Medicine and Other Treatments on a Schedule :</h3>
+                <p>
+                  In-depth information about our scheduled medication management
+                  feature.
+                </p>
+              </div>
+            </div>
+          </ul>
+          <ul>
+            <div onClick={() => scrollToSection(familyRef)}>
+              <img src={People} height={60} alt="" />
+              <div>
+                <h3>Care Family :</h3>
+                <p>
+                  In-depth information about our caregivers management system.
+                </p>
+              </div>
+            </div>
+
+            <div onClick={() => scrollToSection(trackingHubRef)}>
+              <img src={Heart} height={60} alt="" />
+              <div>
+                <h3>Tracking Hub :</h3>
+                <p>
+                  Additional information about tracking categories and options.
+                </p>
+              </div>
+            </div>
+
+            <div onClick={() => scrollToSection(journalRef)}>
+              <img src={Journal} height={60} alt="" />
+              <div>
+                <h3>Journal :</h3>
+                <p>
+                  Additional information about tracking your child's reaction
+                  and progress related to their treatment plans.
+                </p>
+              </div>
+            </div>
+          </ul>
+        </div>
       </div>
-      <p>
-        Feel free to explore each section to find answers related to your
-        queries. If you can't find what you're looking for, don't hesitate to
-        reach out to our support team.
-      </p>
 
-      <div>
-        <h2>General</h2>
+      <div className="faq-collapse">
+        <h2 ref={generalRef}>General</h2>
         <Collapsible trigger={<div>What is the Encurage app about?</div>}>
           <div>
             <p>
@@ -173,7 +218,7 @@ export const Faq = () => {
             address all feedback and feature requests.
           </p>
         </Collapsible>
-        <h2>Account</h2>
+        <h2 ref={accountRef}>Account</h2>
         <Collapsible
           trigger={
             <div>
@@ -194,8 +239,8 @@ export const Faq = () => {
             If you use the app frequently, and don’t force close it or log out
             when you’re done, you will probably not need to log in upon
             reopening it. In all other cases, you can either: use your email and
-            password; or log in through Google, Apple or Facebook, by tapping
-            the corresponding buttons available on the sign in screen.
+            password; or log in through Google or Apple, by tapping the
+            corresponding buttons available on the sign in screen.
           </p>
         </Collapsible>
         <Collapsible trigger={<div>How can I edit my profile?</div>}>
@@ -224,7 +269,7 @@ export const Faq = () => {
             Please note, that once your data is deleted, it cannot be restored.
           </p>
         </Collapsible>
-        <h2>Children's Profiles</h2>
+        <h2 ref={childrenProfileRef}>Children's Profiles</h2>
         <Collapsible
           trigger={<div>How many children’s profiles can I add?</div>}
         >
@@ -243,8 +288,8 @@ export const Faq = () => {
         </Collapsible>
         <Collapsible trigger={<div>How do I edit my child’s profile?</div>}>
           <p>
-            You can edit the profile through the edit button (pencil icon)
-            available next to your child’s photo space.
+            You can edit your child’s profile by tapping the arrow available
+            next to your child's name.
           </p>
         </Collapsible>
         <Collapsible trigger={<div>How do I remove a child’s profile?</div>}>
@@ -254,7 +299,7 @@ export const Faq = () => {
             deleted profile cannot be restored.
           </p>
         </Collapsible>
-        <h2>Subscriptions and Free Services</h2>
+        <h2 ref={subscriptionRef}>Subscriptions and Free Services</h2>
         <Collapsible trigger={<div>What can I do on the app for free?</div>}>
           <p>You can use the app for free for the following services:</p>
           <ul>
@@ -326,7 +371,7 @@ export const Faq = () => {
             Conditions.
           </p>
         </Collapsible>
-        <h2>As-needed Medicine (As-needed Wizard)</h2>
+        <h2 ref={wizardRef}>As-needed Medicine (As-needed Wizard)</h2>
         <Collapsible
           trigger={
             <div>
@@ -355,8 +400,14 @@ export const Faq = () => {
         <Collapsible
           trigger={
             <div>
-              I want to give my child ibuprofen. Why am I asked about my child’s
-              acetaminophen dose as well?
+              I want to give my child acetaminophen. Why am I asked about my
+              child’s ibuprofen dose as well?
+              <br />
+              <br />
+              OR
+              <br />
+              <br />I want to give my child ibuprofen. Why am I asked about my
+              child’s acetaminophen dose as well?
             </div>
           }
         >
@@ -375,8 +426,15 @@ export const Faq = () => {
         <Collapsible
           trigger={
             <div>
-              I want to switch from acetaminophen to ibuprofen. I want to switch
-              from ibuprofen to acetaminophen. How do I do it?
+              I want to switch from acetaminophen to ibuprofen.
+              <br />
+              <br />
+              OR
+              <br />
+              <br />I want to switch from ibuprofen to acetaminophen.
+              <br />
+              <br />
+              How do I do it?
             </div>
           }
         >
@@ -393,8 +451,17 @@ export const Faq = () => {
           trigger={
             <div>
               I’m alternating acetaminophen and ibuprofen and want to switch to
-              giving only one of them. I’m giving either acetaminophen or
-              ibuprofen, and want to switch to alternating. How do I do it?
+              giving only one of them.
+              <br />
+              <br />
+              OR
+              <br />
+              <br />
+              I’m giving either acetaminophen or ibuprofen, and want to switch
+              to alternating.
+              <br />
+              <br />
+              How do I do it?
             </div>
           }
         >
@@ -592,7 +659,7 @@ export const Faq = () => {
             track doses given without a schedule.
           </p>
         </Collapsible>
-        <h2>Medicine and Other Treatments on a Schedule</h2>
+        <h2 ref={medicineRef}>Medicine and Other Treatments on a Schedule</h2>
         <Collapsible
           trigger={
             <div>
@@ -746,7 +813,7 @@ export const Faq = () => {
             track doses given without a schedule.
           </p>
         </Collapsible>
-        <h2>Care Family</h2>
+        <h2 ref={familyRef}>Care Family</h2>
         <Collapsible
           trigger={<div>How many Care Family Members can I add?</div>}
         >
@@ -815,7 +882,7 @@ export const Faq = () => {
             through the “Contact Support” button on the app.
           </p>
         </Collapsible>
-        <h2>Tracking Hub</h2>
+        <h2 ref={trackingHubRef}>Tracking Hub</h2>
         <Collapsible
           trigger={
             <div>
@@ -861,7 +928,7 @@ export const Faq = () => {
             restored.
           </p>
         </Collapsible>
-        <h2>Journal</h2>
+        <h2 ref={journalRef}>Journal</h2>
         <Collapsible
           trigger={
             <div>

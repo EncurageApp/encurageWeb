@@ -11,6 +11,7 @@
   text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
   letter-spacing: 0.2rem;
+  border: none;
 }
 
 /* 
@@ -59,7 +60,7 @@ Help Layout
 }
 
 .hcNavLink {
-  background-color: var(--primaryTwo);
+  background-color: white;
   margin: 0 auto;
   min-width: 250px;
   padding: 1rem;
@@ -160,58 +161,76 @@ Faq Section
   align-items: center;
 }
 
-.faq-page h1 {
-  margin-top: 3rem;
-  color: black;
-  font-size: 3rem;
-}
-
 .faq-page h2 {
-  text-align: center;
-  color: black;
-  font-size: 2.3rem;
-  border: none;
+  margin-top: 2rem;
+  padding-left: 2rem;
 }
 
 .faq-page > p {
-  text-align: center;
+  text-align: left;
   color: black;
   margin: 0 auto 2rem;
   padding: 2rem;
   max-width: 1000px;
   font-size: 1.1rem;
   line-height: 2.2rem;
+  max-width: 900px;
+  letter-spacing: 2px;
+}
+
+.faq-wrapper {
+  background-color: var(--primaryOne);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
 }
 
 .faq-examples {
-  width: 100%;
-  border: 0.3px solid var(--primaryFour);
-  background-color: var(--primaryOne);
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.43);
+  max-width: 1300px;
+  color: var(--primaryOne);
   padding: 1rem;
   display: flex;
   flex-direction: column;
 }
 
-.faq-examples > ul {
+.faq-examples ul {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: right;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   color: white;
 }
 
-.faq-examples > ul span {
-  font-size: 1.4rem;
-  border-bottom: 0.3px solid white;
+.faq-examples ul > div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
-.faq-examples > ul li {
-  padding: 0.75rem 0;
-  max-width: 400px;
-  font-size: 1rem;
+.faq-examples ul > div:hover {
+  cursor: pointer;
+}
+
+.faq-examples ul div h3 {
+  border-bottom: 0.2px solid white;
+  margin-bottom: 4px;
+}
+
+.faq-examples ul img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.faq-collapse h2 {
+  padding-top: 2rem;
 }
 
 .Collapsible {
@@ -382,7 +401,8 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .faq-examples {
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 700px;
   }
 
   .tech-support {

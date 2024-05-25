@@ -18,7 +18,9 @@ export const Contact = () => {
           <div className="contact-card">
             <GearsAnimation />
 
-            <button className="cta-btn-home">Contact Support</button>
+            <button className="cta-btn-home">
+              <a href="mailto:support@encurage.app">Contact Support</a>
+            </button>
           </div>
         </div>
       </div>
@@ -35,7 +37,9 @@ export const Contact = () => {
         </p>
         <div className="contact-card">
           <SupportAnimation />
-          <button className="cta-btn-home">Chat With Us</button>
+          <button className="cta-btn-home">
+            <a href="mailto:hello@encurage.app">Chat With Us</a>
+          </button>
         </div>
       </div>
     </main>
