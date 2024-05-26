@@ -183,16 +183,14 @@ export const Reviews = () => {
       <section className="review-links">
         <div className="ch-download-break">
           <p>Share your Story</p>
-          <AppStoreButton
-            url="https://apps.apple.com/us/app/oncure-medicine-reminder/id1417312275"
-            theme={"dark"}
-            title="Review on the"
-            width={190}
-          />
           <GooglePlayButton
             url="https://apps.apple.com/us/app/oncure-medicine-reminder/id1417312275"
             theme={"dark"}
-            title="Review on"
+            width={190}
+          />
+          <AppStoreButton
+            url="https://apps.apple.com/us/app/oncure-medicine-reminder/id1417312275"
+            theme={"dark"}
             width={190}
           />
         </div>

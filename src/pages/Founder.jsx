@@ -8,7 +8,6 @@ import EmailIcon from "../imgs/encurage/email-icon.png";
 
 //components
 import { TimeLine } from "../components/TimeLine";
-import { MissionAnimation } from "../components/animations/MissionAnimation";
 
 export const Founder = () => {
   return (
@@ -110,10 +109,7 @@ export const Founder = () => {
       </section>
 
       <section className="f-mission-container">
-        <h2>Our Lifelong Mission</h2>
         <div>
-          <MissionAnimation />
-
           <div>
             <p>
               We are committed to keep evolving encurage, through constant
@@ -135,27 +131,25 @@ export const Founder = () => {
               </span>
             </p>
           </div>
-        </div>
-      </section>
 
-      <section className="f-subscribe-container">
-        <div className="subscribe-wrapper">
-          <div className="subscribe-box">
-            <div className="subscribe">
-              <img src={EmailIcon} alt="email flying in clouds" />
+          <div className="subscribe-wrapper">
+            <div className="subscribe-box">
+              <div className="subscribe">
+                <img src={EmailIcon} alt="email flying in clouds" />
 
-              <form className="f-email-form">
-                <input
-                  className="f-email-bar"
-                  type="email"
-                  name="Email"
-                  placeholder="Enter your email address"
-                  autoComplete
-                  required
-                  checked
-                />
-                <button className="cta-btn-home">Subscribe</button>
-              </form>
+                <form className="f-email-form">
+                  <input
+                    className="f-email-bar"
+                    type="email"
+                    name="Email"
+                    placeholder="Enter your email address"
+                    autoComplete
+                    required
+                    checked
+                  />
+                  <button className="cta-btn-home">Subscribe</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

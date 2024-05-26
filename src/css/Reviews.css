@@ -2,9 +2,9 @@
 
 .review-page p {
   font-size: 1.2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
 }
 
 .review-page h2 {
@@ -45,15 +45,14 @@ Hero
 
 .review-hero-container h2 {
   border: none;
-  font-size: 2rem;
   transition: all 2s ease-in-out;
 }
 
 .review-hero-container p {
-  font-size: 1.2rem;
   transition: all 2s ease-in-out;
   text-align: left;
   max-width: 900px;
+  letter-spacing: 2px;
 }
 
 .review-hero-container-text span {
@@ -169,10 +168,7 @@ Review info
 
 .review-info p {
   padding: 2rem;
-}
-
-.review-info p:nth-child(2) {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .review-email {
@@ -222,20 +218,20 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .review-hero-container-img {
     width: 100%;
-    min-width: 300px;
     border-radius: 0 0 10px 10px;
   }
 
   .review-hero-container h2 {
     border: none;
-
     transition: all 2s ease-in-out;
     padding-right: 2rem;
+    font-size: 2.2rem;
   }
 
   .review-hero-container p {
     transition: all 2s ease-in-out;
     padding-right: 2rem;
+    font-size: 1.4rem;
   }
 
   /* Review Boxes*/
@@ -266,11 +262,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     border: none;
     transition: all 2s ease-in-out;
     padding-right: 2rem;
+    font-size: 2.1rem;
   }
 
   .review-hero-container p {
     transition: all 2s ease-in-out;
     padding-right: 2rem;
+    font-size: 1.4rem;
   }
 
   /* Review Boxes*/

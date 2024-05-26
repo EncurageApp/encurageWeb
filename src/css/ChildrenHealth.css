@@ -19,7 +19,7 @@ Hero
 */
 
 .ch-hero-container {
-  height: 120svh;
+  height: 130svh;
   display: flex;
   flex-direction: column;
 }
@@ -354,7 +354,6 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .ch-hero-container h2 {
     border: none;
-
     transition: all 2s ease-in-out;
     padding-right: 2rem;
   }
@@ -423,7 +422,6 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   .ch-hero-container h2 {
     border: none;
-
     transition: all 2s ease-in-out;
     padding-right: 2rem;
   }

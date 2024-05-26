@@ -31,7 +31,7 @@ Hero
 */
 
 .home-hero-container {
-  height: 95svh;
+  height: 80svh;
   display: flex;
   flex-direction: column;
 }
@@ -56,12 +56,12 @@ Hero
 
 .home-hero-container h2 {
   border: none;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   transition: all 2s ease-in-out;
 }
 
 .home-hero-container p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: all 2s ease-in-out;
   text-align: left;
 }
@@ -215,15 +215,16 @@ Main Section
 }
 
 .card .card-info h2 {
+  border: none;
   max-width: 300px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   transition: all 0.5s ease-in-out;
 }
 
 .card .card-info p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   width: 80%;
-  padding: 10px 0;
+  padding: 0 0 15px 0;
   transition: all 0.5s ease-in-out;
 }
 
@@ -530,6 +531,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /*       Hero Section       */
 
   .home-hero-container {
+    height: 95svh;
+  }
+
+  .home-hero-container {
     flex-direction: row-reverse;
   }
 
@@ -561,12 +566,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* CTA Cards */
 
   .card .card-info h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     transition: all 0.5s ease-in-out;
   }
 
   .card .card-info p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: all 0.5s ease-in-out;
   }
 
@@ -618,6 +623,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /*         Hero Section          */
 
   .home-hero-container {
+    height: 95svh;
+  }
+
+  .home-hero-container {
     flex-direction: row-reverse;
   }
 
@@ -649,12 +658,12 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   /* CTA Cards */
 
   .card .card-info h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     transition: all 0.5s ease-in-out;
   }
 
   .card .card-info p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     transition: all 0.5s ease-in-out;
   }
 
