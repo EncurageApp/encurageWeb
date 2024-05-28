@@ -131,8 +131,8 @@ Main Section
 
 .card {
   background-color: var(--primaryTwo);
-  height: 750px;
-  margin: 40px 0;
+  height: 600px;
+  margin: 50px 0;
   justify-content: center;
   align-items: center;
   box-shadow: rgb(0, 0, 0) 0px 20px 30px -25px;
@@ -565,6 +565,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   /* CTA Cards */
 
+  .card {
+    height: 650px;
+  }
+
   .card .card-info h2 {
     font-size: 1.8rem;
     transition: all 0.5s ease-in-out;
@@ -656,6 +660,10 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   /* CTA Cards */
+
+  .card {
+    height: 700px;
+  }
 
   .card .card-info h2 {
     font-size: 2rem;
