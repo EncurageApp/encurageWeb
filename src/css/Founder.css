@@ -346,13 +346,13 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
   }
 
   .f-mission-container > div > div {
-    min-width: 600px;
+    min-width: 400px;
     margin: 0 auto;
   }
 
   /* Subscribe */
 
   .subscribe-box {
-    min-width: 500px;
+    min-width: 400px;
   }
 }

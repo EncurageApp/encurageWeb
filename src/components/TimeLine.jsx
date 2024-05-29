@@ -64,7 +64,7 @@ export const TimeLine = () => {
   return (
     <div className="timeline">
       <h2>Product Evolvement</h2>
-      <VerticalTimeline lineColor="Teal">
+      <VerticalTimeline lineColor="White">
         {events.map((element, index) => {
           const isIconEven = element.icon === "even";
           const color = colors[index % colors.length];
@@ -73,21 +73,27 @@ export const TimeLine = () => {
               contentStyle={{
                 background: color,
                 color: "black",
-                borderRadius: "50%",
-                height: "400px",
                 display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
+                flexDirection: "column-reverse",
+                justifyContent: "start",
+                alignItems: "center",
+                height: "250px",
+                maxWidth: "600px",
+                borderRadius: "50%",
+                paddingTop: "35px",
+              }}
+              contentArrowStyle={{
+                borderRight: "10px solid #008080",
               }}
               key={element.key}
               date={element.date}
               dateClassName="timeline-date"
               iconStyle={isIconEven ? iconOdd : iconEven}
             >
+              <p id="timelineDescription">{element.timelineDescription}</p>
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
-              <p id="timelineDescription">{element.timelineDescription}</p>
             </VerticalTimelineElement>
           );
         })}
