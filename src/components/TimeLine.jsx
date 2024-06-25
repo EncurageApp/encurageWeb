@@ -10,7 +10,7 @@ export const TimeLine = () => {
     {
       id: 1,
       date: "2018",
-      title: "Dreaming Big",
+
       timelineDescription:
         "Ideation, research and development, medical vetting.",
       icon: "odd",
@@ -18,8 +18,6 @@ export const TimeLine = () => {
     {
       id: 2,
       date: " November 2018",
-
-      title: "First Steps",
       timelineDescription:
         " Release of the first version (OnCure) on the App Store.",
       icon: "even",
@@ -27,7 +25,6 @@ export const TimeLine = () => {
     {
       id: 3,
       date: "2019-2021",
-      title: "Listening Hearts",
       timelineDescription:
         "Analyzing parents’ feedback, and adding more capabilities.",
       icon: "odd",
@@ -35,7 +32,6 @@ export const TimeLine = () => {
     {
       id: 4,
       date: "2022",
-      title: "Vision Quest",
       timelineDescription:
         "Second research phase, defining long term scope and capabilities.",
       icon: "even",
@@ -43,14 +39,12 @@ export const TimeLine = () => {
     {
       id: 5,
       date: "2023",
-      title: "Creative Journey",
       timelineDescription: "Second design and development phase.",
       icon: "odd",
     },
     {
       id: 6,
       date: "2024",
-      title: "Heartfelt Release",
       timelineDescription: "Release of the enhanced and updated Encurage app.",
       icon: "even",
     },
@@ -70,6 +64,7 @@ export const TimeLine = () => {
           const color = colors[index % colors.length];
           return (
             <VerticalTimelineElement
+              className="timeline-bubbles"
               contentStyle={{
                 background: color,
                 color: "black",
@@ -77,10 +72,10 @@ export const TimeLine = () => {
                 flexDirection: "column-reverse",
                 justifyContent: "start",
                 alignItems: "center",
-                height: "250px",
-                maxWidth: "600px",
+                height: "200px",
+                width: "300px",
+                maxWidth: "400px",
                 borderRadius: "50%",
-                paddingTop: "35px",
               }}
               contentArrowStyle={{
                 borderRight: "10px solid #008080",
