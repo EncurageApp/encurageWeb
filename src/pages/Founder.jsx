@@ -122,7 +122,7 @@ export const Founder = () => {
               path to making this a reality for families worldwide.
               <br />
               <br />
-              Join us to get news and updated about encurage, and be a part of
+              Join us to get news and updates about encurage, and be a part of
               our journey.
               <br />
               <br />

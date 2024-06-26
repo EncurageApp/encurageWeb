@@ -42,97 +42,105 @@ export const Faq = () => {
 
       <div className="faq-wrapper">
         <div className="faq-examples">
-          <ul>
-            <div onClick={() => scrollToSection(generalRef)}>
-              <img src={generalIcon} height={60} alt="" />
-              <div>
-                <h3>General :</h3>
-                <p>Information about our services and policies</p>
-              </div>
+          <div className="examples" onClick={() => scrollToSection(generalRef)}>
+            <img src={generalIcon} height={55} alt="" />
+            <div>
+              <h3>General :</h3>
+              <p>Information about our services and policies</p>
             </div>
+          </div>
 
-            <div onClick={() => scrollToSection(accountRef)}>
-              <img src={accountIcon} height={60} alt="" />
-              <div>
-                <h3>Account :</h3>
-                <p>Managing your account and data.</p>
-              </div>
+          <div className="examples" onClick={() => scrollToSection(accountRef)}>
+            <img src={accountIcon} height={55} alt="" />
+            <div>
+              <h3>Account :</h3>
+              <p>Managing your account and data.</p>
             </div>
+          </div>
 
-            <div onClick={() => scrollToSection(childrenProfileRef)}>
-              <img src={duckIcon} height={55} alt="" />
-              <div>
-                <h3>Children's Profiles :</h3>
-                <p>Adding, managing and deleting your children's profiles.</p>
-              </div>
+          <div
+            className="examples"
+            onClick={() => scrollToSection(childrenProfileRef)}
+          >
+            <img src={duckIcon} height={55} alt="" />
+            <div>
+              <h3>Children's Profiles :</h3>
+              <p>Adding, managing and deleting your children's profiles.</p>
             </div>
-          </ul>
-          <ul>
-            <div onClick={() => scrollToSection(subscriptionRef)}>
-              <img src={lightIcon} height={80} alt="" />
-              <div>
-                <h3>Subscriptions and Free Services :</h3>
-                <p>
-                  What can you do on the app for free, and additional paid
-                  services.
-                </p>
-              </div>
-            </div>
+          </div>
 
-            <div onClick={() => scrollToSection(wizardRef)}>
-              <img src={HighFrequency} height={60} alt="" />
-              <div>
-                <h3>As-needed Wizard :</h3>
-                <p>
-                  In-depth information about our as-needed medication management
-                  feature.
-                </p>
-              </div>
+          <div
+            className="examples"
+            onClick={() => scrollToSection(subscriptionRef)}
+          >
+            <img src={lightIcon} height={65} alt="" />
+            <div>
+              <h3>Subscriptions and Free Services :</h3>
+              <p>
+                What can you do on the app for free, and additional paid
+                services.
+              </p>
             </div>
+          </div>
 
-            <div onClick={() => scrollToSection(medicineRef)}>
-              <img src={Schedule} height={60} alt="" />
-              <div>
-                <h3>Medicine and Other Treatments on a Schedule :</h3>
-                <p>
-                  In-depth information about our scheduled medication management
-                  feature.
-                </p>
-              </div>
+          <div className="examples" onClick={() => scrollToSection(wizardRef)}>
+            <img src={HighFrequency} height={55} alt="" />
+            <div>
+              <h3>As-needed Wizard :</h3>
+              <p>
+                In-depth information about our as-needed medication management
+                feature.
+              </p>
             </div>
-          </ul>
-          <ul>
-            <div onClick={() => scrollToSection(familyRef)}>
-              <img src={People} height={60} alt="" />
-              <div>
-                <h3>Care Family :</h3>
-                <p>
-                  In-depth information about our caregivers management system.
-                </p>
-              </div>
-            </div>
+          </div>
 
-            <div onClick={() => scrollToSection(trackingHubRef)}>
-              <img src={Heart} height={60} alt="" />
-              <div>
-                <h3>Tracking Hub :</h3>
-                <p>
-                  Additional information about tracking categories and options.
-                </p>
-              </div>
+          <div
+            className="examples"
+            onClick={() => scrollToSection(medicineRef)}
+          >
+            <img src={Schedule} height={55} alt="" />
+            <div>
+              <h3>Medicine and Other Treatments on a Schedule :</h3>
+              <p>
+                In-depth information about our scheduled medication management
+                feature.
+              </p>
             </div>
+          </div>
 
-            <div onClick={() => scrollToSection(journalRef)}>
-              <img src={Journal} height={60} alt="" />
-              <div>
-                <h3>Journal :</h3>
-                <p>
-                  Additional information about tracking your child's reaction
-                  and progress related to their treatment plans.
-                </p>
-              </div>
+          <div className="examples" onClick={() => scrollToSection(familyRef)}>
+            <img src={People} height={55} alt="" />
+            <div>
+              <h3>Care Family :</h3>
+              <p>
+                In-depth information about our caregivers management system.
+              </p>
             </div>
-          </ul>
+          </div>
+
+          <div
+            className="examples"
+            onClick={() => scrollToSection(trackingHubRef)}
+          >
+            <img src={Heart} height={55} alt="" />
+            <div>
+              <h3>Tracking Hub :</h3>
+              <p>
+                Additional information about tracking categories and options.
+              </p>
+            </div>
+          </div>
+
+          <div className="examples" onClick={() => scrollToSection(journalRef)}>
+            <img src={Journal} height={55} alt="" />
+            <div>
+              <h3>Journal :</h3>
+              <p>
+                Additional information about tracking your child's reaction and
+                progress related to their treatment plans.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

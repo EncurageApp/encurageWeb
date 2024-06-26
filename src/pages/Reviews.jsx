@@ -175,7 +175,6 @@ export const Reviews = () => {
         <p>
           Help more parents learn about encurage.
           <br />
-          <br />
           You can easily submit an app review here:
         </p>
       </section>

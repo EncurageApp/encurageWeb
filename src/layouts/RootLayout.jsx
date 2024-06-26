@@ -15,6 +15,7 @@ import { LoaderAnimation } from "../components/animations/LoaderAnimation";
 //Imgs
 import Elogo from "../imgs/figmaImgs/encurage.png";
 import Elogo2 from "../imgs/figmaImgs/Layer_1.png";
+import ScrollToTop from "react-scroll-to-top";
 
 export const RootLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -119,6 +120,7 @@ export const RootLayout = () => {
         <Outlet />
         <CookieConsentBanner />
         {loading && <LoaderAnimation />}
+        <ScrollToTop smooth />
       </main>
 
       <footer>

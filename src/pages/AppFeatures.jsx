@@ -232,7 +232,7 @@ export const AppFeatures = () => {
       <section className="daily-life">
         <div>
           <div className="dl-info">
-            <h3>Daily Life</h3>
+            <h3>Baby Life</h3>
             <p>
               A complete baby tracker with easy and efficient tracking tools for
               your baby’s feeding (including breastfeeding, bottle feeding and

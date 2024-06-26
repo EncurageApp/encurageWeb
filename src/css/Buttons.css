@@ -168,11 +168,9 @@ CTA Button
 .cta-btn-home:hover {
   color: white;
   border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
-    0 0 20px var(--primaryFive);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px #008080;
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
-  text-shadow: 1px 1px 2px #427388;
 }
 /*
 ==========================

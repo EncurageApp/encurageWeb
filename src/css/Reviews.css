@@ -23,6 +23,7 @@ Hero
   height: 90svh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 8rem;
 }
 
 .review-hero-container-img {
@@ -167,16 +168,15 @@ Review info
 }
 
 .review-info p {
-  padding: 2rem;
+  padding: 1rem;
   font-size: 1.2rem;
 }
 
 .review-email {
-  margin: 20px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 }
 
 .review-email a {
@@ -196,7 +196,7 @@ Review info
 .review-info p:nth-child(4) {
   margin: 0 auto;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .review-links {
@@ -263,6 +263,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     transition: all 2s ease-in-out;
     padding-right: 2rem;
     font-size: 2.1rem;
+    min-width: 700px;
   }
 
   .review-hero-container p {

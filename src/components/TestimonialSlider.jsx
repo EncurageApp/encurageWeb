@@ -11,19 +11,14 @@ const testimonialData = [
   {
     quote:
       "As a busy parent, I was constantly worried about our child's medication regimen. Encurage came to our rescue, allowing us to effortlessly add babysitters and grandparents to help with medication tracking. It's a game-changer!",
-    author: " Emily Carter",
+    author: "Adrianna Embry",
     role: "Mother of Three",
   },
-  {
-    quote:
-      "Encurage has been a lifesaver for us. Our child has a complex medication schedule, and the app has made it incredibly easy to manage. We can share access with our child's school nurse, making sure everyone is on the same page. Highly recommended!",
-    author: " David and Lisa Johnson",
-    role: "Parents of Special Needs Child",
-  },
+
   {
     quote:
       "I can't express how grateful we are for Encurage. Our child's medical needs are demanding, and this app has brought much-needed relief. With the ability to easily invite babysitters and grandparents, it has strengthened our support network and improved our child's health management.",
-    author: " Michael and Amanda Reynolds",
+    author: "Matt and Amanda Tindle",
     role: "Parents of a Toddler",
   },
 ];
