@@ -31,13 +31,19 @@ export const SocialMediaIcons = () => {
     <div className="icons-container">
       <h3>Get in Touch With Us!</h3>
       <div className="icons">
-        <a href="https://www.facebook.com/" className="facebook social">
+        <a
+          href="https://www.facebook.com/oncureapp/"
+          className="facebook social"
+        >
           <FontAwesomeIcon icon={faFacebook} size={iconSize} />
         </a>
         <a href="https://www.instagram.com/" className="instagram social">
           <FontAwesomeIcon icon={faInstagram} size={iconSize} />
         </a>
-        <a href="https://www.linkedin.com/" className="linkedin social">
+        <a
+          href="https://www.linkedin.com/company/oncure/"
+          className="linkedin social"
+        >
           <FontAwesomeIcon icon={faLinkedin} size={iconSize} />
         </a>
       </div>

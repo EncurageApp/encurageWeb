@@ -1,226 +1,101 @@
 import React from "react";
 
 //components
-import { AppFeatureAnimation } from "../components/animations/AppFeatureAnimation";
 import { AppCarousel } from "../components/AppCarousel";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
-import { AnimateText } from "../components/AnimateText";
 
 //images
+import ANW1 from "../imgs/appFeatureScreens/ANW/ANW1.png";
+import ANW2 from "../imgs/appFeatureScreens/ANW/ANW2.png";
+import ANW3 from "../imgs/appFeatureScreens/ANW/ANW3.png";
+import ANW4 from "../imgs/appFeatureScreens/ANW/ANW4.png";
+
+import EOAS1 from "../imgs/appFeatureScreens/EOAS/EOAS1.png";
+import EOAS2 from "../imgs/appFeatureScreens/EOAS/EOAS2.png";
+import EOAS3 from "../imgs/appFeatureScreens/EOAS/EOAS3.png";
+
 import TH1 from "../imgs/appFeatureScreens/trackingHub/TH1.png";
 import TH2 from "../imgs/appFeatureScreens/trackingHub/TH2.png";
 import TH3 from "../imgs/appFeatureScreens/trackingHub/TH3.png";
 import TH4 from "../imgs/appFeatureScreens/trackingHub/TH4.png";
-import CF1 from "../imgs/appFeatureScreens/careFamily/Care Family.png";
-import EOS1 from "../imgs/appFeatureScreens/EOS/EOAS - Dashboard.png";
-import EOS2 from "../imgs/appFeatureScreens/EOS/Schedule.png";
-import EOS3 from "../imgs/appFeatureScreens/EOS/Edit Schedule.png";
-import EOS4 from "../imgs/appFeatureScreens/EOS/Available Dose-Admin Site pressed.png";
-import EOS5 from "../imgs/appFeatureScreens/EOS/Available Dose-Admin Site pressed (2) (1).png";
-import DL1 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life.png";
-import DL2 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Introducing Solids.png";
-import DL3 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Diapers.png";
-import DL4 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Diapers (2).png";
-import DL5 from "../imgs/appFeatureScreens/DailyLife/Tracking Hub - Daily Life - Breastfeeding.png";
-import J1 from "../imgs/appFeatureScreens/Journal/Journal - Dashboard.png";
-import J2 from "../imgs/appFeatureScreens/Journal/Frame 93809.png";
-import J3 from "../imgs/appFeatureScreens/Journal/Frame 93809 (1).png";
-import J4 from "../imgs/appFeatureScreens/Journal/Frame 93807.png";
-import DadBaby from "../imgs/encurage/dadbaby.jpg";
-import { Link } from "react-router-dom";
+
+import CF1 from "../imgs/appFeatureScreens/careFamily/CF1.png";
+
+import J1 from "../imgs/appFeatureScreens/Journal/Journal1.png";
+import J2 from "../imgs/appFeatureScreens/Journal/Journal2.png";
+import J3 from "../imgs/appFeatureScreens/Journal/Journal3.png";
+import J4 from "../imgs/appFeatureScreens/Journal/Journal4.png";
+
+import DL1 from "../imgs/appFeatureScreens/DailyLife/DL1.png";
+import DL2 from "../imgs/appFeatureScreens/DailyLife/DL2.png";
+import DL3 from "../imgs/appFeatureScreens/DailyLife/DL3.png";
+import DL4 from "../imgs/appFeatureScreens/DailyLife/DL4.png";
+
+//icons
+import Journal from "../imgs/icons/journal.png";
+import Heart from "../imgs/icons/heartclipboard.png";
+import Schedule from "../imgs/icons/schedule.png";
+import People from "../imgs/icons/3people.png";
+import HighFrequency from "../imgs/icons/highfrequency.png";
+import DailyLife from "../imgs/icons/dailylife.png";
 
 export const AppFeatures = () => {
-  const handleLink = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
   return (
     <main className="appFeatures-page">
-      <section className="af-hero">
-        <AnimateText>
-          <div className="af-intro-text">
-            <h2>Discover the Power of Encurage</h2>
-            <p>
-              Encurage offers a rich array of features designed to simplify and
-              streamline medication management for your child.
-            </p>
-          </div>
-        </AnimateText>
-      </section>
-
-      <section className="af-info">
-        <div>
-          <h2>
-            Unlock the Full Potential: Explore the Boundless Capabilities of
-            Encurage
+      <section className="af-hero-container">
+        <div className="af-hero-container-img"></div>
+        <div className="af-hero-container-text">
+          <h2 data-aos="fade-in" data-aos-delay="500">
+            Just Add TLC
           </h2>
-          <p>
-            Begin an exploration of Encurage's versatile features, designed for
-            seamless medication management, synchronized caregiver support, and
-            expert guidance. Dive into a world of possibilities for your child's
-            health journey.
+
+          <p data-aos="fade-in" data-aos-delay="2000">
+            Every aspect of caring for your child at home has its own dedicated
+            feature, built and designed for{" "}
+            <span>the needs of your family</span>, following
+            <span> extensive research</span>, medical vetting, and valuable{" "}
+            <span>feedback from parents.</span>
           </p>
         </div>
-        <AppFeatureAnimation />
       </section>
 
       <section className="features-container">
-        <div className="feature-info">
-          <p>
-            <span>Discover</span> the features of Encurage, designed to simplify
-            and enhance the way you track and manage your child's medications,
-            health data, and daily activities.
-          </p>
-        </div>
         <div className="feature-card-wrapper">
           <div className="feature-card ">
-            <h3>Tracking Hub</h3>
-            <p>
-              Track and log everything related to your child’s health, from
-              occasional bugs to ongoing conditions. Detailed trackers for
-              symptoms, side effects, vitals, therapies, and growth.
-            </p>
+            <div>
+              <h3>As-Needed Medication Management</h3>
+            </div>
+            <img src={HighFrequency} width={60} alt="thermometer" />
           </div>
           <div className="feature-card ">
-            <h3>Daily Life</h3>
-            <p>
-              Complete baby tracker with easy tools for feeding, sleep, and
-              diapers. Track your baby’s experience with introducing solids and
-              your child’s potty training journey.
-            </p>
+            <h3>Scheduled Medication Management</h3>
+            <img src={Schedule} width={60} alt="pill with arrow around it" />
           </div>
           <div className="feature-card">
-            <h3>Care Family</h3>
-            <p>
-              An essential tool for seamless care coordination. Everyone
-              connected, updated, and ready at the tap of a button.
-            </p>
+            <h3>Comprehensive Health Tracking Tool</h3>
+            <img src={Heart} width={60} alt="clipboard with heart" />
           </div>
 
           <div className="feature-card ">
-            <h3>
-              As-Needed Wizard <br />
-              (ANW)
-            </h3>
-            <p>
-              Designed for as-needed (PRN) medications, our schedule builder
-              generates a dynamic medication schedule that updates
-              automatically, all with a few taps. No reminders, no updates, no
-              calculations.
-            </p>
+            <h3>Caregivers Management</h3>
+            <img src={People} width={60} alt="3 caregiver" />
           </div>
 
           <div className="feature-card ">
-            <h3>Everything on a Schedule (EOS)</h3>
-            <p>
-              Comprehensive medication tracker and reminder built for your
-              child’s ever-changing health journey.
-            </p>
+            <h3>Health Journal</h3>
+            <img src={Journal} width={60} alt="journal pad" />
           </div>
 
           <div className="feature-card ">
-            <h3>Journal</h3>
-            <p>
-              Follow and monitor your child’s experience with medications and
-              treatments. Guided Journal Stories provide insights into sleep,
-              appetite, energy, focus, mood, and more.
-            </p>
+            <h3>Baby Tracker</h3>
+            <img src={DailyLife} width={60} alt="pill with arrow around it" />
           </div>
-        </div>
-      </section>
-
-      <section className="tracking-hub">
-        <div>
-          <div className="tracking-info">
-            <h3>Tracking Hub</h3>
-            <p>
-              Track and log everything related to your child’s health, whether
-              it’s an occasional bug or an ongoing condition requiring daily
-              monitoring.
-              <br />
-              Symptoms, side effects, vitals, therapies, and growth categories
-              include detailed and guided trackers, covering important
-              information for you and your child’s pediatrician
-            </p>
-          </div>
-          <AppCarousel>
-            <img src={TH1} alt="tracking hub screen" width={225} />
-            <img src={TH2} alt="tracking hub screen" width={225} />
-            <img src={TH3} alt="tracking hub screen" width={225} />
-            <img src={TH4} alt="tracking hub screen" width={225} />
-          </AppCarousel>
-        </div>
-      </section>
-
-      <section className="daily-life">
-        <div>
-          <div className="dl-info">
-            <h3>Daily Life</h3>
-            <p>
-              A complete baby tracker with easy and efficient tracking tools for
-              your baby’s feeding (including breastfeeding, bottle feeding and
-              pumping), sleep and diapers.
-              <br />
-              Beyond the daily happenings, you can also track your baby’s
-              experience with introducing solids, and your child’s potty
-              training journey.
-            </p>
-          </div>
-          <AppCarousel>
-            <img src={DL1} alt="daily life screen" width={225} />
-            <img src={DL2} alt="introducing solids screen" width={225} />
-            <img src={DL3} alt="Daiper's screen" width={225} />
-            <img src={DL4} alt="Daiper's hub screen" width={225} />
-            <img src={DL5} alt="breastfeeding screen" width={225} />
-          </AppCarousel>
-        </div>
-      </section>
-
-      <section className="care-family">
-        <div>
-          <div className="cf-info">
-            <h3>Care Family</h3>
-            <p>
-              An essential tool for caring together, easily and efficiently.
-              <br />
-              Parents. Partners. Grandparents. Relatives. Babysitters. Everyone
-              is connected seamlessly, updated and ready to take over at the tap
-              of a button.
-            </p>
-          </div>
-          <AppCarousel>
-            <img src={CF1} alt="care family app screen" width={325} />
-          </AppCarousel>
-        </div>
-      </section>
-
-      <section className="af-download-container">
-        <h2>Take Control of Your Child's Health</h2>
-        <div className="af-download-wrapper">
-          <img
-            src={DadBaby}
-            alt="dad laying next to baby"
-            className="af-download-img"
-          />
-          <div className="af-download-info">
-            <p>
-              <span>Download Encurage</span> <br /> Experience effortless
-              medication tracking, family coordination, and comprehensive health
-              monitoring. Empower your child's well-being with just a tap.
-            </p>
-          </div>
-          <div className="af-download-info-square"></div>
-        </div>
-        <div className="af-download-btns">
-          <GooglePlayBtn />
-          <AppStoreBtn />
         </div>
       </section>
 
       <section className="as-needed-wizard">
+        <h2>What's Inside</h2>
         <div>
           <div className="anw-info">
             <h3>As-Needed Wizard</h3>
@@ -231,15 +106,16 @@ export const AppFeatures = () => {
               in alignment with your child’s needs, while keeping safe time
               gaps.
               <br />
+              <br />
               All done with a few taps. No reminder setting, no updating, no
               calculating.
             </p>
           </div>
           <AppCarousel>
-            <img src={TH1} alt="tracking hub screen" width={225} />
-            <img src={TH2} alt="tracking hub screen" width={225} />
-            <img src={TH3} alt="tracking hub screen" width={225} />
-            <img src={TH4} alt="tracking hub screen" width={225} />
+            <img src={ANW1} height={500} alt="tracking hub screen" />
+            <img src={ANW2} height={500} alt="tracking hub screen" />
+            <img src={ANW3} height={500} alt="tracking hub screen" />
+            <img src={ANW4} height={500} alt="tracking hub screen" />
           </AppCarousel>
         </div>
       </section>
@@ -256,11 +132,71 @@ export const AppFeatures = () => {
             </p>
           </div>
           <AppCarousel>
-            <img src={EOS1} alt="EOS dashboard screen" width={225} />
-            <img src={EOS2} alt="EOS schedule screen" width={225} />
-            <img src={EOS3} alt="EOS schedule screen" width={225} />
-            <img src={EOS4} alt="EOS schedule screen" width={225} />
-            <img src={EOS5} alt="EOS schedule screen" width={225} />
+            <img
+              src={EOAS1}
+              height={720}
+              alt="Everything on a schedule screen"
+            />
+            <img
+              src={EOAS2}
+              height={500}
+              alt="Everything on a schedule screen"
+            />
+            <img
+              src={EOAS3}
+              height={500}
+              alt="Everything on a schedule screen"
+            />
+          </AppCarousel>
+        </div>
+      </section>
+
+      <section className="tracking-hub">
+        <div>
+          <div className="tracking-info">
+            <h3>Tracking Hub</h3>
+            <p>
+              Track and log everything related to your child’s health, whether
+              it’s an occasional bug or an ongoing condition requiring daily
+              monitoring.
+              <br />
+              <br />
+              Symptoms, side effects, vitals, therapies, and growth categories
+              include detailed and guided trackers, covering important
+              information for you and your child’s pediatrician, and helping you
+              navigate a sea of data easily and effectively.
+            </p>
+          </div>
+          <AppCarousel>
+            <img src={TH1} height={800} alt="Tracking Hub screen" />
+            <img src={TH2} height={600} alt="Tracking Hub screen" />
+            <img src={TH3} height={500} alt="Tracking Hub screen" />
+            <img src={TH4} height={700} alt="Tracking Hub screen" />
+          </AppCarousel>
+        </div>
+      </section>
+
+      <div className="ch-download-break">
+        <p>Download and Explore</p>
+        <GooglePlayBtn />
+        <AppStoreBtn />
+      </div>
+
+      <section className="care-family">
+        <div>
+          <div className="cf-info">
+            <h3>Caring Together</h3>
+            <p>
+              An essential tool for caring together, easily and efficiently.
+              <br />
+              <br />
+              Parents. Partners. Grandparents. Relatives. Babysitters. Everyone
+              is connected seamlessly, updated and ready to take over at the tap
+              of a button.
+            </p>
+          </div>
+          <AppCarousel>
+            <img src={CF1} height={550} alt="Care Family screen" />
           </AppCarousel>
         </div>
       </section>
@@ -270,45 +206,49 @@ export const AppFeatures = () => {
           <div className="j-info">
             <h3>Journal</h3>
             <p>
-              Follow and monitor your child's experience with medications and
+              Follow and monitor your child’s experience with medications and
               other treatments. How they react to a medication or treatment, the
-              progress they are making, and their physical and emotional
-              wellbeing. Our guided Journal Stories address the unique aspects
-              important to children's health and development Sleep, appetite,
-              energy, focus, mood and many more categories provide you with
-              valuable insights, and help in shaping the best treatment plan for
-              your child.
+              progress they are making, and their physical and emotional well
+              being.
+              <br />
+              <br />
+              Our guided Journal Stories address the unique aspects important to
+              children's health and development.
+              <br />
+              Sleep, appetite, energy, focus, mood and many more categories
+              provide you with valuable insights, and help in shaping the best
+              treatment plan for your child.
             </p>
           </div>
           <AppCarousel>
-            <img src={J1} alt="Journal screen" width={225} />
-            <img src={J2} alt="Journal screen" width={225} />
-            <img src={J3} alt="Journal screen" width={225} />
-            <img src={J4} alt="Journal screen" width={225} />
+            <img src={J1} width={225} alt="Journal app screen" />
+            <img src={J2} width={230} alt="Journal app screen" />
+            <img src={J3} width={150} alt="Journal app screen" />
+            <img src={J4} width={250} alt="Journal app screen" />
           </AppCarousel>
         </div>
       </section>
 
-      <section className="af-contact-container">
-        <div className="heading-container">
-          <div class="heading-frame">
-            <h2>
-              REACH OUT
+      <section className="daily-life">
+        <div>
+          <div className="dl-info">
+            <h3>Baby Life</h3>
+            <p>
+              A complete baby tracker with easy and efficient tracking tools for
+              your baby’s feeding (including breastfeeding, bottle feeding and
+              pumping), sleep and diapers.
               <br />
-              TO OUR TEAM
-            </h2>
+              Beyond the daily happenings, you can also track your baby’s
+              experience with introducing solids, and your child’s potty
+              training journey.
+            </p>
           </div>
-        </div>
-
-        <div className="af-contact-info">
-          <h3>Have Question or Concerns?</h3>
-          <p>
-            We value your feedback! Get in touch with a support staff for any
-            issues in our app!
-          </p>
-          <Link to="/HelpCenterLayout" onClick={handleLink}>
-            <button className="cta-btn-home">Email Us </button>
-          </Link>
+          <AppCarousel>
+            <img src={DL1} width={230} alt="daily life app screen" />
+            <img src={DL2} width={230} alt="daily life app screen" />
+            <img src={DL3} width={180} alt="daily life app screen" />
+            <img src={DL4} width={230} alt="daily life app screen" />
+          </AppCarousel>
         </div>
       </section>
     </main>

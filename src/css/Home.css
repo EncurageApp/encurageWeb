@@ -31,32 +31,37 @@ Hero
 */
 
 .home-hero-container {
-  height: 100svh;
+  height: 80svh;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
-.home-hero-container img {
-  height: 100svh;
-  width: 70%;
+.home-hero-container-img {
+  background-image: url(../imgs/encurage/homephoto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.home-hero-container > div {
+.home-hero-container-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  padding-left: 3rem;
+  padding: 20px;
 }
 
 .home-hero-container h2 {
   border: none;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   transition: all 2s ease-in-out;
 }
 
 .home-hero-container p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: all 2s ease-in-out;
   text-align: left;
 }
@@ -69,7 +74,7 @@ Main Intro // REVISIONS
 
 .home-main-intro {
   padding: 1rem;
-  margin: 8rem 0;
+  margin: 8rem 0 0 0;
   text-align: center;
   border-top: 3px solid var(--primaryOne);
   border-bottom: 3px solid var(--primaryOne);
@@ -92,7 +97,7 @@ Main Section
 
 .home-main-container {
   width: 100%;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .home-main {
@@ -126,8 +131,8 @@ Main Section
 
 .card {
   background-color: var(--primaryTwo);
-  height: 750px;
-  margin: 40px 0;
+  height: 600px;
+  margin: 50px 0;
   justify-content: center;
   align-items: center;
   box-shadow: rgb(0, 0, 0) 0px 20px 30px -25px;
@@ -210,15 +215,16 @@ Main Section
 }
 
 .card .card-info h2 {
+  border: none;
   max-width: 300px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   transition: all 0.5s ease-in-out;
 }
 
 .card .card-info p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   width: 80%;
-  padding: 10px 0;
+  padding: 0 0 15px 0;
   transition: all 0.5s ease-in-out;
 }
 
@@ -524,9 +530,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 @media (min-width: 550px) and (max-width: 1100px) {
   /*       Hero Section       */
 
-  .hero-container {
-    height: 50vh;
-    transition: all 0.3s ease-in-out;
+  .home-hero-container {
+    height: 95svh;
+  }
+
+  .home-hero-container {
+    flex-direction: row-reverse;
+  }
+
+  .home-hero-container-img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
   }
 
   .home-hero-container h2 {
@@ -551,13 +565,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   /* CTA Cards */
 
+  .card {
+    height: 650px;
+  }
+
   .card .card-info h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     transition: all 0.5s ease-in-out;
   }
 
   .card .card-info p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: all 0.5s ease-in-out;
   }
 
@@ -608,9 +626,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 @media (min-width: 1101px) {
   /*         Hero Section          */
 
-  .hero-container {
-    height: 60vh;
-    transition: all 0.3s ease-in-out;
+  .home-hero-container {
+    height: 95svh;
+  }
+
+  .home-hero-container {
+    flex-direction: row-reverse;
+  }
+
+  .home-hero-container-img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
   }
 
   .home-hero-container h2 {
@@ -635,13 +661,17 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
 
   /* CTA Cards */
 
+  .card {
+    height: 700px;
+  }
+
   .card .card-info h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     transition: all 0.5s ease-in-out;
   }
 
   .card .card-info p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     transition: all 0.5s ease-in-out;
   }
 

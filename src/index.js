@@ -11,6 +11,7 @@ import "./css/Home.css";
 import "./css/ChildrenHealth.css";
 import "./css/AppFeatures.css";
 import "./css/Reviews.css";
+import "./css/NotFound.css";
 
 import App from "./App";
 

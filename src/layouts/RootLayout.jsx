@@ -15,6 +15,7 @@ import { LoaderAnimation } from "../components/animations/LoaderAnimation";
 //Imgs
 import Elogo from "../imgs/figmaImgs/encurage.png";
 import Elogo2 from "../imgs/figmaImgs/Layer_1.png";
+import ScrollToTop from "react-scroll-to-top";
 
 export const RootLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -88,10 +89,10 @@ export const RootLayout = () => {
                 Home
               </NavLink>
               <NavLink to={"ChildrenHealth"} onClick={handleQuickLinkClick}>
-                Children's Health
+                Challenges & Risks
               </NavLink>
               <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
-                Explore Our App
+                Explore Encurage
               </NavLink>
               <NavLink to={"Founder"} onClick={handleQuickLinkClick}>
                 Our Story
@@ -109,12 +110,17 @@ export const RootLayout = () => {
               </div>
             </ul>
           </nav>
+          <div className="nav-download-container-small">
+            <GooglePlayBtn />
+            <AppStoreBtn />
+          </div>
         </header>
       </Headroom>
       <main>
         <Outlet />
         <CookieConsentBanner />
         {loading && <LoaderAnimation />}
+        <ScrollToTop smooth />
       </main>
 
       <footer>
@@ -132,10 +138,10 @@ export const RootLayout = () => {
               Home
             </NavLink>
             <NavLink to={"ChildrenHealth"} onClick={handleQuickLinkClick}>
-              Children's Health
+              Challenges & Risks
             </NavLink>
             <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
-              Explore Our App
+              Explore Encurage
             </NavLink>
             <NavLink to={"Founder"} onClick={handleQuickLinkClick}>
               Our Story

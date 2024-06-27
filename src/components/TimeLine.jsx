@@ -9,50 +9,43 @@ export const TimeLine = () => {
   const events = [
     {
       id: 1,
-      date: "Late 2017",
-      title: "The Birth of Innovation",
+      date: "2018",
+
       timelineDescription:
-        "The light bulb went off, and the idea for the Encurage App was born. This was the pivotal moment when we set out on a journey to create a solution that would make children's healthcare safer and more manageable.",
+        "Ideation, research and development, medical vetting.",
       icon: "odd",
     },
     {
       id: 2,
-      date: "2018",
-      title: "A Year of Discovery",
+      date: " November 2018",
       timelineDescription:
-        "In 2018, we embarked on extensive research into the problem of medication dosage errors in children. This year was marked by the development of the Encurage App, laying the foundation for a revolutionary tool that would change the way parents and caregivers manage their children's medication.",
+        " Release of the first version (OnCure) on the App Store.",
       icon: "even",
     },
     {
       id: 3,
-      date: "Late 2018",
-      title: "Launching Excellence",
+      date: "2019-2021",
       timelineDescription:
-        "The moment arrived when we proudly launched the Encurage App. It was a significant milestone, and the app's introduction marked the beginning of a new era in children's healthcare, offering a convenient and reliable way to track medication dosages.",
+        "Analyzing parents’ feedback, and adding more capabilities.",
       icon: "odd",
     },
     {
       id: 4,
-      date: "2019",
-      title: "Listening to Our Users",
+      date: "2022",
       timelineDescription:
-        "2019 was a year of growth and learning. We gathered valuable feedback and insights from users of the app, enabling us to fine-tune and enhance its features. In addition, we conducted further research and studies to ensure that the app was meeting the evolving needs of our users.",
+        "Second research phase, defining long term scope and capabilities.",
       icon: "even",
     },
     {
       id: 5,
-      date: "2020-2022",
-      title: "Elevating the Experience",
-      timelineDescription:
-        "Over the course of these three years, we dedicated ourselves to fine-tuning the Encurage App. Our focus was on continually improving the user experience, with regular updates and refinements to make the app more intuitive, effective, and reliable for parents and caregivers.",
+      date: "2023",
+      timelineDescription: "Second design and development phase.",
       icon: "odd",
     },
     {
       id: 6,
-      date: "2023",
-      title: "The Future Beckons",
-      timelineDescription:
-        "As we march into the future, we're excited to announce our partnership with industry-leading developers. Together, we're committed to elevating the Encurage App to new heights, enhancing its systems and user experience. This year marks a pivotal moment in our journey to provide the best possible support for children's health.",
+      date: "2024",
+      timelineDescription: "Release of the enhanced and updated Encurage app.",
       icon: "even",
     },
   ];
@@ -60,23 +53,42 @@ export const TimeLine = () => {
   const iconOdd = { background: "#008080" };
   const iconEven = { background: "#3fccca" };
 
+  const colors = ["#b2ebf2", "#eafaf1", "#ffccbc", "#fcf3cf", "#fbeee6"];
+
   return (
     <div className="timeline">
-      <h2>Our History</h2>
-      <VerticalTimeline lineColor="Teal">
-        {events.map((element) => {
+      <h2>Product Evolvement</h2>
+      <VerticalTimeline lineColor="White">
+        {events.map((element, index) => {
           const isIconEven = element.icon === "even";
+          const color = colors[index % colors.length];
           return (
             <VerticalTimelineElement
+              className="timeline-bubbles"
+              contentStyle={{
+                background: color,
+                color: "black",
+                display: "flex",
+                flexDirection: "column-reverse",
+                justifyContent: "start",
+                alignItems: "center",
+                height: "200px",
+                width: "300px",
+                maxWidth: "400px",
+                borderRadius: "50%",
+              }}
+              contentArrowStyle={{
+                borderRight: "10px solid #008080",
+              }}
               key={element.key}
               date={element.date}
               dateClassName="timeline-date"
               iconStyle={isIconEven ? iconOdd : iconEven}
             >
+              <p id="timelineDescription">{element.timelineDescription}</p>
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
-              <p id="timelineDescription">{element.timelineDescription}</p>
             </VerticalTimelineElement>
           );
         })}

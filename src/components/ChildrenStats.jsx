@@ -7,7 +7,11 @@ export const ChildrenStats = ({ animateNumber, icon }) => {
       <AnimatedNumbers
         includeComma
         animateToNumber={animateNumber}
-        fontStyle={{ fontSize: "4rem", color: "White" }}
+        fontStyle={{
+          fontSize: "4rem",
+          color: "White",
+          padding: "10px 0",
+        }}
         configs={[
           { mass: 1, tension: 220, friction: 100 },
           { mass: 1, tension: 180, friction: 130 },
@@ -17,7 +21,6 @@ export const ChildrenStats = ({ animateNumber, icon }) => {
           { mass: 1, tension: 210, friction: 180 },
         ]}
       ></AnimatedNumbers>
-      <div>+</div>
     </div>
   );
 };
