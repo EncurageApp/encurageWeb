@@ -1,4 +1,6 @@
-import React from "react";
+/* EXPLORE PAGE */
+
+import React, { useRef } from "react";
 
 //components
 import { AppCarousel } from "../components/AppCarousel";
@@ -41,6 +43,19 @@ import HighFrequency from "../imgs/icons/highfrequency.png";
 import DailyLife from "../imgs/icons/dailylife.png";
 
 export const AppFeatures = () => {
+  const asNeededRef = useRef(null);
+  const scheduledRef = useRef(null);
+  const trackingRef = useRef(null);
+  const careGiverRef = useRef(null);
+  const healthRef = useRef(null);
+  const babyRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main className="appFeatures-page">
       <section className="af-hero-container">
@@ -62,32 +77,50 @@ export const AppFeatures = () => {
 
       <section className="features-container">
         <div className="feature-card-wrapper">
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(asNeededRef)}
+            className="feature-card "
+          >
             <div>
               <h3>As-Needed Medication Management</h3>
             </div>
             <img src={HighFrequency} width={60} alt="thermometer" />
           </div>
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(scheduledRef)}
+            className="feature-card "
+          >
             <h3>Scheduled Medication Management</h3>
             <img src={Schedule} width={60} alt="pill with arrow around it" />
           </div>
-          <div className="feature-card">
+          <div
+            onClick={() => scrollToSection(healthRef)}
+            className="feature-card"
+          >
             <h3>Comprehensive Health Tracking Tool</h3>
             <img src={Heart} width={60} alt="clipboard with heart" />
           </div>
 
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(careGiverRef)}
+            className="feature-card "
+          >
             <h3>Caregivers Management</h3>
             <img src={People} width={60} alt="3 caregiver" />
           </div>
 
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(healthRef)}
+            className="feature-card "
+          >
             <h3>Health Journal</h3>
             <img src={Journal} width={60} alt="journal pad" />
           </div>
 
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(babyRef)}
+            className="feature-card "
+          >
             <h3>Baby Tracker</h3>
             <img src={DailyLife} width={60} alt="pill with arrow around it" />
           </div>
@@ -97,7 +130,7 @@ export const AppFeatures = () => {
       <section className="as-needed-wizard">
         <h2>What's Inside</h2>
         <div>
-          <div className="anw-info">
+          <div ref={asNeededRef} className="anw-info">
             <h3>As-Needed Wizard</h3>
             <p>
               Specifically designed for as-needed (PRN) medications, our unique
@@ -122,7 +155,7 @@ export const AppFeatures = () => {
 
       <section className="eos">
         <div>
-          <div className="eos-info">
+          <div ref={scheduledRef} className="eos-info">
             <h3>Everything on a Schedule</h3>
             <p>
               Built for your child’s ever changing health journey, a
@@ -153,7 +186,7 @@ export const AppFeatures = () => {
 
       <section className="tracking-hub">
         <div>
-          <div className="tracking-info">
+          <div ref={trackingRef} className="tracking-info">
             <h3>Tracking Hub</h3>
             <p>
               Track and log everything related to your child’s health, whether
@@ -184,7 +217,7 @@ export const AppFeatures = () => {
 
       <section className="care-family">
         <div>
-          <div className="cf-info">
+          <div ref={careGiverRef} className="cf-info">
             <h3>Caring Together</h3>
             <p>
               An essential tool for caring together, easily and efficiently.
@@ -203,7 +236,7 @@ export const AppFeatures = () => {
 
       <section className="journal">
         <div>
-          <div className="j-info">
+          <div ref={healthRef} className="j-info">
             <h3>Journal</h3>
             <p>
               Follow and monitor your child’s experience with medications and
@@ -229,7 +262,7 @@ export const AppFeatures = () => {
         </div>
       </section>
 
-      <section className="daily-life">
+      <section ref={babyRef} className="daily-life">
         <div>
           <div className="dl-info">
             <h3>Baby Life</h3>

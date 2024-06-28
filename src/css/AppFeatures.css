@@ -134,6 +134,10 @@ features intro
   padding: 1rem;
 }
 
+.feature-card:hover {
+  cursor: pointer;
+}
+
 .feature-card img {
   margin-right: 10px;
 }

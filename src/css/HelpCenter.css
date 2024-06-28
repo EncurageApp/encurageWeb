@@ -206,25 +206,36 @@ Faq Section
 .faq-examples {
   max-width: 1600px;
   color: white;
-  padding: 1.4rem;
+  padding: 1rem;
   margin: 2rem 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(9, 1fr);
-  gap: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
 
 .examples {
+  max-width: 900px;
   display: flex;
+  justify-content: left;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 10px 5px;
+  margin: 10px;
 }
 
 .examples img {
-  padding-right: 30px;
+  margin: 5px;
+  padding-right: 10px;
 }
 
 .examples:nth-child(4) > img {
-  padding-right: 45px;
+  padding-right: 20px;
+  margin-left: 15px;
+}
+
+.examples:hover {
+  cursor: pointer;
 }
 
 /* Collapse */
