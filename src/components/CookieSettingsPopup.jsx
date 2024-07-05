@@ -1,23 +1,19 @@
-import React from "react";
+import { useState } from "react";
 
 export const CookieSettingsPopup = ({ onClose }) => {
-  // State variables to track the enabled/disabled status of each type of cookie
   const [marketingCookiesEnabled, setMarketingCookiesEnabled] = useState(true);
   const [functionalCookiesEnabled, setFunctionalCookiesEnabled] =
     useState(true);
   const [analyticCookiesEnabled, setAnalyticCookiesEnabled] = useState(true);
 
-  // Function to handle toggling of marketing cookies
   const toggleMarketingCookies = () => {
     setMarketingCookiesEnabled(!marketingCookiesEnabled);
   };
 
-  // Function to handle toggling of functional cookies
   const toggleFunctionalCookies = () => {
     setFunctionalCookiesEnabled(!functionalCookiesEnabled);
   };
 
-  // Function to handle toggling of analytic cookies
   const toggleAnalyticCookies = () => {
     setAnalyticCookiesEnabled(!analyticCookiesEnabled);
   };
@@ -25,9 +21,9 @@ export const CookieSettingsPopup = ({ onClose }) => {
   return (
     <div className="cookie-settings-popup">
       <button className="close-button" onClick={onClose}>
-        Close
+        X
       </button>
-      <h3>Cookie Settings</h3>
+      <h3>Advanced Cookie Settings</h3>
       <div className="cookie-option">
         <h4>Marketing Cookies</h4>
         <p>Enable cookies for targeted marketing campaigns.</p>
@@ -64,6 +60,9 @@ export const CookieSettingsPopup = ({ onClose }) => {
           <span className="slider round"></span>
         </label>
       </div>
+      <button className="accept-button" onClick={onClose}>
+        Accept
+      </button>
     </div>
   );
 };

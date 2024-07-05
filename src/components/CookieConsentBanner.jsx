@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
 import CookieImg from "../imgs/encurage/cookies.png";
 import { Link } from "react-router-dom";
+import { CookieSettingsPopup } from "./CookieSettingsPopup";
 
 export const CookieConsentBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -13,6 +15,18 @@ export const CookieConsentBanner = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const handleSettingsClick = () => {
+    setShowSettings(true);
+  };
+
+  const handleCloseSettings = () => {
+    setShowSettings(false);
+  };
+
+  const handleLinkClick = () => {
+    setShowBanner(false);
+  };
 
   return (
     <>
@@ -24,14 +38,12 @@ export const CookieConsentBanner = () => {
           buttonText="Accept!"
           cookieName="EnCurage Cookies"
           enableDeclineButton
-          declineButtonText="Decline (Optional)"
+          declineButtonText="Settings (Optional)"
           flipButtons
           onAccept={() => {
             console.log("User Accepted Cookies");
           }}
-          onDecline={() => {
-            console.log("User Declined Cookies");
-          }}
+          onDecline={handleSettingsClick}
           style={{
             background: "#008080",
             display: "flex",
@@ -84,12 +96,22 @@ export const CookieConsentBanner = () => {
               This website uses cookies to improve our users' experience. Click
               'Accept' to Help us Out! Questions about Cookies? Visit Our
               Privacy Policy to{" "}
-              <Link to="/HelpCenterLayout" className="cookie-btn">
+              <Link
+                to="/HelpCenterLayout"
+                className="cookie-btn"
+                onClick={handleLinkClick}
+              >
                 Learn More
               </Link>
             </p>
           </div>
         </CookieConsent>
+      )}
+      {showSettings && (
+        <>
+          <div className="overlay"></div>
+          <CookieSettingsPopup onClose={handleCloseSettings} />
+        </>
       )}
     </>
   );

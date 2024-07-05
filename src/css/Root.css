@@ -32,6 +32,8 @@ Cookie Banner
 }
 
 .cookie-settings-popup {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -42,17 +44,63 @@ Cookie Banner
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  width: 300px;
+  max-width: 500px;
+  min-width: 350px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
 }
 
 .close-button {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
   background: none;
   border: none;
   font-size: 16px;
   cursor: pointer;
+  border: 0.8px solid black;
+  padding: 1px 8px;
+  transition: all 0.3s ease-in-out;
+  font-size: x-large;
+  border-radius: 6px;
+}
+
+.close-button:hover {
+  background-color: var(--primaryFour);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.accept-button {
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: center;
+  width: 30%;
+  position: absolute;
+  top: 93%;
+  right: 5%;
+  padding: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.accept-button:hover {
+  background-color: var(--primaryFour);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.cookie-settings-popup h3 {
+  margin-bottom: 20px;
 }
 
 .cookie-option {
@@ -126,11 +174,11 @@ Cookie Banner
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: var(--primaryOne);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px var(--primaryFive);
 }
 
 input:checked + .slider:before {
@@ -174,11 +222,39 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     width: 500px;
     transition: all 0.5s ease-in-out;
   }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0.8px solid black;
+    padding: 1px 8px;
+    transition: all 0.3s ease-in-out;
+    font-size: xx-large;
+  }
 }
 
 @media (min-width: 1101px) {
   .loader-animation {
     width: 700px;
     transition: all 0.5s ease-in-out;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0.8px solid black;
+    padding: 1px 8px;
+    transition: all 0.3s ease-in-out;
+    font-size: xx-large;
   }
 }
