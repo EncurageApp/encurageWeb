@@ -31,6 +31,10 @@ Cookie Banner
   margin-bottom: 30px;
 }
 
+.cookie-btn {
+  padding: 0 4px;
+}
+
 .cookie-settings-popup {
   display: flex;
   flex-direction: column;
@@ -76,6 +80,7 @@ Cookie Banner
 .close-button:hover {
   background-color: var(--primaryFour);
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -83,7 +88,7 @@ Cookie Banner
   border: 1px solid black;
   border-radius: 6px;
   text-align: center;
-  width: 30%;
+  width: 50%;
   position: absolute;
   top: 93%;
   right: 5%;
@@ -96,6 +101,7 @@ Cookie Banner
 .accept-button:hover {
   background-color: var(--primaryFour);
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -105,6 +111,11 @@ Cookie Banner
 
 .cookie-option {
   margin-bottom: 20px;
+}
+
+.cookie-option span {
+  font-size: 1.2rem;
+  color: var(--primaryOne);
 }
 
 .cookie-option h4 {
@@ -139,6 +150,10 @@ Cookie Banner
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
+}
+
+.slider:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 
 .slider.round {
@@ -222,39 +237,11 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     width: 500px;
     transition: all 0.5s ease-in-out;
   }
-
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border: 0.8px solid black;
-    padding: 1px 8px;
-    transition: all 0.3s ease-in-out;
-    font-size: xx-large;
-  }
 }
 
 @media (min-width: 1101px) {
   .loader-animation {
     width: 700px;
     transition: all 0.5s ease-in-out;
-  }
-
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border: 0.8px solid black;
-    padding: 1px 8px;
-    transition: all 0.3s ease-in-out;
-    font-size: xx-large;
   }
 }

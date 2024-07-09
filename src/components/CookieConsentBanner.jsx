@@ -35,10 +35,10 @@ export const CookieConsentBanner = () => {
           location="bottom"
           overlay
           overlayStyle={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
-          buttonText="Accept!"
+          buttonText="Accept All"
           cookieName="EnCurage Cookies"
           enableDeclineButton
-          declineButtonText="Settings (Optional)"
+          declineButtonText="Manage Cookie Preferences"
           flipButtons
           onAccept={() => {
             console.log("User Accepted Cookies");
@@ -93,16 +93,19 @@ export const CookieConsentBanner = () => {
                 margin: "0 auto",
               }}
             >
-              This website uses cookies to improve our users' experience. Click
-              'Accept' to Help us Out! Questions about Cookies? Visit Our
-              Privacy Policy to{" "}
+              We use cookies to enable core functionalities of this website, and
+              improve your browsing experience. Some cookies are essential to
+              maintain basic functionality, and are listed as “necessary”. You
+              can manage your preferences for other types of cookies by tapping
+              the “manage cookie preferences” button below. Visit our
               <Link
                 to="/HelpCenterLayout"
                 className="cookie-btn"
                 onClick={handleLinkClick}
               >
-                Learn More
+                Privacy Policy
               </Link>
+              to learn more.
             </p>
           </div>
         </CookieConsent>

@@ -1,14 +1,9 @@
 import { useState } from "react";
 
 export const CookieSettingsPopup = ({ onClose }) => {
-  const [marketingCookiesEnabled, setMarketingCookiesEnabled] = useState(true);
   const [functionalCookiesEnabled, setFunctionalCookiesEnabled] =
     useState(true);
   const [analyticCookiesEnabled, setAnalyticCookiesEnabled] = useState(true);
-
-  const toggleMarketingCookies = () => {
-    setMarketingCookiesEnabled(!marketingCookiesEnabled);
-  };
 
   const toggleFunctionalCookies = () => {
     setFunctionalCookiesEnabled(!functionalCookiesEnabled);
@@ -25,20 +20,15 @@ export const CookieSettingsPopup = ({ onClose }) => {
       </button>
       <h3>Advanced Cookie Settings</h3>
       <div className="cookie-option">
-        <h4>Marketing Cookies</h4>
-        <p>Enable cookies for targeted marketing campaigns.</p>
-        <label className="switch">
-          <input
-            type="checkbox"
-            checked={marketingCookiesEnabled}
-            onChange={toggleMarketingCookies}
-          />
-          <span className="slider round"></span>
-        </label>
+        <h4>Necessary</h4>
+        <p>
+          Enabling basic essential functionalities.
+          <span> (Always Active)</span>
+        </p>
       </div>
       <div className="cookie-option">
-        <h4>Functional Cookies</h4>
-        <p>Enable cookies for additional website functionality.</p>
+        <h4>Functional</h4>
+        <p>Enabling additional website functionalities.</p>
         <label className="switch">
           <input
             type="checkbox"
@@ -49,8 +39,12 @@ export const CookieSettingsPopup = ({ onClose }) => {
         </label>
       </div>
       <div className="cookie-option">
-        <h4>Analytic Cookies</h4>
-        <p>Enable cookies for website traffic analysis.</p>
+        <h4>Analytic</h4>
+        <p>
+          Helping us understand how visitors interact with the website, and
+          provide metrics that contribute to overall improvement of visitors’
+          experience.
+        </p>
         <label className="switch">
           <input
             type="checkbox"
@@ -60,8 +54,9 @@ export const CookieSettingsPopup = ({ onClose }) => {
           <span className="slider round"></span>
         </label>
       </div>
+
       <button className="accept-button" onClick={onClose}>
-        Accept
+        Save My Preferences
       </button>
     </div>
   );
