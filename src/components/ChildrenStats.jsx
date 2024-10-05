@@ -1,7 +1,7 @@
 import React from "react";
 import AnimatedNumbers from "react-animated-numbers";
 
-export const ChildrenStats = ({ animateNumber, icon }) => {
+export const ChildrenStats = ({ animateNumber }) => {
   return (
     <div className="stats">
       <AnimatedNumbers
