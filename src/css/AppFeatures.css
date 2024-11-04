@@ -81,19 +81,12 @@ Swiper.js / App Carousel Component
 =================================================
 */
 
-.swiper-container {
-  height: 700px;
-  width: 100%;
-  max-width: 600px;
-  margin-top: 4rem;
-}
-
 .swiper {
-  width: 80%;
   height: 100%;
 }
 
 .swiper-slide {
+  border: 1px red solid;
   text-align: center;
 }
 
@@ -324,7 +317,6 @@ As-Needed Wizard
 .anw-info {
   background-color: #fcf3cf;
   padding: 2rem;
-  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

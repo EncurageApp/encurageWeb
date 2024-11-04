@@ -61,7 +61,7 @@ export const AppFeatures = () => {
       <section className="af-hero-container">
         <div className="af-hero-container-img"></div>
         <div className="af-hero-container-text">
-          <h2 data-aos="fade-in" data-aos-delay="500">
+          <h2 data-aos="fade-in" data-aos-delay="'100%'">
             Just Add TLC
           </h2>
 
@@ -127,10 +127,10 @@ export const AppFeatures = () => {
         </div>
       </section>
 
-      <section className="as-needed-wizard">
+      <section ref={asNeededRef} className="as-needed-wizard">
         <h2>What's Inside</h2>
-        <div>
-          <div ref={asNeededRef} className="anw-info">
+        <div className="description-container">
+          <div className="anw-info">
             <h3>As-Needed Wizard</h3>
             <p>
               Specifically designed for as-needed (PRN) medications, our unique
@@ -145,10 +145,10 @@ export const AppFeatures = () => {
             </p>
           </div>
           <AppCarousel>
-            <img src={ANW1} height={500} alt="tracking hub screen" />
-            <img src={ANW2} height={500} alt="tracking hub screen" />
-            <img src={ANW3} height={500} alt="tracking hub screen" />
-            <img src={ANW4} height={500} alt="tracking hub screen" />
+            <img src={ANW1} height={"100%"} alt="tracking hub screen" />
+            <img src={ANW2} height={"100%"} alt="tracking hub screen" />
+            <img src={ANW3} height={"100%"} alt="tracking hub screen" />
+            <img src={ANW4} height={"100%"} alt="tracking hub screen" />
           </AppCarousel>
         </div>
       </section>
@@ -172,12 +172,12 @@ export const AppFeatures = () => {
             />
             <img
               src={EOAS2}
-              height={500}
+              height={"100%"}
               alt="Everything on a schedule screen"
             />
             <img
               src={EOAS3}
-              height={500}
+              height={"100%"}
               alt="Everything on a schedule screen"
             />
           </AppCarousel>
@@ -203,7 +203,7 @@ export const AppFeatures = () => {
           <AppCarousel>
             <img src={TH1} height={800} alt="Tracking Hub screen" />
             <img src={TH2} height={600} alt="Tracking Hub screen" />
-            <img src={TH3} height={500} alt="Tracking Hub screen" />
+            <img src={TH3} height={"100%"} alt="Tracking Hub screen" />
             <img src={TH4} height={700} alt="Tracking Hub screen" />
           </AppCarousel>
         </div>
