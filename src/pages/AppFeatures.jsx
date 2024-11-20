@@ -1,9 +1,9 @@
 /* EXPLORE PAGE */
 
 import React, { useRef } from "react";
+import { IPhoneFrame } from "react-framify";
 
 //components
-import { AppCarousel } from "../components/AppCarousel";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 
@@ -55,6 +55,13 @@ export const AppFeatures = () => {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const aNWSlides = [ANW1, ANW2, ANW3, ANW4];
+  const eOASSlides = [EOAS1, EOAS2, EOAS3];
+  const tHSlides = [TH1, TH2, TH3, TH4];
+  const cFSlides = [CF1];
+  const jSlides = [J1, J2, J3, J4];
+  const dLSlides = [DL1, DL2, DL3, DL4];
 
   return (
     <main className="appFeatures-page">
@@ -144,18 +151,21 @@ export const AppFeatures = () => {
               calculating.
             </p>
           </div>
-          <AppCarousel>
-            <img src={ANW1} height={"100%"} alt="tracking hub screen" />
-            <img src={ANW2} height={"100%"} alt="tracking hub screen" />
-            <img src={ANW3} height={"100%"} alt="tracking hub screen" />
-            <img src={ANW4} height={"100%"} alt="tracking hub screen" />
-          </AppCarousel>
+          <div>
+            <IPhoneFrame
+              screenshotList={aNWSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
+            />
+          </div>
         </div>
       </section>
 
-      <section className="eos">
+      <section ref={scheduledRef} className="eos">
         <div>
-          <div ref={scheduledRef} className="eos-info">
+          <div className="eos-info">
             <h3>Everything on a Schedule</h3>
             <p>
               Built for your child’s ever changing health journey, a
@@ -164,29 +174,21 @@ export const AppFeatures = () => {
               types.
             </p>
           </div>
-          <AppCarousel>
-            <img
-              src={EOAS1}
-              height={720}
-              alt="Everything on a schedule screen"
+          <div>
+            <IPhoneFrame
+              screenshotList={eOASSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
             />
-            <img
-              src={EOAS2}
-              height={"100%"}
-              alt="Everything on a schedule screen"
-            />
-            <img
-              src={EOAS3}
-              height={"100%"}
-              alt="Everything on a schedule screen"
-            />
-          </AppCarousel>
+          </div>
         </div>
       </section>
 
-      <section className="tracking-hub">
+      <section ref={trackingRef} className="tracking-hub">
         <div>
-          <div ref={trackingRef} className="tracking-info">
+          <div className="tracking-info">
             <h3>Tracking Hub</h3>
             <p>
               Track and log everything related to your child’s health, whether
@@ -200,12 +202,15 @@ export const AppFeatures = () => {
               navigate a sea of data easily and effectively.
             </p>
           </div>
-          <AppCarousel>
-            <img src={TH1} height={800} alt="Tracking Hub screen" />
-            <img src={TH2} height={600} alt="Tracking Hub screen" />
-            <img src={TH3} height={"100%"} alt="Tracking Hub screen" />
-            <img src={TH4} height={700} alt="Tracking Hub screen" />
-          </AppCarousel>
+          <div>
+            <IPhoneFrame
+              screenshotList={tHSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
+            />
+          </div>
         </div>
       </section>
 
@@ -215,9 +220,9 @@ export const AppFeatures = () => {
         <AppStoreBtn />
       </div>
 
-      <section className="care-family">
+      <section ref={careGiverRef} className="care-family">
         <div>
-          <div ref={careGiverRef} className="cf-info">
+          <div className="cf-info">
             <h3>Caring Together</h3>
             <p>
               An essential tool for caring together, easily and efficiently.
@@ -228,15 +233,21 @@ export const AppFeatures = () => {
               of a button.
             </p>
           </div>
-          <AppCarousel>
-            <img src={CF1} height={550} alt="Care Family screen" />
-          </AppCarousel>
+          <div>
+            <IPhoneFrame
+              screenshotList={cFSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
+            />
+          </div>
         </div>
       </section>
 
-      <section className="journal">
+      <section ref={healthRef} className="journal">
         <div>
-          <div ref={healthRef} className="j-info">
+          <div className="j-info">
             <h3>Journal</h3>
             <p>
               Follow and monitor your child’s experience with medications and
@@ -253,18 +264,22 @@ export const AppFeatures = () => {
               treatment plan for your child.
             </p>
           </div>
-          <AppCarousel>
-            <img src={J1} width={225} alt="Journal app screen" />
-            <img src={J2} width={230} alt="Journal app screen" />
-            <img src={J3} width={150} alt="Journal app screen" />
-            <img src={J4} width={250} alt="Journal app screen" />
-          </AppCarousel>
+          <div>
+            <IPhoneFrame
+              screenshotList={jSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
+            />
+          </div>
         </div>
       </section>
 
-      <section ref={babyRef} className="daily-life">
+      <section ref={babyRef} className="baby-life">
+        <div className="coming-soon-banner"></div>
         <div>
-          <div className="dl-info">
+          <div className="bl-info">
             <h3>Baby Life</h3>
             <p>
               A complete baby tracker with easy and efficient tracking tools for
@@ -276,12 +291,17 @@ export const AppFeatures = () => {
               training journey.
             </p>
           </div>
-          <AppCarousel>
-            <img src={DL1} width={230} alt="daily life app screen" />
-            <img src={DL2} width={230} alt="daily life app screen" />
-            <img src={DL3} width={180} alt="daily life app screen" />
-            <img src={DL4} width={230} alt="daily life app screen" />
-          </AppCarousel>
+          <div>
+            <div>
+              <IPhoneFrame
+                screenshotList={dLSlides}
+                deviceColor="black"
+                orientation="portrait"
+                statusBar={{ mode: "dark" }}
+                buttonStyles={{ backgroundColor: "teal" }}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -9,7 +9,7 @@ APP FEATURES IN ORDER
 3.Tracking Hub
 4.Car Family Feature
 5.Journal
-6.Daily Life
+6.baby Life
 
 
 */
@@ -25,6 +25,20 @@ APP FEATURES IN ORDER
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
     0px 0.1px 10px rgba(255, 255, 255, 0.3);
   letter-spacing: 2px;
+}
+
+/*
+=====================================================================
+Framify
+=====================================================================
+*/
+
+.phone__frameset--wrapper {
+  position: none !important;
+  margin-top: 40px !important;
+  top: 0 !important;
+  left: 0 !important;
+  transform: translate(0) !important;
 }
 
 /*
@@ -145,6 +159,100 @@ features intro
   max-width: 200px;
   line-height: 1.5;
 }
+/*
+=================================================
+As-Needed Wizard
+=================================================
+*/
+.as-needed-wizard {
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.as-needed-wizard h2 {
+  font-size: 2.6rem;
+  border: none;
+  padding-bottom: 4rem;
+}
+
+.as-needed-wizard h3 {
+  letter-spacing: 2px;
+  margin: 1rem auto;
+  font-size: 2rem;
+  width: 100%;
+  padding-right: 20px;
+  display: flex;
+}
+
+.as-needed-wizard > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anw-info {
+  background-color: #fcf3cf;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 700px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 8px;
+}
+
+.anw-info p {
+  max-width: 600px;
+  text-align: left;
+}
+
+/*
+=================================================
+EOS
+=================================================
+*/
+.eos {
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.eos h3 {
+  letter-spacing: 2px;
+  margin: 1rem auto;
+  font-size: 2rem;
+  width: 100%;
+  padding-right: 20px;
+  display: flex;
+}
+
+.eos > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eos-info {
+  background-color: #ffccbc;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 700px;
+  min-height: 250px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 8px;
+}
+
+.eos-info p {
+  max-width: 600px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*
 =================================================
@@ -186,6 +294,7 @@ Tracking Hub
   justify-content: space-evenly;
   max-width: 900px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 8px;
 }
 
 .tracking-info p {
@@ -194,56 +303,11 @@ Tracking Hub
 
 /*
 =================================================
-Daily Life
-=================================================
-*/
-.daily-life {
-  margin: 6rem auto;
-  padding: 2rem;
-}
-
-.daily-life h3 {
-  letter-spacing: 2px;
-  margin: 1rem auto;
-  font-size: 2rem;
-  width: 100%;
-  padding-right: 20px;
-  display: flex;
-}
-
-.daily-life > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dl-info {
-  background-color: #eafaf1;
-  padding: 2rem;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  max-width: 700px;
-  min-height: 250px;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
-}
-
-.dl-info p {
-  max-width: 600px;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*
-=================================================
 Care Family
 =================================================
 */
 .care-family {
+  margin: 4rem auto;
   padding: 2rem;
 }
 
@@ -273,101 +337,10 @@ Care Family
   max-width: 700px;
   min-height: 250px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 8px;
 }
 
 .cf-info p {
-  max-width: 600px;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*
-=================================================
-As-Needed Wizard
-=================================================
-*/
-.as-needed-wizard {
-  padding: 2rem;
-}
-
-.as-needed-wizard h2 {
-  font-size: 2.6rem;
-  border: none;
-  padding-bottom: 4rem;
-}
-
-.as-needed-wizard h3 {
-  letter-spacing: 2px;
-  margin: 1rem auto;
-  font-size: 2rem;
-  width: 100%;
-  padding-right: 20px;
-  display: flex;
-}
-
-.as-needed-wizard > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.anw-info {
-  background-color: #fcf3cf;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  max-width: 700px;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
-}
-
-.anw-info p {
-  max-width: 600px;
-  text-align: left;
-}
-
-/*
-=================================================
-EOS
-=================================================
-*/
-.eos {
-  margin: 6rem auto;
-  padding: 2rem;
-}
-
-.eos h3 {
-  letter-spacing: 2px;
-  margin: 1rem auto;
-  font-size: 2rem;
-  width: 100%;
-  padding-right: 20px;
-  display: flex;
-}
-
-.eos > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.eos-info {
-  background-color: #ffccbc;
-  padding: 2rem;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  max-width: 700px;
-  min-height: 250px;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
-}
-
-.eos-info p {
   max-width: 600px;
   text-align: left;
   display: flex;
@@ -382,7 +355,7 @@ Journal
 */
 
 .journal {
-  margin: 6rem auto;
+  margin: 4rem auto;
   padding: 2rem;
 }
 
@@ -412,9 +385,57 @@ Journal
   max-width: 700px;
   min-height: 250px;
   box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 8px;
 }
 
 .j-info p {
+  max-width: 600px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+=================================================
+Baby Life
+=================================================
+*/
+.baby-life {
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.baby-life h3 {
+  letter-spacing: 2px;
+  margin: 1rem auto;
+  font-size: 2rem;
+  width: 100%;
+  padding-right: 20px;
+  display: flex;
+}
+
+.baby-life > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bl-info {
+  background-color: #eafaf1;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 700px;
+  min-height: 250px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 8px;
+}
+
+.bl-info p {
   max-width: 600px;
   text-align: left;
   display: flex;
@@ -478,7 +499,7 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     padding-left: 10px;
   }
 
-  /* Daily Life */
+  /* baby Life */
 
   .dl-info {
     margin: 1rem;
@@ -588,9 +609,9 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     align-items: center;
   }
 
-  /* Daily Life */
+  /* baby Life */
 
-  .daily-life > div {
+  .baby-life > div {
     flex-direction: row;
   }
 
