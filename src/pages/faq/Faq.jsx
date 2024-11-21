@@ -3,15 +3,15 @@ import { useRef } from "react";
 import Collapsible from "react-collapsible";
 
 //Icons
-import generalIcon from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/helpCenter/general.png";
-import accountIcon from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/helpCenter/account.png";
-import duckIcon from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/helpCenter/rubberDuck.png";
-import lightIcon from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/helpCenter/lightBulb.png";
-import Journal from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/journal.png";
-import Heart from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/heartclipboard.png";
-import Schedule from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/schedule.png";
-import People from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/3people.png";
-import HighFrequency from "/Users/shanehorton/Desktop/encurage/src/imgs/icons/highfrequency.png";
+import generalIcon from "../../imgs/icons/helpCenter/general.png";
+import accountIcon from "../../imgs/icons/helpCenter/account.png";
+import duckIcon from "../../imgs/icons/helpCenter/rubberDuck.png";
+import lightIcon from "../../imgs/icons/helpCenter/lightBulb.png";
+import Journal from "../../imgs/icons/journal.png";
+import Heart from "../../imgs/icons/heartclipboard.png";
+import Schedule from "../../imgs/icons/schedule.png";
+import People from "../../imgs/icons/3people.png";
+import HighFrequency from "../../imgs/icons/highfrequency.png";
 
 export const Faq = () => {
   const generalRef = useRef(null);
