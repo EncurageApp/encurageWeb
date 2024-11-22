@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
 import CookieImg from "../imgs/encurage/cookies.png";
 import { Link } from "react-router-dom";
+import { CookieSettingsPopup } from "./CookieSettingsPopup";
 
 export const CookieConsentBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -14,6 +16,18 @@ export const CookieConsentBanner = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleSettingsClick = () => {
+    setShowSettings(true);
+  };
+
+  const handleCloseSettings = () => {
+    setShowSettings(false);
+  };
+
+  const handleLinkClick = () => {
+    setShowBanner(false);
+  };
+
   return (
     <>
       {showBanner && (
@@ -21,17 +35,15 @@ export const CookieConsentBanner = () => {
           location="bottom"
           overlay
           overlayStyle={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
-          buttonText="Accept!"
+          buttonText="Accept All"
           cookieName="EnCurage Cookies"
           enableDeclineButton
-          declineButtonText="Decline (Optional)"
+          declineButtonText="Manage Cookie Preferences"
           flipButtons
           onAccept={() => {
             console.log("User Accepted Cookies");
           }}
-          onDecline={() => {
-            console.log("User Declined Cookies");
-          }}
+          onDecline={handleSettingsClick}
           style={{
             background: "#008080",
             display: "flex",
@@ -81,15 +93,28 @@ export const CookieConsentBanner = () => {
                 margin: "0 auto",
               }}
             >
-              This website uses cookies to improve our users' experience. Click
-              'Accept' to Help us Out! Questions about Cookies? Visit Our
-              Privacy Policy to{" "}
-              <Link to="/HelpCenterLayout" className="cookie-btn">
-                Learn More
+              We use cookies to enable core functionalities of this website, and
+              improve your browsing experience. Some cookies are essential to
+              maintain basic functionality, and are listed as “necessary”. You
+              can manage your preferences for other types of cookies by tapping
+              the “manage cookie preferences” button below. Visit our
+              <Link
+                to="/HelpCenterLayout"
+                className="cookie-btn"
+                onClick={handleLinkClick}
+              >
+                Privacy Policy
               </Link>
+              to learn more.
             </p>
           </div>
         </CookieConsent>
+      )}
+      {showSettings && (
+        <>
+          <div className="overlay"></div>
+          <CookieSettingsPopup onClose={handleCloseSettings} />
+        </>
       )}
     </>
   );

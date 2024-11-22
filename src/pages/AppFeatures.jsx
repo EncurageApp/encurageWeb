@@ -1,7 +1,9 @@
-import React from "react";
+/* EXPLORE PAGE */
+
+import React, { useRef } from "react";
+import { IPhoneFrame } from "react-framify";
 
 //components
-import { AppCarousel } from "../components/AppCarousel";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 
@@ -41,12 +43,32 @@ import HighFrequency from "../imgs/icons/highfrequency.png";
 import DailyLife from "../imgs/icons/dailylife.png";
 
 export const AppFeatures = () => {
+  const asNeededRef = useRef(null);
+  const scheduledRef = useRef(null);
+  const trackingRef = useRef(null);
+  const careGiverRef = useRef(null);
+  const healthRef = useRef(null);
+  const babyRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const aNWSlides = [ANW1, ANW2, ANW3, ANW4];
+  const eOASSlides = [EOAS1, EOAS2, EOAS3];
+  const tHSlides = [TH1, TH2, TH3, TH4];
+  const cFSlides = [CF1];
+  const jSlides = [J1, J2, J3, J4];
+  const dLSlides = [DL1, DL2, DL3, DL4];
+
   return (
     <main className="appFeatures-page">
       <section className="af-hero-container">
         <div className="af-hero-container-img"></div>
         <div className="af-hero-container-text">
-          <h2 data-aos="fade-in" data-aos-delay="500">
+          <h2 data-aos="fade-in" data-aos-delay="'100%'">
             Just Add TLC
           </h2>
 
@@ -62,41 +84,59 @@ export const AppFeatures = () => {
 
       <section className="features-container">
         <div className="feature-card-wrapper">
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(asNeededRef)}
+            className="feature-card "
+          >
             <div>
               <h3>As-Needed Medication Management</h3>
             </div>
             <img src={HighFrequency} width={60} alt="thermometer" />
           </div>
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(scheduledRef)}
+            className="feature-card "
+          >
             <h3>Scheduled Medication Management</h3>
             <img src={Schedule} width={60} alt="pill with arrow around it" />
           </div>
-          <div className="feature-card">
+          <div
+            onClick={() => scrollToSection(healthRef)}
+            className="feature-card"
+          >
             <h3>Comprehensive Health Tracking Tool</h3>
             <img src={Heart} width={60} alt="clipboard with heart" />
           </div>
 
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(careGiverRef)}
+            className="feature-card "
+          >
             <h3>Caregivers Management</h3>
             <img src={People} width={60} alt="3 caregiver" />
           </div>
 
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(healthRef)}
+            className="feature-card "
+          >
             <h3>Health Journal</h3>
             <img src={Journal} width={60} alt="journal pad" />
           </div>
 
-          <div className="feature-card ">
+          <div
+            onClick={() => scrollToSection(babyRef)}
+            className="feature-card "
+          >
             <h3>Baby Tracker</h3>
             <img src={DailyLife} width={60} alt="pill with arrow around it" />
           </div>
         </div>
       </section>
 
-      <section className="as-needed-wizard">
+      <section ref={asNeededRef} className="as-needed-wizard">
         <h2>What's Inside</h2>
-        <div>
+        <div className="description-container">
           <div className="anw-info">
             <h3>As-Needed Wizard</h3>
             <p>
@@ -111,16 +151,19 @@ export const AppFeatures = () => {
               calculating.
             </p>
           </div>
-          <AppCarousel>
-            <img src={ANW1} height={500} alt="tracking hub screen" />
-            <img src={ANW2} height={500} alt="tracking hub screen" />
-            <img src={ANW3} height={500} alt="tracking hub screen" />
-            <img src={ANW4} height={500} alt="tracking hub screen" />
-          </AppCarousel>
+          <div>
+            <IPhoneFrame
+              screenshotList={aNWSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
+            />
+          </div>
         </div>
       </section>
 
-      <section className="eos">
+      <section ref={scheduledRef} className="eos">
         <div>
           <div className="eos-info">
             <h3>Everything on a Schedule</h3>
@@ -131,27 +174,19 @@ export const AppFeatures = () => {
               types.
             </p>
           </div>
-          <AppCarousel>
-            <img
-              src={EOAS1}
-              height={720}
-              alt="Everything on a schedule screen"
+          <div>
+            <IPhoneFrame
+              screenshotList={eOASSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
             />
-            <img
-              src={EOAS2}
-              height={500}
-              alt="Everything on a schedule screen"
-            />
-            <img
-              src={EOAS3}
-              height={500}
-              alt="Everything on a schedule screen"
-            />
-          </AppCarousel>
+          </div>
         </div>
       </section>
 
-      <section className="tracking-hub">
+      <section ref={trackingRef} className="tracking-hub">
         <div>
           <div className="tracking-info">
             <h3>Tracking Hub</h3>
@@ -167,12 +202,15 @@ export const AppFeatures = () => {
               navigate a sea of data easily and effectively.
             </p>
           </div>
-          <AppCarousel>
-            <img src={TH1} height={800} alt="Tracking Hub screen" />
-            <img src={TH2} height={600} alt="Tracking Hub screen" />
-            <img src={TH3} height={500} alt="Tracking Hub screen" />
-            <img src={TH4} height={700} alt="Tracking Hub screen" />
-          </AppCarousel>
+          <div>
+            <IPhoneFrame
+              screenshotList={tHSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
+            />
+          </div>
         </div>
       </section>
 
@@ -182,7 +220,7 @@ export const AppFeatures = () => {
         <AppStoreBtn />
       </div>
 
-      <section className="care-family">
+      <section ref={careGiverRef} className="care-family">
         <div>
           <div className="cf-info">
             <h3>Caring Together</h3>
@@ -195,13 +233,19 @@ export const AppFeatures = () => {
               of a button.
             </p>
           </div>
-          <AppCarousel>
-            <img src={CF1} height={550} alt="Care Family screen" />
-          </AppCarousel>
+          <div>
+            <IPhoneFrame
+              screenshotList={cFSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
+            />
+          </div>
         </div>
       </section>
 
-      <section className="journal">
+      <section ref={healthRef} className="journal">
         <div>
           <div className="j-info">
             <h3>Journal</h3>
@@ -220,18 +264,22 @@ export const AppFeatures = () => {
               treatment plan for your child.
             </p>
           </div>
-          <AppCarousel>
-            <img src={J1} width={225} alt="Journal app screen" />
-            <img src={J2} width={230} alt="Journal app screen" />
-            <img src={J3} width={150} alt="Journal app screen" />
-            <img src={J4} width={250} alt="Journal app screen" />
-          </AppCarousel>
+          <div>
+            <IPhoneFrame
+              screenshotList={jSlides}
+              deviceColor="black"
+              orientation="portrait"
+              statusBar={{ mode: "dark" }}
+              buttonStyles={{ backgroundColor: "teal" }}
+            />
+          </div>
         </div>
       </section>
 
-      <section className="daily-life">
+      <section ref={babyRef} className="baby-life">
+        <div className="coming-soon-banner"></div>
         <div>
-          <div className="dl-info">
+          <div className="bl-info">
             <h3>Baby Life</h3>
             <p>
               A complete baby tracker with easy and efficient tracking tools for
@@ -243,12 +291,17 @@ export const AppFeatures = () => {
               training journey.
             </p>
           </div>
-          <AppCarousel>
-            <img src={DL1} width={230} alt="daily life app screen" />
-            <img src={DL2} width={230} alt="daily life app screen" />
-            <img src={DL3} width={180} alt="daily life app screen" />
-            <img src={DL4} width={230} alt="daily life app screen" />
-          </AppCarousel>
+          <div>
+            <div>
+              <IPhoneFrame
+                screenshotList={dLSlides}
+                deviceColor="black"
+                orientation="portrait"
+                statusBar={{ mode: "dark" }}
+                buttonStyles={{ backgroundColor: "teal" }}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>

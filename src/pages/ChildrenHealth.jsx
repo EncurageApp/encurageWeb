@@ -1,5 +1,4 @@
 // Components
-
 import { ChildrenStats } from "../components/ChildrenStats";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";

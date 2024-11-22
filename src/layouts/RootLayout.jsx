@@ -116,6 +116,7 @@ export const RootLayout = () => {
           </div>
         </header>
       </Headroom>
+
       <main>
         <Outlet />
         <CookieConsentBanner />

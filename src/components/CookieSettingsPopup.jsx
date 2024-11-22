@@ -1,23 +1,14 @@
-import React from "react";
+import { useState } from "react";
 
 export const CookieSettingsPopup = ({ onClose }) => {
-  // State variables to track the enabled/disabled status of each type of cookie
-  const [marketingCookiesEnabled, setMarketingCookiesEnabled] = useState(true);
   const [functionalCookiesEnabled, setFunctionalCookiesEnabled] =
     useState(true);
   const [analyticCookiesEnabled, setAnalyticCookiesEnabled] = useState(true);
 
-  // Function to handle toggling of marketing cookies
-  const toggleMarketingCookies = () => {
-    setMarketingCookiesEnabled(!marketingCookiesEnabled);
-  };
-
-  // Function to handle toggling of functional cookies
   const toggleFunctionalCookies = () => {
     setFunctionalCookiesEnabled(!functionalCookiesEnabled);
   };
 
-  // Function to handle toggling of analytic cookies
   const toggleAnalyticCookies = () => {
     setAnalyticCookiesEnabled(!analyticCookiesEnabled);
   };
@@ -25,24 +16,19 @@ export const CookieSettingsPopup = ({ onClose }) => {
   return (
     <div className="cookie-settings-popup">
       <button className="close-button" onClick={onClose}>
-        Close
+        X
       </button>
-      <h3>Cookie Settings</h3>
+      <h3>Advanced Cookie Settings</h3>
       <div className="cookie-option">
-        <h4>Marketing Cookies</h4>
-        <p>Enable cookies for targeted marketing campaigns.</p>
-        <label className="switch">
-          <input
-            type="checkbox"
-            checked={marketingCookiesEnabled}
-            onChange={toggleMarketingCookies}
-          />
-          <span className="slider round"></span>
-        </label>
+        <h4>Necessary</h4>
+        <p>
+          Enabling basic essential functionalities.
+          <span> (Always Active)</span>
+        </p>
       </div>
       <div className="cookie-option">
-        <h4>Functional Cookies</h4>
-        <p>Enable cookies for additional website functionality.</p>
+        <h4>Functional</h4>
+        <p>Enabling additional website functionalities.</p>
         <label className="switch">
           <input
             type="checkbox"
@@ -53,8 +39,12 @@ export const CookieSettingsPopup = ({ onClose }) => {
         </label>
       </div>
       <div className="cookie-option">
-        <h4>Analytic Cookies</h4>
-        <p>Enable cookies for website traffic analysis.</p>
+        <h4>Analytic</h4>
+        <p>
+          Helping us understand how visitors interact with the website, and
+          provide metrics that contribute to overall improvement of visitors’
+          experience.
+        </p>
         <label className="switch">
           <input
             type="checkbox"
@@ -64,6 +54,10 @@ export const CookieSettingsPopup = ({ onClose }) => {
           <span className="slider round"></span>
         </label>
       </div>
+
+      <button className="accept-button" onClick={onClose}>
+        Save My Preferences
+      </button>
     </div>
   );
 };
