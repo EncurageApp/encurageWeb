@@ -20,6 +20,7 @@ import { Contact } from "./pages/faq/Contact";
 import { Terms } from "./pages/faq/Terms";
 import { Privacy } from "./pages/faq/Privacy";
 import { AppFeatures } from "./pages/AppFeatures";
+import { DataPolicy } from "./pages/faq/DataPolicy";
 
 //Router
 const router = createBrowserRouter(
@@ -39,6 +40,7 @@ const router = createBrowserRouter(
         <Route path="Faq" element={<Faq />} />
         <Route path="Terms" element={<Terms />} />
         <Route path="Privacy" element={<Privacy />} />
+        <Route path="DataPolicy" element={<DataPolicy />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

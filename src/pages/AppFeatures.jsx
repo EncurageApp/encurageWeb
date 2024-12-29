@@ -6,8 +6,10 @@ import { IPhoneFrame } from "react-framify";
 //components
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
+import { DualAppFeature } from "../components/DualAppFeatures";
 
 //images
+
 import ANW1 from "../imgs/appFeatureScreens/ANW/ANW1.png";
 import ANW2 from "../imgs/appFeatureScreens/ANW/ANW2.png";
 import ANW3 from "../imgs/appFeatureScreens/ANW/ANW3.png";
@@ -51,17 +53,20 @@ export const AppFeatures = () => {
   const babyRef = useRef(null);
 
   const scrollToSection = (ref) => {
-    if (ref.current) {
+    if (ref?.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error("Invalid ref: Cannot scroll to section");
     }
   };
 
-  const aNWSlides = [ANW1, ANW2, ANW3, ANW4];
-  const eOASSlides = [EOAS1, EOAS2, EOAS3];
-  const tHSlides = [TH1, TH2, TH3, TH4];
-  const cFSlides = [CF1];
-  const jSlides = [J1, J2, J3, J4];
-  const dLSlides = [DL1, DL2, DL3, DL4];
+  //arrays
+  const ANWarray = [ANW1, ANW2, ANW3, ANW4];
+  const EOASarray = [EOAS1, EOAS2, EOAS3];
+  const THarray = [TH1, TH2, TH3, TH4];
+  const CFarray = [CF1];
+  const Jarray = [J1, J2, J3, J4];
+  const DLarray = [DL1, DL2, DL3, DL4];
 
   return (
     <main className="appFeatures-page">
@@ -136,7 +141,7 @@ export const AppFeatures = () => {
 
       <section ref={asNeededRef} className="as-needed-wizard">
         <h2>What's Inside</h2>
-        <div className="description-container">
+        <div>
           <div className="anw-info">
             <h3>As-Needed Wizard</h3>
             <p>
@@ -152,13 +157,7 @@ export const AppFeatures = () => {
             </p>
           </div>
           <div>
-            <IPhoneFrame
-              screenshotList={aNWSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
+            <DualAppFeature images={ANWarray} width={200} height={400} />
           </div>
         </div>
       </section>
@@ -173,15 +172,6 @@ export const AppFeatures = () => {
               specific solutions for short-term and ongoing treatments of all
               types.
             </p>
-          </div>
-          <div>
-            <IPhoneFrame
-              screenshotList={eOASSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
           </div>
         </div>
       </section>
@@ -201,15 +191,6 @@ export const AppFeatures = () => {
               information for you and your child’s pediatrician, and helping you
               navigate a sea of data easily and effectively.
             </p>
-          </div>
-          <div>
-            <IPhoneFrame
-              screenshotList={tHSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
           </div>
         </div>
       </section>
@@ -233,15 +214,6 @@ export const AppFeatures = () => {
               of a button.
             </p>
           </div>
-          <div>
-            <IPhoneFrame
-              screenshotList={cFSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
-          </div>
         </div>
       </section>
 
@@ -264,20 +236,14 @@ export const AppFeatures = () => {
               treatment plan for your child.
             </p>
           </div>
-          <div>
-            <IPhoneFrame
-              screenshotList={jSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
-          </div>
         </div>
       </section>
 
+      <div className="coming-soon-banner">
+        <h4 className="banner-text">Coming Soon!</h4>
+      </div>
+
       <section ref={babyRef} className="baby-life">
-        <div className="coming-soon-banner"></div>
         <div>
           <div className="bl-info">
             <h3>Baby Life</h3>
@@ -291,17 +257,7 @@ export const AppFeatures = () => {
               training journey.
             </p>
           </div>
-          <div>
-            <div>
-              <IPhoneFrame
-                screenshotList={dLSlides}
-                deviceColor="black"
-                orientation="portrait"
-                statusBar={{ mode: "dark" }}
-                buttonStyles={{ backgroundColor: "teal" }}
-              />
-            </div>
-          </div>
+          <div></div>
         </div>
       </section>
     </main>

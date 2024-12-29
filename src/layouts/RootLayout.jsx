@@ -121,7 +121,7 @@ export const RootLayout = () => {
         <Outlet />
         <CookieConsentBanner />
         {loading && <LoaderAnimation />}
-        <ScrollToTop smooth />
+        <ScrollToTop smooth style={{ zIndex: 99 }} />
       </main>
 
       <footer>

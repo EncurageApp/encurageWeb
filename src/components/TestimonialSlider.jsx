@@ -6,7 +6,7 @@ const testimonialData = [
     quote:
       "Encurage streamlines managing our child's medication with ease. Its user-friendly interface, reminders, and ability to track multiple medications have simplified our lives, giving us peace of mind.",
     author: " Shane Horton",
-    role: "Father Of Two",
+    role: "Father Of Three",
   },
   {
     quote:

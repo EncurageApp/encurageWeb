@@ -40,6 +40,10 @@ export const HelpCenterLayout = () => {
         <NavLink to="Privacy" className="hcNavLink" onClick={scrollToOutlet}>
           Privacy Policy
         </NavLink>
+        <NavLink to="DataPolicy" className="hcNavLink" onClick={scrollToOutlet}>
+          Consumer Health <br />
+          Data Privacy Policy
+        </NavLink>
       </div>
 
       <div ref={outletRef}>
