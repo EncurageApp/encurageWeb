@@ -1,12 +1,10 @@
 /* EXPLORE PAGE */
 
 import React, { useRef } from "react";
-import { IPhoneFrame } from "react-framify";
 
 //components
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
-import { DualAppFeature } from "../components/DualAppFeatures";
 
 //images
 
@@ -31,10 +29,10 @@ import J2 from "../imgs/appFeatureScreens/Journal/Journal2.png";
 import J3 from "../imgs/appFeatureScreens/Journal/Journal3.png";
 import J4 from "../imgs/appFeatureScreens/Journal/Journal4.png";
 
-import DL1 from "../imgs/appFeatureScreens/DailyLife/DL1.png";
-import DL2 from "../imgs/appFeatureScreens/DailyLife/DL2.png";
-import DL3 from "../imgs/appFeatureScreens/DailyLife/DL3.png";
-import DL4 from "../imgs/appFeatureScreens/DailyLife/DL4.png";
+import BL1 from "../imgs/appFeatureScreens/DailyLife/DL1.png";
+import BL2 from "../imgs/appFeatureScreens/DailyLife/DL2.png";
+import BL3 from "../imgs/appFeatureScreens/DailyLife/DL3.png";
+import BL4 from "../imgs/appFeatureScreens/DailyLife/DL4.png";
 
 //icons
 import Journal from "../imgs/icons/journal.png";
@@ -59,14 +57,6 @@ export const AppFeatures = () => {
       console.error("Invalid ref: Cannot scroll to section");
     }
   };
-
-  //arrays
-  const ANWarray = [ANW1, ANW2, ANW3, ANW4];
-  const EOASarray = [EOAS1, EOAS2, EOAS3];
-  const THarray = [TH1, TH2, TH3, TH4];
-  const CFarray = [CF1];
-  const Jarray = [J1, J2, J3, J4];
-  const DLarray = [DL1, DL2, DL3, DL4];
 
   return (
     <main className="appFeatures-page">
@@ -156,8 +146,29 @@ export const AppFeatures = () => {
               calculating.
             </p>
           </div>
-          <div>
-            <DualAppFeature images={ANWarray} width={200} height={400} />
+          <div className="img-container anw-img-container">
+            <div className="img-inner">
+              <img
+                className="screen anw-screen-1"
+                src={ANW4}
+                alt="as needed feature example"
+              />
+              <img
+                className="screen anw-screen-2"
+                src={ANW3}
+                alt="as needed feature example"
+              />
+              <img
+                className="screen anw-screen-3"
+                src={ANW2}
+                alt="as needed feature example"
+              />
+              <img
+                className="screen anw-screen-4"
+                src={ANW1}
+                alt="as needed feature example"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -172,6 +183,26 @@ export const AppFeatures = () => {
               specific solutions for short-term and ongoing treatments of all
               types.
             </p>
+          </div>
+          <div className="img-container eos-img-container">
+            <div className="img-inner">
+              <img
+                className="screen eos-screen-2"
+                src={EOAS2}
+                alt="everything on a schedule screen example"
+              />
+              <div className="screen eos-screen-1">
+                <img
+                  src={EOAS1}
+                  alt="everything on a schedule screen example"
+                />
+              </div>
+              <img
+                className="screen eos-screen-3"
+                src={EOAS3}
+                alt="everything on a schedule screen example"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -191,6 +222,22 @@ export const AppFeatures = () => {
               information for you and your child’s pediatrician, and helping you
               navigate a sea of data easily and effectively.
             </p>
+          </div>
+          <div className="img-container th-img-container">
+            <div className="img-inner">
+              <div className="screen th-screen-1">
+                <img src={TH1} alt="tracking-hub screen example" />
+              </div>
+              <div className="screen th-screen-2">
+                <img src={TH2} alt="tracking-hub screen example" />
+              </div>
+              <div className="screen th-screen-3">
+                <img src={TH4} alt="tracking-hub screen example" />
+              </div>
+              <div className="screen th-screen-4">
+                <img src={TH3} alt="tracking-hub screen example" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -214,6 +261,15 @@ export const AppFeatures = () => {
               of a button.
             </p>
           </div>
+          <div className="img-container cf-img-container">
+            <div className="img-inner">
+              <img
+                className="screen cf-screen-1"
+                src={CF1}
+                alt="as needed feature example"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -222,7 +278,7 @@ export const AppFeatures = () => {
           <div className="j-info">
             <h3>Journal</h3>
             <p>
-              Follow and monitor your child’s experience with medications and
+              Follow and monitor your child's experience with medications and
               other treatments. How they react to a medication or treatment, the
               progress they are making, and their physical and emotional well
               being.
@@ -235,6 +291,22 @@ export const AppFeatures = () => {
               provide you with valuable insights, and help in shaping the best
               treatment plan for your child.
             </p>
+          </div>
+          <div className="img-container j-img-container">
+            <div className="img-inner">
+              <div className="screen j-screen-1">
+                <img src={J1} alt="journal screen example" />
+              </div>
+              <div className="screen j-screen-2">
+                <img src={J2} alt="journal screen example" />
+              </div>
+              <div className="screen j-screen-3">
+                <img src={J3} alt="journal screen example" />
+              </div>
+              <div className="screen j-screen-4">
+                <img src={J4} alt="journal screen example" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -257,7 +329,22 @@ export const AppFeatures = () => {
               training journey.
             </p>
           </div>
-          <div></div>
+          <div className="img-container bl-img-container">
+            <div className="img-inner">
+              <div className="screen bl-screen-1">
+                <img src={BL1} alt="baby life screen example" />
+              </div>
+              <div className="screen bl-screen-2">
+                <img src={BL2} alt="baby life screen example" />
+              </div>
+              <div className="screen bl-screen-3">
+                <img src={BL3} alt="baby life screen example" />
+              </div>
+              <div className="screen bl-screen-4">
+                <img src={BL4} alt="baby life screen example" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
