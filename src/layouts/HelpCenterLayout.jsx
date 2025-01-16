@@ -28,17 +28,37 @@ export const HelpCenterLayout = () => {
       </section>
 
       <div className="hc-nav-container">
-        <NavLink to="Contact" className="hcNavLink" onClick={scrollToOutlet}>
+        <NavLink
+          to="Contact"
+          className="hcNavLink hcnl1"
+          onClick={scrollToOutlet}
+        >
           Contact Us
         </NavLink>
-        <NavLink to="Faq" className="hcNavLink" onClick={scrollToOutlet}>
+        <NavLink to="Faq" className="hcNavLink hcnl2" onClick={scrollToOutlet}>
           FAQ's
         </NavLink>
-        <NavLink to="Terms" className="hcNavLink" onClick={scrollToOutlet}>
+        <NavLink
+          to="Terms"
+          className="hcNavLink hcnl3"
+          onClick={scrollToOutlet}
+        >
           Terms & Conditions
         </NavLink>
-        <NavLink to="Privacy" className="hcNavLink" onClick={scrollToOutlet}>
+        <NavLink
+          to="Privacy"
+          className="hcNavLink hcnl4"
+          onClick={scrollToOutlet}
+        >
           Privacy Policy
+        </NavLink>
+        <NavLink
+          to="DataPolicy"
+          className="hcNavLink 5"
+          onClick={scrollToOutlet}
+        >
+          Consumer Health <br />
+          Data Privacy Policy
         </NavLink>
       </div>
 

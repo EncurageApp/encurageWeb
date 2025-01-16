@@ -47,9 +47,21 @@ export const RootLayout = () => {
     });
   }, []);
 
+  const scrollToOutlet = () => {
+    const element = document.querySelector(".help-layout");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleCopyRightLinkClick = () => {
+    handleQuickLinkClick();
+    scrollToOutlet();
+  };
+
   return (
     <div className="root-layout">
-      <Headroom disableInlineStyles upTolerance={50} downTolerance={50}>
+      <Headroom disableInlineStyles upTolerance={80} downTolerance={50}>
         <header>
           <nav>
             <div className="nav-header">
@@ -121,7 +133,7 @@ export const RootLayout = () => {
         <Outlet />
         <CookieConsentBanner />
         {loading && <LoaderAnimation />}
-        <ScrollToTop smooth />
+        <ScrollToTop smooth style={{ zIndex: 99 }} />
       </main>
 
       <footer>
@@ -166,11 +178,30 @@ export const RootLayout = () => {
               &#169; Copyright 2024 Myrtus Enterprises LLC. All rights reserved.
             </p>
             <div className="terms-privacy">
-              <NavLink to="HelpCenterLayout">Terms & Conditions </NavLink>
+              <NavLink
+                onClick={handleCopyRightLinkClick}
+                to="/HelpCenterLayout"
+              >
+                Terms & Conditions
+              </NavLink>
               <span>|</span>
-              <NavLink to="HelpCenterLayout">Privacy Policy</NavLink>
+              <NavLink
+                onClick={handleCopyRightLinkClick}
+                to="/HelpCenterLayout"
+              >
+                Privacy Policy
+              </NavLink>
+            </div>
+            <div className="terms-privacy">
+              <NavLink
+                onClick={handleCopyRightLinkClick}
+                to="/HelpCenterLayout"
+              >
+                Consumer Health Data Privacy Policy
+              </NavLink>
             </div>
           </div>
+
           <div className="social-icons">
             <SocialMediaIcons />
           </div>

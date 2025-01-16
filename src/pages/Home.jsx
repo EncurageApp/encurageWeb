@@ -26,15 +26,17 @@ export const Home = () => {
           <h2 data-aos="fade-in" data-aos-delay="500">
             Manage and track your child's health.
           </h2>
-          <p data-aos="fade-in" data-aos-delay="1000">
-            Easily.
-          </p>
-          <p data-aos="fade-in" data-aos-delay="2000">
-            Safely.
-          </p>
-          <p data-aos="fade-in" data-aos-delay="3000">
-            Effectively.
-          </p>
+          <div>
+            <p data-aos="fade-in" data-aos-delay="1000">
+              Easily.
+            </p>
+            <p data-aos="fade-in" data-aos-delay="2000">
+              Safely.
+            </p>
+            <p data-aos="fade-in" data-aos-delay="3000">
+              Effectively.
+            </p>
+          </div>
         </div>
       </section>
 

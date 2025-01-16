@@ -1,13 +1,13 @@
 /* EXPLORE PAGE */
 
 import React, { useRef } from "react";
-import { IPhoneFrame } from "react-framify";
 
 //components
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 
 //images
+
 import ANW1 from "../imgs/appFeatureScreens/ANW/ANW1.png";
 import ANW2 from "../imgs/appFeatureScreens/ANW/ANW2.png";
 import ANW3 from "../imgs/appFeatureScreens/ANW/ANW3.png";
@@ -29,10 +29,10 @@ import J2 from "../imgs/appFeatureScreens/Journal/Journal2.png";
 import J3 from "../imgs/appFeatureScreens/Journal/Journal3.png";
 import J4 from "../imgs/appFeatureScreens/Journal/Journal4.png";
 
-import DL1 from "../imgs/appFeatureScreens/DailyLife/DL1.png";
-import DL2 from "../imgs/appFeatureScreens/DailyLife/DL2.png";
-import DL3 from "../imgs/appFeatureScreens/DailyLife/DL3.png";
-import DL4 from "../imgs/appFeatureScreens/DailyLife/DL4.png";
+import BL1 from "../imgs/appFeatureScreens/DailyLife/DL1.png";
+import BL2 from "../imgs/appFeatureScreens/DailyLife/DL2.png";
+import BL3 from "../imgs/appFeatureScreens/DailyLife/DL3.png";
+import BL4 from "../imgs/appFeatureScreens/DailyLife/DL4.png";
 
 //icons
 import Journal from "../imgs/icons/journal.png";
@@ -51,17 +51,12 @@ export const AppFeatures = () => {
   const babyRef = useRef(null);
 
   const scrollToSection = (ref) => {
-    if (ref.current) {
+    if (ref?.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error("Invalid ref: Cannot scroll to section");
     }
   };
-
-  const aNWSlides = [ANW1, ANW2, ANW3, ANW4];
-  const eOASSlides = [EOAS1, EOAS2, EOAS3];
-  const tHSlides = [TH1, TH2, TH3, TH4];
-  const cFSlides = [CF1];
-  const jSlides = [J1, J2, J3, J4];
-  const dLSlides = [DL1, DL2, DL3, DL4];
 
   return (
     <main className="appFeatures-page">
@@ -136,7 +131,7 @@ export const AppFeatures = () => {
 
       <section ref={asNeededRef} className="as-needed-wizard">
         <h2>What's Inside</h2>
-        <div className="description-container">
+        <div>
           <div className="anw-info">
             <h3>As-Needed Wizard</h3>
             <p>
@@ -151,14 +146,29 @@ export const AppFeatures = () => {
               calculating.
             </p>
           </div>
-          <div>
-            <IPhoneFrame
-              screenshotList={aNWSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
+          <div className="img-container anw-img-container">
+            <div className="img-inner">
+              <img
+                className="screen anw-screen-1"
+                src={ANW4}
+                alt="as needed feature example"
+              />
+              <img
+                className="screen anw-screen-2"
+                src={ANW3}
+                alt="as needed feature example"
+              />
+              <img
+                className="screen anw-screen-3"
+                src={ANW2}
+                alt="as needed feature example"
+              />
+              <img
+                className="screen anw-screen-4"
+                src={ANW1}
+                alt="as needed feature example"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -174,14 +184,25 @@ export const AppFeatures = () => {
               types.
             </p>
           </div>
-          <div>
-            <IPhoneFrame
-              screenshotList={eOASSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
+          <div className="img-container eos-img-container">
+            <div className="img-inner">
+              <img
+                className="screen eos-screen-2"
+                src={EOAS2}
+                alt="everything on a schedule screen example"
+              />
+              <div className="screen eos-screen-1">
+                <img
+                  src={EOAS1}
+                  alt="everything on a schedule screen example"
+                />
+              </div>
+              <img
+                className="screen eos-screen-3"
+                src={EOAS3}
+                alt="everything on a schedule screen example"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -202,14 +223,21 @@ export const AppFeatures = () => {
               navigate a sea of data easily and effectively.
             </p>
           </div>
-          <div>
-            <IPhoneFrame
-              screenshotList={tHSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
+          <div className="img-container th-img-container">
+            <div className="img-inner">
+              <div className="screen th-screen-1">
+                <img src={TH1} alt="tracking-hub screen example" />
+              </div>
+              <div className="screen th-screen-2">
+                <img src={TH2} alt="tracking-hub screen example" />
+              </div>
+              <div className="screen th-screen-3">
+                <img src={TH4} alt="tracking-hub screen example" />
+              </div>
+              <div className="screen th-screen-4">
+                <img src={TH3} alt="tracking-hub screen example" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -233,14 +261,14 @@ export const AppFeatures = () => {
               of a button.
             </p>
           </div>
-          <div>
-            <IPhoneFrame
-              screenshotList={cFSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
+          <div className="img-container cf-img-container">
+            <div className="img-inner">
+              <img
+                className="screen cf-screen-1"
+                src={CF1}
+                alt="as needed feature example"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -250,7 +278,7 @@ export const AppFeatures = () => {
           <div className="j-info">
             <h3>Journal</h3>
             <p>
-              Follow and monitor your child’s experience with medications and
+              Follow and monitor your child's experience with medications and
               other treatments. How they react to a medication or treatment, the
               progress they are making, and their physical and emotional well
               being.
@@ -264,20 +292,30 @@ export const AppFeatures = () => {
               treatment plan for your child.
             </p>
           </div>
-          <div>
-            <IPhoneFrame
-              screenshotList={jSlides}
-              deviceColor="black"
-              orientation="portrait"
-              statusBar={{ mode: "dark" }}
-              buttonStyles={{ backgroundColor: "teal" }}
-            />
+          <div className="img-container j-img-container">
+            <div className="img-inner">
+              <div className="screen j-screen-1">
+                <img src={J1} alt="journal screen example" />
+              </div>
+              <div className="screen j-screen-2">
+                <img src={J2} alt="journal screen example" />
+              </div>
+              <div className="screen j-screen-3">
+                <img src={J3} alt="journal screen example" />
+              </div>
+              <div className="screen j-screen-4">
+                <img src={J4} alt="journal screen example" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      <div className="coming-soon-banner">
+        <h4 className="banner-text">Coming Soon!</h4>
+      </div>
+
       <section ref={babyRef} className="baby-life">
-        <div className="coming-soon-banner"></div>
         <div>
           <div className="bl-info">
             <h3>Baby Life</h3>
@@ -291,15 +329,20 @@ export const AppFeatures = () => {
               training journey.
             </p>
           </div>
-          <div>
-            <div>
-              <IPhoneFrame
-                screenshotList={dLSlides}
-                deviceColor="black"
-                orientation="portrait"
-                statusBar={{ mode: "dark" }}
-                buttonStyles={{ backgroundColor: "teal" }}
-              />
+          <div className="img-container bl-img-container">
+            <div className="img-inner">
+              <div className="screen bl-screen-1">
+                <img src={BL1} alt="baby life screen example" />
+              </div>
+              <div className="screen bl-screen-2">
+                <img src={BL2} alt="baby life screen example" />
+              </div>
+              <div className="screen bl-screen-3">
+                <img src={BL3} alt="baby life screen example" />
+              </div>
+              <div className="screen bl-screen-4">
+                <img src={BL4} alt="baby life screen example" />
+              </div>
             </div>
           </div>
         </div>
