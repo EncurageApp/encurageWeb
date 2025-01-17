@@ -112,7 +112,7 @@ export const RootLayout = () => {
               <NavLink to={"Reviews"} onClick={handleQuickLinkClick}>
                 Reviews
               </NavLink>
-              <NavLink to={"HelpCenterLayout"} onClick={handleQuickLinkClick}>
+              <NavLink to={"helpcenter"} onClick={handleQuickLinkClick}>
                 Help Center
               </NavLink>
               <div className="nav-download-container">
@@ -162,7 +162,7 @@ export const RootLayout = () => {
             <NavLink to={"Reviews"} onClick={handleQuickLinkClick}>
               Reviews
             </NavLink>
-            <NavLink to={"HelpCenterLayout"} onClick={handleQuickLinkClick}>
+            <NavLink to={"helpcenter"} onClick={handleQuickLinkClick}>
               Help Center
             </NavLink>
           </ul>
@@ -178,25 +178,16 @@ export const RootLayout = () => {
               &#169; Copyright 2024 Myrtus Enterprises LLC. All rights reserved.
             </p>
             <div className="terms-privacy">
-              <NavLink
-                onClick={handleCopyRightLinkClick}
-                to="/HelpCenterLayout"
-              >
+              <NavLink onClick={handleCopyRightLinkClick} to="/helpcenter">
                 Terms & Conditions
               </NavLink>
               <span>|</span>
-              <NavLink
-                onClick={handleCopyRightLinkClick}
-                to="/HelpCenterLayout"
-              >
+              <NavLink onClick={handleCopyRightLinkClick} to="/helpcenter">
                 Privacy Policy
               </NavLink>
             </div>
             <div className="terms-privacy">
-              <NavLink
-                onClick={handleCopyRightLinkClick}
-                to="/HelpCenterLayout"
-              >
+              <NavLink onClick={handleCopyRightLinkClick} to="/helpcenter">
                 Consumer Health Data Privacy Policy
               </NavLink>
             </div>

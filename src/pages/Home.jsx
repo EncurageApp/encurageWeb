@@ -244,7 +244,7 @@ export const Home = () => {
             <br />
             Always make sure you are following your child’s healthcare team
             instructions and guidelines. Please read our
-            <NavLink to="HelpCenterLayout" className="disclaimer-terms-btn">
+            <NavLink to="helpcenter" className="disclaimer-terms-btn">
               Terms & Conditions
             </NavLink>
             for complete information.

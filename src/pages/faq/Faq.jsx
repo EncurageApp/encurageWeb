@@ -195,9 +195,8 @@ export const Faq = () => {
           <p>
             We take you and your child’s privacy very seriously, and treat it
             with the utmost respect. Please visit our
-            <Link to="/HelpCenterLayout/Privacy">Privacy Policy</Link> page to
-            read the full details about the handling of you and your child's
-            data.
+            <Link to="/helpcenter/Privacy">Privacy Policy</Link> page to read
+            the full details about the handling of you and your child's data.
           </p>
         </Collapsible>
         <Collapsible
