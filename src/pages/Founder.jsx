@@ -4,6 +4,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 //imgs
 import Hadas from "../imgs/encurage/hadas.jpg";
+import Cayden from "../imgs/encurage/cayden.jpg";
 import EmailIcon from "../imgs/encurage/email-icon.png";
 
 //components
@@ -79,7 +80,7 @@ export const Founder = () => {
           <div className="f-founder-img-container">
             <div>
               <img
-                src={Hadas}
+                src={Cayden}
                 alt="Founder of Company victor"
                 width={680}
                 height={510}
