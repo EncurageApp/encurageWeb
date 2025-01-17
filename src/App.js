@@ -7,7 +7,7 @@ import {
 
 //layouts
 import { RootLayout } from "./layouts/RootLayout";
-import { HelpCenterLayout } from "./layouts/HelpCenterLayout";
+import { HelpCenter } from "./layouts/HelpCenterLayout";
 
 //pages
 import { Home } from "./pages/Home";
@@ -35,7 +35,7 @@ const router = createBrowserRouter(
 
       <Route path="Reviews" element={<Reviews />} />
 
-      <Route path="HelpCenterLayout" element={<HelpCenterLayout />}>
+      <Route path="helpcenter" element={<HelpCenter />}>
         <Route path="Contact" element={<Contact />} />
         <Route path="Faq" element={<Faq />} />
         <Route path="Terms" element={<Terms />} />

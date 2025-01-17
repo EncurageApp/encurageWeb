@@ -99,7 +99,7 @@ export const CookieConsentBanner = () => {
               can manage your preferences for other types of cookies by tapping
               the “manage cookie preferences” button below. Visit our
               <Link
-                to="/HelpCenterLayout"
+                to="/helpcenter"
                 className="cookie-btn"
                 onClick={handleLinkClick}
               >

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-export const HelpCenterLayout = () => {
+export const HelpCenter = () => {
   const outletRef = useRef(null);
 
   const scrollToOutlet = () => {

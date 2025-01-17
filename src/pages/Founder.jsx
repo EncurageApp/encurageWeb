@@ -20,10 +20,15 @@ export const Founder = () => {
         <div>
           <div className="f-founder-img-container">
             <div>
-              <img src={Hadas} alt="Founder of Company Hadas" />
+              <img
+                src={Hadas}
+                alt="Founder of Company victor"
+                width={680}
+                height={510}
+                style={{ objectFit: "cover" }}
+              />
               <p className="founder-title">
-                {" "}
-                ~ Hadas Kanner-Golan, Co-founder and CEO ~{" "}
+                ~ Hadas Kanner-Golan, Co-founder and CEO ~
               </p>
             </div>
           </div>
@@ -73,10 +78,15 @@ export const Founder = () => {
         <div>
           <div className="f-founder-img-container">
             <div>
-              <img src={Hadas} alt="Founder of Company Hadas" />
+              <img
+                src={Hadas}
+                alt="Founder of Company victor"
+                width={680}
+                height={510}
+                style={{ objectFit: "cover" }}
+              />
               <p className="founder-title">
-                {" "}
-                ~ Victor Horton, Co-founder and CTO ~{" "}
+                ~ Victor Horton, Co-founder and CTO ~
               </p>
             </div>
           </div>
@@ -84,12 +94,28 @@ export const Founder = () => {
             <blockquote>
               <p>
                 <q>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Eaque dignissimos ipsum magni asperiores ut nisi provident
-                  ducimus praesentium aperiam adipisci quasi nihil,
-                  reprehenderit, deserunt temporibus aliquid tempore veniam!
-                  Magnam unde modi veritatis maxime quibusdam rerum! Officia
-                  veritatis ullam doloremque modi!
+                  Hi! My name is Victor. I am one of the co-founders of
+                  encurage. I helped create this app, inspired by my amazing
+                  child, Cayden, who was born with a rare congenital heart
+                  condition. Caring for Cayden meant tracking his medications,
+                  monitoring various vitals, and managing a complex care
+                  schedule—all while balancing life as a parent of four.
+                  <br />
+                  <br />
+                  Initially, I began building an app to address these needs, but
+                  life’s demands pulled me away. However, the idea never left
+                  me. I knew other families facing similar challenges could
+                  benefit from a tool specifically designed to support medically
+                  complex journeys.
+                  <br />
+                  <br />
+                  This vision became a reality when I partnered with Hadas, who
+                  brought her own experiences and passion for caregiving
+                  innovation to the table. Together, we combined insights from
+                  our families’ unique stories and created this app to empower
+                  other caregivers. It’s a tool born from compassion and
+                  determination, designed to help you navigate the challenges of
+                  caring for a loved one.
                 </q>
               </p>
               <br />
