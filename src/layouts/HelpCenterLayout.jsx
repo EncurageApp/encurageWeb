@@ -14,11 +14,11 @@ export const HelpCenter = () => {
     <main className="help-layout">
       <section className="hc-hero-container">
         <div className="hc-hero-container-text">
-          <h2 data-aos="fade-in" data-aos-delay="500">
+          <h2 data-aos="fade-in" data-aos-delay="400">
             Your Questions, answered.
           </h2>
 
-          <p data-aos="fade-in" data-aos-delay="2000">
+          <p data-aos="fade-in" data-aos-delay="700">
             Whether you’re looking for more information about our services and
             policies, have specific questions about the app, or want to get in
             touch with us, we gathered all assistance channels here for your

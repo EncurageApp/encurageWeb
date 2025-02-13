@@ -37,7 +37,10 @@ export const SocialMediaIcons = () => {
         >
           <FontAwesomeIcon icon={faFacebook} size={iconSize} />
         </a>
-        <a href="https://www.instagram.com/" className="instagram social">
+        <a
+          href="https://www.instagram.com/encurage_app/"
+          className="instagram social"
+        >
           <FontAwesomeIcon icon={faInstagram} size={iconSize} />
         </a>
         <a

@@ -41,8 +41,8 @@ export const RootLayout = () => {
   useEffect(() => {
     AOS.init({
       easing: "ease-out-quart",
-      delay: 800,
-      duration: 3000,
+      delay: 300,
+      duration: 1000,
       once: true,
     });
   }, []);

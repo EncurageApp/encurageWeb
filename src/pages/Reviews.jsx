@@ -17,10 +17,10 @@ export const Reviews = () => {
       <section className="review-hero-container">
         <div className="review-hero-container-img"></div>
         <div className="review-hero-container-text">
-          <h2 data-aos="fade-in" data-aos-delay="500">
+          <h2 data-aos="fade-in" data-aos-delay="400">
             Real reviews from parents like you
           </h2>
-          <p data-aos="fade-in" data-aos-delay="2000">
+          <p data-aos="fade-in" data-aos-delay="700">
             Experiences shared by parents on the App Store that
             <span> every family can identify with. </span>
           </p>

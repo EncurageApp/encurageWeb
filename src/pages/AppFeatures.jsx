@@ -63,11 +63,11 @@ export const AppFeatures = () => {
       <section className="af-hero-container">
         <div className="af-hero-container-img"></div>
         <div className="af-hero-container-text">
-          <h2 data-aos="fade-in" data-aos-delay="'100%'">
+          <h2 data-aos="fade-in" data-aos-delay="400">
             Just Add TLC
           </h2>
 
-          <p data-aos="fade-in" data-aos-delay="2000">
+          <p data-aos="fade-in" data-aos-delay="700">
             Every aspect of caring for your child at home has its own dedicated
             feature, built and designed for{" "}
             <span>the needs of your family</span>, following
