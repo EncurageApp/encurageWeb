@@ -23,17 +23,17 @@ export const Home = () => {
         <div className="home-hero-container-img"></div>
 
         <div className="home-hero-container-text">
-          <h2 data-aos="fade-in" data-aos-delay="500">
+          <h2 data-aos="fade-in" data-aos-delay="300">
             Manage and track your child's health.
           </h2>
           <div>
-            <p data-aos="fade-in" data-aos-delay="1000">
+            <p data-aos="fade-in" data-aos-delay="700">
               Easily.
             </p>
-            <p data-aos="fade-in" data-aos-delay="2000">
+            <p data-aos="fade-in" data-aos-delay="1000">
               Safely.
             </p>
-            <p data-aos="fade-in" data-aos-delay="3000">
+            <p data-aos="fade-in" data-aos-delay="1300">
               Effectively.
             </p>
           </div>
@@ -230,7 +230,7 @@ export const Home = () => {
         <TestimonialSlider />
       </section>
 
-      <section data-aos="fade-in" className="disclaimer-container">
+      <section className="disclaimer-container">
         <div className="disclaimer">
           <p>
             <span>IMPORTANT: </span> Encurage is here to help you track and

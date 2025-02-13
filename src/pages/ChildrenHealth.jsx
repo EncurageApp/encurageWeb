@@ -29,11 +29,11 @@ export const ChildrenHealth = () => {
         <div className="ch-hero-container-img"></div>
 
         <div className="ch-hero-container-text">
-          <h2 data-aos="fade-in" data-aos-delay="500">
+          <h2 data-aos="fade-in" data-aos-delay="400">
             It's Complicated
           </h2>
 
-          <p data-aos="fade-in" data-aos-delay="2000">
+          <p data-aos="fade-in" data-aos-delay="700">
             Managing your child’s health involves wearing many hats and taking
             care of multiple tasks every day, year round.
             <br />
