@@ -1,5 +1,6 @@
+import { useRef, useEffect } from "react";
+import ReactGA from "react-ga4";
 import { Link } from "react-router-dom";
-import { useRef } from "react";
 import Collapsible from "react-collapsible";
 
 //Icons
@@ -14,6 +15,10 @@ import People from "../../imgs/icons/3people.png";
 import HighFrequency from "../../imgs/icons/highfrequency.png";
 
 export const Faq = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   const generalRef = useRef(null);
   const accountRef = useRef(null);
   const childrenProfileRef = useRef(null);

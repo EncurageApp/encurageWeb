@@ -1,7 +1,13 @@
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 import { IoMdSettings } from "react-icons/io";
 import { IoMdChatbubbles } from "react-icons/io";
 
 export const Contact = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   return (
     <main className="contact-page">
       <div className="contact-inner">

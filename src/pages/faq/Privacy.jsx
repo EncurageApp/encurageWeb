@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga4";
 
 export const Privacy = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   return (
     <div className="privacy-policy">
       <h2>Privacy Policy</h2>

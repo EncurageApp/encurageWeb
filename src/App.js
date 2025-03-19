@@ -21,6 +21,8 @@ import { Terms } from "./pages/faq/Terms";
 import { Privacy } from "./pages/faq/Privacy";
 import { AppFeatures } from "./pages/AppFeatures";
 import { DataPolicy } from "./pages/faq/DataPolicy";
+import ReactGA from "react-ga4";
+ReactGA.initialize("G-WHLKC5QEE6");
 
 //Router
 const router = createBrowserRouter(
