@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 import { AppStoreButton, GooglePlayButton } from "react-mobile-app-button";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
@@ -12,6 +14,10 @@ import Icon6 from "../imgs/icons/reviewIcon6.png";
 import Icon7 from "../imgs/icons/reviewIcon7.png";
 
 export const Reviews = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   return (
     <main className="review-page">
       <section className="review-hero-container">

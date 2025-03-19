@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -11,6 +12,10 @@ import EmailIcon from "../imgs/encurage/email-icon.png";
 import { TimeLine } from "../components/TimeLine";
 
 export const Founder = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   return (
     <main className="founder-page">
       <section className="founder-hero">

@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 // Components
 import { CardContainer } from "../components/CardContainer";
 import { Link, NavLink } from "react-router-dom";
@@ -10,6 +12,10 @@ import HomeIllustration3 from "../imgs/homeImgsRevisions/illustration/HomeIllust
 import HomeIllustration4 from "../imgs/homeImgsRevisions/illustration/HomeIllustration4.png";
 
 export const Home = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   const handleLink = () => {
     window.scrollTo({
       top: 0,

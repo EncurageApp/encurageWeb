@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 // Components
 import { ChildrenStats } from "../components/ChildrenStats";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
@@ -17,6 +19,10 @@ import BoyIcon from "../imgs/icons/boyicon.png";
 import GirlIcon from "../imgs/icons/girlicon.png";
 
 export const ChildrenHealth = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   const handleLink = () => {
     window.scrollTo({
       top: 0,

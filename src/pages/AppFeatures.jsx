@@ -1,7 +1,6 @@
 /* EXPLORE PAGE */
-
-import React, { useRef } from "react";
-
+import React, { useRef, useEffect } from "react";
+import ReactGA from "react-ga4";
 //components
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
@@ -43,6 +42,10 @@ import HighFrequency from "../imgs/icons/highfrequency.png";
 import DailyLife from "../imgs/icons/dailylife.png";
 
 export const AppFeatures = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   const asNeededRef = useRef(null);
   const scheduledRef = useRef(null);
   const trackingRef = useRef(null);
