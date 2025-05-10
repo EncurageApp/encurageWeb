@@ -18,7 +18,7 @@ import DailyLife from "../imgs/icons/schedule.png";
 import BoyIcon from "../imgs/icons/boyicon.png";
 import GirlIcon from "../imgs/icons/girlicon.png";
 
-export const ChildrenHealth = () => {
+export const ChildMedicationManagement = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
@@ -159,7 +159,7 @@ export const ChildrenHealth = () => {
                   Add a grandparent, other relative, or a babysitter, and it
                   gets even more challenging.
                 </p>
-                <Link to="/AppFeatures" onClick={handleLink}>
+                <Link to="/MedicationManagementTools" onClick={handleLink}>
                   <button className="cta-btn-home">
                     Explore Our Solutions
                   </button>
@@ -181,7 +181,7 @@ export const ChildrenHealth = () => {
                   and unique aspects of children's medicine administration. A
                   multitude of new instructions elevates error rates.
                 </p>
-                <Link to="/AppFeatures" onClick={handleLink}>
+                <Link to="/MedicationManagementTools" onClick={handleLink}>
                   <button className="cta-btn-home">
                     Explore Our Solutions
                   </button>
@@ -199,7 +199,7 @@ export const ChildrenHealth = () => {
                   work and other commitments. Worrying for your child's health.
                   Confusion is almost inevitable.
                 </p>
-                <Link to="/AppFeatures" onClick={handleLink}>
+                <Link to="/MedicationManagementTools" onClick={handleLink}>
                   <button className="cta-btn-home">
                     Explore Our Solutions
                   </button>
@@ -217,7 +217,7 @@ export const ChildrenHealth = () => {
                   fever episodes up to 12 times a year. With so many to go
                   through, errors are more frequent.
                 </p>
-                <Link to="/AppFeatures" onClick={handleLink}>
+                <Link to="/MedicationManagementTools" onClick={handleLink}>
                   <button className="cta-btn-home">
                     Explore Our Solutions
                   </button>
@@ -237,7 +237,7 @@ export const ChildrenHealth = () => {
                   children in the house will get sick, too. Dosing multiple
                   children at a time elevates the risk for errors.
                 </p>
-                <Link to="AppFeatures" onClick={handleLink}>
+                <Link to="MedicationManagementTools" onClick={handleLink}>
                   <button className="cta-btn-home">
                     Explore Our Solutions
                   </button>
@@ -254,7 +254,7 @@ export const ChildrenHealth = () => {
                   updating frequently. Parents need to navigate a constantly
                   changing “database”.
                 </p>
-                <Link to="/AppFeatures" onClick={handleLink}>
+                <Link to="/MedicationManagementTools" onClick={handleLink}>
                   <button className="cta-btn-home">
                     Explore Our Solutions
                   </button>

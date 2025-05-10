@@ -1,4 +1,4 @@
-import Hadas from "../imgs/founder-hadas.png";
+import Hadas from "../imgs/OurStory-hadas.png";
 
 export const ImagePopOut = () => {
   return (

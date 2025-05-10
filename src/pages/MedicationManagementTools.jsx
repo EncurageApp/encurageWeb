@@ -7,31 +7,31 @@ import { AppStoreBtn } from "../components/AppStoreBtn";
 
 //images
 
-import ANW1 from "../imgs/appFeatureScreens/ANW/ANW1.png";
-import ANW2 from "../imgs/appFeatureScreens/ANW/ANW2.png";
-import ANW3 from "../imgs/appFeatureScreens/ANW/ANW3.png";
-import ANW4 from "../imgs/appFeatureScreens/ANW/ANW4.png";
+import ANW1 from "../imgs/MedicationManagementToolscreens/ANW/ANW1.png";
+import ANW2 from "../imgs/MedicationManagementToolscreens/ANW/ANW2.png";
+import ANW3 from "../imgs/MedicationManagementToolscreens/ANW/ANW3.png";
+import ANW4 from "../imgs/MedicationManagementToolscreens/ANW/ANW4.png";
 
-import EOAS1 from "../imgs/appFeatureScreens/EOAS/EOAS1.png";
-import EOAS2 from "../imgs/appFeatureScreens/EOAS/EOAS2.png";
-import EOAS3 from "../imgs/appFeatureScreens/EOAS/EOAS3.png";
+import EOAS1 from "../imgs/MedicationManagementToolscreens/EOAS/EOAS1.png";
+import EOAS2 from "../imgs/MedicationManagementToolscreens/EOAS/EOAS2.png";
+import EOAS3 from "../imgs/MedicationManagementToolscreens/EOAS/EOAS3.png";
 
-import TH1 from "../imgs/appFeatureScreens/trackingHub/TH1.png";
-import TH2 from "../imgs/appFeatureScreens/trackingHub/TH2.png";
-import TH3 from "../imgs/appFeatureScreens/trackingHub/TH3.png";
-import TH4 from "../imgs/appFeatureScreens/trackingHub/TH4.png";
+import TH1 from "../imgs/MedicationManagementToolscreens/trackingHub/TH1.png";
+import TH2 from "../imgs/MedicationManagementToolscreens/trackingHub/TH2.png";
+import TH3 from "../imgs/MedicationManagementToolscreens/trackingHub/TH3.png";
+import TH4 from "../imgs/MedicationManagementToolscreens/trackingHub/TH4.png";
 
-import CF1 from "../imgs/appFeatureScreens/careFamily/CF1.png";
+import CF1 from "../imgs/MedicationManagementToolscreens/careFamily/CF1.png";
 
-import J1 from "../imgs/appFeatureScreens/Journal/Journal1.png";
-import J2 from "../imgs/appFeatureScreens/Journal/Journal2.png";
-import J3 from "../imgs/appFeatureScreens/Journal/Journal3.png";
-import J4 from "../imgs/appFeatureScreens/Journal/Journal4.png";
+import J1 from "../imgs/MedicationManagementToolscreens/Journal/Journal1.png";
+import J2 from "../imgs/MedicationManagementToolscreens/Journal/Journal2.png";
+import J3 from "../imgs/MedicationManagementToolscreens/Journal/Journal3.png";
+import J4 from "../imgs/MedicationManagementToolscreens/Journal/Journal4.png";
 
-import BL1 from "../imgs/appFeatureScreens/DailyLife/DL1.png";
-import BL2 from "../imgs/appFeatureScreens/DailyLife/DL2.png";
-import BL3 from "../imgs/appFeatureScreens/DailyLife/DL3.png";
-import BL4 from "../imgs/appFeatureScreens/DailyLife/DL4.png";
+import BL1 from "../imgs/MedicationManagementToolscreens/DailyLife/DL1.png";
+import BL2 from "../imgs/MedicationManagementToolscreens/DailyLife/DL2.png";
+import BL3 from "../imgs/MedicationManagementToolscreens/DailyLife/DL3.png";
+import BL4 from "../imgs/MedicationManagementToolscreens/DailyLife/DL4.png";
 
 //icons
 import Journal from "../imgs/icons/journal.png";
@@ -41,7 +41,7 @@ import People from "../imgs/icons/3people.png";
 import HighFrequency from "../imgs/icons/highfrequency.png";
 import DailyLife from "../imgs/icons/dailylife.png";
 
-export const AppFeatures = () => {
+export const MedicationManagementTools = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
@@ -62,7 +62,7 @@ export const AppFeatures = () => {
   };
 
   return (
-    <main className="appFeatures-page">
+    <main className="MedicationManagementTools-page">
       <section className="af-hero-container">
         <div className="af-hero-container-img"></div>
         <div className="af-hero-container-text">

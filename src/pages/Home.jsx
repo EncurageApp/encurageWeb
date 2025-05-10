@@ -113,7 +113,7 @@ export const Home = () => {
                   feeding) are conveniently tracked and saved, so you can have
                   everything easily accessible in one place.
                 </p>
-                <Link to="AppFeatures" onClick={handleLink}>
+                <Link to="MedicationManagementTools" onClick={handleLink}>
                   <button className="cta-btn-home">Explore Our Tools</button>
                 </Link>
               </div>
@@ -150,7 +150,7 @@ export const Home = () => {
                   problem, and how you can minimize the risk for your child with
                   encurage.
                 </p>
-                <Link to="ChildrenHealth" onClick={handleLink}>
+                <Link to="ChildMedicationManagement" onClick={handleLink}>
                   <button className="cta-btn-home">
                     Medication Error Risks
                   </button>
@@ -184,7 +184,7 @@ export const Home = () => {
                   Our mission: provide each and every family with the right
                   toolkit for their children’s unique health management journey.
                 </p>
-                <Link to="AppFeatures" onClick={handleLink}>
+                <Link to="MedicationManagementTools" onClick={handleLink}>
                   <button className="cta-btn-home">About Us</button>
                 </Link>
               </div>
@@ -220,7 +220,7 @@ export const Home = () => {
                   feedback you’d like to share? We would love to hear from you.
                   Your valuable input helps us keep improving encurage.
                 </p>
-                <Link to="AppFeatures" onClick={handleLink}>
+                <Link to="MedicationManagementTools" onClick={handleLink}>
                   <button className="cta-btn-home">Help Center</button>
                 </Link>
               </div>

@@ -11,30 +11,30 @@ import EmailIcon from "../imgs/encurage/email-icon.png";
 //components
 import { TimeLine } from "../components/TimeLine";
 
-export const Founder = () => {
+export const OurStory = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
 
   return (
-    <main className="founder-page">
-      <section className="founder-hero">
-        <h2>Meet the Founders</h2>
+    <main className="OurStory-page">
+      <section className="OurStory-hero">
+        <h2>Meet the OurStorys</h2>
       </section>
 
-      <section className="f-founder-container">
+      <section className="f-OurStory-container">
         <div>
-          <div className="f-founder-img-container">
+          <div className="f-OurStory-img-container">
             <div>
               <img
                 src={Hadas}
-                alt="Founder of Company victor"
+                alt="OurStory of Company victor"
                 width={680}
                 height={510}
                 style={{ objectFit: "cover" }}
               />
-              <p className="founder-title">
-                ~ Hadas Kanner-Golan, Co-founder and CEO ~
+              <p className="OurStory-title">
+                ~ Hadas Kanner-Golan, Co-OurStory and CEO ~
               </p>
             </div>
           </div>
@@ -68,7 +68,7 @@ export const Founder = () => {
                   <br />
                   <br />I feel fortunate and grateful for being able to continue
                   helping and encuraging parents together with Victor, my
-                  co-founder.
+                  co-OurStory.
                 </q>
               </p>
               <br />
@@ -82,17 +82,17 @@ export const Founder = () => {
           </div>
         </div>
         <div>
-          <div className="f-founder-img-container">
+          <div className="f-OurStory-img-container">
             <div>
               <img
                 src={Cayden}
-                alt="Founder of Company victor"
+                alt="OurStory of Company victor"
                 width={680}
                 height={510}
                 style={{ objectFit: "cover" }}
               />
-              <p className="founder-title">
-                ~ Victor Horton, Co-founder and CTO ~
+              <p className="OurStory-title">
+                ~ Victor Horton, Co-OurStory and CTO ~
               </p>
             </div>
           </div>
@@ -100,7 +100,7 @@ export const Founder = () => {
             <blockquote>
               <p>
                 <q>
-                  Hi! My name is Victor. I am one of the co-founders of
+                  Hi! My name is Victor. I am one of the co-OurStorys of
                   encurage. I helped create this app, inspired by my amazing
                   child, Cayden, who was born with a rare congenital heart
                   condition. Caring for Cayden meant tracking his medications,

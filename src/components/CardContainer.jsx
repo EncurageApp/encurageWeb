@@ -55,7 +55,7 @@ export const CardContainer = () => {
               anywhere else.
             </p>
 
-            <Link to={"AppFeatures"} onClick={handleLink}>
+            <Link to={"MedicationManagementTools"} onClick={handleLink}>
               <button className="cta-btn-home">Explore Our Tools</button>
             </Link>
           </div>
@@ -69,7 +69,7 @@ export const CardContainer = () => {
               addressed.
             </p>
 
-            <Link to={"AppFeatures"} onClick={handleLink}>
+            <Link to={"MedicationManagementTools"} onClick={handleLink}>
               <button className="cta-btn-home">Explore Our Tools</button>
             </Link>
           </div>
@@ -80,7 +80,7 @@ export const CardContainer = () => {
             <h2>Protects Your Family</h2>
             <p>Medication error risks are significantly reduced.</p>
 
-            <Link to={"ChildrenHealth"} onClick={handleLink}>
+            <Link to={"ChildMedicationManagement"} onClick={handleLink}>
               <button className="cta-btn-home">Medication Error Risks</button>
             </Link>
           </div>
@@ -105,7 +105,7 @@ export const CardContainer = () => {
               unique journey.
             </p>
 
-            <Link to={"AppFeatures"} onClick={handleLink}>
+            <Link to={"MedicationManagementTools"} onClick={handleLink}>
               <button className="cta-btn-home">Explore Our Tools</button>
             </Link>
           </div>

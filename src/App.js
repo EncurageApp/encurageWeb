@@ -11,15 +11,15 @@ import { HelpCenter } from "./layouts/HelpCenterLayout";
 
 //pages
 import { Home } from "./pages/Home";
-import { ChildrenHealth } from "./pages/ChildrenHealth";
+import { ChildMedicationManagement } from "./pages/ChildMedicationManagement";
 import { NotFound } from "./pages/NotFound";
-import { Founder } from "./pages/Founder";
+import { OurStory } from "./pages/OurStory";
 import { Reviews } from "./pages/Reviews";
 import { Faq } from "./pages/faq/Faq";
 import { Contact } from "./pages/faq/Contact";
 import { Terms } from "./pages/faq/Terms";
 import { Privacy } from "./pages/faq/Privacy";
-import { AppFeatures } from "./pages/AppFeatures";
+import { MedicationManagementTools } from "./pages/MedicationManagementTools";
 import { DataPolicy } from "./pages/faq/DataPolicy";
 import ReactGA from "react-ga4";
 ReactGA.initialize("G-WHLKC5QEE6");
@@ -30,10 +30,16 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
 
-      <Route path="ChildrenHealth" element={<ChildrenHealth />} />
+      <Route
+        path="ChildMedicationManagement"
+        element={<ChildMedicationManagement />}
+      />
 
-      <Route path="AppFeatures" element={<AppFeatures />} />
-      <Route path="Founder" element={<Founder />} />
+      <Route
+        path="MedicationManagementTools"
+        element={<MedicationManagementTools />}
+      />
+      <Route path="OurStory" element={<OurStory />} />
 
       <Route path="Reviews" element={<Reviews />} />
 

@@ -68,7 +68,14 @@ export const RootLayout = () => {
               <div className="nav-logo-download-container">
                 <NavLink to={"/"} onClick={handleQuickLinkClick}>
                   <div className="logo-container">
-                    <img src={Elogo2} alt="cup of pink medicine" />
+                    <img
+                      src={Elogo2}
+                      alt="cup of pink medicine"
+                      style={{
+                        width: "80px",
+                        height: "auto",
+                      }}
+                    />
                     <img src={Elogo} alt="encurage" />
                   </div>
                 </NavLink>
@@ -100,13 +107,19 @@ export const RootLayout = () => {
               <NavLink to={"/"} onClick={handleQuickLinkClick}>
                 Home
               </NavLink>
-              <NavLink to={"ChildrenHealth"} onClick={handleQuickLinkClick}>
+              <NavLink
+                to={"ChildMedicationManagement"}
+                onClick={handleQuickLinkClick}
+              >
                 Challenges & Risks
               </NavLink>
-              <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
+              <NavLink
+                to={"MedicationManagementTools"}
+                onClick={handleQuickLinkClick}
+              >
                 Explore Encurage
               </NavLink>
-              <NavLink to={"Founder"} onClick={handleQuickLinkClick}>
+              <NavLink to={"OurStory"} onClick={handleQuickLinkClick}>
                 Our Story
               </NavLink>
               <NavLink to={"Reviews"} onClick={handleQuickLinkClick}>
@@ -139,7 +152,11 @@ export const RootLayout = () => {
       <footer>
         <nav>
           <div className="logo-container-footer">
-            <img src={Elogo2} alt="cup of pink medicine" />
+            <img
+              src={Elogo2}
+              alt="cup of pink medicine"
+              style={{ width: "100px", height: "auto" }}
+            />
             <img src={Elogo} alt="encurage" />
           </div>
           <div className="download-btn-container">
@@ -150,13 +167,19 @@ export const RootLayout = () => {
             <NavLink to={"/"} onClick={handleQuickLinkClick}>
               Home
             </NavLink>
-            <NavLink to={"ChildrenHealth"} onClick={handleQuickLinkClick}>
+            <NavLink
+              to={"ChildMedicationManagement"}
+              onClick={handleQuickLinkClick}
+            >
               Challenges & Risks
             </NavLink>
-            <NavLink to={"AppFeatures"} onClick={handleQuickLinkClick}>
+            <NavLink
+              to={"MedicationManagementTools"}
+              onClick={handleQuickLinkClick}
+            >
               Explore Encurage
             </NavLink>
-            <NavLink to={"Founder"} onClick={handleQuickLinkClick}>
+            <NavLink to={"OurStory"} onClick={handleQuickLinkClick}>
               Our Story
             </NavLink>
             <NavLink to={"Reviews"} onClick={handleQuickLinkClick}>
