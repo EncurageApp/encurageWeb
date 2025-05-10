@@ -1,3 +1,4 @@
+// App.js
 import {
   createBrowserRouter,
   Route,
@@ -21,6 +22,7 @@ import { Terms } from "./pages/faq/Terms";
 import { Privacy } from "./pages/faq/Privacy";
 import { MedicationManagementTools } from "./pages/MedicationManagementTools";
 import { DataPolicy } from "./pages/faq/DataPolicy";
+import { HelmetProvider } from "react-helmet-async";
 import ReactGA from "react-ga4";
 ReactGA.initialize("G-WHLKC5QEE6");
 
@@ -57,7 +59,11 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
+  );
 }
 
 export default App;

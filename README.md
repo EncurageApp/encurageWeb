@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Also used these packages
 
 - [react-ga4](https://github.com/codler/react-ga4)
+- [react-helmet-async](https://github.com/staylor/react-helmet-async)
 
 ## Available Scripts
 
