@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 
 // CSS
 import "./css/HelpCenter.css";
-import "./css/Founder.css";
+import "./css/OurStory.css";
 import "./css/Root.css";
 import "./css/NavBars.css";
 import "./css/Buttons.css";
 import "./css/Home.css";
-import "./css/ChildrenHealth.css";
-import "./css/AppFeatures.css";
+import "./css/ChildMedicationManagement.css";
+import "./css/MedicationManagementTools.css";
 import "./css/Reviews.css";
 import "./css/NotFound.css";
 

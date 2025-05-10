@@ -54,7 +54,7 @@ export const PhoneAnimation = () => {
             accessible in one place.
           </p>
 
-          <Link to="AppFeatures" onClick={handleLink}>
+          <Link to="MedicationManagementTools" onClick={handleLink}>
             <button className="cta-btn-home">Explore Our Tools</button>
           </Link>
         </div>

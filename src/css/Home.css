@@ -589,20 +589,20 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     font-size: 2.4rem;
   }
 
-  /*       Founder Section       */
+  /*       OurStory Section       */
 
-  .home-founder-info {
+  .home-OurStory-info {
     min-height: 720px;
     transition: all 0.5s ease-in-out;
   }
 
-  .home-founder-info p {
+  .home-OurStory-info p {
     padding: 0 20px;
     font-size: 1.3rem;
     line-height: 1.75;
   }
 
-  .home-founder-info button {
+  .home-OurStory-info button {
     width: 250px;
     transition: all 0.3s ease-in-out;
   }
@@ -709,26 +709,26 @@ Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
     flex-direction: row;
   }
 
-  /*       Founder Section       */
+  /*       OurStory Section       */
 
   .home-review-container {
     min-height: 600px;
   }
 
-  .home-founder {
+  .home-OurStory {
     max-width: 1400px;
   }
 
-  .home-founder-info {
+  .home-OurStory-info {
     min-height: 400px;
     transition: all 0.5s ease-in-out;
   }
 
-  .home-founder-info p {
+  .home-OurStory-info p {
     font-size: 1.4rem;
   }
 
-  .home-founder-info button {
+  .home-OurStory-info button {
     margin: 15px 0 0 100px;
     width: 300px;
     font-size: 1.1rem;

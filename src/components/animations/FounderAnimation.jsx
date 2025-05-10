@@ -1,11 +1,11 @@
 import React from "react";
 import Lottie from "lottie-react";
-import founderAnimation from "../../assets/founder.json";
+import OurStoryAnimation from "../../assets/OurStory.json";
 
-export const FounderAnimation = () => {
+export const OurStoryAnimation = () => {
   return (
-    <div className="founder-animation">
-      <Lottie loop={true} animationData={founderAnimation} />
+    <div className="OurStory-animation">
+      <Lottie loop={true} animationData={OurStoryAnimation} />
     </div>
   );
 };
