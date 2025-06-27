@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 import { AppStoreButton, GooglePlayButton } from "react-mobile-app-button";
 import { AppStoreBtn } from "../components/AppStoreBtn";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
@@ -18,6 +19,9 @@ export const Reviews = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
+
+  const { pathname, search } = useLocation();
+  const canonical = `https://www.encurage.app${pathname}${search}`;
 
   return (
     <>
@@ -51,6 +55,7 @@ export const Reviews = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <main className="review-page">
         <section className="review-hero-container">

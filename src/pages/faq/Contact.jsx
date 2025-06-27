@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 import { IoMdSettings } from "react-icons/io";
 import { IoMdChatbubbles } from "react-icons/io";
 
@@ -8,6 +9,9 @@ export const Contact = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
+
+  const { pathname, search } = useLocation();
+  const canonical = `https://www.encurage.app${pathname}${search}`;
 
   return (
     <>
@@ -35,6 +39,7 @@ export const Contact = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <main className="contact-page">
         <div className="contact-inner">

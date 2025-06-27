@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 // Components
 import { ChildrenStats } from "../components/ChildrenStats";
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
@@ -31,6 +32,9 @@ export const ChildMedicationManagement = () => {
       behavior: "smooth",
     });
   };
+  const { pathname, search } = useLocation();
+  const canonical = `https://www.encurage.app${pathname}${search}`;
+
   return (
     <>
       <Helmet>
@@ -66,6 +70,7 @@ export const ChildMedicationManagement = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <main className="health-page">
         <section className="ch-hero-container">

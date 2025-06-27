@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -16,6 +17,9 @@ export const OurStory = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
+
+  const { pathname, search } = useLocation();
+  const canonical = `https://www.encurage.app${pathname}${search}`;
 
   return (
     <>
@@ -49,6 +53,7 @@ export const OurStory = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <main className="OurStory-page">
         <section className="OurStory-hero">
