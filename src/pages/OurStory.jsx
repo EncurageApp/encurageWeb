@@ -53,6 +53,7 @@ export const OurStory = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <meta name="robots" content="index,follow" />
         <link rel="canonical" href={canonical} />
       </Helmet>
       <main className="OurStory-page">
