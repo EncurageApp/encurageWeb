@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Collapsible from "react-collapsible";
 
 //Icons
@@ -36,6 +36,9 @@ export const Faq = () => {
     }
   };
 
+  const { pathname, search } = useLocation();
+  const canonical = `https://www.encurage.app${pathname}${search}`;
+
   return (
     <>
       <Helmet>
@@ -68,6 +71,8 @@ export const Faq = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <main className="faq-page">
         <p>

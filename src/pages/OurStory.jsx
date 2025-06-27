@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -16,6 +17,9 @@ export const OurStory = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
+
+  const { pathname, search } = useLocation();
+  const canonical = `https://www.encurage.app${pathname}${search}`;
 
   return (
     <>
@@ -49,10 +53,12 @@ export const OurStory = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <main className="OurStory-page">
         <section className="OurStory-hero">
-          <h2>Meet the OurStorys</h2>
+          <h2>Meet the Founders</h2>
         </section>
 
         <section className="f-OurStory-container">
@@ -61,13 +67,13 @@ export const OurStory = () => {
               <div>
                 <img
                   src={Hadas}
-                  alt="OurStory of Company victor"
+                  alt="Founder of Company Hadas"
                   width={680}
                   height={510}
                   style={{ objectFit: "cover" }}
                 />
                 <p className="OurStory-title">
-                  ~ Hadas Kanner-Golan, Co-OurStory and CEO ~
+                  ~ Hadas Kanner-Golan, Co-Founder and CEO ~
                 </p>
               </div>
             </div>
@@ -102,7 +108,7 @@ export const OurStory = () => {
                     <br />
                     <br />I feel fortunate and grateful for being able to
                     continue helping and encuraging parents together with
-                    Victor, my co-OurStory.
+                    Victor, my co-Founder.
                   </q>
                 </p>
                 <br />
@@ -124,13 +130,13 @@ export const OurStory = () => {
               <div>
                 <img
                   src={Cayden}
-                  alt="OurStory of Company victor"
+                  alt="Founder of Company Victor"
                   width={680}
                   height={510}
                   style={{ objectFit: "cover" }}
                 />
                 <p className="OurStory-title">
-                  ~ Victor Horton, Co-OurStory and CTO ~
+                  ~ Victor Horton, Co-Founder and CTO ~
                 </p>
               </div>
             </div>
@@ -138,7 +144,7 @@ export const OurStory = () => {
               <blockquote>
                 <p>
                   <q>
-                    Hi! My name is Victor. I am one of the co-OurStorys of
+                    Hi! My name is Victor. I am one of the co-Founders of
                     encurage. I helped create this app, inspired by my amazing
                     child, Cayden, who was born with a rare congenital heart
                     condition. Caring for Cayden meant tracking his medications,

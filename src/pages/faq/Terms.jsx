@@ -1,11 +1,15 @@
 import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 export const Terms = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
+
+  const { pathname, search } = useLocation();
+  const canonical = `https://www.encurage.app${pathname}${search}`;
 
   return (
     <>
@@ -33,6 +37,8 @@ export const Terms = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <div className="terms-conditions">
         <h2>Terms & Conditions</h2>

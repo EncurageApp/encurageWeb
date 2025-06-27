@@ -48,8 +48,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "generate-sitemap": "node scripts/generate-sitemap.js",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run generate-sitemap &&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -75,6 +76,7 @@
     "@babel/core": "^7.26.0",
     "@babel/eslint-parser": "^7.26.5",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/preset-env": "^7.26.0"
+    "@babel/preset-env": "^7.26.0",
+    "sitemap": "^8.0.0"
   }
 }

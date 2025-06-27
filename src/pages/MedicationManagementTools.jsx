@@ -2,6 +2,8 @@
 import React, { useRef, useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
+
 //components
 import { GooglePlayBtn } from "../components/GooglePlayBtn";
 import { AppStoreBtn } from "../components/AppStoreBtn";
@@ -62,6 +64,9 @@ export const MedicationManagementTools = () => {
     }
   };
 
+  const { pathname, search } = useLocation();
+  const canonical = `https://www.encurage.app${pathname}${search}`;
+
   return (
     <>
       <Helmet>
@@ -97,6 +102,8 @@ export const MedicationManagementTools = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <main className="MedicationManagementTools-page">
         <section className="af-hero-container">

@@ -1,11 +1,15 @@
 import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 export const DataPolicy = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
+
+  const { pathname, search } = useLocation();
+  const canonical = `https://www.encurage.app${pathname}${search}`;
 
   return (
     <>
@@ -42,6 +46,8 @@ export const DataPolicy = () => {
           name="twitter:image"
           content="http://www.encurage.app/static/media/Layer_1.d871b316b4549478f451.png"
         />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <div className="privacy-policy">
         <h2>Consumer Health Data Privacy Policy</h2>
